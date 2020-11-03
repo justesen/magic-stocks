@@ -1,0 +1,57 @@
+* {
+  font-family: sans-serif;
+}
+
+th > a:visited {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: #3283a8;
+  color: white;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.severe {
+  color: red;
+}
+
+.warn {
+  color: orange;
+}
+
+.good {
+  color: green;
+}

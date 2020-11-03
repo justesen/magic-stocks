@@ -1,0 +1,105 @@
+<!doctype html>
+<html ng-app="stocksApp">
+  <head>
+    <title>Stocks</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-sanitize.js"></script>
+    <script src="data/data.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div ng-controller="StocksController">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>
+              <a href="#" ng-click="orderByField='symbol'; reverseSort = !reverseSort">
+                Symbol <span ng-show="orderByField == 'symbol'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='name'; reverseSort = !reverseSort">
+                Name <span ng-show="orderByField == 'name'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='score'; reverseSort = !reverseSort">
+                Score <span ng-show="orderByField == 'score'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='rank_valuation'; reverseSort = !reverseSort">
+                Rank valuation <span ng-show="orderByField == 'rank_valuation'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='rank_roc'; reverseSort = !reverseSort">
+                Rank ROC <span ng-show="orderByField == 'rank_roc'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='earnings_ev'; reverseSort = !reverseSort">
+                E/EV <span ng-show="orderByField == 'earnings_ev'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='fcf_ev'; reverseSort = !reverseSort">
+                FCF/EV <span ng-show="orderByField == 'fcf_ev'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='p_e'; reverseSort = !reverseSort">
+                P/E <span ng-show="orderByField == 'p_e'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='weighted_roce'; reverseSort = !reverseSort">
+                ROCE <span ng-show="orderByField == 'weighted_roce'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='weighted_roe'; reverseSort = !reverseSort">
+                ROE <span ng-show="orderByField == 'weighted_roe'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='weighted_roa'; reverseSort = !reverseSort">
+                ROA <span ng-show="orderByField == 'weighted_roa'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='p_b'; reverseSort = !reverseSort">
+                P/B <span ng-show="orderByField == 'p_b'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='debt_to_equity'; reverseSort = !reverseSort">
+                Debt/equity <span ng-show="orderByField == 'debt_to_equity'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="s in stocks|orderBy:orderByField:reverseSort">
+            <td>{{ $index + 1 }}</td>
+            <td><a href="{{ s.url }}">{{ s.symbol }}</a></td>
+            <td>{{ s.name }}</td>
+            <td class="right" ng-bind-html="format(s, 'score')">{{ s.score }}</td>
+            <td class="right" ng-bind-html="format(s, 'rank_valuation')">{{ s.rank_valuation }}</td>
+            <td class="right" ng-bind-html="format(s, 'rank_roc')">{{ s.rank_roc }}</td>
+            <td class="right" ng-bind-html="format(s, 'earnings_ev')"></td>
+            <td class="right" ng-bind-html="format(s, 'fcf_ev')"></td>
+            <td class="right" ng-bind-html="format(s, 'p_e')"></td>
+            <td class="right" ng-bind-html="format(s, 'weighted_roce')"></td>
+            <td class="right" ng-bind-html="format(s, 'weighted_roe')"></td>
+            <td class="right" ng-bind-html="format(s, 'weighted_roa')"></td>
+            <td class="right" ng-bind-html="format(s, 'p_b')"></td>
+            <td class="right" ng-bind-html="format(s, 'debt_to_equity')"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
