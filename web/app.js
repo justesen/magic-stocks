@@ -22,13 +22,13 @@ angular.module("stocksApp", ['ngSanitize'])
         case "earnings_ev":
           return formatGrowth(s.growth_earnings) + " " + s.earnings_ev.toFixed(2);
         case "fcf_ev":
-          return formatGrowth(s.growth_fcf) + " " + s.fcf_ev.toFixed(2);
+          return formatGrowth(s.growth_my_fcf) + " " + s.fcf_ev.toFixed(2);
         case "weighted_roce":
           return formatGrowth(s.growth_roce) + " " + s.weighted_roce.toFixed(0) + '%';
         case "weighted_roe":
           return formatGrowth(s.growth_roe) + " " + s.weighted_roe.toFixed(0) + '%';
         case "weighted_roa":
-          return formatGrowth(s.growth_roa) + " " + s.weighted_roa.toFixed(0) + '%'
+          return formatGrowth(s.growth_roa) + " " + s.weighted_roa.toFixed(0) + '%';
         case "p_b":
           if (s.p_b < 0) {
             return severe(s.p_b.toFixed(1));
@@ -43,6 +43,13 @@ angular.module("stocksApp", ['ngSanitize'])
             return good(s.debt_to_equity.toFixed(1));
           }
           return s.debt_to_equity.toFixed(1);
+        case "my_debt_to_equity":
+          if (s.my_debt_to_equity > 3) {
+            return warn(s.my_debt_to_equity.toFixed(1));
+          } else if (s.my_debt_to_equity < 0.45) {
+            return good(s.my_debt_to_equity.toFixed(1));
+          }
+          return s.my_debt_to_equity.toFixed(1);
         default:
           return s[key];
       }
@@ -57,5 +64,5 @@ angular.module("stocksApp", ['ngSanitize'])
         return good(str);
       }
       return warn(str);
-    }
+    };
   });

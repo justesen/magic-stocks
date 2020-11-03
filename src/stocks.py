@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import math
 import time
 import traceback
 import sys
@@ -14,30 +13,30 @@ EUR_TO_DKK = 7.44
 
 
 URLS = [
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RL',  # A. P. Moller Maersk A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RN',  # Ambu
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RB',  # Bavarian Nordic A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K1',  # Carlsberg A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000OO3C',  # Chr. Hansen Holding A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K4',  # Coloplast A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KA',  # Danske Bank A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LK',  # Demant AS
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q9',  # DSV Panalpina AS
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RO',  # FLSmidth & Co. A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QU',  # Genmab A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KG',  # GN Store Nord A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00012E78',  # ISS A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KR',  # Jyske Bank A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q7',  # Lundbeck A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5BQ',  # Novo Nordisk A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QX',  # Novozymes A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000Q1VF',  # Pandora A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5L9',  # Rockwool International A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QC',  # Royal UNIBREW A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QV',  # SimCorp A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RI',  # Tryg A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q5',  # Vestas Wind Systems A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001846T',  # Ørsted A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RL',  # A. P. Moller Maersk A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RN',  # Ambu
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RB',  # Bavarian Nordic A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K1',  # Carlsberg A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000OO3C',  # Chr. Hansen Holding A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K4',  # Coloplast A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KA',  # Danske Bank A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LK',  # Demant AS
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q9',  # DSV Panalpina AS
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RO',  # FLSmidth & Co. A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QU',  # Genmab A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KG',  # GN Store Nord A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00012E78',  # ISS A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KR',  # Jyske Bank A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q7',  # Lundbeck A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5BQ',  # Novo Nordisk A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QX',  # Novozymes A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000Q1VF',  # Pandora A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5L9',  # Rockwool International A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QC',  # Royal UNIBREW A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QV',  # SimCorp A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RI',  # Tryg A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q5',  # Vestas Wind Systems A/S
+    # 'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001846T',  # Ørsted A/S
 
     'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LL',  # Alk-Abello A/S
     'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PI',  # Alm Brand AS
@@ -154,16 +153,6 @@ def get_stock_data(driver, url):
         'p_e': find_and_parse(driver, '//*[@id="Col0PE"]'),
         'p_b': find_and_parse(driver, '//*[@id="KeyStatsPriceBookRatio"]/td'),
         'financials_currency': driver.find_element_by_xpath('//*[@id="OverviewFinancialsDisclaimer"]/p').get_attribute('innerHTML').strip()[-4:-1],
-        'equity': [
-            find_and_parse(driver, '//*[@id="OverviewFinancials"]/table/tbody[2]/tr[7]/td[1]'),
-            find_and_parse(driver, '//*[@id="OverviewFinancials"]/table/tbody[2]/tr[7]/td[2]'),
-            find_and_parse(driver, '//*[@id="OverviewFinancials"]/table/tbody[2]/tr[7]/td[3]'),
-        ],
-        'earnings': [
-            find_and_parse(driver, '//*[@id="OverviewFinancials"]/table/tbody[1]/tr[4]/td[1]'),
-            find_and_parse(driver, '//*[@id="OverviewFinancials"]/table/tbody[1]/tr[4]/td[2]'),
-            find_and_parse(driver, '//*[@id="OverviewFinancials"]/table/tbody[1]/tr[4]/td[3]'),
-        ],
         'fcf': [
             find_and_parse(driver, '//*[@id="OverviewFinancials"]/table/tbody[3]/tr[4]/td[1]'),
             find_and_parse(driver, '//*[@id="OverviewFinancials"]/table/tbody[3]/tr[4]/td[2]'),
@@ -172,13 +161,59 @@ def get_stock_data(driver, url):
     }
 
     driver.find_element_by_xpath('//*[@id="LnkPage10"]').click()
+    stock['revenue'] = [
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[1]/tr[1]/td[3]'),
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[1]/tr[1]/td[4]'),
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[1]/tr[1]/td[5]'),
+    ]
+    stock['ebit'] = [
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[2]/tr[8]/td[3]'),
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[2]/tr[8]/td[4]'),
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[2]/tr[8]/td[5]'),
+    ]
+    stock['ebt'] = [
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[2]/td[3]'),
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[2]/td[4]'),
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[2]/td[5]'),
+    ]
+    stock['earnings'] = [
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[5]/td[3]'),
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[5]/td[4]'),
+        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[5]/td[5]'),
+    ]
+
     driver.find_element_by_xpath('//*[@id="LnkPage10Viewbs"]').click()
+    stock['cash'] = [
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[1]/tr[6]/td[3]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[1]/tr[6]/td[4]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[1]/tr[6]/td[5]'),
+    ]
     stock['short_term_debt'] = [
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[6]/td[3]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[6]/td[4]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[6]/td[5]'),
+    ]
+    stock['other_short_term_debt'] = [
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[7]/td[3]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[7]/td[4]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[7]/td[5]'),
+    ]
+    stock['short_term_liabilities'] = [
         find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[8]/td[3]'),
         find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[8]/td[4]'),
         find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[8]/td[5]'),
     ]
     stock['long_term_debt'] = [
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[11]/td[3]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[11]/td[4]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[11]/td[5]'),
+    ]
+    stock['other_long_term_debt'] = [
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[12]/td[3]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[12]/td[4]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[12]/td[5]'),
+    ]
+    stock['long_term_liabilities'] = [
         find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[13]/td[3]'),
         find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[13]/td[4]'),
         find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[13]/td[5]'),
@@ -188,9 +223,13 @@ def get_stock_data(driver, url):
         find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[14]/td[4]'),
         find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[14]/td[5]'),
     ]
+    stock['equity'] = [
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[21]/td[3]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[21]/td[4]'),
+        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[21]/td[5]'),
+    ]
 
     driver.find_element_by_xpath('//*[@id="LnkPage11"]').click()
-
     stock['roa'] = [
         find_and_parse(driver, '//*[@id="KeyRatiosProfitability"]/table/tbody/tr[3]/td[3]'),
         find_and_parse(driver, '//*[@id="KeyRatiosProfitability"]/table/tbody/tr[3]/td[4]'),
@@ -217,7 +256,7 @@ def load_data(db, gui):
             print(stock['name'])
             db.stocks.insert_one(stock)
             time.sleep(1)
-        except Exception as e:
+        except Exception:
             print(traceback.format_exc())
             print('failed at ' + str(i))
             input()
@@ -246,6 +285,37 @@ def weighted_avg(s, key, growth=False, growth_discount=0.5):
     return sum([e*(i+1)/denom for i, e in enumerate(seq)])
 
 
+def calc_fcf(s):
+    if all((x is None for x in s['fcf'])):
+        return s['fcf']
+
+    return [0 if x is None else x for x in s['fcf']]
+
+
+
+def calc_debt(s):
+    if all((x is None for x in s['long_term_liabilities'])) and all((x is None for x in s['short_term_liabilities'])):
+        print('using liabilites')
+        return [l - c for l, c in zip(s['liabilities'], s['cash'])]
+
+    # return [(0 if st is None else st) + (0 if ost is None else ost) + (0 if lt is None else lt) + (0 if olt is None else olt)
+    return [(0 if lt is None else lt) + (0 if olt is None else olt)
+            for st, ost, lt, olt in zip(s['short_term_debt'], s['other_short_term_debt'], s['long_term_debt'], s['other_long_term_debt'])]
+
+
+def calc_ebit(s):
+    if None not in s['ebit']:
+        ebit = s['ebit']
+    elif None not in s['ebt']:
+        ebit = s['ebt']
+        print('using ebt')
+    else:
+        print('using earnings')
+        ebit = s['earnings']
+
+    return ebit
+
+
 def process_data(db):
     for s in sorted(db.stocks.find(), key=lambda s: s['name']):
         print(s['name'])
@@ -256,29 +326,35 @@ def process_data(db):
         else:
             s['market_cap'] = s['market_cap_raw']
 
-        if s['equity'][-1] < 0:
-            if s['long_term_debt'][-1] == 0:
-                s['ev'] = s['market_cap'] + s['liabilities'][-1]
-            else:
-                s['ev'] = s['market_cap'] + s['long_term_debt'][-1]
-        else:
-            s['ev'] = s['market_cap'] + s['equity'][-1]*s['debt_to_equity']
+        s['my_cash'] = [0 if x is None else x for x in s['cash']]
+        s['debt'] = calc_debt(s)
+        s['my_ebit'] = calc_ebit(s)
+        s['my_fcf'] = calc_fcf(s)
+        s['roce'] = [100*s['earnings'][i]/((s['equity'][i] if s['equity'][i] > 0 else -s['equity'][i]) + s['debt'][i]) for i in range(len(s['my_ebit']))]
+        # s['roce'] = [100*s['my_ebit'][i]/(s['equity'][i] + s['debt'][i] - s['my_cash'][i]) for i in range(len(s['my_ebit']))]
+
+        # s['ev'] = s['market_cap'] + s['equity'][-1]*s['debt_to_equity']
+        s['ev'] = s['market_cap'] + s['debt'][-1] #- s['cash'][-1]
+        # s['my_debt_to_equity'] = (s['debt'][-1] - s['cash'][-1])/s['equity'][-1]
+        s['my_debt_to_equity'] = (s['debt'][-1])/s['equity'][-1]
 
         s['weighted_earnings'] = weighted_avg(s, 'earnings', True)
-        if None not in s['fcf']:
-            s['weighted_fcf'] = weighted_avg(s, 'fcf', True)
+        s['weighted_ebit'] = weighted_avg(s, 'my_ebit', True)
+        if None not in s['my_fcf']:
+            s['weighted_fcf'] = weighted_avg(s, 'my_fcf', True)
         s['weighted_roe'] = weighted_avg(s, 'roe', True)
         s['weighted_roa'] = weighted_avg(s, 'roa', True)
-        s['roce'] = [100*earnings/(eq + (liabilities if long_term_debt is None else long_term_debt))
-                     for earnings, eq, long_term_debt, liabilities in zip(s['earnings'], s['equity'], s['long_term_debt'], s['liabilities'])]
-        s['weighted_roce'] = round(weighted_avg(s, 'roce', True))
+        s['weighted_roce'] = weighted_avg(s, 'roce', True)
 
         s['earnings_ev'] = s['weighted_earnings']/s['ev']
-        if None not in s['fcf']:
+        s['ebit_ev'] = s['weighted_ebit']/s['ev']
+
+        if 'weighted_fcf' in s:
             s['fcf_ev'] = s['weighted_fcf']/s['ev']
-            s['valuation'] = round(100*(0.35*s['earnings_ev'] + 0.35*s['fcf_ev'] + 0.25*(1/s['p_e'] if s['p_e'] is not None else 0) + 0.05*(1/s['p_b'] if s['p_b'] is not None else 0)))
+            s['valuation'] = 100*(0.6*s['earnings_ev'] + 0.0*s['ebit_ev'] + 0.3*s['fcf_ev'] + 0.1*(1/s['p_e'] if s['p_e'] is not None else 0))
         else:
-            s['valuation'] = round(100*(0.7*s['earnings_ev'] + 0.25*(1/s['p_e'] if s['p_e'] is not None else 0) + 0.05*(1/s['p_b'] if s['p_b'] is not None else 0)))
+            print('no fcf')
+            s['valuation'] = 100*(0.9*s['earnings_ev'] + 0.0*s['ebit_ev'] + 0.1*(1/s['p_e'] if s['p_e'] is not None else 0))
 
         db.stocks.remove({'name': s['name']})
         db.stocks.insert_one(s)

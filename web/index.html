@@ -4,7 +4,7 @@
     <title>Stocks</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-sanitize.js"></script>
-    <script src="data/data.js"></script>
+    <script src="../data/data.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -79,6 +79,11 @@
                 Debt/equity <span ng-show="orderByField == 'debt_to_equity'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
               </a>
             </th>
+            <th>
+              <a href="#" ng-click="orderByField='my_debt_to_equity'; reverseSort = !reverseSort">
+                My debt/equity <span ng-show="orderByField == 'my_debt_to_equity'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -97,6 +102,7 @@
             <td class="right" ng-bind-html="format(s, 'weighted_roa')"></td>
             <td class="right" ng-bind-html="format(s, 'p_b')"></td>
             <td class="right" ng-bind-html="format(s, 'debt_to_equity')"></td>
+            <td class="right" ng-bind-html="format(s, 'my_debt_to_equity')"></td>
           </tr>
         </tbody>
       </table>
