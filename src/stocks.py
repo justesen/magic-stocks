@@ -298,7 +298,6 @@ def calc_debt(s):
         print('using liabilites')
         return [l - c for l, c in zip(s['liabilities'], s['cash'])]
 
-    # return [(0 if st is None else st) + (0 if ost is None else ost) + (0 if lt is None else lt) + (0 if olt is None else olt)
     return [(0 if lt is None else lt) + (0 if olt is None else olt)
             for st, ost, lt, olt in zip(s['short_term_debt'], s['other_short_term_debt'], s['long_term_debt'], s['other_long_term_debt'])]
 
@@ -331,11 +330,8 @@ def process_data(db):
         s['my_ebit'] = calc_ebit(s)
         s['my_fcf'] = calc_fcf(s)
         s['roce'] = [100*s['earnings'][i]/((s['equity'][i] if s['equity'][i] > 0 else -s['equity'][i]) + s['debt'][i]) for i in range(len(s['my_ebit']))]
-        # s['roce'] = [100*s['my_ebit'][i]/(s['equity'][i] + s['debt'][i] - s['my_cash'][i]) for i in range(len(s['my_ebit']))]
 
-        # s['ev'] = s['market_cap'] + s['equity'][-1]*s['debt_to_equity']
         s['ev'] = s['market_cap'] + s['debt'][-1] #- s['cash'][-1]
-        # s['my_debt_to_equity'] = (s['debt'][-1] - s['cash'][-1])/s['equity'][-1]
         s['my_debt_to_equity'] = (s['debt'][-1])/s['equity'][-1]
 
         s['weighted_earnings'] = weighted_avg(s, 'earnings', True)
