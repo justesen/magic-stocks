@@ -1,16 +1,16 @@
 const DATA = 
 [{
 	"_id": {
-		"$oid": "5fa13574b958315439fa66e4"
+		"$oid": "5fc3812d823e0016c2f4069f"
 	},
 	"name": "3M Co",
 	"symbol": "MMM",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000000I",
 	"debt_to_equity": 1.81,
-	"market_cap_raw": 93990.0,
-	"price": 162.94,
-	"p_e": 19.08,
-	"p_b": 7.77,
+	"market_cap_raw": 102000.0,
+	"price": 176.89,
+	"p_e": 20.75,
+	"p_b": 8.6,
 	"financials_currency": "USD",
 	"fcf": [
 		4867.0,
@@ -92,7 +92,7 @@ const DATA =
 		50.09,
 		46.02
 	],
-	"market_cap": 93990.0,
+	"market_cap": 102000.0,
 	"my_cash": [
 		4129.0,
 		3233.0,
@@ -118,7 +118,7 @@ const DATA =
 		18.49265341400173,
 		13.029966070766687
 	],
-	"ev": 119000.0,
+	"ev": 127010.0,
 	"my_debt_to_equity": 2.485342343237603,
 	"growth_earnings": 0,
 	"weighted_earnings": 4877.666666666666,
@@ -132,26 +132,26 @@ const DATA =
 	"weighted_roa": 12.701666666666666,
 	"growth_roce": 0,
 	"weighted_roce": 15.377550059095665,
-	"earnings_ev": 0.04098879551820728,
-	"ebit_ev": 0.04890400838245168,
-	"fcf_ev": 0.043002801120448186,
-	"valuation": 4.273520779380934,
-	"rank_valuation": 31,
+	"earnings_ev": 0.038403800225704006,
+	"ebit_ev": 0.045819833064418156,
+	"fcf_ev": 0.04029079075138441,
+	"valuation": 3.9948794469271465,
+	"rank_valuation": 30,
 	"rank_roc": 24,
-	"score": 55
+	"score": 54
 },
 {
 	"_id": {
-		"$oid": "5fa12c57b958314d0c6447f6"
+		"$oid": "5fc37e2a823e0016c2f4066a"
 	},
 	"name": "A. P. Moller Maersk A/S",
 	"symbol": "MAERSK B",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RL",
 	"debt_to_equity": 0.52,
-	"market_cap_raw": 193800.0,
-	"price": 10525.0,
-	"p_e": 30.77,
-	"p_b": 1.15,
+	"market_cap_raw": 232000.0,
+	"price": 12415.0,
+	"p_e": 26.11,
+	"p_b": 1.36,
 	"financials_currency": "USD",
 	"fcf": [
 		-1003.0,
@@ -233,7 +233,7 @@ const DATA =
 		10.02,
 		-0.28
 	],
-	"market_cap": 193800.0,
+	"market_cap": 232000.0,
 	"my_cash": [
 		2172.0,
 		5299.0,
@@ -259,7 +259,7 @@ const DATA =
 		7.188223018645375,
 		-0.18892112543013292
 	],
-	"ev": 210165.0,
+	"ev": 248365.0,
 	"my_debt_to_equity": 0.5824257954302797,
 	"growth_earnings": 0,
 	"weighted_earnings": 813.4999999999999,
@@ -273,26 +273,26 @@ const DATA =
 	"weighted_roa": 1.3650000000000002,
 	"growth_roce": 0,
 	"weighted_roce": 1.8760563142153481,
-	"earnings_ev": 0.0038707682059334328,
-	"ebit_ev": 0.004579734970142507,
-	"fcf_ev": 0.008998485317092126,
-	"valuation": 0.8271925270718898,
-	"rank_valuation": 90,
-	"rank_roc": 79,
-	"score": 169
+	"earnings_ev": 0.0032754212550077503,
+	"ebit_ev": 0.0038753447546957098,
+	"fcf_ev": 0.007614465269529389,
+	"valuation": 0.8079542544510728,
+	"rank_valuation": 92,
+	"rank_roc": 80,
+	"score": 172
 },
 {
 	"_id": {
-		"$oid": "5fa13a1ab958315439fa6700"
+		"$oid": "5fc383ad823e0016c2f406bb"
 	},
 	"name": "AT\u0026T Inc",
 	"symbol": "T",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000031",
 	"debt_to_equity": 0.94,
-	"market_cap_raw": 194800.0,
-	"price": 27.34,
-	"p_e": 18.12,
-	"p_b": 1.1,
+	"market_cap_raw": 206900.0,
+	"price": 29.03,
+	"p_e": 19.23,
+	"p_b": 1.18,
 	"financials_currency": "USD",
 	"fcf": [
 		18504.0,
@@ -374,7 +374,7 @@ const DATA =
 		11.92,
 		7.55
 	],
-	"market_cap": 194800.0,
+	"market_cap": 206900.0,
 	"my_cash": [
 		50498.0,
 		5204.0,
@@ -400,7 +400,7 @@ const DATA =
 		4.845043647915156,
 		3.4282431209514157
 	],
-	"ev": 416122.0,
+	"ev": 428222.0,
 	"my_debt_to_equity": 1.2013939778852574,
 	"growth_earnings": -0.14112028910686636,
 	"weighted_earnings": 11941.004620547237,
@@ -414,26 +414,26 @@ const DATA =
 	"weighted_roa": 2.116851385390428,
 	"growth_roce": -0.1462113274844692,
 	"weighted_roce": 2.9269951432976096,
-	"earnings_ev": 0.02869592239907344,
-	"ebit_ev": 0.07405886305005761,
-	"fcf_ev": 0.07848950706080239,
-	"valuation": 4.628316935459427,
-	"rank_valuation": 24,
-	"rank_roc": 75,
-	"score": 99
+	"earnings_ev": 0.027885079749632755,
+	"ebit_ev": 0.07196622828840199,
+	"fcf_ev": 0.07627167837513069,
+	"valuation": 4.481275937063919,
+	"rank_valuation": 19,
+	"rank_roc": 76,
+	"score": 95
 },
 {
 	"_id": {
-		"$oid": "5fa13a51b958315439fa6702"
+		"$oid": "5fc383cb823e0016c2f406bd"
 	},
 	"name": "AbbVie Inc",
 	"symbol": "ABBV",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000XPGW",
 	"debt_to_equity": null,
-	"market_cap_raw": 155700.0,
-	"price": 88.25,
-	"p_e": 19.76,
-	"p_b": 10.21,
+	"market_cap_raw": 185200.0,
+	"price": 104.89,
+	"p_e": 22.62,
+	"p_b": 12.05,
 	"financials_currency": "USD",
 	"fcf": [
 		9431.0,
@@ -515,7 +515,7 @@ const DATA =
 		0.0,
 		0.0
 	],
-	"market_cap": 155700.0,
+	"market_cap": 185200.0,
 	"my_cash": [
 		9789.0,
 		8061.0,
@@ -541,7 +541,7 @@ const DATA =
 		9.81566502122959,
 		8.881727215361039
 	],
-	"ev": 236272.0,
+	"ev": 265772.0,
 	"my_debt_to_equity": -9.859520313264806,
 	"growth_earnings": 0.03559992465624395,
 	"weighted_earnings": 8162.598606140515,
@@ -555,26 +555,26 @@ const DATA =
 	"weighted_roa": 11.223419689119172,
 	"growth_roce": -0.022482410367663963,
 	"weighted_roce": 8.682044579331643,
-	"earnings_ev": 0.034547464812337114,
-	"ebit_ev": 0.0432460610369969,
-	"fcf_ev": 0.05172357847452653,
-	"valuation": 4.13062811746995,
-	"rank_valuation": 32,
-	"rank_roc": 53,
+	"earnings_ev": 0.03071278617062939,
+	"ebit_ev": 0.03844586086319602,
+	"fcf_ev": 0.045982395938373236,
+	"valuation": 3.6643256973721607,
+	"rank_valuation": 34,
+	"rank_roc": 51,
 	"score": 85
 },
 {
 	"_id": {
-		"$oid": "5fa13312b958315439fa66c7"
+		"$oid": "5fc37f64823e0016c2f40682"
 	},
 	"name": "Alk-Abello A/S",
 	"symbol": "ALK B",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LL",
 	"debt_to_equity": 0.3,
-	"market_cap_raw": 23760.0,
-	"price": 2158.0,
-	"p_e": 476.19,
-	"p_b": 7.34,
+	"market_cap_raw": 23980.0,
+	"price": 2200.0,
+	"p_e": 555.56,
+	"p_b": 7.29,
 	"financials_currency": "DKK",
 	"fcf": [
 		-654.0,
@@ -656,7 +656,7 @@ const DATA =
 		-5.26,
 		-1.57
 	],
-	"market_cap": 23760.0,
+	"market_cap": 23980.0,
 	"my_cash": [
 		711.0,
 		396.0,
@@ -682,7 +682,7 @@ const DATA =
 		-4.113234938301476,
 		-1.097213078779899
 	],
-	"ev": 25141.0,
+	"ev": 25361.0,
 	"my_debt_to_equity": 0.43482367758186397,
 	"growth_earnings": 0,
 	"weighted_earnings": -108.0,
@@ -696,26 +696,26 @@ const DATA =
 	"weighted_roa": -2.1783333333333332,
 	"growth_roce": 0,
 	"weighted_roce": -2.536246157081794,
-	"earnings_ev": -0.004295771846784137,
-	"ebit_ev": -0.0023997984699627435,
-	"fcf_ev": -0.008651207191440276,
-	"valuation": -0.4962825055502355,
-	"rank_valuation": 95,
-	"rank_roc": 95,
-	"score": 190
+	"earnings_ev": -0.00425850715665786,
+	"ebit_ev": -0.0023789808498613355,
+	"fcf_ev": -0.00857616024604708,
+	"valuation": -0.494795380779732,
+	"rank_valuation": 97,
+	"rank_roc": 97,
+	"score": 194
 },
 {
 	"_id": {
-		"$oid": "5fa13322b958315439fa66c8"
+		"$oid": "5fc37f71823e0016c2f40683"
 	},
 	"name": "Alm Brand AS",
 	"symbol": "ALMB",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PI",
 	"debt_to_equity": 0.35,
-	"market_cap_raw": 11590.0,
-	"price": 73.8,
-	"p_e": 24.39,
-	"p_b": 2.39,
+	"market_cap_raw": 11620.0,
+	"price": 74.1,
+	"p_e": 19.49,
+	"p_b": 2.26,
 	"financials_currency": "DKK",
 	"fcf": [
 		null,
@@ -724,7 +724,7 @@ const DATA =
 	],
 	"revenue": [
 		8237.0,
-		7609.0,
+		8080.0,
 		9294.0
 	],
 	"ebit": [
@@ -797,7 +797,7 @@ const DATA =
 		11.75,
 		9.7
 	],
-	"market_cap": 11590.0,
+	"market_cap": 11620.0,
 	"my_cash": [
 		500.0,
 		1093.0,
@@ -823,7 +823,7 @@ const DATA =
 		1.5000527259306127,
 		1.108875913841323
 	],
-	"ev": 47776.0,
+	"ev": 47806.0,
 	"my_debt_to_equity": 7.90777972027972,
 	"growth_earnings": -0.10281195079086114,
 	"weighted_earnings": 405.52899824253075,
@@ -835,25 +835,25 @@ const DATA =
 	"weighted_roa": 0.9672727272727274,
 	"growth_roce": -0.13038768748832108,
 	"weighted_roce": 0.964292147724054,
-	"earnings_ev": 0.008488132079758263,
-	"ebit_ev": 0.010974609907965567,
-	"valuation": 1.173935987219244,
-	"rank_valuation": 87,
-	"rank_roc": 87,
-	"score": 174
+	"earnings_ev": 0.008482805468822548,
+	"ebit_ev": 0.010967722941952118,
+	"valuation": 1.2765361248261484,
+	"rank_valuation": 86,
+	"rank_roc": 89,
+	"score": 175
 },
 {
 	"_id": {
-		"$oid": "5fa139fdb958315439fa66ff"
+		"$oid": "5fc38397823e0016c2f406ba"
 	},
 	"name": "Alphabet Inc",
 	"symbol": "GOOGL",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002HD",
 	"debt_to_equity": 0.07,
-	"market_cap_raw": 1.099e+06,
-	"price": 1624.32,
-	"p_e": 31.45,
-	"p_b": 5.13,
+	"market_cap_raw": 1.211e+06,
+	"price": 1787.02,
+	"p_e": 34.6,
+	"p_b": 5.6,
 	"financials_currency": "USD",
 	"fcf": [
 		23907.0,
@@ -935,7 +935,7 @@ const DATA =
 		18.62,
 		18.12
 	],
-	"market_cap": 1.099e+06,
+	"market_cap": 1.211e+06,
 	"my_cash": [
 		101871.0,
 		109140.0,
@@ -961,7 +961,7 @@ const DATA =
 		15.60932008856928,
 		14.997794634629914
 	],
-	"ev": 1.126545e+06,
+	"ev": 1.238545e+06,
 	"my_debt_to_equity": 0.13673911100962063,
 	"growth_earnings": 0.05867712129099423,
 	"weighted_earnings": 36358.14837649662,
@@ -975,26 +975,26 @@ const DATA =
 	"weighted_roa": 12.67,
 	"growth_roce": 0,
 	"weighted_roce": 13.924096260139187,
-	"earnings_ev": 0.032274031109717424,
-	"ebit_ev": 0.03327800266227738,
-	"fcf_ev": 0.02403913440356725,
-	"valuation": 2.9755809225374397,
-	"rank_valuation": 53,
-	"rank_roc": 31,
-	"score": 84
+	"earnings_ev": 0.029355532803811424,
+	"ebit_ev": 0.030268716525580636,
+	"fcf_ev": 0.021865307006743127,
+	"valuation": 2.706308519471442,
+	"rank_valuation": 56,
+	"rank_roc": 32,
+	"score": 88
 },
 {
 	"_id": {
-		"$oid": "5fa13b3cb958315439fa670b"
+		"$oid": "5fc38455823e0016c2f406c6"
 	},
 	"name": "Altria Group Inc",
 	"symbol": "MO",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000AV",
 	"debt_to_equity": 4.35,
-	"market_cap_raw": 67800.0,
-	"price": 36.48,
-	"p_e": 93.46,
-	"p_b": 21.36,
+	"market_cap_raw": 75020.0,
+	"price": 40.37,
+	"p_e": 103.09,
+	"p_b": 23.91,
 	"financials_currency": "USD",
 	"fcf": [
 		4723.0,
@@ -1076,7 +1076,7 @@ const DATA =
 		46.11,
 		-12.38
 	],
-	"market_cap": 67800.0,
+	"market_cap": 75020.0,
 	"my_cash": [
 		1253.0,
 		1333.0,
@@ -1102,7 +1102,7 @@ const DATA =
 		23.788049605411498,
 		-3.5999665896372193
 	],
-	"ev": 97495.0,
+	"ev": 104715.0,
 	"my_debt_to_equity": 4.772581163612986,
 	"growth_earnings": 0,
 	"weighted_earnings": 3378.166666666667,
@@ -1116,26 +1116,26 @@ const DATA =
 	"weighted_roa": 7.2666666666666675,
 	"growth_roce": 0,
 	"weighted_roce": 11.596846248448639,
-	"earnings_ev": 0.034649640152486456,
-	"ebit_ev": 0.10263774210643282,
-	"fcf_ev": 0.07487905362668171,
-	"valuation": 4.432347664001425,
+	"earnings_ev": 0.03226058030527305,
+	"ebit_ev": 0.09556096706934697,
+	"fcf_ev": 0.06971621385029206,
+	"valuation": 4.124123852895859,
 	"rank_valuation": 27,
 	"rank_roc": 40,
 	"score": 67
 },
 {
 	"_id": {
-		"$oid": "5fa139c6b958315439fa66fd"
+		"$oid": "5fc38378823e0016c2f406b8"
 	},
 	"name": "Amazon.com Inc",
 	"symbol": "AMZN",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000B7",
 	"debt_to_equity": 1.02,
-	"market_cap_raw": 1.508e+06,
-	"price": 3004.48,
-	"p_e": 87.72,
-	"p_b": 18.4,
+	"market_cap_raw": 1.603e+06,
+	"price": 3195.34,
+	"p_e": 93.46,
+	"p_b": 19.31,
 	"financials_currency": "USD",
 	"fcf": [
 		6479.0,
@@ -1217,7 +1217,7 @@ const DATA =
 		28.27,
 		21.95
 	],
-	"market_cap": 1.508e+06,
+	"market_cap": 1.603e+06,
 	"my_cash": [
 		30986.0,
 		41250.0,
@@ -1243,7 +1243,7 @@ const DATA =
 		10.964286880517246,
 		8.431560871969499
 	],
-	"ev": 1.583376e+06,
+	"ev": 1.678376e+06,
 	"my_debt_to_equity": 1.2145665485014503,
 	"growth_earnings": 0.0752010324630199,
 	"weighted_earnings": 12459.429564181475,
@@ -1257,167 +1257,167 @@ const DATA =
 	"weighted_roa": 5.74,
 	"growth_roce": 0,
 	"weighted_roce": 8.57819885481073,
-	"earnings_ev": 0.007868901362772629,
-	"ebit_ev": 0.009967259457434915,
-	"fcf_ev": 0.01539765758813279,
-	"valuation": 1.0480628974176374,
-	"rank_valuation": 89,
-	"rank_roc": 55,
-	"score": 144
+	"earnings_ev": 0.007423503174605378,
+	"ebit_ev": 0.009403089302203719,
+	"fcf_ev": 0.014526114220691515,
+	"valuation": 0.9881912631488551,
+	"rank_valuation": 90,
+	"rank_roc": 53,
+	"score": 143
 },
 {
 	"_id": {
-		"$oid": "5fa12c68b958314d0c6447f7"
+		"$oid": "5fc37e36823e0016c2f4066b"
 	},
-	"name": "Ambu",
+	"name": "Ambu A/S",
 	"symbol": "AMBU B",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RN",
-	"debt_to_equity": 0.53,
-	"market_cap_raw": 47530.0,
-	"price": 188.35,
-	"p_e": 333.33,
-	"p_b": 19.72,
+	"debt_to_equity": 0.59,
+	"market_cap_raw": 49960.0,
+	"price": 201.5,
+	"p_e": 208.33,
+	"p_b": 20.65,
 	"financials_currency": "DKK",
 	"fcf": [
-		null,
 		552.0,
-		272.0
+		272.0,
+		-135.0
 	],
 	"revenue": [
-		2355.0,
 		2606.0,
-		2820.0
+		2820.0,
+		3567.0
 	],
 	"ebit": [
-		460.0,
 		563.0,
-		480.0
+		480.0,
+		428.0
 	],
 	"ebt": [
-		393.0,
 		465.0,
-		413.0
+		413.0,
+		322.0
 	],
 	"earnings": [
-		301.0,
 		337.0,
-		317.0
+		317.0,
+		241.0
 	],
 	"cash": [
-		19.0,
 		63.0,
-		120.0
+		120.0,
+		98.0
 	],
 	"short_term_debt": [
-		null,
 		0.0,
+		null,
 		null
 	],
 	"other_short_term_debt": [
-		917.0,
 		201.0,
-		669.0
+		669.0,
+		773.0
 	],
 	"short_term_liabilities": [
-		1100.0,
 		474.0,
-		1007.0
+		1007.0,
+		1040.0
 	],
 	"long_term_debt": [
-		null,
 		1200.0,
-		1050.0
+		1050.0,
+		1249.0
 	],
 	"other_long_term_debt": [
-		119.0,
 		638.0,
-		253.0
+		253.0,
+		184.0
 	],
 	"long_term_liabilities": [
-		121.0,
 		1878.0,
-		1369.0
+		1369.0,
+		1514.0
 	],
 	"liabilities": [
-		1221.0,
 		2352.0,
-		2376.0
+		2376.0,
+		2554.0
 	],
 	"equity": [
-		1279.0,
 		1882.0,
-		2182.0
+		2182.0,
+		2372.0
 	],
 	"roa": [
-		12.37,
 		10.01,
-		7.21
+		7.21,
+		5.08
 	],
 	"roe": [
-		26.51,
 		21.32,
-		15.6
+		15.6,
+		10.58
 	],
-	"market_cap": 47530.0,
+	"market_cap": 49960.0,
 	"my_cash": [
-		19.0,
 		63.0,
-		120.0
+		120.0,
+		98.0
 	],
 	"debt": [
-		119.0,
 		1838.0,
-		1303.0
+		1303.0,
+		1433.0
 	],
 	"my_ebit": [
-		460.0,
 		563.0,
-		480.0
+		480.0,
+		428.0
 	],
 	"my_fcf": [
-		0,
 		552.0,
-		272.0
+		272.0,
+		-135.0
 	],
 	"roce": [
-		21.530758226037197,
 		9.059139784946236,
-		9.0961262553802
+		9.0961262553802,
+		6.33377135348226
 	],
-	"ev": 48833.0,
-	"my_debt_to_equity": 0.5971585701191567,
-	"growth_earnings": 0,
-	"weighted_earnings": 321.0,
-	"growth_my_ebit": 0,
-	"weighted_ebit": 504.3333333333333,
+	"ev": 51393.0,
+	"my_debt_to_equity": 0.6041315345699831,
+	"growth_earnings": -0.029673590504451064,
+	"weighted_earnings": 233.8486646884273,
+	"growth_my_ebit": -0.054166666666666696,
+	"weighted_ebit": 404.81666666666666,
 	"growth_my_fcf": 0,
-	"weighted_fcf": 320.0,
-	"growth_roe": -0.09788758958883448,
-	"weighted_roe": 14.072953602414183,
-	"growth_roa": -0.09539207760711399,
-	"weighted_roa": 6.522223120452708,
+	"weighted_fcf": 115.16666666666669,
+	"growth_roe": -0.13414634146341464,
+	"weighted_roe": 9.160731707317073,
+	"growth_roa": -0.1398601398601398,
+	"weighted_roa": 4.36951048951049,
 	"growth_roce": 0,
-	"weighted_roce": 11.156236093678377,
-	"earnings_ev": 0.006573423709376856,
-	"ebit_ev": 0.0103277155475464,
-	"fcf_ev": 0.006552945753895931,
-	"valuation": 0.6209940951824892,
-	"rank_valuation": 94,
-	"rank_roc": 42,
-	"score": 136
+	"weighted_roce": 7.708784392692236,
+	"earnings_ev": 0.004550204593785677,
+	"ebit_ev": 0.007876883362844487,
+	"fcf_ev": 0.0022409018089363667,
+	"valuation": 0.3882400979075198,
+	"rank_valuation": 96,
+	"rank_roc": 57,
+	"score": 153
 },
 {
 	"_id": {
-		"$oid": "5fa1358fb958315439fa66e5"
+		"$oid": "5fc3813d823e0016c2f406a0"
 	},
 	"name": "American Express Co",
 	"symbol": "AXP",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000CU",
 	"debt_to_equity": 2.51,
-	"market_cap_raw": 75210.0,
-	"price": 93.4,
-	"p_e": 23.09,
-	"p_b": 3.36,
+	"market_cap_raw": 97100.0,
+	"price": 120.59,
+	"p_e": 29.85,
+	"p_b": 4.44,
 	"financials_currency": "USD",
 	"fcf": [
 		12478.0,
@@ -1499,7 +1499,7 @@ const DATA =
 		33.5,
 		29.24
 	],
-	"market_cap": 75210.0,
+	"market_cap": 97100.0,
 	"my_cash": [
 		32927.0,
 		27445.0,
@@ -1525,7 +1525,7 @@ const DATA =
 		4.294569891472291,
 		3.875817855484004
 	],
-	"ev": 226528.0,
+	"ev": 248418.0,
 	"my_debt_to_equity": 6.558796757834511,
 	"growth_earnings": 0,
 	"weighted_earnings": 6142.5,
@@ -1539,26 +1539,26 @@ const DATA =
 	"weighted_roa": 3.1966666666666668,
 	"growth_roce": 0,
 	"weighted_roce": 3.6770581086492298,
-	"earnings_ev": 0.02711585322785704,
-	"ebit_ev": 0.03791276169289573,
-	"fcf_ev": 0.046851456184960207,
-	"valuation": 3.4655827960673484,
-	"rank_valuation": 40,
-	"rank_roc": 71,
-	"score": 111
+	"earnings_ev": 0.024726469096442286,
+	"ebit_ev": 0.03457197981131917,
+	"fcf_ev": 0.042723017924090306,
+	"valuation": 3.1002870587186266,
+	"rank_valuation": 46,
+	"rank_roc": 72,
+	"score": 118
 },
 {
 	"_id": {
-		"$oid": "5fa13993b958315439fa66fb"
+		"$oid": "5fc38358823e0016c2f406b6"
 	},
 	"name": "Apple Inc",
 	"symbol": "AAPL",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000GY",
 	"debt_to_equity": 1.51,
-	"market_cap_raw": 1.849e+06,
-	"price": 108.77,
-	"p_e": 33.11,
-	"p_b": 28.33,
+	"market_cap_raw": 1.982e+06,
+	"price": 116.59,
+	"p_e": 35.59,
+	"p_b": 30.19,
 	"financials_currency": "USD",
 	"fcf": [
 		64121.0,
@@ -1640,7 +1640,7 @@ const DATA =
 		55.92,
 		73.69
 	],
-	"market_cap": 1.849e+06,
+	"market_cap": 1.982e+06,
 	"my_cash": [
 		66301.0,
 		100557.0,
@@ -1666,7 +1666,7 @@ const DATA =
 		23.73559910308508,
 		26.275538224956062
 	],
-	"ev": 2.002157e+06,
+	"ev": 2.135157e+06,
 	"my_debt_to_equity": 2.3440364866312615,
 	"growth_earnings": 0,
 	"weighted_earnings": 57046.0,
@@ -1680,26 +1680,167 @@ const DATA =
 	"weighted_roa": 16.57333333333333,
 	"growth_roce": 0,
 	"weighted_roce": 25.043401740425654,
-	"earnings_ev": 0.028492271085634145,
-	"ebit_ev": 0.03309946888946938,
-	"fcf_ev": 0.033464575122397165,
-	"valuation": 3.0154970766474753,
-	"rank_valuation": 51,
+	"earnings_ev": 0.026717473234989277,
+	"ebit_ev": 0.031037686377785496,
+	"fcf_ev": 0.031380049960416656,
+	"valuation": 2.8254276956654385,
+	"rank_valuation": 52,
 	"rank_roc": 5,
-	"score": 56
+	"score": 57
 },
 {
 	"_id": {
-		"$oid": "5fa13a83b958315439fa6704"
+		"$oid": "5fc38488823e0016c2f406c9"
+	},
+	"name": "Assurant Inc",
+	"symbol": "AIZ",
+	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000K5",
+	"debt_to_equity": 0.36,
+	"market_cap_raw": 7860.0,
+	"price": 133.79,
+	"p_e": 19.84,
+	"p_b": 1.34,
+	"financials_currency": "USD",
+	"fcf": [
+		468.3,
+		573.9,
+		1303.1
+	],
+	"revenue": [
+		6311.1,
+		8000.7,
+		10072.5
+	],
+	"ebit": [
+		null,
+		null,
+		null
+	],
+	"ebt": [
+		444.5,
+		333.5,
+		554.5
+	],
+	"earnings": [
+		519.6,
+		251.0,
+		382.6
+	],
+	"cash": [
+		10943.5,
+		12884.3,
+		14592.0
+	],
+	"short_term_debt": [
+		null,
+		null,
+		null
+	],
+	"other_short_term_debt": [
+		null,
+		null,
+		null
+	],
+	"short_term_liabilities": [
+		null,
+		null,
+		null
+	],
+	"long_term_debt": [
+		1068.2,
+		2006.0,
+		2006.9
+	],
+	"other_long_term_debt": [
+		null,
+		null,
+		null
+	],
+	"long_term_liabilities": [
+		null,
+		null,
+		null
+	],
+	"liabilities": [
+		27561.5,
+		35955.4,
+		38609.1
+	],
+	"equity": [
+		4270.6,
+		5112.0,
+		5652.8
+	],
+	"roa": [
+		1.69,
+		0.65,
+		0.85
+	],
+	"roe": [
+		12.42,
+		5.05,
+		6.76
+	],
+	"market_cap": 7860.0,
+	"my_cash": [
+		10943.5,
+		12884.3,
+		14592.0
+	],
+	"debt": [
+		16618.0,
+		23071.100000000002,
+		24017.1
+	],
+	"my_ebit": [
+		444.5,
+		333.5,
+		554.5
+	],
+	"my_fcf": [
+		468.3,
+		573.9,
+		1303.1
+	],
+	"roce": [
+		2.4874812098465195,
+		0.8906046531431957,
+		1.2895223778981393
+	],
+	"ev": 31877.1,
+	"my_debt_to_equity": 4.248708604585338,
+	"growth_earnings": 0,
+	"weighted_earnings": 361.5666666666667,
+	"growth_my_ebit": 0,
+	"weighted_ebit": 462.5,
+	"growth_my_fcf": 0.11274823830877634,
+	"weighted_fcf": 1450.0222293401664,
+	"growth_roe": 0,
+	"weighted_roe": 7.133333333333333,
+	"growth_roa": 0,
+	"weighted_roa": 0.9233333333333333,
+	"growth_roce": 0,
+	"weighted_roce": 1.356209608304555,
+	"earnings_ev": 0.011342520701904085,
+	"ebit_ev": 0.014508848044520989,
+	"fcf_ev": 0.04548789661983576,
+	"valuation": 2.549220398773834,
+	"rank_valuation": 60,
+	"rank_roc": 85,
+	"score": 145
+},
+{
+	"_id": {
+		"$oid": "5fc383ea823e0016c2f406bf"
 	},
 	"name": "B\u0026G Foods Inc",
 	"symbol": "BGS",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00008WF2",
 	"debt_to_equity": 2.35,
-	"market_cap_raw": 1800.0,
-	"price": 28.0,
-	"p_e": 15.82,
-	"p_b": 2.09,
+	"market_cap_raw": 1720.0,
+	"price": 26.83,
+	"p_e": 13.28,
+	"p_b": 2.01,
 	"financials_currency": "USD",
 	"fcf": [
 		-22.0,
@@ -1781,7 +1922,7 @@ const DATA =
 		19.37,
 		8.92
 	],
-	"market_cap": 1800.0,
+	"market_cap": 1720.0,
 	"my_cash": [
 		206.51,
 		11.65,
@@ -1807,7 +1948,7 @@ const DATA =
 		6.7347799596944276,
 		2.7714287787428256
 	],
-	"ev": 3743.8,
+	"ev": 3663.8,
 	"my_debt_to_equity": 2.392251458389741,
 	"growth_earnings": -0.10351328980042307,
 	"weighted_earnings": 68.48261979214568,
@@ -1821,26 +1962,26 @@ const DATA =
 	"weighted_roa": 2.1755690440060698,
 	"growth_roce": -0.01635849800618927,
 	"weighted_roce": 2.7260923665914656,
-	"earnings_ev": 0.018292275172857975,
-	"ebit_ev": 0.05246273839414499,
-	"fcf_ev": 0.014517780508218033,
-	"valuation": 2.165181177198298,
-	"rank_valuation": 66,
-	"rank_roc": 77,
-	"score": 143
+	"earnings_ev": 0.018691691629495518,
+	"ebit_ev": 0.053608275560893065,
+	"fcf_ev": 0.014834779918845645,
+	"valuation": 2.3195569435278713,
+	"rank_valuation": 63,
+	"rank_roc": 78,
+	"score": 141
 },
 {
 	"_id": {
-		"$oid": "5fa12c79b958314d0c6447f8"
+		"$oid": "5fc37e43823e0016c2f4066c"
 	},
 	"name": "Bavarian Nordic A/S",
 	"symbol": "BAVA",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RB",
 	"debt_to_equity": 0.24,
-	"market_cap_raw": 10300.0,
-	"price": 176.7,
-	"p_e": 16.23,
-	"p_b": 1.96,
+	"market_cap_raw": 10900.0,
+	"price": 186.8,
+	"p_e": 14.1,
+	"p_b": 2.06,
 	"financials_currency": "DKK",
 	"fcf": [
 		137.37,
@@ -1922,7 +2063,7 @@ const DATA =
 		-15.44,
 		-17.14
 	],
-	"market_cap": 10300.0,
+	"market_cap": 10900.0,
 	"my_cash": [
 		2594.43,
 		2317.21,
@@ -1948,7 +2089,7 @@ const DATA =
 		-14.037870795581481,
 		-6.935808074242226
 	],
-	"ev": 13434.39,
+	"ev": 14034.39,
 	"my_debt_to_equity": 1.6802236445702399,
 	"growth_earnings": 0,
 	"weighted_earnings": -263.81,
@@ -1962,26 +2103,26 @@ const DATA =
 	"weighted_roa": -6.301666666666667,
 	"growth_roce": 0,
 	"weighted_roce": -7.107183657891449,
-	"earnings_ev": -0.019636916897603836,
-	"ebit_ev": -0.016637897217514158,
-	"fcf_ev": -0.12039214285129433,
-	"valuation": -4.173836354231781,
-	"rank_valuation": 96,
-	"rank_roc": 96,
-	"score": 192
+	"earnings_ev": -0.018797396965596652,
+	"ebit_ev": -0.015926591750692408,
+	"fcf_ev": -0.11524512287317083,
+	"valuation": -3.875977645974895,
+	"rank_valuation": 98,
+	"rank_roc": 98,
+	"score": 196
 },
 {
 	"_id": {
-		"$oid": "5fa13acbb958315439fa6707"
+		"$oid": "5fc38417823e0016c2f406c2"
 	},
 	"name": "Berkshire Hathaway Inc",
 	"symbol": "BRK.B",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000RD",
 	"debt_to_equity": 0.23,
-	"market_cap_raw": 487900.0,
-	"price": 204.31,
-	"p_e": 22.68,
-	"p_b": 1.23,
+	"market_cap_raw": 543000.0,
+	"price": 231.55,
+	"p_e": 15.75,
+	"p_b": 1.32,
 	"financials_currency": "USD",
 	"fcf": [
 		34068.0,
@@ -2063,7 +2204,7 @@ const DATA =
 		1.15,
 		21.05
 	],
-	"market_cap": 487900.0,
+	"market_cap": 543000.0,
 	"my_cash": [
 		115954.0,
 		111867.0,
@@ -2089,7 +2230,7 @@ const DATA =
 		0.6790738520257376,
 		11.869059420374366
 	],
-	"ev": 749069.0,
+	"ev": 804169.0,
 	"my_debt_to_equity": 0.6148176397334219,
 	"growth_earnings": 0,
 	"weighted_earnings": 49538.833333333336,
@@ -2103,26 +2244,26 @@ const DATA =
 	"weighted_roa": 6.656666666666666,
 	"growth_roce": 0,
 	"weighted_roce": 7.446762098399661,
-	"earnings_ev": 0.06613387195750102,
-	"ebit_ev": 0.0756334418680611,
-	"fcf_ev": 0.030212203965506664,
-	"valuation": 5.315315543999036,
-	"rank_valuation": 15,
+	"earnings_ev": 0.06160251555746782,
+	"ebit_ev": 0.07045119454575675,
+	"fcf_ev": 0.028142126110603755,
+	"valuation": 5.175335351686816,
+	"rank_valuation": 12,
 	"rank_roc": 59,
-	"score": 74
+	"score": 71
 },
 {
 	"_id": {
-		"$oid": "5fa1361bb958315439fa66ea"
+		"$oid": "5fc3818d823e0016c2f406a5"
 	},
 	"name": "Boeing Co",
 	"symbol": "BA",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000TU",
 	"debt_to_equity": null,
-	"market_cap_raw": 83890.0,
-	"price": 148.6,
+	"market_cap_raw": 122200.0,
+	"price": 216.5,
 	"p_e": 49.02,
-	"p_b": -6.9,
+	"p_b": -10.39,
 	"financials_currency": "USD",
 	"fcf": [
 		11474.0,
@@ -2204,7 +2345,7 @@ const DATA =
 		3012.39,
 		0.0
 	],
-	"market_cap": 83890.0,
+	"market_cap": 122200.0,
 	"my_cash": [
 		9992.0,
 		8564.0,
@@ -2230,7 +2371,7 @@ const DATA =
 		30.799128437665626,
 		-1.2041577522388625
 	],
-	"ev": 128090.0,
+	"ev": 166400.0,
 	"my_debt_to_equity": -5.129395381223164,
 	"growth_earnings": 0,
 	"weighted_earnings": 4534.833333333333,
@@ -2244,26 +2385,26 @@ const DATA =
 	"weighted_roa": 4.565,
 	"growth_roce": 0,
 	"weighted_roce": 13.662677820771997,
-	"earnings_ev": 0.03540349233611783,
-	"ebit_ev": 0.033399692924245966,
-	"fcf_ev": 0.032939079293205296,
-	"valuation": 3.3163802869762846,
-	"rank_valuation": 44,
-	"rank_roc": 32,
-	"score": 76
+	"earnings_ev": 0.027252604166666666,
+	"ebit_ev": 0.025710136217948713,
+	"fcf_ev": 0.025355568910256407,
+	"valuation": 2.599821685320748,
+	"rank_valuation": 59,
+	"rank_roc": 33,
+	"score": 92
 },
 {
 	"_id": {
-		"$oid": "5fa133ddb958315439fa66d4"
+		"$oid": "5fc38010823e0016c2f4068f"
 	},
 	"name": "Brødrene Hartmann A/S",
 	"symbol": "HART",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PC",
 	"debt_to_equity": 0.76,
-	"market_cap_raw": 3680.0,
-	"price": 540.0,
-	"p_e": 13.99,
-	"p_b": 3.83,
+	"market_cap_raw": 3690.0,
+	"price": 534.0,
+	"p_e": 13.87,
+	"p_b": 3.76,
 	"financials_currency": "DKK",
 	"fcf": [
 		49.2,
@@ -2345,7 +2486,7 @@ const DATA =
 		12.72,
 		20.34
 	],
-	"market_cap": 3680.0,
+	"market_cap": 3690.0,
 	"my_cash": [
 		52.6,
 		83.2,
@@ -2371,7 +2512,7 @@ const DATA =
 		6.784327567949171,
 		10.503832139716044
 	],
-	"ev": 4392.6,
+	"ev": 4402.6,
 	"my_debt_to_equity": 0.8105095541401274,
 	"growth_earnings": 0,
 	"weighted_earnings": 135.96666666666664,
@@ -2385,26 +2526,26 @@ const DATA =
 	"weighted_roa": 7.116666666666667,
 	"growth_roce": 0,
 	"weighted_roce": 8.954519081084776,
-	"earnings_ev": 0.030953573434108872,
-	"ebit_ev": 0.05283886536447661,
-	"fcf_ev": 0.023429555768034113,
-	"valuation": 3.2748973621468833,
-	"rank_valuation": 46,
-	"rank_roc": 52,
-	"score": 98
+	"earnings_ev": 0.03088326594890897,
+	"ebit_ev": 0.05271884795348202,
+	"fcf_ev": 0.023376338224382558,
+	"valuation": 3.2752666371916095,
+	"rank_valuation": 42,
+	"rank_roc": 50,
+	"score": 92
 },
 {
 	"_id": {
-		"$oid": "5fa12c8cb958314d0c6447f9"
+		"$oid": "5fc37e4f823e0016c2f4066d"
 	},
 	"name": "Carlsberg A/S",
 	"symbol": "CARL B",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K1",
 	"debt_to_equity": 0.48,
-	"market_cap_raw": 121700.0,
-	"price": 832.2,
-	"p_e": 19.05,
-	"p_b": 3.05,
+	"market_cap_raw": 137900.0,
+	"price": 939.8,
+	"p_e": 21.79,
+	"p_b": 3.46,
 	"financials_currency": "DKK",
 	"fcf": [
 		7781.0,
@@ -2486,7 +2627,7 @@ const DATA =
 		11.51,
 		14.8
 	],
-	"market_cap": 121700.0,
+	"market_cap": 137900.0,
 	"my_cash": [
 		3462.0,
 		5589.0,
@@ -2512,7 +2653,7 @@ const DATA =
 		7.081215904392248,
 		7.961073272414378
 	],
-	"ev": 160766.0,
+	"ev": 176966.0,
 	"my_debt_to_equity": 0.899143804087645,
 	"growth_earnings": 0.1186664155208137,
 	"weighted_earnings": 7348.519683556226,
@@ -2526,26 +2667,26 @@ const DATA =
 	"weighted_roa": 5.984541484716157,
 	"growth_roce": 0.06212615036044755,
 	"weighted_roce": 8.455664107566934,
-	"earnings_ev": 0.0457094142017356,
-	"ebit_ev": 0.06497241642152161,
-	"fcf_ev": 0.04847832667769719,
-	"valuation": 4.721849035637151,
-	"rank_valuation": 21,
-	"rank_roc": 56,
-	"score": 77
+	"earnings_ev": 0.041525036919838984,
+	"ebit_ev": 0.05902464596827834,
+	"fcf_ev": 0.044040474818138324,
+	"valuation": 4.271642572630312,
+	"rank_valuation": 22,
+	"rank_roc": 54,
+	"score": 76
 },
 {
 	"_id": {
-		"$oid": "5fa134f8b958315439fa66e2"
+		"$oid": "5fc380d3823e0016c2f4069d"
 	},
 	"name": "Caterpillar Inc",
 	"symbol": "CAT",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000014I",
 	"debt_to_equity": 1.8,
-	"market_cap_raw": 88410.0,
-	"price": 163.27,
-	"p_e": 27.03,
-	"p_b": 5.69,
+	"market_cap_raw": 95110.0,
+	"price": 175.08,
+	"p_e": 28.99,
+	"p_b": 6.35,
 	"financials_currency": "USD",
 	"fcf": [
 		3366.0,
@@ -2627,7 +2768,7 @@ const DATA =
 		44.33,
 		42.57
 	],
-	"market_cap": 88410.0,
+	"market_cap": 95110.0,
 	"my_cash": [
 		0.0,
 		0.0,
@@ -2653,7 +2794,7 @@ const DATA =
 		12.232835820895522,
 		11.764592303682107
 	],
-	"ev": 125613.0,
+	"ev": 132313.0,
 	"my_debt_to_equity": 2.5502467781738414,
 	"growth_earnings": 0,
 	"weighted_earnings": 5221.166666666666,
@@ -2667,26 +2808,26 @@ const DATA =
 	"weighted_roa": 6.681666666666667,
 	"growth_roce": 0,
 	"weighted_roce": 10.211432584086776,
-	"earnings_ev": 0.04156549614026148,
-	"ebit_ev": 0.06085092041959564,
-	"fcf_ev": 0.035163203145535435,
-	"valuation": 3.9187851672582594,
-	"rank_valuation": 35,
-	"rank_roc": 46,
-	"score": 81
+	"earnings_ev": 0.03946072318416683,
+	"ebit_ev": 0.057769581724144016,
+	"fcf_ev": 0.03338262632334043,
+	"valuation": 3.7140687140375634,
+	"rank_valuation": 33,
+	"rank_roc": 45,
+	"score": 78
 },
 {
 	"_id": {
-		"$oid": "5fa1364cb958315439fa66ec"
+		"$oid": "5fc381ad823e0016c2f406a7"
 	},
 	"name": "Chevron Corp",
 	"symbol": "CVX",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000185",
 	"debt_to_equity": 0.16,
-	"market_cap_raw": 138900.0,
-	"price": 72.15,
+	"market_cap_raw": 175800.0,
+	"price": 91.31,
 	"p_e": 40.32,
-	"p_b": 1.02,
+	"p_b": 1.35,
 	"financials_currency": "USD",
 	"fcf": [
 		7111.0,
@@ -2768,7 +2909,7 @@ const DATA =
 		9.8,
 		1.96
 	],
-	"market_cap": 138900.0,
+	"market_cap": 175800.0,
 	"my_cash": [
 		4822.0,
 		10345.0,
@@ -2794,7 +2935,7 @@ const DATA =
 		7.069719529003305,
 		1.4902020742552813
 	],
-	"ev": 190902.0,
+	"ev": 227802.0,
 	"my_debt_to_equity": 0.36059162488818625,
 	"growth_earnings": 0,
 	"weighted_earnings": 7935.833333333333,
@@ -2808,26 +2949,26 @@ const DATA =
 	"weighted_roa": 3.1383333333333328,
 	"growth_roce": 0,
 	"weighted_roce": 3.8306654703238694,
-	"earnings_ev": 0.04157019482945874,
-	"ebit_ev": 0.02765118577420177,
-	"fcf_ev": 0.07015554228522139,
-	"valuation": 4.846893831340038,
-	"rank_valuation": 20,
-	"rank_roc": 70,
-	"score": 90
+	"earnings_ev": 0.034836539333865955,
+	"ebit_ev": 0.023172169983874884,
+	"fcf_ev": 0.058791552898277165,
+	"valuation": 4.101954819996145,
+	"rank_valuation": 29,
+	"rank_roc": 71,
+	"score": 100
 },
 {
 	"_id": {
-		"$oid": "5fa12c9db958314d0c6447fa"
+		"$oid": "5fc37e5c823e0016c2f4066e"
 	},
 	"name": "Chr. Hansen Holding A/S",
 	"symbol": "CHR",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000OO3C",
 	"debt_to_equity": 0.82,
-	"market_cap_raw": 84590.0,
-	"price": 644.8,
-	"p_e": 49.02,
-	"p_b": 12.72,
+	"market_cap_raw": 80270.0,
+	"price": 609.8,
+	"p_e": 46.51,
+	"p_b": 11.95,
 	"financials_currency": "EUR",
 	"fcf": [
 		194.5,
@@ -2909,7 +3050,7 @@ const DATA =
 		31.9,
 		28.99
 	],
-	"market_cap": 11369.623655913978,
+	"market_cap": 10788.978494623656,
 	"my_cash": [
 		69.1,
 		87.4,
@@ -2935,7 +3076,7 @@ const DATA =
 		15.581989163604659,
 		14.386376981796829
 	],
-	"ev": 12179.623655913978,
+	"ev": 11598.978494623656,
 	"my_debt_to_equity": 0.9070548712206047,
 	"growth_earnings": 0,
 	"weighted_earnings": 243.93333333333334,
@@ -2949,26 +3090,26 @@ const DATA =
 	"weighted_roa": 11.323333333333334,
 	"growth_roce": -0.009734083283604589,
 	"weighted_roce": 14.246338790106687,
-	"earnings_ev": 0.020027986104060636,
-	"ebit_ev": 0.027194326854741525,
-	"fcf_ev": 0.017103703082444237,
-	"valuation": 1.9187886267300212,
-	"rank_valuation": 70,
-	"rank_roc": 28,
-	"score": 98
+	"earnings_ev": 0.021030587602727344,
+	"ebit_ev": 0.028555675555411348,
+	"fcf_ev": 0.017959914897956345,
+	"valuation": 2.015640228365715,
+	"rank_valuation": 68,
+	"rank_roc": 29,
+	"score": 97
 },
 {
 	"_id": {
-		"$oid": "5fa13634b958315439fa66eb"
+		"$oid": "5fc3819d823e0016c2f406a6"
 	},
 	"name": "Cisco Systems Inc",
 	"symbol": "CSCO",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000019Y",
 	"debt_to_equity": 0.31,
-	"market_cap_raw": 151500.0,
-	"price": 35.9,
-	"p_e": 13.61,
-	"p_b": 4.0,
+	"market_cap_raw": 180400.0,
+	"price": 42.7,
+	"p_e": 17.3,
+	"p_b": 4.71,
 	"financials_currency": "USD",
 	"fcf": [
 		12832.0,
@@ -3050,7 +3191,7 @@ const DATA =
 		30.27,
 		31.37
 	],
-	"market_cap": 151500.0,
+	"market_cap": 180400.0,
 	"my_cash": [
 		46548.0,
 		33413.0,
@@ -3076,7 +3217,7 @@ const DATA =
 		17.585992948048606,
 		16.130145853111244
 	],
-	"ev": 183102.0,
+	"ev": 212002.0,
 	"my_debt_to_equity": 0.8333860759493671,
 	"growth_earnings": 0,
 	"weighted_earnings": 9499.0,
@@ -3090,26 +3231,26 @@ const DATA =
 	"weighted_roa": 11.841759999999999,
 	"growth_roce": 0,
 	"weighted_roce": 13.949496946054435,
-	"earnings_ev": 0.05187818811372896,
-	"ebit_ev": 0.07650744757930916,
-	"fcf_ev": 0.07886678827465929,
-	"valuation": 6.213448792521268,
-	"rank_valuation": 8,
-	"rank_roc": 30,
-	"score": 38
+	"earnings_ev": 0.044806181073763454,
+	"ebit_ev": 0.06607799297490904,
+	"fcf_ev": 0.0681157096002239,
+	"valuation": 5.3098768345134495,
+	"rank_valuation": 9,
+	"rank_roc": 31,
+	"score": 40
 },
 {
 	"_id": {
-		"$oid": "5fa13b53b958315439fa670c"
+		"$oid": "5fc38465823e0016c2f406c7"
 	},
 	"name": "Clorox Co",
 	"symbol": "CLX",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001BD",
 	"debt_to_equity": 3.37,
-	"market_cap_raw": 27230.0,
-	"price": 216.03,
-	"p_e": 29.33,
-	"p_b": 23.43,
+	"market_cap_raw": 25600.0,
+	"price": 203.09,
+	"p_e": 22.57,
+	"p_b": 22.69,
 	"financials_currency": "USD",
 	"fcf": [
 		780.0,
@@ -3191,7 +3332,7 @@ const DATA =
 		127.63,
 		128.02
 	],
-	"market_cap": 27230.0,
+	"market_cap": 25600.0,
 	"my_cash": [
 		131.0,
 		111.0,
@@ -3217,7 +3358,7 @@ const DATA =
 		22.61445118587976,
 		19.839425311641666
 	],
-	"ev": 31055.0,
+	"ev": 29425.0,
 	"my_debt_to_equity": 4.212555066079295,
 	"growth_earnings": 0,
 	"weighted_earnings": 880.0,
@@ -3231,26 +3372,26 @@ const DATA =
 	"weighted_roa": 16.511666666666667,
 	"growth_roce": 0,
 	"weighted_roce": 21.078947176422076,
-	"earnings_ev": 0.028336821767831265,
-	"ebit_ev": 0.03822250845274513,
-	"fcf_ev": 0.041763620375760126,
-	"valuation": 3.294065752323928,
-	"rank_valuation": 45,
-	"rank_roc": 9,
-	"score": 54
+	"earnings_ev": 0.029906542056074768,
+	"ebit_ev": 0.04033984706881903,
+	"fcf_ev": 0.0440771191425397,
+	"valuation": 3.559772114477186,
+	"rank_valuation": 37,
+	"rank_roc": 8,
+	"score": 45
 },
 {
 	"_id": {
-		"$oid": "5fa13737b958315439fa66f0"
+		"$oid": "5fc381ee823e0016c2f406ab"
 	},
 	"name": "Coca-Cola Co",
 	"symbol": "KO",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001BW",
 	"debt_to_equity": 1.45,
-	"market_cap_raw": 208900.0,
-	"price": 48.62,
-	"p_e": 25.19,
-	"p_b": 11.1,
+	"market_cap_raw": 226500.0,
+	"price": 52.7,
+	"p_e": 27.32,
+	"p_b": 12.22,
 	"financials_currency": "USD",
 	"fcf": [
 		5431.0,
@@ -3332,7 +3473,7 @@ const DATA =
 		37.79,
 		49.61
 	],
-	"market_cap": 208900.0,
+	"market_cap": 226500.0,
 	"my_cash": [
 		20675.0,
 		15964.0,
@@ -3358,7 +3499,7 @@ const DATA =
 		12.872376608046736,
 		16.21611794862472
 	],
-	"ev": 244926.0,
+	"ev": 262526.0,
 	"my_debt_to_equity": 1.8980032664243192,
 	"growth_earnings": 0.19319241529375208,
 	"weighted_earnings": 10643.276344420268,
@@ -3372,26 +3513,26 @@ const DATA =
 	"weighted_roa": 12.618404255319149,
 	"growth_roce": 0.12988049691180414,
 	"weighted_roce": 18.322275405772526,
-	"earnings_ev": 0.04345506946759539,
-	"ebit_ev": 0.0438122783917586,
-	"fcf_ev": 0.037051570390562526,
-	"valuation": 4.1158342095066205,
-	"rank_valuation": 34,
-	"rank_roc": 17,
-	"score": 51
+	"earnings_ev": 0.04054179907674009,
+	"ebit_ev": 0.04087506036499191,
+	"fcf_ev": 0.03456759684556546,
+	"valuation": 3.8355680608059224,
+	"rank_valuation": 32,
+	"rank_roc": 16,
+	"score": 48
 },
 {
 	"_id": {
-		"$oid": "5fa13ab5b958315439fa6706"
+		"$oid": "5fc38408823e0016c2f406c1"
 	},
 	"name": "Colgate-Palmolive Co",
 	"symbol": "CL",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001CL",
 	"debt_to_equity": 66.87,
-	"market_cap_raw": 68710.0,
-	"price": 80.16,
-	"p_e": 25.64,
-	"p_b": 103.56,
+	"market_cap_raw": 72770.0,
+	"price": 84.9,
+	"p_e": 27.1,
+	"p_b": 111.25,
 	"financials_currency": "USD",
 	"fcf": [
 		2501.0,
@@ -3473,7 +3614,7 @@ const DATA =
 		0.0,
 		31560.0
 	],
-	"market_cap": 68710.0,
+	"market_cap": 72770.0,
 	"my_cash": [
 		1535.0,
 		726.0,
@@ -3499,7 +3640,7 @@ const DATA =
 		28.268551236749115,
 		23.556926751592357
 	],
-	"ev": 78641.0,
+	"ev": 82701.0,
 	"my_debt_to_equity": 84.88034188034187,
 	"growth_earnings": 0,
 	"weighted_earnings": 2320.833333333333,
@@ -3513,71 +3654,71 @@ const DATA =
 	"weighted_roa": 17.868333333333332,
 	"growth_roce": 0,
 	"weighted_roce": 24.999684842356587,
-	"earnings_ev": 0.029511747476931027,
-	"ebit_ev": 0.04692632765775274,
-	"fcf_ev": 0.036425856406842795,
-	"valuation": 3.253496141445171,
+	"earnings_ev": 0.028062941600867378,
+	"ebit_ev": 0.04462259626042409,
+	"fcf_ev": 0.034637619541366176,
+	"valuation": 3.091908772329928,
 	"rank_valuation": 47,
 	"rank_roc": 6,
 	"score": 53
 },
 {
 	"_id": {
-		"$oid": "5fa12cacb958314d0c6447fb"
+		"$oid": "5fc37e69823e0016c2f4066f"
 	},
 	"name": "Coloplast A/S",
 	"symbol": "COLO B",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K4",
-	"debt_to_equity": 0.02,
-	"market_cap_raw": 200300.0,
-	"price": 935.4,
-	"p_e": 50.51,
-	"p_b": 31.49,
+	"debt_to_equity": 0.06,
+	"market_cap_raw": 197800.0,
+	"price": 929.8,
+	"p_e": 46.08,
+	"p_b": 25.99,
 	"financials_currency": "DKK",
 	"fcf": [
-		2566.0,
 		3692.0,
-		3721.0
+		3721.0,
+		3828.0
 	],
 	"revenue": [
-		15528.0,
 		16449.0,
-		17939.0
+		17939.0,
+		18544.0
 	],
 	"ebit": [
-		5024.0,
 		5091.0,
-		5556.0
+		5556.0,
+		5854.0
 	],
 	"ebt": [
-		4950.0,
 		5009.0,
-		5028.0
+		5028.0,
+		5466.0
 	],
 	"earnings": [
-		3797.0,
 		3845.0,
-		3873.0
+		3873.0,
+		4197.0
 	],
 	"cash": [
-		629.0,
 		607.0,
-		669.0
+		669.0,
+		585.0
 	],
 	"short_term_debt": [
-		1358.0,
 		1262.0,
-		1066.0
+		1066.0,
+		1111.0
 	],
 	"other_short_term_debt": [
-		2766.0,
 		1872.0,
-		1949.0
+		1949.0,
+		2051.0
 	],
 	"short_term_liabilities": [
-		5425.0,
 		4708.0,
-		4942.0
+		4942.0,
+		4979.0
 	],
 	"long_term_debt": [
 		null,
@@ -3585,95 +3726,95 @@ const DATA =
 		null
 	],
 	"other_long_term_debt": [
-		420.0,
 		361.0,
-		613.0
+		613.0,
+		745.0
 	],
 	"long_term_liabilities": [
-		673.0,
 		643.0,
-		877.0
+		877.0,
+		1114.0
 	],
 	"liabilities": [
-		6098.0,
 		5351.0,
-		5819.0
+		5819.0,
+		6093.0
 	],
 	"equity": [
-		5952.0,
 		6418.0,
-		6913.0
+		6913.0,
+		7406.0
 	],
 	"roa": [
-		32.94,
 		32.29,
-		31.62
+		31.62,
+		32.0
 	],
 	"roe": [
-		68.91,
 		62.17,
-		58.11
+		58.11,
+		58.62
 	],
-	"market_cap": 200300.0,
+	"market_cap": 197800.0,
 	"my_cash": [
-		629.0,
 		607.0,
-		669.0
+		669.0,
+		585.0
 	],
 	"debt": [
-		420.0,
 		361.0,
-		613.0
+		613.0,
+		745.0
 	],
 	"my_ebit": [
-		5024.0,
 		5091.0,
-		5556.0
+		5556.0,
+		5854.0
 	],
 	"my_fcf": [
-		2566.0,
 		3692.0,
-		3721.0
+		3721.0,
+		3828.0
 	],
 	"roce": [
-		59.58882611424984,
 		56.71928012981266,
-		51.46159978740367
+		51.46159978740367,
+		51.490614648509386
 	],
-	"ev": 200913.0,
-	"my_debt_to_equity": 0.0886735136698973,
+	"ev": 198545.0,
+	"my_debt_to_equity": 0.10059411288144747,
 	"growth_earnings": 0.003641092327698381,
-	"weighted_earnings": 3887.101950585176,
-	"growth_my_ebit": 0.0066679936305731324,
-	"weighted_ebit": 5593.047372611464,
+	"weighted_earnings": 4212.28166449935,
+	"growth_my_ebit": 0.026817854571634214,
+	"weighted_ebit": 6010.991720662347,
 	"growth_my_fcf": 0.00392741061755153,
-	"weighted_fcf": 3735.613894907909,
-	"growth_roe": -0.03265240469679909,
-	"weighted_roe": 56.21256876306901,
-	"growth_roa": -0.00986642380085001,
-	"weighted_roa": 31.308023679417122,
-	"growth_roce": -0.024077886506233437,
-	"weighted_roce": 50.22251322829336,
-	"earnings_ev": 0.019347189831345785,
-	"ebit_ev": 0.027838155682367315,
-	"fcf_ev": 0.018593191555090555,
-	"valuation": 1.9166077344348693,
-	"rank_valuation": 71,
+	"weighted_fcf": 3843.0341278439873,
+	"growth_roe": 0,
+	"weighted_roe": 59.04166666666667,
+	"growth_roa": 0,
+	"weighted_roa": 31.921666666666667,
+	"growth_roce": 0,
+	"weighted_roce": 52.3523872750247,
+	"earnings_ev": 0.021215752925026317,
+	"ebit_ev": 0.030275210761602393,
+	"fcf_ev": 0.019355985433246806,
+	"valuation": 2.070638627387872,
+	"rank_valuation": 67,
 	"rank_roc": 2,
-	"score": 73
+	"score": 69
 },
 {
 	"_id": {
-		"$oid": "5fa13b02b958315439fa6709"
+		"$oid": "5fc38437823e0016c2f406c4"
 	},
 	"name": "Consolidated Edison Inc",
 	"symbol": "ED",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001GL",
 	"debt_to_equity": 1.07,
-	"market_cap_raw": 26690.0,
-	"price": 79.78,
-	"p_e": 19.96,
-	"p_b": 1.44,
+	"market_cap_raw": 26040.0,
+	"price": 77.77,
+	"p_e": 19.19,
+	"p_b": 1.42,
 	"financials_currency": "USD",
 	"fcf": [
 		-76.0,
@@ -3755,7 +3896,7 @@ const DATA =
 		8.6,
 		7.73
 	],
-	"market_cap": 26690.0,
+	"market_cap": 26040.0,
 	"my_cash": [
 		797.0,
 		895.0,
@@ -3781,7 +3922,7 @@ const DATA =
 		3.307802776448061,
 		2.959844845065456
 	],
-	"ev": 54042.0,
+	"ev": 53392.0,
 	"my_debt_to_equity": 1.5177005881700145,
 	"growth_earnings": -0.01410998552821996,
 	"weighted_earnings": 1324.0502894356007,
@@ -3795,26 +3936,26 @@ const DATA =
 	"weighted_roa": 2.262730627306273,
 	"growth_roce": -0.05259653535877429,
 	"weighted_roce": 2.8041672610154853,
-	"earnings_ev": 0.02450039394240777,
-	"ebit_ev": 0.04842838286271172,
-	"fcf_ev": -0.008437881647607417,
-	"valuation": 1.7178891911242598,
+	"earnings_ev": 0.02479866439608182,
+	"ebit_ev": 0.04901795524922586,
+	"fcf_ev": -0.008540605334132454,
+	"valuation": 1.7528064457940882,
 	"rank_valuation": 75,
-	"rank_roc": 76,
-	"score": 151
+	"rank_roc": 77,
+	"score": 152
 },
 {
 	"_id": {
-		"$oid": "5fa1335fb958315439fa66cc"
+		"$oid": "5fc37fa7823e0016c2f40687"
 	},
 	"name": "Copenhagen Airports A/S",
 	"symbol": "KBHL",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PB",
 	"debt_to_equity": 1.88,
-	"market_cap_raw": 34530.0,
-	"price": 4400.0,
-	"p_e": 95.24,
-	"p_b": 11.05,
+	"market_cap_raw": 41910.0,
+	"price": 5340.0,
+	"p_e": 104.17,
+	"p_b": 14.07,
 	"financials_currency": "DKK",
 	"fcf": [
 		null,
@@ -3896,7 +4037,7 @@ const DATA =
 		35.43,
 		32.16
 	],
-	"market_cap": 34530.0,
+	"market_cap": 41910.0,
 	"my_cash": [
 		12.6,
 		159.1,
@@ -3922,7 +4063,7 @@ const DATA =
 		11.42133815551537,
 		10.810782173811694
 	],
-	"ev": 40709.1,
+	"ev": 48089.1,
 	"my_debt_to_equity": 1.8961855954828615,
 	"growth_earnings": -0.03845109924907264,
 	"weighted_earnings": 981.0683434361712,
@@ -3934,25 +4075,25 @@ const DATA =
 	"weighted_roa": 6.91505,
 	"growth_roce": -0.026728741124298017,
 	"weighted_roce": 10.521823575736706,
-	"earnings_ev": 0.02409948496616656,
-	"ebit_ev": 0.03344464078402167,
-	"valuation": 2.2739515469969898,
-	"rank_valuation": 64,
-	"rank_roc": 45,
-	"score": 109
+	"earnings_ev": 0.02040105436442294,
+	"ebit_ev": 0.02831205462653318,
+	"valuation": 1.9320918208963658,
+	"rank_valuation": 71,
+	"rank_roc": 44,
+	"score": 115
 },
 {
 	"_id": {
-		"$oid": "5fa13333b958315439fa66c9"
+		"$oid": "5fc37f7f823e0016c2f40684"
 	},
 	"name": "DFDS A/S",
 	"symbol": "DFDS",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K5",
 	"debt_to_equity": 1.14,
-	"market_cap_raw": 13910.0,
-	"price": 245.6,
-	"p_e": 16.18,
-	"p_b": 1.35,
+	"market_cap_raw": 15730.0,
+	"price": 275.0,
+	"p_e": 34.97,
+	"p_b": 1.52,
 	"financials_currency": "DKK",
 	"fcf": [
 		1271.3,
@@ -4034,7 +4175,7 @@ const DATA =
 		20.71,
 		13.46
 	],
-	"market_cap": 13910.0,
+	"market_cap": 15730.0,
 	"my_cash": [
 		1033.2,
 		760.7,
@@ -4060,7 +4201,7 @@ const DATA =
 		9.094003928922225,
 		5.87074494326591
 	],
-	"ev": 25931.0,
+	"ev": 27751.0,
 	"my_debt_to_equity": 1.1698131568703776,
 	"growth_earnings": 0,
 	"weighted_earnings": 1467.1166666666666,
@@ -4074,26 +4215,26 @@ const DATA =
 	"weighted_roa": 4.668698128559805,
 	"growth_roce": -0.1772189131898868,
 	"weighted_roce": 4.830337904805302,
-	"earnings_ev": 0.056577712647667526,
-	"ebit_ev": 0.06827799416399934,
-	"fcf_ev": 0.040842363708816984,
-	"valuation": 5.237980641694401,
-	"rank_valuation": 16,
+	"earnings_ev": 0.05286716394604398,
+	"ebit_ev": 0.0638001032995808,
+	"fcf_ev": 0.03816378989345729,
+	"valuation": 4.602902927332442,
+	"rank_valuation": 18,
 	"rank_roc": 66,
-	"score": 82
+	"score": 84
 },
 {
 	"_id": {
-		"$oid": "5fa12cd9b958314d0c6447fe"
+		"$oid": "5fc37e90823e0016c2f40672"
 	},
 	"name": "DSV Panalpina AS",
 	"symbol": "DSV",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q9",
 	"debt_to_equity": 0.32,
-	"market_cap_raw": 236800.0,
-	"price": 1064.0,
-	"p_e": 71.94,
-	"p_b": 4.92,
+	"market_cap_raw": 231900.0,
+	"price": 1020.5,
+	"p_e": 70.92,
+	"p_b": 4.86,
 	"financials_currency": "DKK",
 	"fcf": [
 		3651.0,
@@ -4175,7 +4316,7 @@ const DATA =
 		27.21,
 		11.56
 	],
-	"market_cap": 236800.0,
+	"market_cap": 231900.0,
 	"my_cash": [
 		1348.0,
 		275.0,
@@ -4201,7 +4342,7 @@ const DATA =
 		17.624250969333804,
 		5.449430755408928
 	],
-	"ev": 255267.0,
+	"ev": 250367.0,
 	"my_debt_to_equity": 0.37359902892979974,
 	"growth_earnings": 0,
 	"weighted_earnings": 3680.1666666666665,
@@ -4215,26 +4356,26 @@ const DATA =
 	"weighted_roa": 7.43,
 	"growth_roce": 0,
 	"weighted_roce": 10.745057915936364,
-	"earnings_ev": 0.014416930769220723,
-	"ebit_ev": 0.027595137331810272,
-	"fcf_ev": 0.01736351872092097,
-	"valuation": 1.5249261339415618,
+	"earnings_ev": 0.01469908840488829,
+	"ebit_ev": 0.028135209198014165,
+	"fcf_ev": 0.017703344823132974,
+	"valuation": 1.5540495970978339,
 	"rank_valuation": 80,
-	"rank_roc": 44,
-	"score": 124
+	"rank_roc": 43,
+	"score": 123
 },
 {
 	"_id": {
-		"$oid": "5fa133eeb958315439fa66d5"
+		"$oid": "5fc3801f823e0016c2f40690"
 	},
 	"name": "Dampskibsselskabet NORDEN A/S",
 	"symbol": "DNORD",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PK",
 	"debt_to_equity": 0.54,
-	"market_cap_raw": 3630.0,
-	"price": 94.5,
-	"p_e": 6.23,
-	"p_b": 0.62,
+	"market_cap_raw": 4270.0,
+	"price": 112.0,
+	"p_e": 6.09,
+	"p_b": 0.75,
 	"financials_currency": "USD",
 	"fcf": [
 		-100.71,
@@ -4316,7 +4457,7 @@ const DATA =
 		3.46,
 		2.28
 	],
-	"market_cap": 3630.0,
+	"market_cap": 4270.0,
 	"my_cash": [
 		219.44,
 		188.59,
@@ -4342,7 +4483,7 @@ const DATA =
 		2.7280226813703647,
 		1.4478546112661188
 	],
-	"ev": 4097.1,
+	"ev": 4737.1,
 	"my_debt_to_equity": 0.5437718277066356,
 	"growth_earnings": 0,
 	"weighted_earnings": 23.28333333333333,
@@ -4356,26 +4497,26 @@ const DATA =
 	"weighted_roa": 1.5983333333333332,
 	"growth_roce": 0,
 	"weighted_roce": 2.0149736893925327,
-	"earnings_ev": 0.005682881387648173,
-	"ebit_ev": 0.015442986921709829,
-	"fcf_ev": -0.0061746926687982545,
-	"valuation": 1.7608685397920536,
-	"rank_valuation": 73,
-	"rank_roc": 78,
-	"score": 151
+	"earnings_ev": 0.004915102770330652,
+	"ebit_ev": 0.01335658139303315,
+	"fcf_ev": -0.005340468500418681,
+	"valuation": 1.7767282360020242,
+	"rank_valuation": 74,
+	"rank_roc": 79,
+	"score": 153
 },
 {
 	"_id": {
-		"$oid": "5fa12cbcb958314d0c6447fc"
+		"$oid": "5fc37e77823e0016c2f40670"
 	},
 	"name": "Danske Bank A/S",
 	"symbol": "DANSKE",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KA",
 	"debt_to_equity": 6.95,
-	"market_cap_raw": 75780.0,
-	"price": 91.72,
-	"p_e": 8.03,
-	"p_b": 0.46,
+	"market_cap_raw": 88670.0,
+	"price": 104.0,
+	"p_e": 11.01,
+	"p_b": 0.54,
 	"financials_currency": "DKK",
 	"fcf": [
 		146747.0,
@@ -4457,7 +4598,7 @@ const DATA =
 		8.39,
 		8.56
 	],
-	"market_cap": 75780.0,
+	"market_cap": 88670.0,
 	"my_cash": [
 		360479.0,
 		210255.0,
@@ -4483,7 +4624,7 @@ const DATA =
 		0.4129193768088232,
 		0.39902502139679147
 	],
-	"ev": 3.485248e+06,
+	"ev": 3.498138e+06,
 	"my_debt_to_equity": 19.99594153939991,
 	"growth_earnings": 0,
 	"weighted_earnings": 15130.833333333334,
@@ -4497,26 +4638,26 @@ const DATA =
 	"weighted_roa": 0.41999999999999993,
 	"growth_roce": -0.016824537903030734,
 	"weighted_roce": 0.3923116098000435,
-	"earnings_ev": 0.004341393591885953,
-	"ebit_ev": 0.0034404062857500205,
-	"fcf_ev": -0.025386476562547822,
-	"valuation": 0.7442193310900228,
-	"rank_valuation": 92,
-	"rank_roc": 92,
-	"score": 184
+	"earnings_ev": 0.004325396348952881,
+	"ebit_ev": 0.0034277290165790164,
+	"fcf_ev": -0.02529293203031632,
+	"valuation": 0.4090010334700085,
+	"rank_valuation": 95,
+	"rank_roc": 94,
+	"score": 189
 },
 {
 	"_id": {
-		"$oid": "5fa12cc9b958314d0c6447fd"
+		"$oid": "5fc37e83823e0016c2f40671"
 	},
 	"name": "Demant AS",
 	"symbol": "DEMANT",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LK",
 	"debt_to_equity": 0.53,
-	"market_cap_raw": 48280.0,
-	"price": 204.1,
-	"p_e": 59.52,
-	"p_b": 6.49,
+	"market_cap_raw": 52640.0,
+	"price": 218.7,
+	"p_e": 64.52,
+	"p_b": 7.01,
 	"financials_currency": "DKK",
 	"fcf": [
 		1434.0,
@@ -4598,7 +4739,7 @@ const DATA =
 		25.18,
 		19.91
 	],
-	"market_cap": 48280.0,
+	"market_cap": 52640.0,
 	"my_cash": [
 		697.0,
 		630.0,
@@ -4624,7 +4765,7 @@ const DATA =
 		17.858542319749215,
 		11.574697173620457
 	],
-	"ev": 53275.0,
+	"ev": 57635.0,
 	"my_debt_to_equity": 0.6541382922996333,
 	"growth_earnings": 0,
 	"weighted_earnings": 1631.0,
@@ -4638,26 +4779,26 @@ const DATA =
 	"weighted_roa": 7.236666666666667,
 	"growth_roce": 0,
 	"weighted_roce": 14.563581513816969,
-	"earnings_ev": 0.03061473486625997,
-	"ebit_ev": 0.0412325981542312,
-	"fcf_ev": 0.024129516658845614,
-	"valuation": 2.7287803444291385,
-	"rank_valuation": 58,
-	"rank_roc": 26,
-	"score": 84
+	"earnings_ev": 0.028298776784939708,
+	"ebit_ev": 0.038113414881004025,
+	"fcf_ev": 0.02230415546109135,
+	"valuation": 2.5220419714870896,
+	"rank_valuation": 61,
+	"rank_roc": 27,
+	"score": 88
 },
 {
 	"_id": {
-		"$oid": "5fa134bbb958315439fa66e0"
+		"$oid": "5fc380b0823e0016c2f4069b"
 	},
 	"name": "Dow Inc",
 	"symbol": "DOW",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001H3ZI",
 	"debt_to_equity": 1.31,
-	"market_cap_raw": 35470.0,
-	"price": 47.82,
+	"market_cap_raw": 41090.0,
+	"price": 55.4,
 	"p_e": 13.79,
-	"p_b": 2.73,
+	"p_b": 3.35,
 	"financials_currency": "USD",
 	"fcf": [
 		-7923.0,
@@ -4739,7 +4880,7 @@ const DATA =
 		17.09,
 		-6.73
 	],
-	"market_cap": 35470.0,
+	"market_cap": 41090.0,
 	"my_cash": [
 		6192.0,
 		2769.0,
@@ -4765,7 +4906,7 @@ const DATA =
 		7.277462350981058,
 		-2.77658596383696
 	],
-	"ev": 70874.0,
+	"ev": 76494.0,
 	"my_debt_to_equity": 2.614577948452847,
 	"growth_earnings": 0,
 	"weighted_earnings": 897.6666666666667,
@@ -4779,26 +4920,26 @@ const DATA =
 	"weighted_roa": 1.018333333333333,
 	"growth_roce": 0,
 	"weighted_roce": 1.159358245204687,
-	"earnings_ev": 0.01266566959204598,
-	"ebit_ev": 0.07073585988279671,
-	"fcf_ev": 0.015466414576102192,
-	"valuation": 1.9490957745172097,
-	"rank_valuation": 69,
-	"rank_roc": 85,
-	"score": 154
+	"earnings_ev": 0.011735125195004402,
+	"ebit_ev": 0.06553890936979807,
+	"fcf_ev": 0.01433009996426735,
+	"valuation": 1.8591736723396697,
+	"rank_valuation": 73,
+	"rank_roc": 87,
+	"score": 160
 },
 {
 	"_id": {
-		"$oid": "5fa13781b958315439fa66f3"
+		"$oid": "5fc3821b823e0016c2f406ae"
 	},
 	"name": "Exxon Mobil Corp",
 	"symbol": "XOM",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000220",
 	"debt_to_equity": 0.14,
-	"market_cap_raw": 143700.0,
-	"price": 33.99,
-	"p_e": 43.67,
-	"p_b": 0.77,
+	"market_cap_raw": 169900.0,
+	"price": 40.19,
+	"p_e": 51.55,
+	"p_b": 0.97,
 	"financials_currency": "USD",
 	"fcf": [
 		14664.0,
@@ -4880,7 +5021,7 @@ const DATA =
 		10.98,
 		7.48
 	],
-	"market_cap": 143700.0,
+	"market_cap": 169900.0,
 	"my_cash": [
 		3177.0,
 		3042.0,
@@ -4906,7 +5047,7 @@ const DATA =
 		8.169985886780617,
 		5.397064358298834
 	],
-	"ev": 217750.0,
+	"ev": 243950.0,
 	"my_debt_to_equity": 0.3863814244716932,
 	"growth_earnings": 0,
 	"weighted_earnings": 17401.666666666668,
@@ -4920,26 +5061,26 @@ const DATA =
 	"weighted_roa": 4.993333333333333,
 	"growth_roce": 0,
 	"weighted_roce": 6.699002498879702,
-	"earnings_ev": 0.07991580558744739,
-	"ebit_ev": 0.07242250287026407,
-	"fcf_ev": 0.04868656716417911,
-	"valuation": 6.484535503595619,
-	"rank_valuation": 6,
+	"earnings_ev": 0.07133292341326775,
+	"ebit_ev": 0.0646443943431031,
+	"fcf_ev": 0.04345767575322812,
+	"valuation": 5.777692098343442,
+	"rank_valuation": 7,
 	"rank_roc": 62,
-	"score": 68
+	"score": 69
 },
 {
 	"_id": {
-		"$oid": "5fa12ce7b958314d0c6447ff"
+		"$oid": "5fc37e9e823e0016c2f40673"
 	},
 	"name": "FLSmidth \u0026 Co. A/S",
 	"symbol": "FLS",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RO",
 	"debt_to_equity": 0.35,
-	"market_cap_raw": 8320.0,
-	"price": 171.6,
-	"p_e": 15.97,
-	"p_b": 0.98,
+	"market_cap_raw": 10550.0,
+	"price": 210.4,
+	"p_e": 20.62,
+	"p_b": 1.22,
 	"financials_currency": "DKK",
 	"fcf": [
 		800.0,
@@ -5021,7 +5162,7 @@ const DATA =
 		7.9,
 		9.1
 	],
-	"market_cap": 8320.0,
+	"market_cap": 10550.0,
 	"my_cash": [
 		1382.0,
 		875.0,
@@ -5047,7 +5188,7 @@ const DATA =
 		5.394957983193278,
 		5.941884535766311
 	],
-	"ev": 12584.0,
+	"ev": 14814.0,
 	"my_debt_to_equity": 0.485704522155143,
 	"growth_earnings": 0.10358255451713383,
 	"weighted_earnings": 855.2764797507787,
@@ -5061,26 +5202,26 @@ const DATA =
 	"weighted_roa": 3.719690721649484,
 	"growth_roce": 0.05068867582257863,
 	"weighted_roce": 6.243070794774963,
-	"earnings_ev": 0.06796539095285908,
-	"ebit_ev": 0.104869353232692,
-	"fcf_ev": 0.028356113583386314,
-	"valuation": 5.5547809410663715,
-	"rank_valuation": 12,
+	"earnings_ev": 0.057734337771755004,
+	"ebit_ev": 0.08908302558932066,
+	"fcf_ev": 0.024087574816614915,
+	"valuation": 4.671653563180081,
+	"rank_valuation": 17,
 	"rank_roc": 63,
-	"score": 75
+	"score": 80
 },
 {
 	"_id": {
-		"$oid": "5fa12d06b958314d0c644801"
+		"$oid": "5fc37eb9823e0016c2f40675"
 	},
 	"name": "GN Store Nord A/S",
 	"symbol": "GN",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KG",
 	"debt_to_equity": 1.18,
-	"market_cap_raw": 59230.0,
-	"price": 466.1,
-	"p_e": 60.24,
-	"p_b": 13.16,
+	"market_cap_raw": 64590.0,
+	"price": 501.4,
+	"p_e": 49.5,
+	"p_b": 12.85,
 	"financials_currency": "DKK",
 	"fcf": [
 		1205.0,
@@ -5162,7 +5303,7 @@ const DATA =
 		25.12,
 		29.24
 	],
-	"market_cap": 59230.0,
+	"market_cap": 64590.0,
 	"my_cash": [
 		526.0,
 		636.0,
@@ -5188,7 +5329,7 @@ const DATA =
 		12.981171548117155,
 		13.010021474588404
 	],
-	"ev": 65557.0,
+	"ev": 70917.0,
 	"my_debt_to_equity": 1.304805114456589,
 	"growth_earnings": 0.024513947590870666,
 	"weighted_earnings": 1489.6432797971258,
@@ -5202,26 +5343,26 @@ const DATA =
 	"weighted_roa": 9.843333333333334,
 	"growth_roce": 0,
 	"weighted_roce": 13.063974945884759,
-	"earnings_ev": 0.022722871391264485,
-	"ebit_ev": 0.03276053508652633,
-	"fcf_ev": 0.019527535833956198,
-	"valuation": 2.1152010145370514,
-	"rank_valuation": 67,
-	"rank_roc": 35,
-	"score": 102
+	"earnings_ev": 0.021005446928058516,
+	"ebit_ev": 0.030284450818102947,
+	"fcf_ev": 0.018051619028817724,
+	"valuation": 2.003895588568245,
+	"rank_valuation": 70,
+	"rank_roc": 36,
+	"score": 106
 },
 {
 	"_id": {
-		"$oid": "5fa13ae5b958315439fa6708"
+		"$oid": "5fc38426823e0016c2f406c3"
 	},
 	"name": "General Dynamics Corp",
 	"symbol": "GD",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002DN",
 	"debt_to_equity": 0.76,
-	"market_cap_raw": 39050.0,
-	"price": 136.09,
-	"p_e": 12.35,
-	"p_b": 2.56,
+	"market_cap_raw": 43640.0,
+	"price": 152.06,
+	"p_e": 13.79,
+	"p_b": 2.96,
 	"financials_currency": "USD",
 	"fcf": [
 		3451.0,
@@ -5303,7 +5444,7 @@ const DATA =
 		28.88,
 		27.53
 	],
-	"market_cap": 39050.0,
+	"market_cap": 43640.0,
 	"my_cash": [
 		2983.0,
 		963.0,
@@ -5329,7 +5470,7 @@ const DATA =
 		11.11591120563605,
 		11.039640039291486
 	],
-	"ev": 57032.0,
+	"ev": 61622.0,
 	"my_debt_to_equity": 1.3244457538484202,
 	"growth_earnings": 0.020777279521674075,
 	"weighted_earnings": 3556.3880418535123,
@@ -5343,26 +5484,26 @@ const DATA =
 	"weighted_roa": 7.278030303030302,
 	"growth_roce": -0.0034307203851129398,
 	"weighted_roce": 11.00176612116438,
-	"earnings_ev": 0.062357764796140976,
-	"ebit_ev": 0.08324436370885296,
-	"fcf_ev": 0.03166283762182931,
-	"valuation": 5.501067615613621,
-	"rank_valuation": 13,
-	"rank_roc": 43,
+	"earnings_ev": 0.057712960336462824,
+	"ebit_ev": 0.07704379200680443,
+	"fcf_ev": 0.02930438731699992,
+	"valuation": 5.067072401409153,
+	"rank_valuation": 14,
+	"rank_roc": 42,
 	"score": 56
 },
 {
 	"_id": {
-		"$oid": "5fa139e0b958315439fa66fe"
+		"$oid": "5fc38387823e0016c2f406b9"
 	},
 	"name": "General Mills Inc",
 	"symbol": "GIS",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002DT",
 	"debt_to_equity": 1.39,
-	"market_cap_raw": 36510.0,
-	"price": 59.73,
-	"p_e": 15.97,
-	"p_b": 4.28,
+	"market_cap_raw": 36760.0,
+	"price": 60.13,
+	"p_e": 16.08,
+	"p_b": 4.34,
 	"financials_currency": "USD",
 	"fcf": [
 		2218.3,
@@ -5444,7 +5585,7 @@ const DATA =
 		26.56,
 		28.87
 	],
-	"market_cap": 36510.0,
+	"market_cap": 36760.0,
 	"my_cash": [
 		399.0,
 		450.0,
@@ -5470,7 +5611,7 @@ const DATA =
 		8.47537947475568,
 		10.348672255670845
 	],
-	"ev": 49528.6,
+	"ev": 49778.6,
 	"my_debt_to_equity": 1.6155115716324377,
 	"growth_earnings": 0,
 	"weighted_earnings": 2030.0,
@@ -5484,26 +5625,26 @@ const DATA =
 	"weighted_roa": 6.858333333333333,
 	"growth_roce": 0,
 	"weighted_roce": 9.696632145232599,
-	"earnings_ev": 0.04098641996745315,
-	"ebit_ev": 0.061775129555604796,
-	"fcf_ev": 0.06566780460711834,
-	"valuation": 5.055393412653976,
-	"rank_valuation": 19,
-	"rank_roc": 49,
-	"score": 68
+	"earnings_ev": 0.04078057639226495,
+	"ebit_ev": 0.061464880123340705,
+	"fcf_ev": 0.06533800523245173,
+	"valuation": 5.02886528777313,
+	"rank_valuation": 15,
+	"rank_roc": 47,
+	"score": 62
 },
 {
 	"_id": {
-		"$oid": "5fa12cf7b958314d0c644800"
+		"$oid": "5fc37eab823e0016c2f40674"
 	},
 	"name": "Genmab A/S",
 	"symbol": "GMAB",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QU",
 	"debt_to_equity": 0.01,
-	"market_cap_raw": 142900.0,
-	"price": 2162.0,
-	"p_e": 24.45,
-	"p_b": 7.99,
+	"market_cap_raw": 152000.0,
+	"price": 2319.0,
+	"p_e": 26.81,
+	"p_b": 8.18,
 	"financials_currency": "DKK",
 	"fcf": [
 		1500.46,
@@ -5585,7 +5726,7 @@ const DATA =
 		20.61,
 		19.64
 	],
-	"market_cap": 142900.0,
+	"market_cap": 152000.0,
 	"my_cash": [
 		5422.74,
 		6106.09,
@@ -5611,7 +5752,7 @@ const DATA =
 		18.361240513117934,
 		15.247078699141207
 	],
-	"ev": 143058.0,
+	"ev": 152158.0,
 	"my_debt_to_equity": 0.011247152619589976,
 	"growth_earnings": 0.16700194825789505,
 	"weighted_earnings": 2527.7262199266006,
@@ -5625,26 +5766,26 @@ const DATA =
 	"weighted_roa": 18.798333333333332,
 	"growth_roce": 0,
 	"weighted_roce": 16.67464557616919,
-	"earnings_ev": 0.017669240587220574,
-	"ebit_ev": 0.018687761810275278,
-	"fcf_ev": 0.007246827627023072,
-	"valuation": 1.6865572190541516,
-	"rank_valuation": 76,
+	"earnings_ev": 0.016612509496224982,
+	"ebit_ev": 0.017570116780283394,
+	"fcf_ev": 0.006813422013082892,
+	"valuation": 1.5741483812290218,
+	"rank_valuation": 79,
 	"rank_roc": 21,
-	"score": 97
+	"score": 100
 },
 {
 	"_id": {
-		"$oid": "5fa1355ab958315439fa66e3"
+		"$oid": "5fc3811d823e0016c2f4069e"
 	},
 	"name": "Goldman Sachs Group Inc",
 	"symbol": "GS",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002H5",
 	"debt_to_equity": 2.8,
-	"market_cap_raw": 65440.0,
-	"price": 190.2,
-	"p_e": 10.54,
-	"p_b": 0.7,
+	"market_cap_raw": 80990.0,
+	"price": 235.4,
+	"p_e": 13.57,
+	"p_b": 1.0,
 	"financials_currency": "USD",
 	"fcf": [
 		-20927.0,
@@ -5726,7 +5867,7 @@ const DATA =
 		13.2,
 		9.99
 	],
-	"market_cap": 65440.0,
+	"market_cap": 80990.0,
 	"my_cash": [
 		110051.0,
 		130547.0,
@@ -5752,7 +5893,7 @@ const DATA =
 		1.3053370425423307,
 		0.9850806704971481
 	],
-	"ev": 834597.0,
+	"ev": 850147.0,
 	"my_debt_to_equity": 8.521098986318064,
 	"growth_earnings": 0,
 	"weighted_earnings": 8433.666666666668,
@@ -5766,26 +5907,26 @@ const DATA =
 	"weighted_roa": 0.835,
 	"growth_roce": 0,
 	"weighted_roce": 1.0161999985559638,
-	"earnings_ev": 0.010105076661750123,
-	"ebit_ev": 0.013548055728293614,
-	"fcf_ev": 0.010029990522371876,
-	"valuation": 1.8559709187917235,
-	"rank_valuation": 72,
-	"rank_roc": 86,
-	"score": 158
+	"earnings_ev": 0.00992024516544394,
+	"ebit_ev": 0.01330024885892283,
+	"fcf_ev": 0.00984653242321622,
+	"valuation": 1.6275303583784657,
+	"rank_valuation": 77,
+	"rank_roc": 88,
+	"score": 165
 },
 {
 	"_id": {
-		"$oid": "5fa12d32b958314d0c644804"
+		"$oid": "5fc37edf823e0016c2f40678"
 	},
 	"name": "H. Lundbeck A/S",
 	"symbol": "LUN",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q7",
 	"debt_to_equity": 0.52,
-	"market_cap_raw": 36960.0,
-	"price": 185.45,
-	"p_e": 20.88,
-	"p_b": 2.55,
+	"market_cap_raw": 38540.0,
+	"price": 193.95,
+	"p_e": 26.88,
+	"p_b": 2.6,
 	"financials_currency": "DKK",
 	"fcf": [
 		3320.0,
@@ -5867,7 +6008,7 @@ const DATA =
 		29.56,
 		18.52
 	],
-	"market_cap": 36960.0,
+	"market_cap": 38540.0,
 	"my_cash": [
 		3677.0,
 		6635.0,
@@ -5893,7 +6034,7 @@ const DATA =
 		26.111073982490144,
 		11.20917917034422
 	],
-	"ev": 46199.0,
+	"ev": 47779.0,
 	"my_debt_to_equity": 0.6348083001236774,
 	"growth_earnings": 0,
 	"weighted_earnings": 3073.1666666666665,
@@ -5907,26 +6048,26 @@ const DATA =
 	"weighted_roa": 12.818333333333332,
 	"growth_roce": 0,
 	"weighted_roce": 17.735121010877048,
-	"earnings_ev": 0.06652019884990296,
-	"ebit_ev": 0.09232523070484933,
-	"fcf_ev": 0.07348283151871975,
-	"valuation": 6.674624079620902,
-	"rank_valuation": 3,
-	"rank_roc": 18,
+	"earnings_ev": 0.06432044761645632,
+	"ebit_ev": 0.08927213489887469,
+	"fcf_ev": 0.07105283353216546,
+	"valuation": 6.362835672476153,
+	"rank_valuation": 4,
+	"rank_roc": 17,
 	"score": 21
 },
 {
 	"_id": {
-		"$oid": "5fa13b7bb958315439fa670e"
+		"$oid": "5fc384a2823e0016c2f406cb"
 	},
 	"name": "Hennes \u0026 Mauritz AB",
 	"symbol": "HM B",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A6GI",
 	"debt_to_equity": 0.19,
-	"market_cap_raw": 265600.0,
-	"price": 148.45,
-	"p_e": 80.0,
-	"p_b": 4.5,
+	"market_cap_raw": 337800.0,
+	"price": 182.65,
+	"p_e": 102.04,
+	"p_b": 5.8,
 	"financials_currency": "SEK",
 	"fcf": [
 		9116.0,
@@ -6008,7 +6149,7 @@ const DATA =
 		21.4,
 		23.25
 	],
-	"market_cap": 265600.0,
+	"market_cap": 337800.0,
 	"my_cash": [
 		9718.0,
 		11590.0,
@@ -6034,7 +6175,7 @@ const DATA =
 		18.208770490623607,
 		19.70363204643391
 	],
-	"ev": 276757.0,
+	"ev": 348957.0,
 	"my_debt_to_equity": 0.19550018398780425,
 	"growth_earnings": 0,
 	"weighted_earnings": 13636.166666666666,
@@ -6048,26 +6189,167 @@ const DATA =
 	"weighted_roa": 11.993333333333332,
 	"growth_roce": 0,
 	"weighted_roce": 20.37921892777312,
-	"earnings_ev": 0.049271262033721515,
-	"ebit_ev": 0.06238505259126237,
-	"fcf_ev": 0.049364605050640095,
-	"valuation": 4.562213873542493,
-	"rank_valuation": 25,
-	"rank_roc": 11,
-	"score": 36
+	"earnings_ev": 0.03907692542825238,
+	"ebit_ev": 0.04947744277948286,
+	"fcf_ev": 0.03915095556186006,
+	"valuation": 3.617144976557216,
+	"rank_valuation": 36,
+	"rank_roc": 10,
+	"score": 46
 },
 {
 	"_id": {
-		"$oid": "5fa12d15b958314d0c644802"
+		"$oid": "5fc38479823e0016c2f406c8"
+	},
+	"name": "Honeywell International Inc",
+	"symbol": "HON",
+	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002PC",
+	"debt_to_equity": 0.63,
+	"market_cap_raw": 146900.0,
+	"price": 209.41,
+	"p_e": 30.03,
+	"p_b": 8.06,
+	"financials_currency": "USD",
+	"fcf": [
+		4935.0,
+		5606.0,
+		6058.0
+	],
+	"revenue": [
+		40534.0,
+		41802.0,
+		36709.0
+	],
+	"ebit": [
+		7151.0,
+		6705.0,
+		6851.0
+	],
+	"ebt": [
+		6902.0,
+		7487.0,
+		7559.0
+	],
+	"earnings": [
+		1655.0,
+		6765.0,
+		6143.0
+	],
+	"cash": [
+		10817.0,
+		10910.0,
+		10416.0
+	],
+	"short_term_debt": [
+		5309.0,
+		6458.0,
+		4892.0
+	],
+	"other_short_term_debt": [
+		6557.0,
+		6459.0,
+		6984.0
+	],
+	"short_term_liabilities": [
+		18861.0,
+		18924.0,
+		18098.0
+	],
+	"long_term_debt": [
+		12573.0,
+		9756.0,
+		11110.0
+	],
+	"other_long_term_debt": [
+		7620.0,
+		9022.0,
+		9095.0
+	],
+	"long_term_liabilities": [
+		23087.0,
+		20491.0,
+		21875.0
+	],
+	"liabilities": [
+		41948.0,
+		39415.0,
+		39973.0
+	],
+	"equity": [
+		17276.0,
+		18180.0,
+		18494.0
+	],
+	"roa": [
+		2.92,
+		11.55,
+		10.55
+	],
+	"roe": [
+		9.03,
+		38.16,
+		33.5
+	],
+	"market_cap": 146900.0,
+	"my_cash": [
+		10817.0,
+		10910.0,
+		10416.0
+	],
+	"debt": [
+		20193.0,
+		18778.0,
+		20205.0
+	],
+	"my_ebit": [
+		7151.0,
+		6705.0,
+		6851.0
+	],
+	"my_fcf": [
+		4935.0,
+		5606.0,
+		6058.0
+	],
+	"roce": [
+		4.416984707358083,
+		18.30456193516965,
+		15.873795188506163
+	],
+	"ev": 167105.0,
+	"my_debt_to_equity": 1.0925164918351897,
+	"growth_earnings": 0,
+	"weighted_earnings": 5602.333333333334,
+	"growth_my_ebit": 0,
+	"weighted_ebit": 6852.333333333333,
+	"growth_my_fcf": 0.04031394933999288,
+	"weighted_fcf": 6302.221905101677,
+	"growth_roe": 0,
+	"weighted_roe": 30.974999999999998,
+	"growth_roa": 0,
+	"weighted_roa": 9.611666666666668,
+	"growth_roce": 0,
+	"weighted_roce": 14.774582357202647,
+	"earnings_ev": 0.0335258270747933,
+	"ebit_ev": 0.041006153815465324,
+	"fcf_ev": 0.037714143233904894,
+	"valuation": 3.4759742545050774,
+	"rank_valuation": 39,
+	"rank_roc": 25,
+	"score": 64
+},
+{
+	"_id": {
+		"$oid": "5fc37ec6823e0016c2f40676"
 	},
 	"name": "ISS A/S",
 	"symbol": "ISS",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00012E78",
 	"debt_to_equity": 1.3,
-	"market_cap_raw": 16090.0,
-	"price": 88.72,
+	"market_cap_raw": 21590.0,
+	"price": 116.9,
 	"p_e": 16.45,
-	"p_b": 1.73,
+	"p_b": 2.32,
 	"financials_currency": "DKK",
 	"fcf": [
 		2621.0,
@@ -6149,7 +6431,7 @@ const DATA =
 		2.14,
 		10.81
 	],
-	"market_cap": 16090.0,
+	"market_cap": 21590.0,
 	"my_cash": [
 		6275.0,
 		6834.0,
@@ -6175,7 +6457,7 @@ const DATA =
 		0.9018261176546102,
 		4.448398576512456
 	],
-	"ev": 33915.0,
+	"ev": 39415.0,
 	"my_debt_to_equity": 1.4233809789986425,
 	"growth_earnings": 0,
 	"weighted_earnings": 1102.3333333333335,
@@ -6189,26 +6471,26 @@ const DATA =
 	"weighted_roa": 2.206666666666667,
 	"growth_roce": 0,
 	"weighted_roce": 3.5482311965048883,
-	"earnings_ev": 0.032502825691680184,
-	"ebit_ev": 0.08459966820533626,
-	"fcf_ev": 0.025743803816833867,
-	"valuation": 3.330386391568137,
-	"rank_valuation": 43,
-	"rank_roc": 72,
-	"score": 115
+	"earnings_ev": 0.02796735591356929,
+	"ebit_ev": 0.07279456418074286,
+	"fcf_ev": 0.02215149324997896,
+	"valuation": 2.950488887875836,
+	"rank_valuation": 49,
+	"rank_roc": 73,
+	"score": 122
 },
 {
 	"_id": {
-		"$oid": "5fa13a37b958315439fa6701"
+		"$oid": "5fc383bc823e0016c2f406bc"
 	},
 	"name": "Ingredion Inc",
 	"symbol": "INGR",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001HZ",
 	"debt_to_equity": 0.69,
-	"market_cap_raw": 4830.0,
-	"price": 72.13,
-	"p_e": 13.95,
-	"p_b": 1.73,
+	"market_cap_raw": 5360.0,
+	"price": 79.95,
+	"p_e": 15.77,
+	"p_b": 1.95,
 	"financials_currency": "USD",
 	"fcf": [
 		455.0,
@@ -6256,14 +6538,14 @@ const DATA =
 		967.0
 	],
 	"long_term_debt": [
-		1744.0,
-		1931.0,
-		1766.0
+		1743.0,
+		1932.0,
+		1765.0
 	],
 	"other_long_term_debt": [
-		263.0,
-		254.0,
-		371.0
+		264.0,
+		253.0,
+		372.0
 	],
 	"long_term_liabilities": [
 		2206.0,
@@ -6290,7 +6572,7 @@ const DATA =
 		16.78,
 		16.17
 	],
-	"market_cap": 4830.0,
+	"market_cap": 5360.0,
 	"my_cash": [
 		604.0,
 		334.0,
@@ -6316,7 +6598,7 @@ const DATA =
 		9.68729499234638,
 		8.503191270331481
 	],
-	"ev": 6967.0,
+	"ev": 7497.0,
 	"my_debt_to_equity": 0.7856617647058823,
 	"growth_earnings": -0.0338600451467268,
 	"weighted_earnings": 399.01580135440184,
@@ -6330,26 +6612,26 @@ const DATA =
 	"weighted_roa": 6.79536,
 	"growth_roce": -0.04288660045748971,
 	"weighted_roce": 8.13851830370716,
-	"earnings_ev": 0.05727225511043517,
-	"ebit_ev": 0.10038458450706993,
-	"fcf_ev": 0.050452334782631676,
-	"valuation": 5.666751228241261,
-	"rank_valuation": 11,
-	"rank_roc": 57,
-	"score": 68
+	"earnings_ev": 0.05322339620573587,
+	"ebit_ev": 0.09328790186217903,
+	"fcf_ev": 0.04688560976798651,
+	"valuation": 5.234087474388186,
+	"rank_valuation": 10,
+	"rank_roc": 55,
+	"score": 65
 },
 {
 	"_id": {
-		"$oid": "5fa137b7b958315439fa66f5"
+		"$oid": "5fc3823c823e0016c2f406b0"
 	},
 	"name": "Intel Corp",
 	"symbol": "INTC",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002X8",
 	"debt_to_equity": 0.33,
-	"market_cap_raw": 182200.0,
-	"price": 44.46,
-	"p_e": 8.73,
-	"p_b": 2.43,
+	"market_cap_raw": 194500.0,
+	"price": 47.45,
+	"p_e": 9.32,
+	"p_b": 2.59,
 	"financials_currency": "USD",
 	"fcf": [
 		10332.0,
@@ -6431,7 +6713,7 @@ const DATA =
 		29.07,
 		27.58
 	],
-	"market_cap": 182200.0,
+	"market_cap": 194500.0,
 	"my_cash": [
 		14002.0,
 		11650.0,
@@ -6457,7 +6739,7 @@ const DATA =
 		19.196330877525714,
 		18.764375501470983
 	],
-	"ev": 216711.0,
+	"ev": 229011.0,
 	"my_debt_to_equity": 0.444391506457719,
 	"growth_earnings": 0,
 	"weighted_earnings": 19141.833333333336,
@@ -6471,26 +6753,26 @@ const DATA =
 	"weighted_roa": 14.9,
 	"growth_roce": 0,
 	"weighted_roce": 17.337819671544736,
-	"earnings_ev": 0.0883288496353823,
-	"ebit_ev": 0.10158844421064614,
-	"fcf_ev": 0.0854810528454807,
-	"valuation": 9.009637935766856,
+	"earnings_ev": 0.08358477685933573,
+	"ebit_ev": 0.09613220907874878,
+	"fcf_ev": 0.08088993298661186,
+	"valuation": 8.514745974549056,
 	"rank_valuation": 1,
-	"rank_roc": 19,
-	"score": 20
+	"rank_roc": 18,
+	"score": 19
 },
 {
 	"_id": {
-		"$oid": "5fa135cdb958315439fa66e7"
+		"$oid": "5fc3815f823e0016c2f406a2"
 	},
 	"name": "International Business Machines Corp",
 	"symbol": "IBM",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002RH",
 	"debt_to_equity": 2.78,
-	"market_cap_raw": 100600.0,
-	"price": 112.91,
-	"p_e": 12.79,
-	"p_b": 4.69,
+	"market_cap_raw": 110800.0,
+	"price": 124.35,
+	"p_e": 14.08,
+	"p_b": 5.22,
 	"financials_currency": "USD",
 	"fcf": [
 		12951.0,
@@ -6572,7 +6854,7 @@ const DATA =
 		50.76,
 		50.12
 	],
-	"market_cap": 100600.0,
+	"market_cap": 110800.0,
 	"my_cash": [
 		12580.0,
 		11997.0,
@@ -6598,7 +6880,7 @@ const DATA =
 		10.73224715647095,
 		8.6434914903172
 	],
-	"ev": 188870.0,
+	"ev": 199070.0,
 	"my_debt_to_equity": 4.235401372294995,
 	"growth_earnings": 0.040272685609532566,
 	"weighted_earnings": 9810.811697983501,
@@ -6612,26 +6894,26 @@ const DATA =
 	"weighted_roa": 6.55,
 	"growth_roce": 0,
 	"weighted_roce": 8.997267598335622,
-	"earnings_ev": 0.05194478582084768,
-	"ebit_ev": 0.06205149926757381,
-	"fcf_ev": 0.06274686292158628,
-	"valuation": 5.780953865670928,
-	"rank_valuation": 10,
-	"rank_roc": 51,
-	"score": 61
+	"earnings_ev": 0.04928322548843875,
+	"ebit_ev": 0.0588720885450679,
+	"fcf_ev": 0.059531822976842313,
+	"valuation": 5.453175491338866,
+	"rank_valuation": 8,
+	"rank_roc": 49,
+	"score": 57
 },
 {
 	"_id": {
-		"$oid": "5fa1395bb958315439fa66f9"
+		"$oid": "5fc3833a823e0016c2f406b4"
 	},
 	"name": "JPMorgan Chase \u0026 Co",
 	"symbol": "JPM",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000031C",
 	"debt_to_equity": 1.24,
-	"market_cap_raw": 305600.0,
-	"price": 100.25,
-	"p_e": 13.09,
-	"p_b": 1.24,
+	"market_cap_raw": 369500.0,
+	"price": 121.22,
+	"p_e": 15.82,
+	"p_b": 1.54,
 	"financials_currency": "USD",
 	"fcf": [
 		null,
@@ -6713,7 +6995,7 @@ const DATA =
 		13.35,
 		14.91
 	],
-	"market_cap": 305600.0,
+	"market_cap": 369500.0,
 	"my_cash": [
 		430121.0,
 		278793.0,
@@ -6739,7 +7021,7 @@ const DATA =
 		1.3855638362462714,
 		1.5030853042478014
 	],
-	"ev": 2.468018e+06,
+	"ev": 2.531918e+06,
 	"my_debt_to_equity": 8.274664217655838,
 	"growth_earnings": 0.060925663607809266,
 	"weighted_earnings": 38650.5828508961,
@@ -6751,25 +7033,25 @@ const DATA =
 	"weighted_roa": 1.3600840336134454,
 	"growth_roce": 0.04240925785127159,
 	"weighted_roce": 1.5668300364881034,
-	"earnings_ev": 0.01566057575386245,
-	"ebit_ev": 0.018885944235966668,
-	"valuation": 2.1733937582601492,
-	"rank_valuation": 65,
-	"rank_roc": 82,
-	"score": 147
+	"earnings_ev": 0.015265337523133094,
+	"ebit_ev": 0.0184093048516429,
+	"valuation": 2.0059916286622568,
+	"rank_valuation": 69,
+	"rank_roc": 83,
+	"score": 152
 },
 {
 	"_id": {
-		"$oid": "5fa13350b958315439fa66cb"
+		"$oid": "5fc37f98823e0016c2f40686"
 	},
 	"name": "Jeudan A/S",
 	"symbol": "JDAN",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RA",
 	"debt_to_equity": 2.19,
-	"market_cap_raw": 12080.0,
-	"price": 218.0,
-	"p_e": 23.81,
-	"p_b": 1.62,
+	"market_cap_raw": 13530.0,
+	"price": 244.0,
+	"p_e": 16.34,
+	"p_b": 1.79,
 	"financials_currency": "DKK",
 	"fcf": [
 		569.77,
@@ -6851,7 +7133,7 @@ const DATA =
 		9.22,
 		11.92
 	],
-	"market_cap": 12080.0,
+	"market_cap": 13530.0,
 	"my_cash": [
 		14.64,
 		15.11,
@@ -6877,7 +7159,7 @@ const DATA =
 		2.7643610720315794,
 		3.532750235775507
 	],
-	"ev": 28489.54,
+	"ev": 29939.54,
 	"my_debt_to_equity": 2.2126942903875224,
 	"growth_earnings": 0,
 	"weighted_earnings": 743.3600000000001,
@@ -6891,26 +7173,26 @@ const DATA =
 	"weighted_roa": 3.0316666666666663,
 	"growth_roce": 0,
 	"weighted_roce": 3.2660983627876066,
-	"earnings_ev": 0.026092383380005437,
-	"ebit_ev": 0.0293722579934832,
-	"fcf_ev": 0.02328861228623982,
-	"valuation": 2.6841929715555173,
-	"rank_valuation": 59,
-	"rank_roc": 74,
-	"score": 133
+	"earnings_ev": 0.02482870478303942,
+	"ebit_ev": 0.027949731993065337,
+	"fcf_ev": 0.02216072295276817,
+	"valuation": 2.766539079604578,
+	"rank_valuation": 55,
+	"rank_roc": 75,
+	"score": 130
 },
 {
 	"_id": {
-		"$oid": "5fa13808b958315439fa66f8"
+		"$oid": "5fc3826e823e0016c2f406b3"
 	},
 	"name": "Johnson \u0026 Johnson",
 	"symbol": "JNJ",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000032S",
 	"debt_to_equity": 0.45,
-	"market_cap_raw": 365100.0,
-	"price": 138.69,
-	"p_e": 21.79,
-	"p_b": 5.6,
+	"market_cap_raw": 379100.0,
+	"price": 144.0,
+	"p_e": 22.62,
+	"p_b": 5.87,
 	"financials_currency": "USD",
 	"fcf": [
 		17777.0,
@@ -6992,7 +7274,7 @@ const DATA =
 		25.51,
 		25.36
 	],
-	"market_cap": 365100.0,
+	"market_cap": 379100.0,
 	"my_cash": [
 		18296.0,
 		19687.0,
@@ -7018,7 +7300,7 @@ const DATA =
 		13.39281024006724,
 		13.0554548123586
 	],
-	"ev": 421435.0,
+	"ev": 435435.0,
 	"my_debt_to_equity": 0.9472684165391535,
 	"growth_earnings": 0,
 	"weighted_earnings": 12875.166666666668,
@@ -7032,26 +7314,26 @@ const DATA =
 	"weighted_roa": 8.296666666666667,
 	"growth_roce": 0,
 	"weighted_roce": 11.174996072889552,
-	"earnings_ev": 0.030550776909052803,
-	"ebit_ev": 0.04768356678083834,
-	"fcf_ev": 0.04826463053068643,
-	"valuation": 3.7399116433595845,
-	"rank_valuation": 38,
+	"earnings_ev": 0.02956851577541233,
+	"ebit_ev": 0.0461504563626778,
+	"fcf_ev": 0.046712837892452,
+	"valuation": 3.6175827322815004,
+	"rank_valuation": 35,
 	"rank_roc": 41,
-	"score": 79
+	"score": 76
 },
 {
 	"_id": {
-		"$oid": "5fa12d23b958314d0c644803"
+		"$oid": "5fc37ed2823e0016c2f40677"
 	},
 	"name": "Jyske Bank A/S",
 	"symbol": "JYSK",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KR",
 	"debt_to_equity": 11.21,
-	"market_cap_raw": 14290.0,
-	"price": 204.0,
-	"p_e": 11.76,
-	"p_b": 0.41,
+	"market_cap_raw": 17170.0,
+	"price": 236.6,
+	"p_e": 11.33,
+	"p_b": 0.48,
 	"financials_currency": "DKK",
 	"fcf": [
 		10130.0,
@@ -7133,7 +7415,7 @@ const DATA =
 		6.88,
 		6.52
 	],
-	"market_cap": 14290.0,
+	"market_cap": 17170.0,
 	"my_cash": [
 		36601.0,
 		22917.0,
@@ -7159,7 +7441,7 @@ const DATA =
 		0.4332530371037901,
 		0.3984785956569099
 	],
-	"ev": 590909.0,
+	"ev": 593789.0,
 	"my_debt_to_equity": 16.147269672360682,
 	"growth_earnings": -0.01200000000000001,
 	"weighted_earnings": 2410.72,
@@ -7173,26 +7455,26 @@ const DATA =
 	"weighted_roa": 0.35612499999999997,
 	"growth_roce": -0.04013179189618654,
 	"weighted_roce": 0.3824869355809221,
-	"earnings_ev": 0.004079680627643173,
-	"ebit_ev": 0.005160003513101961,
-	"fcf_ev": 0.007829744794319712,
-	"valuation": 1.3300133175426034,
-	"rank_valuation": 84,
-	"rank_roc": 93,
-	"score": 177
+	"earnings_ev": 0.004059893329111856,
+	"ebit_ev": 0.005134976424156673,
+	"fcf_ev": 0.007791768905565221,
+	"valuation": 1.359959200011638,
+	"rank_valuation": 83,
+	"rank_roc": 95,
+	"score": 178
 },
 {
 	"_id": {
-		"$oid": "5fa133ffb958315439fa66d6"
+		"$oid": "5fc3802a823e0016c2f40691"
 	},
 	"name": "Matas A/S",
 	"symbol": "MATAS",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000Z26I",
 	"debt_to_equity": 0.88,
-	"market_cap_raw": 2820.0,
-	"price": 75.6,
-	"p_e": 14.81,
-	"p_b": 1.0,
+	"market_cap_raw": 3140.0,
+	"price": 82.0,
+	"p_e": 14.53,
+	"p_b": 1.1,
 	"financials_currency": "DKK",
 	"fcf": [
 		291.0,
@@ -7274,7 +7556,7 @@ const DATA =
 		9.95,
 		7.04
 	],
-	"market_cap": 2820.0,
+	"market_cap": 3140.0,
 	"my_cash": [
 		86.4,
 		160.9,
@@ -7300,7 +7582,7 @@ const DATA =
 		6.048136824440817,
 		3.63014999050693
 	],
-	"ev": 5323.0,
+	"ev": 5643.0,
 	"my_debt_to_equity": 0.9055716353111433,
 	"growth_earnings": -0.03068141277202996,
 	"weighted_earnings": 185.33371387798786,
@@ -7314,26 +7596,26 @@ const DATA =
 	"weighted_roa": 3.0162735849056603,
 	"growth_roce": -0.04911927547800454,
 	"weighted_roce": 3.451839653096745,
-	"earnings_ev": 0.03481753031711213,
-	"ebit_ev": 0.05608589594580694,
-	"fcf_ev": 0.053231260567349246,
-	"valuation": 4.3612090823672585,
-	"rank_valuation": 29,
-	"rank_roc": 73,
-	"score": 102
+	"earnings_ev": 0.032843117823495985,
+	"ebit_ev": 0.0529054092006965,
+	"fcf_ev": 0.0502126528442318,
+	"valuation": 4.165197900435268,
+	"rank_valuation": 24,
+	"rank_roc": 74,
+	"score": 98
 },
 {
 	"_id": {
-		"$oid": "5fa13601b958315439fa66e9"
+		"$oid": "5fc3817d823e0016c2f406a4"
 	},
 	"name": "McDonald's Corp",
 	"symbol": "MCD",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003IJ",
 	"debt_to_equity": null,
-	"market_cap_raw": 158200.0,
-	"price": 212.56,
-	"p_e": 33.67,
-	"p_b": -16.75,
+	"market_cap_raw": 162700.0,
+	"price": 218.33,
+	"p_e": 33.33,
+	"p_b": -19.29,
 	"financials_currency": "USD",
 	"fcf": [
 		3697.5,
@@ -7415,7 +7697,7 @@ const DATA =
 		0.0,
 		0.0
 	],
-	"market_cap": 158200.0,
+	"market_cap": 162700.0,
 	"my_cash": [
 		2463.8,
 		866.0,
@@ -7441,7 +7723,7 @@ const DATA =
 		14.400690342497388,
 		10.21387537017543
 	],
-	"ev": 208982.0,
+	"ev": 213482.0,
 	"my_debt_to_equity": -6.185157667807511,
 	"growth_earnings": 0.008532653646844413,
 	"weighted_earnings": 6076.812651283696,
@@ -7455,26 +7737,26 @@ const DATA =
 	"weighted_roa": 16.1,
 	"growth_roce": 0,
 	"weighted_roce": 12.289194992798553,
-	"earnings_ev": 0.029078162957975787,
-	"ebit_ev": 0.04301737688863262,
-	"fcf_ev": 0.029366252214791656,
-	"valuation": 2.922677640922594,
-	"rank_valuation": 55,
-	"rank_roc": 37,
-	"score": 92
+	"earnings_ev": 0.028465222600892327,
+	"ebit_ev": 0.0421106109973685,
+	"fcf_ev": 0.028747239206825818,
+	"valuation": 2.870360535258614,
+	"rank_valuation": 51,
+	"rank_roc": 38,
+	"score": 89
 },
 {
 	"_id": {
-		"$oid": "5fa13679b958315439fa66ee"
+		"$oid": "5fc381ca823e0016c2f406a9"
 	},
 	"name": "Merck \u0026 Co Inc",
 	"symbol": "MRK",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003KE",
 	"debt_to_equity": 0.88,
-	"market_cap_raw": 194000.0,
-	"price": 76.71,
-	"p_e": 16.92,
-	"p_b": 6.88,
+	"market_cap_raw": 202000.0,
+	"price": 79.86,
+	"p_e": 17.64,
+	"p_b": 6.94,
 	"financials_currency": "USD",
 	"fcf": [
 		4559.0,
@@ -7556,7 +7838,7 @@ const DATA =
 		20.38,
 		37.42
 	],
-	"market_cap": 194000.0,
+	"market_cap": 202000.0,
 	"my_cash": [
 		8498.0,
 		8864.0,
@@ -7582,7 +7864,7 @@ const DATA =
 		10.623761699801872,
 		16.239090624123538
 	],
-	"ev": 228706.0,
+	"ev": 236706.0,
 	"my_debt_to_equity": 1.339637935693056,
 	"growth_earnings": 0.29123794212218646,
 	"weighted_earnings": 12709.655064308681,
@@ -7596,26 +7878,26 @@ const DATA =
 	"weighted_roa": 15.415828767123285,
 	"growth_roce": 0.26428157384339634,
 	"weighted_roce": 20.53078305205245,
-	"earnings_ev": 0.05557202287788113,
-	"ebit_ev": 0.059461711714737873,
-	"fcf_ev": 0.047934291701891486,
-	"valuation": 5.363366672192969,
-	"rank_valuation": 14,
-	"rank_roc": 10,
-	"score": 24
+	"earnings_ev": 0.05369384411171952,
+	"ebit_ev": 0.057452072357400484,
+	"fcf_ev": 0.04631424686308245,
+	"valuation": 5.177951476631925,
+	"rank_valuation": 11,
+	"rank_roc": 9,
+	"score": 20
 },
 {
 	"_id": {
-		"$oid": "5fa139adb958315439fa66fc"
+		"$oid": "5fc38369823e0016c2f406b7"
 	},
 	"name": "Microsoft Corp",
 	"symbol": "MSFT",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003MH",
 	"debt_to_equity": 0.57,
-	"market_cap_raw": 1.53e+06,
-	"price": 202.33,
-	"p_e": 32.68,
-	"p_b": 12.41,
+	"market_cap_raw": 1.627e+06,
+	"price": 215.23,
+	"p_e": 34.72,
+	"p_b": 13.1,
 	"financials_currency": "USD",
 	"fcf": [
 		32252.0,
@@ -7697,7 +7979,7 @@ const DATA =
 		42.41,
 		40.14
 	],
-	"market_cap": 1.53e+06,
+	"market_cap": 1.627e+06,
 	"my_cash": [
 		133768.0,
 		133819.0,
@@ -7723,7 +8005,7 @@ const DATA =
 		18.0910360852547,
 		19.35383768143813
 	],
-	"ev": 1.640493e+06,
+	"ev": 1.737493e+06,
 	"my_debt_to_equity": 0.9339751825804706,
 	"growth_earnings": 0.06423292558613669,
 	"weighted_earnings": 47125.29817787972,
@@ -7737,26 +8019,26 @@ const DATA =
 	"weighted_roa": 15.426066712995137,
 	"growth_roce": 0.03490130665353908,
 	"weighted_roce": 20.02931190528082,
-	"earnings_ev": 0.028726302506551213,
-	"ebit_ev": 0.03592009762074212,
-	"fcf_ev": 0.030086448019358853,
-	"valuation": 2.9321691429934216,
+	"earnings_ev": 0.02712258304227972,
+	"ebit_ev": 0.03391476610619099,
+	"fcf_ev": 0.028406794945718954,
+	"valuation": 2.767577264088075,
 	"rank_valuation": 54,
-	"rank_roc": 13,
-	"score": 67
+	"rank_roc": 12,
+	"score": 66
 },
 {
 	"_id": {
-		"$oid": "5fa13424b958315439fa66d8"
+		"$oid": "5fc38044823e0016c2f40693"
 	},
 	"name": "NKT A/S",
 	"symbol": "NKT",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KX",
 	"debt_to_equity": 0.3,
-	"market_cap_raw": 6130.0,
-	"price": 191.5,
+	"market_cap_raw": 7880.0,
+	"price": 215.8,
 	"p_e": null,
-	"p_b": 0.95,
+	"p_b": 1.21,
 	"financials_currency": "EUR",
 	"fcf": [
 		-6.6,
@@ -7838,7 +8120,7 @@ const DATA =
 		-5.69,
 		-9.9
 	],
-	"market_cap": 823.9247311827957,
+	"market_cap": 1059.1397849462364,
 	"my_cash": [
 		44.7,
 		28.2,
@@ -7864,7 +8146,7 @@ const DATA =
 		-3.9516390782213566,
 		-6.83453237410072
 	],
-	"ev": 1132.1247311827956,
+	"ev": 1367.3397849462365,
 	"my_debt_to_equity": 0.38342871361035086,
 	"growth_earnings": 0,
 	"weighted_earnings": 100.56666666666666,
@@ -7878,26 +8160,26 @@ const DATA =
 	"weighted_roa": 5.3100000000000005,
 	"growth_roce": 0,
 	"weighted_roce": 7.849863523238753,
-	"earnings_ev": 0.08883002366850418,
-	"ebit_ev": 0.09006327744826713,
-	"fcf_ev": -0.007478563477560516,
-	"valuation": 5.105444515783435,
-	"rank_valuation": 18,
-	"rank_roc": 58,
-	"score": 76
+	"earnings_ev": 0.07354914102102347,
+	"ebit_ev": 0.0745702457378362,
+	"fcf_ev": -0.006192072197328464,
+	"valuation": 4.227186295341554,
+	"rank_valuation": 23,
+	"rank_roc": 56,
+	"score": 79
 },
 {
 	"_id": {
-		"$oid": "5fa1336db958315439fa66cd"
+		"$oid": "5fc37fb4823e0016c2f40688"
 	},
 	"name": "Netcompany Group AS",
 	"symbol": "NETC",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001DFE0",
 	"debt_to_equity": 0.49,
-	"market_cap_raw": 25970.0,
-	"price": 541.0,
+	"market_cap_raw": 27520.0,
+	"price": 560.5,
 	"p_e": 62.5,
-	"p_b": 11.39,
+	"p_b": 11.15,
 	"financials_currency": "DKK",
 	"fcf": [
 		167.5,
@@ -7979,7 +8261,7 @@ const DATA =
 		10.5,
 		20.03
 	],
-	"market_cap": 25970.0,
+	"market_cap": 27520.0,
 	"my_cash": [
 		194.5,
 		107.67,
@@ -8005,7 +8287,7 @@ const DATA =
 		6.109541565245534,
 		12.426665813633601
 	],
-	"ev": 27024.4,
+	"ev": 28574.4,
 	"my_debt_to_equity": 0.5089539991311485,
 	"growth_earnings": 0.1399011299435029,
 	"weighted_earnings": 442.8173919491526,
@@ -8019,26 +8301,26 @@ const DATA =
 	"weighted_roa": 11.661476510067112,
 	"growth_roce": 0.13131929507537188,
 	"weighted_roce": 14.058526808417188,
-	"earnings_ev": 0.01638583620539781,
-	"ebit_ev": 0.02187735793319406,
-	"fcf_ev": 0.011112735157857344,
-	"valuation": 1.4765322270595889,
-	"rank_valuation": 81,
-	"rank_roc": 29,
-	"score": 110
+	"earnings_ev": 0.015496997030529164,
+	"ebit_ev": 0.020690634684536142,
+	"fcf_ev": 0.010509931967075423,
+	"valuation": 1.4051177808440125,
+	"rank_valuation": 82,
+	"rank_roc": 30,
+	"score": 112
 },
 {
 	"_id": {
-		"$oid": "5fa135e6b958315439fa66e8"
+		"$oid": "5fc3816e823e0016c2f406a3"
 	},
 	"name": "Nike Inc",
 	"symbol": "NKE",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003X1",
 	"debt_to_equity": 1.53,
-	"market_cap_raw": 192100.0,
-	"price": 122.39,
-	"p_e": 72.46,
-	"p_b": 20.44,
+	"market_cap_raw": 210700.0,
+	"price": 134.25,
+	"p_e": 79.37,
+	"p_b": 23.07,
 	"financials_currency": "USD",
 	"fcf": [
 		3927.0,
@@ -8120,7 +8402,7 @@ const DATA =
 		42.74,
 		29.7
 	],
-	"market_cap": 192100.0,
+	"market_cap": 210700.0,
 	"my_cash": [
 		5245.0,
 		4663.0,
@@ -8146,7 +8428,7 @@ const DATA =
 		32.22168905950096,
 		12.46196132325513
 	],
-	"ev": 204419.0,
+	"ev": 223019.0,
 	"my_debt_to_equity": 1.529360645561763,
 	"growth_earnings": 0,
 	"weighted_earnings": 2934.666666666667,
@@ -8160,26 +8442,26 @@ const DATA =
 	"weighted_roa": 11.823333333333334,
 	"growth_roce": 0,
 	"weighted_roce": 19.397497496722263,
-	"earnings_ev": 0.014356134540657508,
-	"ebit_ev": 0.01902465035050558,
-	"fcf_ev": 0.014424621325154057,
-	"valuation": 1.4321138885672435,
-	"rank_valuation": 82,
+	"earnings_ev": 0.013158819054280877,
+	"ebit_ev": 0.017437976136562356,
+	"fcf_ev": 0.013221593974803344,
+	"valuation": 1.312169150985267,
+	"rank_valuation": 84,
 	"rank_roc": 15,
-	"score": 97
+	"score": 99
 },
 {
 	"_id": {
-		"$oid": "5fa1340fb958315439fa66d7"
+		"$oid": "5fc38037823e0016c2f40692"
 	},
 	"name": "Nilfisk Holding A/S",
 	"symbol": "NLFSK",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001BQUO",
 	"debt_to_equity": 2.59,
-	"market_cap_raw": 2450.0,
-	"price": 89.7,
+	"market_cap_raw": 3780.0,
+	"price": 139.2,
 	"p_e": 68.97,
-	"p_b": 2.19,
+	"p_b": 3.62,
 	"financials_currency": "EUR",
 	"fcf": [
 		2.9,
@@ -8261,7 +8543,7 @@ const DATA =
 		7.01,
 		5.69
 	],
-	"market_cap": 329.3010752688172,
+	"market_cap": 508.06451612903226,
 	"my_cash": [
 		40.7,
 		16.4,
@@ -8287,7 +8569,7 @@ const DATA =
 		1.8601190476190474,
 		1.5080603224128963
 	],
-	"ev": 748.2010752688172,
+	"ev": 926.9645161290323,
 	"my_debt_to_equity": 2.65126582278481,
 	"growth_earnings": -0.06500000000000006,
 	"weighted_earnings": 8.1345,
@@ -8301,26 +8583,26 @@ const DATA =
 	"weighted_roa": 0.9867479674796749,
 	"growth_roce": -0.09463338533541343,
 	"weighted_roce": 1.365347468812949,
-	"earnings_ev": 0.010872077398548775,
-	"ebit_ev": 0.09284491691181859,
-	"fcf_ev": 0.013900006754552498,
-	"valuation": 1.2143154221620867,
-	"rank_valuation": 85,
-	"rank_roc": 83,
-	"score": 168
+	"earnings_ev": 0.0087754168131153,
+	"ebit_ev": 0.07493994155974466,
+	"fcf_ev": 0.011219415435048147,
+	"valuation": 1.0080980474509476,
+	"rank_valuation": 89,
+	"rank_roc": 84,
+	"score": 173
 },
 {
 	"_id": {
-		"$oid": "5fa1337eb958315439fa66ce"
+		"$oid": "5fc37fc1823e0016c2f40689"
 	},
 	"name": "Nordea Bank Abp",
 	"symbol": "NDA DK",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A6IU",
 	"debt_to_equity": 5.8,
-	"market_cap_raw": 199800.0,
-	"price": 50.71,
-	"p_e": 11.78,
-	"p_b": 0.82,
+	"market_cap_raw": 221000.0,
+	"price": 54.37,
+	"p_e": 13.04,
+	"p_b": 0.91,
 	"financials_currency": "EUR",
 	"fcf": [
 		11460.0,
@@ -8402,7 +8684,7 @@ const DATA =
 		9.3,
 		4.72
 	],
-	"market_cap": 26854.838709677417,
+	"market_cap": 29704.301075268817,
 	"my_cash": [
 		43081.0,
 		41578.0,
@@ -8428,7 +8710,7 @@ const DATA =
 		0.6035416143610344,
 		0.2975164596889268
 	],
-	"ev": 514665.8387096774,
+	"ev": 517515.3010752688,
 	"my_debt_to_equity": 15.491965193089431,
 	"growth_earnings": 0,
 	"weighted_earnings": 2303.3333333333335,
@@ -8442,26 +8724,26 @@ const DATA =
 	"weighted_roa": 0.4,
 	"growth_roce": 0,
 	"weighted_roce": 0.44377260622387626,
-	"earnings_ev": 0.004475395800716126,
-	"ebit_ev": 0.004082471132108384,
-	"fcf_ev": 0.001970534258130074,
-	"valuation": 1.1765362104218444,
-	"rank_valuation": 86,
-	"rank_roc": 91,
-	"score": 177
+	"earnings_ev": 0.004450754071517454,
+	"ebit_ev": 0.0040599928636873605,
+	"fcf_ev": 0.0019596844084792835,
+	"valuation": 1.0927069421895976,
+	"rank_valuation": 88,
+	"rank_roc": 93,
+	"score": 181
 },
 {
 	"_id": {
-		"$oid": "5fa13b68b958315439fa670d"
+		"$oid": "5fc38495823e0016c2f406ca"
 	},
 	"name": "Note AB",
 	"symbol": "NOTE",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A6N7",
 	"debt_to_equity": 0.13,
-	"market_cap_raw": 1540.0,
-	"price": 53.2,
-	"p_e": 14.39,
-	"p_b": 2.78,
+	"market_cap_raw": 1670.0,
+	"price": 59.0,
+	"p_e": 15.7,
+	"p_b": 3.03,
 	"financials_currency": "SEK",
 	"fcf": [
 		25.67,
@@ -8543,7 +8825,7 @@ const DATA =
 		17.07,
 		21.74
 	],
-	"market_cap": 1540.0,
+	"market_cap": 1670.0,
 	"my_cash": [
 		87.19,
 		30.99,
@@ -8569,7 +8851,7 @@ const DATA =
 		15.860161959312657,
 		17.603403540903543
 	],
-	"ev": 1598.91,
+	"ev": 1728.91,
 	"my_debt_to_equity": 0.12662009672219235,
 	"growth_earnings": 0,
 	"weighted_earnings": 79.57166666666666,
@@ -8583,26 +8865,26 @@ const DATA =
 	"weighted_roa": 8.553333333333335,
 	"growth_roce": 0,
 	"weighted_roce": 17.240017006343233,
-	"earnings_ev": 0.04976619488693338,
-	"ebit_ev": 0.09139615033167223,
-	"fcf_ev": 0.026900617712483293,
-	"valuation": 4.487917257252072,
+	"earnings_ev": 0.04602418093866462,
+	"ebit_ev": 0.08452390160668516,
+	"fcf_ev": 0.024877909588507593,
+	"valuation": 4.14473081913434,
 	"rank_valuation": 26,
-	"rank_roc": 20,
-	"score": 46
+	"rank_roc": 19,
+	"score": 45
 },
 {
 	"_id": {
-		"$oid": "5fa12d41b958314d0c644805"
+		"$oid": "5fc37eec823e0016c2f40679"
 	},
 	"name": "Novo Nordisk A/S",
 	"symbol": "NOVO B",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5BQ",
 	"debt_to_equity": 0.05,
-	"market_cap_raw": 968200.0,
-	"price": 416.25,
-	"p_e": 23.2,
-	"p_b": 16.25,
+	"market_cap_raw": 970600.0,
+	"price": 419.25,
+	"p_e": 23.7,
+	"p_b": 16.12,
 	"financials_currency": "DKK",
 	"fcf": [
 		32520.0,
@@ -8684,7 +8966,7 @@ const DATA =
 		76.0,
 		71.19
 	],
-	"market_cap": 968200.0,
+	"market_cap": 970600.0,
 	"my_cash": [
 		18852.0,
 		15638.0,
@@ -8710,7 +8992,7 @@ const DATA =
 		68.38387593605609,
 		58.52980510601211
 	],
-	"ev": 977156.0,
+	"ev": 979556.0,
 	"my_debt_to_equity": 0.15550500928932334,
 	"growth_earnings": 0.00418090504297397,
 	"weighted_earnings": 39113.85043232888,
@@ -8724,26 +9006,26 @@ const DATA =
 	"weighted_roa": 32.139239842726084,
 	"growth_roce": -0.011708996020710516,
 	"weighted_roce": 57.844479850932856,
-	"earnings_ev": 0.0400282559103448,
-	"ebit_ev": 0.05132445586989181,
-	"fcf_ev": 0.03472406998814246,
-	"valuation": 3.874451937023583,
-	"rank_valuation": 37,
+	"earnings_ev": 0.03993018309553398,
+	"ebit_ev": 0.05119870635267407,
+	"fcf_ev": 0.034638992904268195,
+	"valuation": 3.8569217011301262,
+	"rank_valuation": 31,
 	"rank_roc": 1,
-	"score": 38
+	"score": 32
 },
 {
 	"_id": {
-		"$oid": "5fa12d52b958314d0c644806"
+		"$oid": "5fc37ef9823e0016c2f4067a"
 	},
 	"name": "Novozymes A/S",
 	"symbol": "NZYM B",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QX",
 	"debt_to_equity": 0.28,
-	"market_cap_raw": 108500.0,
-	"price": 383.7,
-	"p_e": 35.09,
-	"p_b": 10.05,
+	"market_cap_raw": 100200.0,
+	"price": 359.3,
+	"p_e": 32.89,
+	"p_b": 9.21,
 	"financials_currency": "DKK",
 	"fcf": [
 		2371.0,
@@ -8825,7 +9107,7 @@ const DATA =
 		28.45,
 		27.55
 	],
-	"market_cap": 108500.0,
+	"market_cap": 100200.0,
 	"my_cash": [
 		648.0,
 		737.0,
@@ -8851,7 +9133,7 @@ const DATA =
 		24.315971960503504,
 		21.294983458240498
 	],
-	"ev": 111843.0,
+	"ev": 103543.0,
 	"my_debt_to_equity": 0.29150680153470526,
 	"growth_earnings": 0,
 	"weighted_earnings": 3172.1666666666665,
@@ -8865,26 +9147,26 @@ const DATA =
 	"weighted_roa": 16.316666666666666,
 	"growth_roce": 0,
 	"weighted_roce": 22.73255337736444,
-	"earnings_ev": 0.02836267505938384,
-	"ebit_ev": 0.03153053049627747,
-	"fcf_ev": 0.019313205258170672,
-	"valuation": 2.566138137512197,
-	"rank_valuation": 61,
-	"rank_roc": 8,
-	"score": 69
+	"earnings_ev": 0.030636225207562717,
+	"ebit_ev": 0.03405801572578698,
+	"fcf_ev": 0.02086135050838379,
+	"valuation": 2.7680578100099287,
+	"rank_valuation": 53,
+	"rank_roc": 7,
+	"score": 60
 },
 {
 	"_id": {
-		"$oid": "5fa12d60b958314d0c644807"
+		"$oid": "5fc37f06823e0016c2f4067b"
 	},
 	"name": "Pandora A/S",
 	"symbol": "PNDORA",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000Q1VF",
 	"debt_to_equity": 1.52,
-	"market_cap_raw": 50930.0,
-	"price": 530.2,
-	"p_e": 34.48,
-	"p_b": 9.3,
+	"market_cap_raw": 64700.0,
+	"price": 649.2,
+	"p_e": 33.44,
+	"p_b": 11.32,
 	"financials_currency": "DKK",
 	"fcf": [
 		5289.0,
@@ -8966,7 +9248,7 @@ const DATA =
 		78.02,
 		50.48
 	],
-	"market_cap": 50930.0,
+	"market_cap": 64700.0,
 	"my_cash": [
 		993.0,
 		1387.0,
@@ -8992,7 +9274,7 @@ const DATA =
 		37.95801670303213,
 		21.830985915492956
 	],
-	"ev": 59171.0,
+	"ev": 72941.0,
 	"my_debt_to_equity": 1.5700133358734998,
 	"growth_earnings": -0.06267337031900144,
 	"weighted_earnings": 2760.426924410541,
@@ -9006,26 +9288,26 @@ const DATA =
 	"weighted_roa": 12.80667553936677,
 	"growth_roce": -0.09106949411816634,
 	"weighted_roce": 19.842849072068198,
-	"earnings_ev": 0.046651686204568804,
-	"ebit_ev": 0.05905594105005085,
-	"fcf_ev": 0.10294785469108622,
-	"valuation": 6.1775600148628635,
-	"rank_valuation": 9,
-	"rank_roc": 14,
-	"score": 23
+	"earnings_ev": 0.03784465423301765,
+	"ebit_ev": 0.04790720017373712,
+	"fcf_ev": 0.08351307919998714,
+	"valuation": 5.07511469218163,
+	"rank_valuation": 13,
+	"rank_roc": 13,
+	"score": 26
 },
 {
 	"_id": {
-		"$oid": "5fa13a9bb958315439fa6705"
+		"$oid": "5fc383f8823e0016c2f406c0"
 	},
 	"name": "PepsiCo Inc",
 	"symbol": "PEP",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004B0",
 	"debt_to_equity": 1.97,
-	"market_cap_raw": 186800.0,
-	"price": 135.15,
-	"p_e": 26.74,
-	"p_b": 13.66,
+	"market_cap_raw": 199800.0,
+	"price": 144.6,
+	"p_e": 28.65,
+	"p_b": 14.78,
 	"financials_currency": "USD",
 	"fcf": [
 		7025.0,
@@ -9107,7 +9389,7 @@ const DATA =
 		98.66,
 		49.92
 	],
-	"market_cap": 186800.0,
+	"market_cap": 199800.0,
 	"my_cash": [
 		19510.0,
 		8993.0,
@@ -9133,7 +9415,7 @@ const DATA =
 		24.10114198779055,
 		13.56630126314618
 	],
-	"ev": 225927.0,
+	"ev": 238927.0,
 	"my_debt_to_equity": 2.646219396726633,
 	"growth_earnings": 0,
 	"weighted_earnings": 8638.166666666668,
@@ -9147,26 +9429,26 @@ const DATA =
 	"weighted_roa": 11.033333333333333,
 	"growth_roce": 0,
 	"weighted_roce": 16.263226834478687,
-	"earnings_ev": 0.03823432642697273,
-	"ebit_ev": 0.04544388231596932,
-	"fcf_ev": 0.02257718147966613,
-	"valuation": 3.345346608168408,
-	"rank_valuation": 42,
+	"earnings_ev": 0.03615399961773541,
+	"ebit_ev": 0.042971284116068924,
+	"fcf_ev": 0.0213487587428651,
+	"valuation": 3.158742878966134,
+	"rank_valuation": 44,
 	"rank_roc": 22,
-	"score": 64
+	"score": 66
 },
 {
 	"_id": {
-		"$oid": "5fa13661b958315439fa66ed"
+		"$oid": "5fc381bb823e0016c2f406a8"
 	},
 	"name": "Pfizer Ltd",
 	"symbol": "PFIZER",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000CHAD",
 	"debt_to_equity": null,
-	"market_cap_raw": 228000.0,
-	"price": 4916.4,
-	"p_e": 43.86,
-	"p_b": 6.72,
+	"market_cap_raw": 233500.0,
+	"price": 5104.5,
+	"p_e": 46.95,
+	"p_b": 10.93,
 	"financials_currency": "INR",
 	"fcf": [
 		2291.1,
@@ -9248,7 +9530,7 @@ const DATA =
 		15.07,
 		15.89
 	],
-	"market_cap": 228000.0,
+	"market_cap": 233500.0,
 	"my_cash": [
 		17718.6,
 		18918.1,
@@ -9274,7 +9556,7 @@ const DATA =
 		14.085362450633111,
 		14.41461591601454
 	],
-	"ev": 229365.5,
+	"ev": 234865.5,
 	"my_debt_to_equity": 0.040215108864994444,
 	"growth_earnings": 0.09332245659014093,
 	"weighted_earnings": 5566.432623237385,
@@ -9288,26 +9570,26 @@ const DATA =
 	"weighted_roa": 12.71511111111111,
 	"growth_roce": 0.011687788174972624,
 	"weighted_roce": 14.583090893464506,
-	"earnings_ev": 0.024268831289960283,
-	"ebit_ev": 0.020732847790971176,
-	"fcf_ev": 0.009697913010747766,
-	"valuation": 1.9750654437346415,
-	"rank_valuation": 68,
-	"rank_roc": 25,
-	"score": 93
+	"earnings_ev": 0.023700512094102306,
+	"ebit_ev": 0.020247333048063677,
+	"fcf_ev": 0.009470810598690173,
+	"valuation": 1.9191475888677596,
+	"rank_valuation": 72,
+	"rank_roc": 26,
+	"score": 98
 },
 {
 	"_id": {
-		"$oid": "5fa137d3b958315439fa66f6"
+		"$oid": "5fc3824d823e0016c2f406b1"
 	},
 	"name": "Procter \u0026 Gamble Co",
 	"symbol": "PG",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004GV",
 	"debt_to_equity": 0.53,
-	"market_cap_raw": 343400.0,
-	"price": 138.5,
-	"p_e": 26.46,
-	"p_b": 7.16,
+	"market_cap_raw": 343700.0,
+	"price": 138.61,
+	"p_e": 26.53,
+	"p_b": 7.24,
 	"financials_currency": "USD",
 	"fcf": [
 		11150.0,
@@ -9389,7 +9671,7 @@ const DATA =
 		7.45,
 		27.78
 	],
-	"market_cap": 343400.0,
+	"market_cap": 343700.0,
 	"my_cash": [
 		11850.0,
 		10287.0,
@@ -9415,7 +9697,7 @@ const DATA =
 		5.0089974293059125,
 		16.049428346146264
 	],
-	"ev": 378047.0,
+	"ev": 378347.0,
 	"my_debt_to_equity": 0.7447604307731992,
 	"growth_earnings": 0,
 	"weighted_earnings": 9437.5,
@@ -9429,56 +9711,56 @@ const DATA =
 	"weighted_roa": 7.776666666666666,
 	"growth_roce": 0,
 	"weighted_roce": 11.644692032769758,
-	"earnings_ev": 0.02496382724899285,
-	"ebit_ev": 0.04172841728255883,
-	"fcf_ev": 0.0391716841243587,
-	"valuation": 3.0509091080278528,
-	"rank_valuation": 50,
-	"rank_roc": 38,
-	"score": 88
+	"earnings_ev": 0.024944032858724926,
+	"ebit_ev": 0.04169532986496395,
+	"fcf_ev": 0.03914062399903114,
+	"valuation": 3.0477924668430916,
+	"rank_valuation": 48,
+	"rank_roc": 39,
+	"score": 87
 },
 {
 	"_id": {
-		"$oid": "5fa13439b958315439fa66d9"
+		"$oid": "5fc38051823e0016c2f40694"
 	},
 	"name": "RTX A/S",
 	"symbol": "RTX",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QW",
-	"debt_to_equity": null,
-	"market_cap_raw": 1820.0,
-	"price": 218.0,
-	"p_e": 25.97,
-	"p_b": 5.54,
+	"debt_to_equity": 0.13,
+	"market_cap_raw": 1830.0,
+	"price": 219.0,
+	"p_e": 29.59,
+	"p_b": 5.21,
 	"financials_currency": "DKK",
 	"fcf": [
-		20.35,
 		67.73,
-		86.59
+		86.59,
+		35.09
 	],
 	"revenue": [
-		433.5,
 		475.34,
-		560.27
+		560.27,
+		555.87
 	],
 	"ebit": [
-		72.28,
 		74.87,
-		86.72
+		86.72,
+		83.57
 	],
 	"ebt": [
-		70.38,
 		76.26,
-		91.35
+		91.35,
+		80.22
 	],
 	"earnings": [
-		58.2,
 		59.95,
-		71.38
+		71.38,
+		63.15
 	],
 	"cash": [
-		151.3,
 		182.6,
-		226.71
+		226.71,
+		194.8
 	],
 	"short_term_debt": [
 		null,
@@ -9486,14 +9768,14 @@ const DATA =
 		null
 	],
 	"other_short_term_debt": [
-		21.01,
 		25.85,
-		38.24
+		38.24,
+		25.88
 	],
 	"short_term_liabilities": [
-		61.19,
 		97.02,
-		91.57
+		91.57,
+		88.08
 	],
 	"long_term_debt": [
 		null,
@@ -9501,95 +9783,95 @@ const DATA =
 		null
 	],
 	"other_long_term_debt": [
-		8.84,
 		13.73,
-		18.13
+		18.13,
+		84.81
 	],
 	"long_term_liabilities": [
-		8.84,
 		13.73,
-		24.27
+		24.27,
+		93.31
 	],
 	"liabilities": [
-		70.03,
 		110.75,
-		115.84
+		115.84,
+		181.39
 	],
 	"equity": [
-		282.98,
 		312.0,
-		347.44
+		347.44,
+		352.19
 	],
 	"roa": [
-		16.43,
 		15.46,
-		16.11
+		16.11,
+		12.67
 	],
 	"roe": [
-		20.66,
 		20.15,
-		21.65
+		21.65,
+		18.05
 	],
-	"market_cap": 1820.0,
+	"market_cap": 1830.0,
 	"my_cash": [
-		151.3,
 		182.6,
-		226.71
+		226.71,
+		194.8
 	],
 	"debt": [
-		8.84,
 		13.73,
-		18.13
+		18.13,
+		84.81
 	],
 	"my_ebit": [
-		72.28,
 		74.87,
-		86.72
+		86.72,
+		83.57
 	],
 	"my_fcf": [
-		20.35,
 		67.73,
-		86.59
+		86.59,
+		35.09
 	],
 	"roce": [
-		19.94380097320266,
 		18.404813802842845,
-		19.5256722378751
+		19.5256722378751,
+		14.450800915331808
 	],
-	"ev": 1838.13,
-	"my_debt_to_equity": 0.052181671655537644,
-	"growth_earnings": 0.015034364261168331,
-	"weighted_earnings": 72.4531529209622,
-	"growth_my_ebit": 0.01791643608190374,
-	"weighted_ebit": 88.27371333702268,
-	"growth_my_fcf": 0.1392292927801564,
-	"weighted_fcf": 98.64586446183374,
+	"ev": 1914.81,
+	"my_debt_to_equity": 0.24080751866890032,
+	"growth_earnings": 0,
+	"weighted_earnings": 65.36,
+	"growth_my_ebit": 0,
+	"weighted_ebit": 83.16999999999999,
+	"growth_my_fcf": 0,
+	"weighted_fcf": 57.69666666666667,
 	"growth_roe": 0,
-	"weighted_roe": 20.985,
+	"weighted_roe": 19.6,
 	"growth_roa": 0,
-	"weighted_roa": 15.946666666666665,
+	"weighted_roa": 14.281666666666666,
 	"growth_roce": 0,
-	"weighted_roce": 19.22174088208561,
-	"earnings_ev": 0.03941677298175983,
-	"ebit_ev": 0.04802365085006103,
-	"fcf_ev": 0.05366642428002031,
-	"valuation": 4.3600587915572575,
-	"rank_valuation": 30,
-	"rank_roc": 16,
-	"score": 46
+	"weighted_roce": 16.80142683743141,
+	"earnings_ev": 0.034133934959604345,
+	"ebit_ev": 0.043435118889080374,
+	"fcf_ev": 0.030131797236627483,
+	"valuation": 3.289942025489549,
+	"rank_valuation": 41,
+	"rank_roc": 20,
+	"score": 61
 },
 {
 	"_id": {
-		"$oid": "5fa135a9b958315439fa66e6"
+		"$oid": "5fc3814b823e0016c2f406a1"
 	},
 	"name": "Raytheon Technologies Corp",
 	"symbol": "RTX",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005NO",
 	"debt_to_equity": 0.96,
-	"market_cap_raw": 84670.0,
-	"price": 55.75,
-	"p_e": 90.09,
-	"p_b": 1.21,
+	"market_cap_raw": 112200.0,
+	"price": 73.91,
+	"p_e": 119.05,
+	"p_b": 1.64,
 	"financials_currency": "USD",
 	"fcf": [
 		3237.0,
@@ -9671,7 +9953,7 @@ const DATA =
 		15.48,
 		13.8
 	],
-	"market_cap": 84670.0,
+	"market_cap": 112200.0,
 	"my_cash": [
 		8985.0,
 		6152.0,
@@ -9697,7 +9979,7 @@ const DATA =
 		5.233464774183296,
 		5.3928491424230325
 	],
-	"ev": 145569.0,
+	"ev": 173099.0,
 	"my_debt_to_equity": 1.457820653995308,
 	"growth_earnings": 0.025431770734484882,
 	"weighted_earnings": 5677.815714556843,
@@ -9711,26 +9993,26 @@ const DATA =
 	"weighted_roa": 3.907540983606557,
 	"growth_roce": 0,
 	"weighted_roce": 5.513718432749334,
-	"earnings_ev": 0.03900429153567616,
-	"ebit_ev": 0.06031045987355366,
-	"fcf_ev": 0.04832796011988391,
-	"valuation": 3.9010964067371976,
-	"rank_valuation": 36,
+	"earnings_ev": 0.03280097351548445,
+	"ebit_ev": 0.05071856760196958,
+	"fcf_ev": 0.040641787801728384,
+	"valuation": 3.271310365014518,
+	"rank_valuation": 43,
 	"rank_roc": 65,
-	"score": 101
+	"score": 108
 },
 {
 	"_id": {
-		"$oid": "5fa1338eb958315439fa66cf"
+		"$oid": "5fc37fcf823e0016c2f4068a"
 	},
 	"name": "Ringkjøbing Landbobank A/S",
 	"symbol": "RILBA",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5L8",
 	"debt_to_equity": 0.87,
-	"market_cap_raw": 14390.0,
-	"price": 498.5,
-	"p_e": 16.16,
-	"p_b": 1.82,
+	"market_cap_raw": 15810.0,
+	"price": 544.0,
+	"p_e": 18.05,
+	"p_b": 1.99,
 	"financials_currency": "DKK",
 	"fcf": [
 		120.09,
@@ -9812,7 +10094,7 @@ const DATA =
 		12.05,
 		13.22
 	],
-	"market_cap": 14390.0,
+	"market_cap": 15810.0,
 	"my_cash": [
 		1482.67,
 		3871.27,
@@ -9838,7 +10120,7 @@ const DATA =
 		1.448669113480646,
 		1.974745973023695
 	],
-	"ev": 56319.149999999994,
+	"ev": 57739.149999999994,
 	"my_debt_to_equity": 5.509830641219046,
 	"growth_earnings": 0.06332393313400386,
 	"weighted_earnings": 1040.2179040670019,
@@ -9852,26 +10134,26 @@ const DATA =
 	"weighted_roa": 1.9333333333333331,
 	"growth_roce": 0,
 	"weighted_roce": 1.8737643483618571,
-	"earnings_ev": 0.01847005688237486,
-	"ebit_ev": 0.0232897782862463,
-	"fcf_ev": 0.00035538533518350335,
-	"valuation": 1.7376768541861154,
-	"rank_valuation": 74,
-	"rank_roc": 80,
-	"score": 154
+	"earnings_ev": 0.01801581602893361,
+	"ebit_ev": 0.02271700426434834,
+	"fcf_ev": 0.00034664521386269115,
+	"valuation": 1.645364938650512,
+	"rank_valuation": 76,
+	"rank_roc": 81,
+	"score": 157
 },
 {
 	"_id": {
-		"$oid": "5fa12d73b958314d0c644808"
+		"$oid": "5fc37f13823e0016c2f4067c"
 	},
 	"name": "Rockwool International A/S",
 	"symbol": "ROCK B",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5L9",
 	"debt_to_equity": 0.02,
-	"market_cap_raw": 52330.0,
-	"price": 2628.0,
-	"p_e": 29.5,
-	"p_b": 3.66,
+	"market_cap_raw": 51320.0,
+	"price": 2446.0,
+	"p_e": 28.9,
+	"p_b": 3.4,
 	"financials_currency": "EUR",
 	"fcf": [
 		200.3,
@@ -9953,7 +10235,7 @@ const DATA =
 		14.93,
 		14.3
 	],
-	"market_cap": 7033.602150537634,
+	"market_cap": 6897.849462365591,
 	"my_cash": [
 		261.9,
 		386.0,
@@ -9979,7 +10261,7 @@ const DATA =
 		13.63870303654143,
 		12.774540564769161
 	],
-	"ev": 7150.602150537634,
+	"ev": 7014.849462365591,
 	"my_debt_to_equity": 0.05534531693472091,
 	"growth_earnings": 0.037735849056603765,
 	"weighted_earnings": 295.75471698113205,
@@ -9993,26 +10275,26 @@ const DATA =
 	"weighted_roa": 11.111666666666666,
 	"growth_roce": 0,
 	"weighted_roce": 12.967141147548297,
-	"earnings_ev": 0.041360812803561596,
-	"ebit_ev": 0.058058971881715986,
-	"fcf_ev": 0.00026901434839136863,
-	"valuation": 2.8287022495128946,
-	"rank_valuation": 57,
-	"rank_roc": 36,
-	"score": 93
+	"earnings_ev": 0.04216123504400846,
+	"ebit_ev": 0.059182540042049696,
+	"fcf_ev": 0.00027422036473525517,
+	"valuation": 2.8839214748282402,
+	"rank_valuation": 50,
+	"rank_roc": 37,
+	"score": 87
 },
 {
 	"_id": {
-		"$oid": "5fa12d82b958314d0c644809"
+		"$oid": "5fc37f1f823e0016c2f4067d"
 	},
 	"name": "Royal UNIBREW A/S",
 	"symbol": "RBREW",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QC",
 	"debt_to_equity": 0.7,
-	"market_cap_raw": 30750.0,
-	"price": 635.0,
-	"p_e": 28.25,
-	"p_b": 8.72,
+	"market_cap_raw": 31740.0,
+	"price": 649.8,
+	"p_e": 27.4,
+	"p_b": 9.38,
 	"financials_currency": "DKK",
 	"fcf": [
 		914.45,
@@ -10094,7 +10376,7 @@ const DATA =
 		36.44,
 		38.09
 	],
-	"market_cap": 30750.0,
+	"market_cap": 31740.0,
 	"my_cash": [
 		684.63,
 		145.15,
@@ -10120,7 +10402,7 @@ const DATA =
 		18.89664862784538,
 		21.320724774324844
 	],
-	"ev": 33009.1,
+	"ev": 33999.1,
 	"my_debt_to_equity": 0.7294360762661242,
 	"growth_earnings": 0.04853879260654037,
 	"weighted_earnings": 1197.3998449928908,
@@ -10134,26 +10416,26 @@ const DATA =
 	"weighted_roa": 13.73,
 	"growth_roce": 0,
 	"weighted_roce": 20.363628592099904,
-	"earnings_ev": 0.0362748407255239,
-	"ebit_ev": 0.04667110220349107,
-	"fcf_ev": 0.029350845675889376,
-	"valuation": 3.410998114693071,
-	"rank_valuation": 41,
-	"rank_roc": 12,
-	"score": 53
+	"earnings_ev": 0.035218574756181516,
+	"ebit_ev": 0.045312113548454436,
+	"fcf_ev": 0.02849619548752761,
+	"valuation": 3.3329638536463544,
+	"rank_valuation": 40,
+	"rank_roc": 11,
+	"score": 51
 },
 {
 	"_id": {
-		"$oid": "5fa1345cb958315439fa66db"
+		"$oid": "5fc3806b823e0016c2f40696"
 	},
 	"name": "SP Group A/S",
 	"symbol": "SPG",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KP",
 	"debt_to_equity": 0.69,
-	"market_cap_raw": 3000.0,
-	"price": 245.0,
-	"p_e": 19.72,
-	"p_b": 3.11,
+	"market_cap_raw": 2920.0,
+	"price": 239.0,
+	"p_e": 20.08,
+	"p_b": 2.94,
 	"financials_currency": "DKK",
 	"fcf": [
 		-3.82,
@@ -10235,7 +10517,7 @@ const DATA =
 		27.8,
 		21.15
 	],
-	"market_cap": 3000.0,
+	"market_cap": 2920.0,
 	"my_cash": [
 		75.61,
 		61.44,
@@ -10261,7 +10543,7 @@ const DATA =
 		16.044283542683416,
 		11.478846138099879
 	],
-	"ev": 3513.3,
+	"ev": 3433.3,
 	"my_debt_to_equity": 0.7250102402576307,
 	"growth_earnings": 0,
 	"weighted_earnings": 145.6,
@@ -10275,25 +10557,25 @@ const DATA =
 	"weighted_roa": 8.801666666666668,
 	"growth_roce": 0,
 	"weighted_roce": 13.545378572893622,
-	"earnings_ev": 0.04144251842996612,
-	"ebit_ev": 0.04654568493700471,
-	"fcf_ev": 0.0027353200694503746,
-	"valuation": 3.0757100993622086,
-	"rank_valuation": 49,
-	"rank_roc": 33,
-	"score": 82
+	"earnings_ev": 0.042408178720181745,
+	"ebit_ev": 0.04763025511582985,
+	"fcf_ev": 0.0027990563015174905,
+	"valuation": 3.1264703803839193,
+	"rank_valuation": 45,
+	"rank_roc": 34,
+	"score": 79
 },
 {
 	"_id": {
-		"$oid": "5fa1339fb958315439fa66d0"
+		"$oid": "5fc37fdb823e0016c2f4068b"
 	},
 	"name": "Scandinavian Tobacco Group A/S",
 	"symbol": "STG",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00017EFW",
 	"debt_to_equity": 0.31,
-	"market_cap_raw": 9250.0,
-	"price": 93.5,
-	"p_e": 12.97,
+	"market_cap_raw": 9390.0,
+	"price": 95.5,
+	"p_e": 10.49,
 	"p_b": 1.07,
 	"financials_currency": "DKK",
 	"fcf": [
@@ -10376,7 +10658,7 @@ const DATA =
 		7.71,
 		8.34
 	],
-	"market_cap": 9250.0,
+	"market_cap": 9390.0,
 	"my_cash": [
 		605.2,
 		310.8,
@@ -10402,7 +10684,7 @@ const DATA =
 		5.650269141294935,
 		6.090646942865056
 	],
-	"ev": 12423.5,
+	"ev": 12563.5,
 	"my_debt_to_equity": 0.3486328232282729,
 	"growth_earnings": 0,
 	"weighted_earnings": 714.2833333333334,
@@ -10416,26 +10698,26 @@ const DATA =
 	"weighted_roa": 5.29,
 	"growth_roce": 0,
 	"weighted_roce": 5.973827763464046,
-	"earnings_ev": 0.05749453320991133,
-	"ebit_ev": 0.08166780697870969,
-	"fcf_ev": 0.07771159496116231,
-	"valuation": 6.55202986455985,
-	"rank_valuation": 5,
+	"earnings_ev": 0.05685384911317176,
+	"ebit_ev": 0.08075775062681577,
+	"fcf_ev": 0.07684562422891711,
+	"valuation": 6.669888520178315,
+	"rank_valuation": 3,
 	"rank_roc": 64,
-	"score": 69
+	"score": 67
 },
 {
 	"_id": {
-		"$oid": "5fa133b1b958315439fa66d1"
+		"$oid": "5fc37fe8823e0016c2f4068c"
 	},
 	"name": "Schouw \u0026 Co A/S",
 	"symbol": "SCHO",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5JU",
 	"debt_to_equity": 0.31,
-	"market_cap_raw": 13590.0,
-	"price": 577.0,
-	"p_e": 14.22,
-	"p_b": 1.45,
+	"market_cap_raw": 14530.0,
+	"price": 606.0,
+	"p_e": 15.7,
+	"p_b": 1.52,
 	"financials_currency": "DKK",
 	"fcf": [
 		-70.4,
@@ -10517,7 +10799,7 @@ const DATA =
 		9.44,
 		10.03
 	],
-	"market_cap": 13590.0,
+	"market_cap": 14530.0,
 	"my_cash": [
 		478.2,
 		585.0,
@@ -10543,7 +10825,7 @@ const DATA =
 		7.282480225475044,
 		7.1171875
 	],
-	"ev": 16871.0,
+	"ev": 17811.0,
 	"my_debt_to_equity": 0.344679062926778,
 	"growth_earnings": 0,
 	"weighted_earnings": 869.0833333333334,
@@ -10557,26 +10839,26 @@ const DATA =
 	"weighted_roa": 5.095009784735812,
 	"growth_roce": -0.011348655976903821,
 	"weighted_roce": 7.03641698753938,
-	"earnings_ev": 0.05151344516231008,
-	"ebit_ev": 0.06134889700547153,
-	"fcf_ev": 0.019595756031059217,
-	"valuation": 4.3819142711204515,
+	"earnings_ev": 0.04879475230662699,
+	"ebit_ev": 0.058111124663371524,
+	"fcf_ev": 0.01856156307899613,
+	"valuation": 4.1214747059267385,
 	"rank_valuation": 28,
 	"rank_roc": 61,
 	"score": 89
 },
 {
 	"_id": {
-		"$oid": "5fa12d91b958314d0c64480a"
+		"$oid": "5fc37f2c823e0016c2f4067e"
 	},
 	"name": "SimCorp A/S",
 	"symbol": "SIM",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QV",
 	"debt_to_equity": 0.18,
-	"market_cap_raw": 30720.0,
-	"price": 783.5,
-	"p_e": 48.08,
-	"p_b": 18.78,
+	"market_cap_raw": 32150.0,
+	"price": 811.0,
+	"p_e": 61.73,
+	"p_b": 18.06,
 	"financials_currency": "EUR",
 	"fcf": [
 		51.01,
@@ -10658,7 +10940,7 @@ const DATA =
 		53.89,
 		48.56
 	],
-	"market_cap": 4129.032258064516,
+	"market_cap": 4321.236559139785,
 	"my_cash": [
 		31.41,
 		47.5,
@@ -10684,7 +10966,7 @@ const DATA =
 		43.40739905256034,
 		34.0717299578059
 	],
-	"ev": 4183.412258064516,
+	"ev": 4375.616559139785,
 	"my_debt_to_equity": 0.23641422485001304,
 	"growth_earnings": 0.0787218045112783,
 	"weighted_earnings": 104.52814285714287,
@@ -10698,26 +10980,26 @@ const DATA =
 	"weighted_roa": 25.873690205011393,
 	"growth_roce": -0.09330857173386886,
 	"weighted_roce": 30.892545498940958,
-	"earnings_ev": 0.02498633565354219,
-	"ebit_ev": 0.033039160562813044,
-	"fcf_ev": 0.019385485096812583,
-	"valuation": 2.2887313809688226,
-	"rank_valuation": 63,
+	"earnings_ev": 0.02388878034543602,
+	"ebit_ev": 0.031587875086067,
+	"fcf_ev": 0.018533953989440962,
+	"valuation": 2.151341228518899,
+	"rank_valuation": 66,
 	"rank_roc": 4,
-	"score": 67
+	"score": 70
 },
 {
 	"_id": {
-		"$oid": "5fa13449b958315439fa66da"
+		"$oid": "5fc3805e823e0016c2f40695"
 	},
 	"name": "Solar A/S",
 	"symbol": "SOLAR B",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QR",
 	"debt_to_equity": 0.24,
-	"market_cap_raw": 2280.0,
-	"price": 328.0,
-	"p_e": 10.72,
-	"p_b": 1.42,
+	"market_cap_raw": 2520.0,
+	"price": 345.5,
+	"p_e": 8.09,
+	"p_b": 1.46,
 	"financials_currency": "DKK",
 	"fcf": [
 		-148.0,
@@ -10799,7 +11081,7 @@ const DATA =
 		8.24,
 		3.96
 	],
-	"market_cap": 2280.0,
+	"market_cap": 2520.0,
 	"my_cash": [
 		77.0,
 		65.0,
@@ -10825,7 +11107,7 @@ const DATA =
 		6.431334622823985,
 		3.21285140562249
 	],
-	"ev": 2680.0,
+	"ev": 2920.0,
 	"my_debt_to_equity": 0.25125628140703515,
 	"growth_earnings": 0,
 	"weighted_earnings": 79.5,
@@ -10839,26 +11121,26 @@ const DATA =
 	"weighted_roa": 1.68,
 	"growth_roce": 0,
 	"weighted_roce": 3.9053566133426436,
-	"earnings_ev": 0.029664179104477613,
-	"ebit_ev": 0.10990289140073692,
-	"fcf_ev": 0.04695273631840796,
-	"valuation": 4.121268656716418,
-	"rank_valuation": 33,
-	"rank_roc": 69,
-	"score": 102
+	"earnings_ev": 0.027226027397260273,
+	"ebit_ev": 0.10086977703903251,
+	"fcf_ev": 0.043093607305936074,
+	"valuation": 4.162463806153378,
+	"rank_valuation": 25,
+	"rank_roc": 70,
+	"score": 95
 },
 {
 	"_id": {
-		"$oid": "5fa133c0b958315439fa66d2"
+		"$oid": "5fc37ff5823e0016c2f4068d"
 	},
 	"name": "Spar Nord Bank A/S",
 	"symbol": "SPNO",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PV",
 	"debt_to_equity": 0.42,
-	"market_cap_raw": 6680.0,
-	"price": 55.1,
-	"p_e": 10.58,
-	"p_b": 0.66,
+	"market_cap_raw": 7810.0,
+	"price": 63.5,
+	"p_e": 12.21,
+	"p_b": 0.76,
 	"financials_currency": "DKK",
 	"fcf": [
 		488.0,
@@ -10940,7 +11222,7 @@ const DATA =
 		9.69,
 		10.63
 	],
-	"market_cap": 6680.0,
+	"market_cap": 7810.0,
 	"my_cash": [
 		2735.0,
 		3088.0,
@@ -10966,7 +11248,7 @@ const DATA =
 		1.1542563201806662,
 		1.180746802840928
 	],
-	"ev": 86608.0,
+	"ev": 87738.0,
 	"my_debt_to_equity": 8.18850527609876,
 	"growth_earnings": 0,
 	"weighted_earnings": 1001.0,
@@ -10980,26 +11262,26 @@ const DATA =
 	"weighted_roa": 1.1316666666666666,
 	"growth_roce": 0,
 	"weighted_roce": 1.1874520401616424,
-	"earnings_ev": 0.011557823757620543,
-	"ebit_ev": 0.014134568015271878,
-	"fcf_ev": -0.009138878625531128,
-	"valuation": 1.3644826508122816,
-	"rank_valuation": 83,
-	"rank_roc": 84,
-	"score": 167
+	"earnings_ev": 0.011408967608105952,
+	"ebit_ev": 0.013952525321601435,
+	"fcf_ev": -0.00902117668513073,
+	"valuation": 1.2329035749332542,
+	"rank_valuation": 87,
+	"rank_roc": 86,
+	"score": 173
 },
 {
 	"_id": {
-		"$oid": "5fa133cfb958315439fa66d3"
+		"$oid": "5fc38003823e0016c2f4068e"
 	},
 	"name": "Sydbank A/S",
 	"symbol": "SYDB",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5R6",
 	"debt_to_equity": 0.79,
-	"market_cap_raw": 6660.0,
-	"price": 115.6,
-	"p_e": 8.94,
-	"p_b": 0.54,
+	"market_cap_raw": 7770.0,
+	"price": 131.5,
+	"p_e": 10.78,
+	"p_b": 0.63,
 	"financials_currency": "DKK",
 	"fcf": [
 		3043.0,
@@ -11081,7 +11363,7 @@ const DATA =
 		9.79,
 		7.29
 	],
-	"market_cap": 6660.0,
+	"market_cap": 7770.0,
 	"my_cash": [
 		14594.0,
 		16748.0,
@@ -11107,7 +11389,7 @@ const DATA =
 		0.9340206518753131,
 		0.6289818310523831
 	],
-	"ev": 130550.0,
+	"ev": 131660.0,
 	"my_debt_to_equity": 10.56541019955654,
 	"growth_earnings": -0.12246897452645333,
 	"weighted_earnings": 748.5339647289353,
@@ -11121,26 +11403,26 @@ const DATA =
 	"weighted_roa": 0.5238317757009345,
 	"growth_roce": -0.12206022610270639,
 	"weighted_roce": 0.552208166539635,
-	"earnings_ev": 0.005733695631780431,
-	"ebit_ev": 0.007291958183416855,
-	"fcf_ev": -0.012820120005106598,
-	"valuation": 1.0779863704158206,
-	"rank_valuation": 88,
-	"rank_roc": 90,
-	"score": 178
+	"earnings_ev": 0.0056853559526730615,
+	"ebit_ev": 0.007230481094068589,
+	"fcf_ev": -0.012712036052458351,
+	"valuation": 0.8874040603732751,
+	"rank_valuation": 91,
+	"rank_roc": 92,
+	"score": 183
 },
 {
 	"_id": {
-		"$oid": "5fa1346db958315439fa66dc"
+		"$oid": "5fc38076823e0016c2f40697"
 	},
 	"name": "TCM Group A/S",
 	"symbol": "TCM",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001C9AZ",
 	"debt_to_equity": 0.34,
-	"market_cap_raw": 1250.0,
-	"price": 128.0,
-	"p_e": 11.51,
-	"p_b": 2.38,
+	"market_cap_raw": 1260.0,
+	"price": 125.5,
+	"p_e": 11.72,
+	"p_b": 2.29,
 	"financials_currency": "DKK",
 	"fcf": [
 		99.05,
@@ -11222,7 +11504,7 @@ const DATA =
 		29.07,
 		25.26
 	],
-	"market_cap": 1250.0,
+	"market_cap": 1260.0,
 	"my_cash": [
 		49.17,
 		100.86,
@@ -11248,7 +11530,7 @@ const DATA =
 		17.992401242171372,
 		17.220469030381782
 	],
-	"ev": 1423.7,
+	"ev": 1433.7,
 	"my_debt_to_equity": 0.367432415281127,
 	"growth_earnings": 0.03668884389162086,
 	"weighted_earnings": 115.40420210201523,
@@ -11262,26 +11544,26 @@ const DATA =
 	"weighted_roa": 12.750572792362766,
 	"growth_roce": 0,
 	"weighted_roce": 16.089039028468918,
-	"earnings_ev": 0.08105935386810088,
-	"ebit_ev": 0.11304806731615717,
-	"fcf_ev": 0.0945131742588662,
-	"valuation": 8.567766190521022,
+	"earnings_ev": 0.0804939681258389,
+	"ebit_ev": 0.11225956158053496,
+	"fcf_ev": 0.0938539486589578,
+	"valuation": 8.498498868138181,
 	"rank_valuation": 2,
 	"rank_roc": 23,
 	"score": 25
 },
 {
 	"_id": {
-		"$oid": "5fa13341b958315439fa66ca"
+		"$oid": "5fc37f8a823e0016c2f40685"
 	},
 	"name": "The Drilling Company of 1972 A/S",
 	"symbol": "DRLCO",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001H6JR",
 	"debt_to_equity": 0.35,
-	"market_cap_raw": 5260.0,
-	"price": 132.4,
+	"market_cap_raw": 7710.0,
+	"price": 186.8,
 	"p_e": 2.79,
-	"p_b": 0.39,
+	"p_b": 0.6,
 	"financials_currency": "USD",
 	"fcf": [
 		144.0,
@@ -11363,7 +11645,7 @@ const DATA =
 		18.78,
 		-3.02
 	],
-	"market_cap": 5260.0,
+	"market_cap": 7710.0,
 	"my_cash": [
 		49.0,
 		372.0,
@@ -11389,7 +11671,7 @@ const DATA =
 		18.141507615191827,
 		-2.2704440425959413
 	],
-	"ev": 6557.0,
+	"ev": 9007.0,
 	"my_debt_to_equity": 0.35244565217391305,
 	"growth_earnings": 0,
 	"weighted_earnings": 3.5000000000000284,
@@ -11403,26 +11685,26 @@ const DATA =
 	"weighted_roa": 0.8816666666666664,
 	"growth_roce": 0,
 	"weighted_roce": 0.8277954100311997,
-	"earnings_ev": 0.0005337806923898168,
-	"ebit_ev": 0.004200729914063082,
-	"fcf_ev": 0.034543236236083574,
-	"valuation": 4.6525533193069,
-	"rank_valuation": 23,
-	"rank_roc": 88,
+	"earnings_ev": 0.00038858665482402894,
+	"ebit_ev": 0.0030580866044755887,
+	"fcf_ev": 0.025147107805040526,
+	"valuation": 4.361957824121661,
+	"rank_valuation": 21,
+	"rank_roc": 90,
 	"score": 111
 },
 {
 	"_id": {
-		"$oid": "5fa13769b958315439fa66f2"
+		"$oid": "5fc3820b823e0016c2f406ad"
 	},
 	"name": "The Home Depot Inc",
 	"symbol": "HD",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002OY",
 	"debt_to_equity": null,
-	"market_cap_raw": 291400.0,
-	"price": 270.74,
-	"p_e": 24.75,
-	"p_b": -693.47,
+	"market_cap_raw": 297100.0,
+	"price": 275.99,
+	"p_e": 23.87,
+	"p_b": 192.14,
 	"financials_currency": "USD",
 	"fcf": [
 		10134.0,
@@ -11504,7 +11786,7 @@ const DATA =
 		0.0,
 		0.0
 	],
-	"market_cap": 291400.0,
+	"market_cap": 297100.0,
 	"my_cash": [
 		3595.0,
 		1778.0,
@@ -11530,7 +11812,7 @@ const DATA =
 		36.40023566378633,
 		29.285956183082813
 	],
-	"ev": 326671.0,
+	"ev": 332371.0,
 	"my_debt_to_equity": -11.319319640564826,
 	"growth_earnings": 0.005440158259149452,
 	"weighted_earnings": 11303.158259149359,
@@ -11544,26 +11826,26 @@ const DATA =
 	"weighted_roa": 23.46666666666667,
 	"growth_roce": 0,
 	"weighted_roce": 31.932630643866432,
-	"earnings_ev": 0.03460104588148124,
-	"ebit_ev": 0.048599777908228024,
-	"fcf_ev": 0.03452713302059313,
-	"valuation": 3.5159171475470723,
-	"rank_valuation": 39,
+	"earnings_ev": 0.0340076548770782,
+	"ebit_ev": 0.04776631550002484,
+	"fcf_ev": 0.03393500958558412,
+	"valuation": 3.4774454829990855,
+	"rank_valuation": 38,
 	"rank_roc": 3,
-	"score": 42
+	"score": 41
 },
 {
 	"_id": {
-		"$oid": "5fa13b1bb958315439fa670a"
+		"$oid": "5fc38445823e0016c2f406c5"
 	},
 	"name": "The Kraft Heinz Co",
 	"symbol": "KHC",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00016CR2",
 	"debt_to_equity": 0.55,
-	"market_cap_raw": 38720.0,
-	"price": 31.67,
+	"market_cap_raw": 40150.0,
+	"price": 32.84,
 	"p_e": 22.03,
-	"p_b": 0.76,
+	"p_b": 0.81,
 	"financials_currency": "USD",
 	"fcf": [
 		-690.0,
@@ -11645,7 +11927,7 @@ const DATA =
 		-17.32,
 		3.75
 	],
-	"market_cap": 38720.0,
+	"market_cap": 40150.0,
 	"my_cash": [
 		1629.0,
 		1130.0,
@@ -11671,7 +11953,7 @@ const DATA =
 		-12.185848537746,
 		2.372166578808645
 	],
-	"ev": 68668.0,
+	"ev": 70098.0,
 	"my_debt_to_equity": 0.5801290122619762,
 	"growth_earnings": 0,
 	"weighted_earnings": -596.6666666666667,
@@ -11685,26 +11967,26 @@ const DATA =
 	"weighted_roa": -0.5683333333333332,
 	"growth_roce": 0,
 	"weighted_roce": -0.9626705828772437,
-	"earnings_ev": -0.008689151666957924,
-	"ebit_ev": 0.06763428589964399,
-	"fcf_ev": 0.027081998407797906,
-	"valuation": 0.7450373161293078,
-	"rank_valuation": 91,
-	"rank_roc": 94,
-	"score": 185
+	"earnings_ev": -0.008511892873786224,
+	"ebit_ev": 0.06625454569540862,
+	"fcf_ev": 0.02652952533120298,
+	"valuation": 0.7390986514217621,
+	"rank_valuation": 93,
+	"rank_roc": 96,
+	"score": 189
 },
 {
 	"_id": {
-		"$oid": "5fa134a6b958315439fa66df"
+		"$oid": "5fc380a4823e0016c2f4069a"
 	},
 	"name": "The Travelers Companies Inc",
 	"symbol": "TRV",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000053I",
 	"debt_to_equity": 0.23,
-	"market_cap_raw": 31390.0,
-	"price": 123.92,
-	"p_e": 14.18,
-	"p_b": 1.1,
+	"market_cap_raw": 34050.0,
+	"price": 134.44,
+	"p_e": 15.38,
+	"p_b": 1.24,
 	"financials_currency": "USD",
 	"fcf": [
 		null,
@@ -11786,7 +12068,7 @@ const DATA =
 		10.74,
 		10.66
 	],
-	"market_cap": 31390.0,
+	"market_cap": 34050.0,
 	"my_cash": [
 		67933.0,
 		67822.0,
@@ -11812,7 +12094,7 @@ const DATA =
 		6.929224684847986,
 		7.173538343684167
 	],
-	"ev": 41998.0,
+	"ev": 44658.0,
 	"my_debt_to_equity": 0.40889642678179083,
 	"growth_earnings": 0.019619500594530326,
 	"weighted_earnings": 2673.4423305588584,
@@ -11824,166 +12106,166 @@ const DATA =
 	"weighted_roa": 2.4400829875518673,
 	"growth_roce": 0.01762922043575932,
 	"weighted_roce": 7.300002232449347,
-	"earnings_ev": 0.06365642008092906,
-	"ebit_ev": 0.07695105180142461,
-	"valuation": 6.434296425055125,
-	"rank_valuation": 7,
+	"earnings_ev": 0.059864802063658434,
+	"ebit_ev": 0.0723675550529856,
+	"valuation": 6.038027244246814,
+	"rank_valuation": 6,
 	"rank_roc": 60,
-	"score": 67
+	"score": 66
 },
 {
 	"_id": {
-		"$oid": "5fa13750b958315439fa66f1"
+		"$oid": "5fc381fd823e0016c2f406ac"
 	},
 	"name": "The Walt Disney Co",
 	"symbol": "DIS",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005UJ",
-	"debt_to_equity": 0.43,
-	"market_cap_raw": 217100.0,
-	"price": 120.13,
+	"debt_to_equity": 0.63,
+	"market_cap_raw": 266400.0,
+	"price": 147.13,
 	"p_e": 51.28,
-	"p_b": 2.55,
+	"p_b": 3.23,
 	"financials_currency": "USD",
 	"fcf": [
-		8720.0,
 		9830.0,
-		1108.0
+		1108.0,
+		3594.0
 	],
 	"revenue": [
-		55137.0,
 		59434.0,
-		69570.0
+		69570.0,
+		65388.0
 	],
 	"ebit": [
-		13873.0,
 		14837.0,
-		11851.0
+		11851.0,
+		3794.0
 	],
 	"ebt": [
-		13788.0,
 		14729.0,
-		13944.0
+		13944.0,
+		-1743.0
 	],
 	"earnings": [
-		8980.0,
 		12598.0,
-		11054.0
+		11054.0,
+		-2864.0
 	],
 	"cash": [
-		4017.0,
 		4150.0,
-		5418.0
+		5418.0,
+		17914.0
 	],
 	"short_term_debt": [
-		6172.0,
 		3790.0,
-		8857.0
+		8857.0,
+		5711.0
 	],
 	"other_short_term_debt": [
-		6933.0,
 		7567.0,
-		8706.0
+		8706.0,
+		8254.0
 	],
 	"short_term_liabilities": [
-		19595.0,
 		17860.0,
-		31341.0
+		31341.0,
+		26628.0
 	],
 	"long_term_debt": [
-		19119.0,
 		17084.0,
-		38129.0
+		38129.0,
+		52917.0
 	],
 	"other_long_term_debt": [
-		7591.0,
 		7713.0,
-		22723.0
+		22723.0,
+		26453.0
 	],
 	"long_term_liabilities": [
-		31190.0,
 		27906.0,
-		68754.0
+		68754.0,
+		86658.0
 	],
 	"liabilities": [
-		50785.0,
 		45766.0,
-		100095.0
+		100095.0,
+		113286.0
 	],
 	"equity": [
-		41315.0,
 		48773.0,
-		88877.0
+		88877.0,
+		83583.0
 	],
 	"roa": [
-		9.56,
 		12.96,
-		7.56
+		7.56,
+		-1.45
 	],
 	"roe": [
-		21.23,
 		27.97,
-		16.06
+		16.06,
+		-3.32
 	],
-	"market_cap": 217100.0,
+	"market_cap": 266400.0,
 	"my_cash": [
-		4017.0,
 		4150.0,
-		5418.0
+		5418.0,
+		17914.0
 	],
 	"debt": [
-		26710.0,
 		24797.0,
-		60852.0
+		60852.0,
+		79370.0
 	],
 	"my_ebit": [
-		13873.0,
 		14837.0,
-		11851.0
+		11851.0,
+		3794.0
 	],
 	"my_fcf": [
-		8720.0,
 		9830.0,
-		1108.0
+		1108.0,
+		3594.0
 	],
 	"roce": [
-		13.201029033443588,
 		17.12382764713878,
-		7.382671359589659
+		7.382671359589659,
+		-1.7575619964038711
 	],
-	"ev": 277952.0,
-	"my_debt_to_equity": 0.684676575491972,
+	"ev": 345770.0,
+	"my_debt_to_equity": 0.9495950133400333,
 	"growth_earnings": 0,
-	"weighted_earnings": 11223.0,
-	"growth_my_ebit": 0,
-	"weighted_ebit": 13183.333333333334,
+	"weighted_earnings": 4352.333333333333,
+	"growth_my_ebit": -0.10062681135000329,
+	"weighted_ebit": 3412.2218777380876,
 	"growth_my_fcf": 0,
-	"weighted_fcf": 5284.0,
+	"weighted_fcf": 3804.6666666666665,
 	"growth_roe": 0,
-	"weighted_roe": 20.891666666666666,
+	"weighted_roe": 8.354999999999999,
 	"growth_roa": 0,
-	"weighted_roa": 9.693333333333333,
+	"weighted_roa": 3.9549999999999996,
 	"growth_roce": 0,
-	"weighted_roce": 11.59944973441502,
-	"earnings_ev": 0.040377475247524754,
-	"ebit_ev": 0.047430251746104844,
-	"fcf_ev": 0.019010476629058255,
-	"valuation": 3.1879706140352453,
-	"rank_valuation": 48,
-	"rank_roc": 39,
-	"score": 87
+	"weighted_roce": 4.436080729517747,
+	"earnings_ev": 0.012587365397036565,
+	"ebit_ev": 0.009868472908980212,
+	"fcf_ev": 0.011003460874762607,
+	"valuation": 1.2803535503770846,
+	"rank_valuation": 85,
+	"rank_roc": 67,
+	"score": 152
 },
 {
 	"_id": {
-		"$oid": "5fa1347eb958315439fa66dd"
+		"$oid": "5fc38084823e0016c2f40698"
 	},
 	"name": "Topdanmark A/S",
 	"symbol": "TOP",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LG",
 	"debt_to_equity": 0.59,
-	"market_cap_raw": 22010.0,
-	"price": 253.8,
-	"p_e": 22.32,
-	"p_b": 3.5,
+	"market_cap_raw": 23460.0,
+	"price": 268.8,
+	"p_e": 23.98,
+	"p_b": 3.7,
 	"financials_currency": "DKK",
 	"fcf": [
 		null,
@@ -12065,7 +12347,7 @@ const DATA =
 		21.81,
 		24.93
 	],
-	"market_cap": 22010.0,
+	"market_cap": 23460.0,
 	"my_cash": [
 		3942.0,
 		4633.0,
@@ -12091,7 +12373,7 @@ const DATA =
 		1.6935781450802254,
 		1.625905178303047
 	],
-	"ev": 110760.0,
+	"ev": 112210.0,
 	"my_debt_to_equity": 13.873690792559012,
 	"growth_earnings": 0,
 	"weighted_earnings": 1506.0,
@@ -12103,25 +12385,25 @@ const DATA =
 	"weighted_roa": 1.7633333333333332,
 	"growth_roce": -0.019979286746751423,
 	"weighted_roce": 1.5934207525227024,
-	"earnings_ev": 0.013596966413867822,
-	"ebit_ev": 0.017455158300228726,
-	"valuation": 1.6717556510832294,
+	"earnings_ev": 0.013421263701987346,
+	"ebit_ev": 0.017229599263286103,
+	"valuation": 1.6249279116609296,
 	"rank_valuation": 78,
-	"rank_roc": 81,
-	"score": 159
+	"rank_roc": 82,
+	"score": 160
 },
 {
 	"_id": {
-		"$oid": "5fa12da1b958314d0c64480b"
+		"$oid": "5fc37f39823e0016c2f4067f"
 	},
 	"name": "Tryg A/S",
 	"symbol": "TRYG",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RI",
 	"debt_to_equity": 0.74,
-	"market_cap_raw": 53770.0,
-	"price": 180.1,
-	"p_e": 21.93,
-	"p_b": 4.21,
+	"market_cap_raw": 54650.0,
+	"price": 181.1,
+	"p_e": 22.42,
+	"p_b": 4.17,
 	"financials_currency": "DKK",
 	"fcf": [
 		null,
@@ -12203,7 +12485,7 @@ const DATA =
 		14.46,
 		24.28
 	],
-	"market_cap": 53770.0,
+	"market_cap": 54650.0,
 	"my_cash": [
 		509.0,
 		627.0,
@@ -12229,7 +12511,7 @@ const DATA =
 		3.095604277692335,
 		4.885635235689368
 	],
-	"ev": 99877.0,
+	"ev": 100757.0,
 	"my_debt_to_equity": 3.8155412115193643,
 	"growth_earnings": 0,
 	"weighted_earnings": 2418.0,
@@ -12241,166 +12523,166 @@ const DATA =
 	"weighted_roa": 4.358333333333333,
 	"growth_roce": 0,
 	"weighted_roce": 4.299531359077639,
-	"earnings_ev": 0.02420977802697318,
-	"ebit_ev": 0.0311166067596477,
-	"valuation": 2.63487637445677,
-	"rank_valuation": 60,
-	"rank_roc": 68,
-	"score": 128
+	"earnings_ev": 0.023998332622051075,
+	"ebit_ev": 0.03084483791035197,
+	"valuation": 2.6058802660470413,
+	"rank_valuation": 58,
+	"rank_roc": 69,
+	"score": 127
 },
 {
 	"_id": {
-		"$oid": "5fa13a69b958315439fa6703"
+		"$oid": "5fc383da823e0016c2f406be"
 	},
 	"name": "Tyson Foods Inc",
 	"symbol": "TSN",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005K5",
 	"debt_to_equity": 0.7,
-	"market_cap_raw": 20990.0,
-	"price": 57.63,
-	"p_e": 11.6,
-	"p_b": 1.4,
+	"market_cap_raw": 23670.0,
+	"price": 65.0,
+	"p_e": 11.09,
+	"p_b": 1.53,
 	"financials_currency": "USD",
 	"fcf": [
-		1530.0,
 		1763.0,
-		1254.0
+		1254.0,
+		2675.0
 	],
 	"revenue": [
-		38260.0,
 		40052.0,
-		42405.0
+		42405.0,
+		43185.0
 	],
 	"ebit": [
-		2931.0,
 		3055.0,
-		2827.0
+		2827.0,
+		3114.0
 	],
 	"ebt": [
-		2628.0,
 		2745.0,
-		2431.0
+		2431.0,
+		2770.0
 	],
 	"earnings": [
-		1774.0,
 		3024.0,
-		2022.0
+		2022.0,
+		2140.0
 	],
 	"cash": [
-		318.0,
 		270.0,
-		484.0
+		484.0,
+		1420.0
 	],
 	"short_term_debt": [
-		906.0,
 		1911.0,
-		2102.0
+		2102.0,
+		548.0
 	],
 	"other_short_term_debt": [
-		1428.0,
 		1426.0,
-		1485.0
+		1485.0,
+		1810.0
 	],
 	"short_term_liabilities": [
-		4032.0,
 		5031.0,
-		5513.0
+		5513.0,
+		4234.0
 	],
 	"long_term_debt": [
-		9297.0,
 		7962.0,
-		9830.0
+		9830.0,
+		10791.0
 	],
 	"other_long_term_debt": [
-		1199.0,
 		1198.0,
-		1172.0
+		1172.0,
+		1728.0
 	],
 	"long_term_liabilities": [
-		13475.0,
 		11267.0,
-		13358.0
+		13358.0,
+		14910.0
 	],
 	"liabilities": [
-		17507.0,
 		16298.0,
-		18871.0
+		18871.0,
+		19144.0
 	],
 	"equity": [
-		10541.0,
 		12803.0,
-		14082.0
+		14082.0,
+		15465.0
 	],
 	"roa": [
-		7.03,
 		10.58,
-		6.5
+		6.5,
+		6.31
 	],
 	"roe": [
-		17.61,
 		25.91,
-		15.04
+		15.04,
+		14.49
 	],
-	"market_cap": 20990.0,
+	"market_cap": 23670.0,
 	"my_cash": [
-		318.0,
 		270.0,
-		484.0
+		484.0,
+		1420.0
 	],
 	"debt": [
-		10496.0,
 		9160.0,
-		11002.0
+		11002.0,
+		12519.0
 	],
 	"my_ebit": [
-		2931.0,
 		3055.0,
-		2827.0
+		2827.0,
+		3114.0
 	],
 	"my_fcf": [
-		1530.0,
 		1763.0,
-		1254.0
+		1254.0,
+		2675.0
 	],
 	"roce": [
-		8.432761325284023,
 		13.768610845512908,
-		8.060915324509647
+		8.060915324509647,
+		7.6472269868496285
 	],
-	"ev": 31992.0,
-	"my_debt_to_equity": 0.7812810680301093,
+	"ev": 36189.0,
+	"my_debt_to_equity": 0.8095053346265761,
 	"growth_earnings": 0,
-	"weighted_earnings": 2314.666666666667,
+	"weighted_earnings": 2248.0,
 	"growth_my_ebit": 0,
-	"weighted_ebit": 2920.3333333333335,
+	"weighted_ebit": 3008.5,
 	"growth_my_fcf": 0,
-	"weighted_fcf": 1469.6666666666665,
-	"growth_roe": 0,
-	"weighted_roe": 19.09166666666667,
-	"growth_roa": 0,
-	"weighted_roa": 7.948333333333333,
-	"growth_roce": 0,
-	"weighted_roce": 10.025454831639797,
-	"earnings_ev": 0.0723514211886305,
-	"ebit_ev": 0.09128323747603569,
-	"fcf_ev": 0.04593856797532716,
-	"valuation": 6.581311276094887,
-	"rank_valuation": 4,
-	"rank_roc": 47,
-	"score": 51
+	"weighted_fcf": 2049.333333333333,
+	"growth_roe": -0.01828457446808507,
+	"weighted_roe": 14.225056515957448,
+	"growth_roa": -0.014615384615384697,
+	"weighted_roa": 6.217776923076922,
+	"growth_roce": -0.02566013417869417,
+	"weighted_roce": 7.450998116272136,
+	"earnings_ev": 0.062118323247395614,
+	"ebit_ev": 0.08313299621431927,
+	"fcf_ev": 0.05662862564130904,
+	"valuation": 6.327671419267859,
+	"rank_valuation": 5,
+	"rank_roc": 58,
+	"score": 63
 },
 {
 	"_id": {
-		"$oid": "5fa1348fb958315439fa66de"
+		"$oid": "5fc38092823e0016c2f40699"
 	},
 	"name": "UIE PLC",
 	"symbol": "UIE",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QN",
 	"debt_to_equity": null,
-	"market_cap_raw": 4550.0,
-	"price": 1340.0,
-	"p_e": 19.12,
-	"p_b": 1.22,
+	"market_cap_raw": 4620.0,
+	"price": 1370.0,
+	"p_e": 8.25,
+	"p_b": 1.15,
 	"financials_currency": "USD",
 	"fcf": [
 		null,
@@ -12482,7 +12764,7 @@ const DATA =
 		5.35,
 		11.47
 	],
-	"market_cap": 4550.0,
+	"market_cap": 4620.0,
 	"my_cash": [
 		324.7,
 		335.6,
@@ -12508,7 +12790,7 @@ const DATA =
 		5.361798069470866,
 		10.91597127886668
 	],
-	"ev": 4555.71,
+	"ev": 4625.71,
 	"my_debt_to_equity": 0.009320166489839223,
 	"growth_earnings": 0,
 	"weighted_earnings": 55.16833333333334,
@@ -12520,25 +12802,25 @@ const DATA =
 	"weighted_roa": 5.5616666666666665,
 	"growth_roce": 0,
 	"weighted_roce": 9.195738202704618,
-	"earnings_ev": 0.012109711402467088,
-	"ebit_ev": 0.018829483585800385,
-	"valuation": 1.6128865785232933,
-	"rank_valuation": 79,
-	"rank_roc": 50,
-	"score": 129
+	"earnings_ev": 0.011926457415906604,
+	"ebit_ev": 0.01854454054981109,
+	"valuation": 2.285502379552807,
+	"rank_valuation": 64,
+	"rank_roc": 48,
+	"score": 112
 },
 {
 	"_id": {
-		"$oid": "5fa1379cb958315439fa66f4"
+		"$oid": "5fc3822c823e0016c2f406af"
 	},
 	"name": "UnitedHealth Group Inc",
 	"symbol": "UNH",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005NU",
 	"debt_to_equity": 0.64,
-	"market_cap_raw": 296600.0,
-	"price": 312.1,
-	"p_e": 17.92,
-	"p_b": 4.26,
+	"market_cap_raw": 320600.0,
+	"price": 337.94,
+	"p_e": 19.42,
+	"p_b": 4.85,
 	"financials_currency": "USD",
 	"fcf": [
 		11573.0,
@@ -12620,7 +12902,7 @@ const DATA =
 		24.1,
 		25.32
 	],
-	"market_cap": 296600.0,
+	"market_cap": 320600.0,
 	"my_cash": [
 		15490.0,
 		14324.0,
@@ -12646,7 +12928,7 @@ const DATA =
 		12.762604482776979,
 		13.01954955124466
 	],
-	"ev": 345278.0,
+	"ev": 369278.0,
 	"my_debt_to_equity": 0.8448694806998056,
 	"growth_earnings": 0.06762644440234888,
 	"weighted_earnings": 14774.882364084106,
@@ -12660,26 +12942,26 @@ const DATA =
 	"weighted_roa": 8.579534739454093,
 	"growth_roce": 0.009851422499116858,
 	"weighted_roce": 13.147810634622159,
-	"earnings_ev": 0.04279126490562418,
-	"ebit_ev": 0.05450528990037722,
-	"fcf_ev": 0.05173492562878966,
-	"valuation": 4.677559377486855,
-	"rank_valuation": 22,
-	"rank_roc": 34,
-	"score": 56
+	"earnings_ev": 0.04001018843279076,
+	"ebit_ev": 0.05096289918766471,
+	"fcf_ev": 0.048372585562251845,
+	"valuation": 4.366721931537369,
+	"rank_valuation": 20,
+	"rank_roc": 35,
+	"score": 55
 },
 {
 	"_id": {
-		"$oid": "5fa13711b958315439fa66ef"
+		"$oid": "5fc381de823e0016c2f406aa"
 	},
 	"name": "Verizon Communications Inc",
 	"symbol": "VZ",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005QY",
 	"debt_to_equity": 1.94,
-	"market_cap_raw": 238800.0,
-	"price": 57.7,
-	"p_e": 13.05,
-	"p_b": 3.62,
+	"market_cap_raw": 250700.0,
+	"price": 60.58,
+	"p_e": 13.7,
+	"p_b": 3.84,
 	"financials_currency": "USD",
 	"fcf": [
 		7475.0,
@@ -12761,7 +13043,7 @@ const DATA =
 		32.27,
 		33.64
 	],
-	"market_cap": 238800.0,
+	"market_cap": 250700.0,
 	"my_cash": [
 		2079.0,
 		2745.0,
@@ -12787,7 +13069,7 @@ const DATA =
 		8.106965161142117,
 		9.142637483627253
 	],
-	"ev": 388121.0,
+	"ev": 400021.0,
 	"my_debt_to_equity": 2.4321361674403454,
 	"growth_earnings": 0,
 	"weighted_earnings": 19825.333333333332,
@@ -12801,26 +13083,26 @@ const DATA =
 	"weighted_roa": 7.444999999999999,
 	"growth_roce": 0,
 	"weighted_roce": 9.896368740887855,
-	"earnings_ev": 0.05108029025312553,
-	"ebit_ev": 0.07486325140871017,
-	"fcf_ev": 0.044446911847713384,
-	"valuation": 5.164508295523148,
-	"rank_valuation": 17,
-	"rank_roc": 48,
-	"score": 65
+	"earnings_ev": 0.049560731394935095,
+	"ebit_ev": 0.07263618660020349,
+	"fcf_ev": 0.04312468563711997,
+	"valuation": 4.997311460108975,
+	"rank_valuation": 16,
+	"rank_roc": 46,
+	"score": 62
 },
 {
 	"_id": {
-		"$oid": "5fa12db2b958314d0c64480c"
+		"$oid": "5fc37f4b823e0016c2f40680"
 	},
 	"name": "Vestas Wind Systems A/S",
 	"symbol": "VWS",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q5",
 	"debt_to_equity": 0.2,
-	"market_cap_raw": 209900.0,
-	"price": 1092.0,
-	"p_e": 57.47,
-	"p_b": 9.05,
+	"market_cap_raw": 241700.0,
+	"price": 1234.0,
+	"p_e": 67.11,
+	"p_b": 9.35,
 	"financials_currency": "EUR",
 	"fcf": [
 		1134.0,
@@ -12834,7 +13116,7 @@ const DATA =
 	],
 	"ebit": [
 		1230.0,
-		959.0,
+		944.0,
 		1004.0
 	],
 	"ebt": [
@@ -12902,7 +13184,7 @@ const DATA =
 		22.05,
 		22.05
 	],
-	"market_cap": 28212.365591397847,
+	"market_cap": 32486.559139784946,
 	"my_cash": [
 		3204.0,
 		3308.0,
@@ -12915,7 +13197,7 @@ const DATA =
 	],
 	"my_ebit": [
 		1230.0,
-		959.0,
+		944.0,
 		1004.0
 	],
 	"my_fcf": [
@@ -12928,12 +13210,12 @@ const DATA =
 		15.680880330123797,
 		14.71264367816092
 	],
-	"ev": 29704.365591397847,
+	"ev": 33978.55913978495,
 	"my_debt_to_equity": 0.453082295778925,
 	"growth_earnings": 0,
 	"weighted_earnings": 729.0,
 	"growth_my_ebit": 0,
-	"weighted_ebit": 1026.6666666666667,
+	"weighted_ebit": 1021.6666666666667,
 	"growth_my_fcf": -0.31746031746031744,
 	"weighted_fcf": 32.07936507936508,
 	"growth_roe": 0,
@@ -12942,167 +13224,167 @@ const DATA =
 	"weighted_roa": 5.084076539101498,
 	"growth_roce": -0.030873159911272374,
 	"weighted_roce": 14.258417877167487,
-	"earnings_ev": 0.02454184714892927,
-	"ebit_ev": 0.034562820859031625,
-	"fcf_ev": 0.0010799545602365943,
-	"valuation": 1.6789132938270717,
-	"rank_valuation": 77,
-	"rank_roc": 27,
-	"score": 104
+	"earnings_ev": 0.021454706098659303,
+	"ebit_ev": 0.0300679808835806,
+	"fcf_ev": 0.0009441061037165602,
+	"valuation": 1.4646146385855179,
+	"rank_valuation": 81,
+	"rank_roc": 28,
+	"score": 109
 },
 {
 	"_id": {
-		"$oid": "5fa1397ab958315439fa66fa"
+		"$oid": "5fc38349823e0016c2f406b5"
 	},
 	"name": "Visa Inc",
 	"symbol": "V",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000CPCP",
-	"debt_to_equity": 0.57,
-	"market_cap_raw": 404900.0,
-	"price": 184.74,
-	"p_e": 35.09,
-	"p_b": 13.18,
+	"debt_to_equity": 0.68,
+	"market_cap_raw": 464400.0,
+	"price": 211.0,
+	"p_e": 43.1,
+	"p_b": 14.46,
 	"financials_currency": "USD",
 	"fcf": [
-		8501.0,
 		11995.0,
-		12028.0
+		12028.0,
+		9704.0
 	],
 	"revenue": [
-		18358.0,
 		20609.0,
-		22977.0
+		22977.0,
+		21846.0
 	],
 	"ebit": [
-		12163.0,
 		13561.0,
-		15401.0
+		15401.0,
+		14092.0
 	],
 	"ebt": [
-		11694.0,
 		12806.0,
-		14884.0
+		14884.0,
+		13790.0
 	],
 	"earnings": [
-		6699.0,
 		10301.0,
-		12080.0
+		12080.0,
+		10866.0
 	],
 	"cash": [
-		13438.0,
 		11709.0,
-		12074.0
+		12074.0,
+		20041.0
 	],
 	"short_term_debt": [
-		1749.0,
 		null,
-		null
+		null,
+		2999.0
 	],
 	"other_short_term_debt": [
-		7823.0,
 		11122.0,
-		13259.0
+		13259.0,
+		11337.0
 	],
 	"short_term_liabilities": [
-		9994.0,
 		11305.0,
-		13415.0
+		13415.0,
+		14510.0
 	],
 	"long_term_debt": [
-		16618.0,
 		16630.0,
-		16729.0
+		16729.0,
+		21071.0
 	],
 	"other_long_term_debt": [
-		2625.0,
 		2666.0,
-		2939.0
+		2939.0,
+		3891.0
 	],
 	"long_term_liabilities": [
-		25223.0,
 		23914.0,
-		24475.0
+		24475.0,
+		30199.0
 	],
 	"liabilities": [
-		35217.0,
 		35219.0,
-		37890.0
+		37890.0,
+		44709.0
 	],
 	"equity": [
-		32760.0,
 		34006.0,
-		34684.0
+		34684.0,
+		36210.0
 	],
 	"roa": [
-		9.8,
 		14.49,
-		17.04
+		17.04,
+		14.16
 	],
 	"roe": [
-		23.76,
 		35.65,
-		41.83
+		41.83,
+		36.01
 	],
-	"market_cap": 404900.0,
+	"market_cap": 464400.0,
 	"my_cash": [
-		13438.0,
 		11709.0,
-		12074.0
+		12074.0,
+		20041.0
 	],
 	"debt": [
-		19243.0,
 		19296.0,
-		19668.0
+		19668.0,
+		24962.0
 	],
 	"my_ebit": [
-		12163.0,
 		13561.0,
-		15401.0
+		15401.0,
+		14092.0
 	],
 	"my_fcf": [
-		8501.0,
 		11995.0,
-		12028.0
+		12028.0,
+		9704.0
 	],
 	"roce": [
-		12.881949118320097,
 		19.325728865708605,
-		22.225493082131294
+		22.225493082131294,
+		17.763028836722683
 	],
-	"ev": 424568.0,
-	"my_debt_to_equity": 0.5670626225348864,
-	"growth_earnings": 0.08635083972429847,
-	"weighted_earnings": 13123.118143869526,
-	"growth_my_ebit": 0.05746937433199051,
-	"weighted_ebit": 16286.085834086985,
-	"growth_my_fcf": 0.0013755731554814243,
-	"weighted_fcf": 12044.54539391413,
-	"growth_roe": 0.08667601683029469,
-	"weighted_roe": 45.45565778401122,
-	"growth_roa": 0.08799171842650111,
-	"weighted_roa": 18.539378881987577,
-	"growth_roce": 0.07502341144731695,
-	"weighted_roce": 23.892925394251527,
-	"earnings_ev": 0.030909343482950966,
-	"ebit_ev": 0.03835919295398378,
-	"fcf_ev": 0.028368943005394023,
-	"valuation": 2.9906103753429254,
-	"rank_valuation": 52,
-	"rank_roc": 7,
-	"score": 59
+	"ev": 489362.0,
+	"my_debt_to_equity": 0.6893675780171223,
+	"growth_earnings": 0,
+	"weighted_earnings": 11176.5,
+	"growth_my_ebit": 0,
+	"weighted_ebit": 14439.833333333334,
+	"growth_my_fcf": 0,
+	"weighted_fcf": 10860.5,
+	"growth_roe": 0,
+	"weighted_roe": 37.89,
+	"growth_roa": 0,
+	"weighted_roa": 15.175,
+	"growth_roce": 0,
+	"weighted_roce": 19.51096692335654,
+	"earnings_ev": 0.022838920880656855,
+	"ebit_ev": 0.029507467546179177,
+	"fcf_ev": 0.022193182143280435,
+	"valuation": 2.2681492786227433,
+	"rank_valuation": 65,
+	"rank_roc": 14,
+	"score": 79
 },
 {
 	"_id": {
-		"$oid": "5fa134d6b958315439fa66e1"
+		"$oid": "5fc380c0823e0016c2f4069c"
 	},
 	"name": "Walgreens Boots Alliance Inc",
 	"symbol": "WBA",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005UI",
 	"debt_to_equity": 1.66,
-	"market_cap_raw": 30990.0,
-	"price": 35.79,
-	"p_e": 68.97,
-	"p_b": 1.43,
+	"market_cap_raw": 33770.0,
+	"price": 39.0,
+	"p_e": 75.19,
+	"p_b": 1.64,
 	"financials_currency": "USD",
 	"fcf": [
 		6898.0,
@@ -13184,7 +13466,7 @@ const DATA =
 		16.08,
 		2.07
 	],
-	"market_cap": 30990.0,
+	"market_cap": 33770.0,
 	"my_cash": [
 		785.0,
 		1023.0,
@@ -13210,7 +13492,7 @@ const DATA =
 		10.105573038270226,
 		0.7847591512210232
 	],
-	"ev": 68460.0,
+	"ev": 71240.0,
 	"my_debt_to_equity": 1.815670882395697,
 	"growth_earnings": -0.10370222929936301,
 	"weighted_earnings": 408.7117834394905,
@@ -13224,26 +13506,26 @@ const DATA =
 	"weighted_roa": 0.5261949265687583,
 	"growth_roce": -0.05788117957567762,
 	"weighted_roce": 0.7393363658655429,
-	"earnings_ev": 0.0059700815576904835,
-	"ebit_ev": 0.01261353693001972,
-	"fcf_ev": 0.06576102833771545,
-	"valuation": 2.4760263192054777,
+	"earnings_ev": 0.005737110941037205,
+	"ebit_ev": 0.012121318616355278,
+	"fcf_ev": 0.06319483436271757,
+	"valuation": 2.3730680964407136,
 	"rank_valuation": 62,
-	"rank_roc": 89,
-	"score": 151
+	"rank_roc": 91,
+	"score": 153
 },
 {
 	"_id": {
-		"$oid": "5fa137edb958315439fa66f7"
+		"$oid": "5fc3825e823e0016c2f406b2"
 	},
 	"name": "Walmart Inc",
 	"symbol": "WMT",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005UH",
 	"debt_to_equity": 0.86,
-	"market_cap_raw": 397900.0,
-	"price": 140.4,
-	"p_e": 22.37,
-	"p_b": 5.22,
+	"market_cap_raw": 429600.0,
+	"price": 151.6,
+	"p_e": 21.88,
+	"p_b": 5.28,
 	"financials_currency": "USD",
 	"fcf": [
 		18286.0,
@@ -13325,7 +13607,7 @@ const DATA =
 		8.87,
 		20.22
 	],
-	"market_cap": 397900.0,
+	"market_cap": 429600.0,
 	"my_cash": [
 		6756.0,
 		7722.0,
@@ -13351,7 +13633,7 @@ const DATA =
 		5.43606712361144,
 		10.716471867551004
 	],
-	"ev": 462092.0,
+	"ev": 493792.0,
 	"my_debt_to_equity": 0.8596874204823957,
 	"growth_earnings": 0,
 	"weighted_earnings": 11307.5,
@@ -13365,26 +13647,26 @@ const DATA =
 	"weighted_roa": 5.13,
 	"growth_roce": 0,
 	"weighted_roce": 8.603346932535944,
-	"earnings_ev": 0.024470235364386313,
-	"ebit_ev": 0.04546533302170707,
-	"fcf_ev": 0.030732169419535525,
-	"valuation": 2.8372064731126327,
-	"rank_valuation": 56,
-	"rank_roc": 54,
-	"score": 110
+	"earnings_ev": 0.02289931793143672,
+	"ebit_ev": 0.04254659181733739,
+	"fcf_ev": 0.028759254162505687,
+	"valuation": 2.6937750919862364,
+	"rank_valuation": 57,
+	"rank_roc": 52,
+	"score": 109
 },
 {
 	"_id": {
-		"$oid": "5fa12dc0b958314d0c64480d"
+		"$oid": "5fc37f57823e0016c2f40681"
 	},
 	"name": "Ørsted A/S",
 	"symbol": "ORSTED",
 	"url": "https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001846T",
 	"debt_to_equity": 0.47,
-	"market_cap_raw": 428900.0,
-	"price": 1027.0,
-	"p_e": 27.7,
-	"p_b": 4.58,
+	"market_cap_raw": 473200.0,
+	"price": 1126.5,
+	"p_e": 30.49,
+	"p_b": 4.93,
 	"financials_currency": "DKK",
 	"fcf": [
 		-16569.0,
@@ -13466,7 +13748,7 @@ const DATA =
 		23.81,
 		7.74
 	],
-	"market_cap": 428900.0,
+	"market_cap": 473200.0,
 	"my_cash": [
 		29483.0,
 		28164.0,
@@ -13492,7 +13774,7 @@ const DATA =
 		14.32855740922473,
 		4.854060484797685
 	],
-	"ev": 490524.0,
+	"ev": 534824.0,
 	"my_debt_to_equity": 0.7139513867970434,
 	"growth_earnings": -0.030460509390275226,
 	"weighted_earnings": 6962.2630820684335,
@@ -13506,12 +13788,12 @@ const DATA =
 	"weighted_roa": 3.2550340136054423,
 	"growth_roce": -0.09340736977615682,
 	"weighted_roce": 4.4006554621783565,
-	"earnings_ev": 0.014193521789083579,
-	"ebit_ev": 0.02430017318023829,
-	"fcf_ev": -0.01810682725683826,
-	"valuation": 0.6694173199647766,
-	"rank_valuation": 93,
-	"rank_roc": 67,
-	"score": 160
+	"earnings_ev": 0.013017858364748839,
+	"ebit_ev": 0.02228736584196522,
+	"fcf_ev": -0.016607020876649763,
+	"valuation": 0.6108372612856671,
+	"rank_valuation": 94,
+	"rank_roc": 68,
+	"score": 162
 }]
 
