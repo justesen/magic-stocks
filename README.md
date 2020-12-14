@@ -4,7 +4,7 @@ Rates stocks based on valuation and ROC metrics inspired by Joel Greenblatt's *T
 Scrapes data from https://morningstar.dk/.
 
 ## Running ##
-From `src/folder`:
+From `src/` folder:
 * Update data with `./stocks.py clear load`
 * Process data with `./stocks.py process`
 * Update JSON files used by frontend with `./exportstocksdata.sh`
