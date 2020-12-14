@@ -33,7 +33,7 @@ def parse_market_cap(s: str) -> float:
     return parse_decimal_comma_string(s[:-len('Mia.')])*1000
 
 
-def find_and_parse(driver: WebDriver, xpath: str, parse_fn: Callable=parse_decimal_comma_string) -> float:
+def find_and_parse(driver: WebDriver, xpath: str, parse_fn: Callable = parse_decimal_comma_string) -> float:
     """Find xpath element on web page given by driver and parse it with parse_fn"""
     return parse_fn(driver.find_element_by_xpath(xpath).get_attribute('innerHTML'))
 
@@ -169,7 +169,7 @@ def load_data(db, gui: bool) -> None:
     driver.close()
 
 
-def weighted_avg(s: Dict, key: str, growth: bool=False, growth_discount: float=0.5) -> float:
+def weighted_avg(s: Dict, key: str, growth: bool = False, growth_discount: float = 0.5) -> float:
     """Return weighted average of three values in s[key]
 
     If growth is True and elements in s[key] are monotonically increasing or decreasing,
@@ -178,7 +178,7 @@ def weighted_avg(s: Dict, key: str, growth: bool=False, growth_discount: float=0
     """
     seq = s[key]
     n = len(seq)
-    denom = sum(range(1, n+1))
+    denom = sum(range(1, n + 1))
     s['growth_' + key] = 0
 
     if growth and seq[0] < seq[1] < seq[2] and all([x > 0 for x in seq]):
@@ -193,7 +193,7 @@ def weighted_avg(s: Dict, key: str, growth: bool=False, growth_discount: float=0
         s['growth_' + key] = growth_factor - 1
         return growth
 
-    return sum([e*(i+1)/denom for i, e in enumerate(seq)])
+    return sum([e*(i + 1)/denom for i, e in enumerate(seq)])
 
 
 def calc_fcf(s: Dict) -> List:
@@ -204,12 +204,11 @@ def calc_fcf(s: Dict) -> List:
     return [0 if x is None else x for x in s['fcf']]
 
 
-
 def calc_debt(s: Dict) -> List:
     """Return debt based on long/short term liabilites and cash"""
     if all((x is None for x in s['long_term_liabilities'])) and all((x is None for x in s['short_term_liabilities'])):
         print('using liabilites')
-        return [l - c for l, c in zip(s['liabilities'], s['cash'])]
+        return [lia - c for lia, c in zip(s['liabilities'], s['cash'])]
 
     return [(0 if lt is None else lt) + (0 if olt is None else olt)
             for st, ost, lt, olt in zip(s['short_term_debt'], s['other_short_term_debt'], s['long_term_debt'], s['other_long_term_debt'])]
@@ -246,7 +245,7 @@ def process_data(db) -> None:
         s['my_fcf'] = calc_fcf(s)
         s['roce'] = [100*s['earnings'][i]/((s['equity'][i] if s['equity'][i] > 0 else -s['equity'][i]) + s['debt'][i]) for i in range(len(s['my_ebit']))]
 
-        s['ev'] = s['market_cap'] + s['debt'][-1] #- s['cash'][-1]
+        s['ev'] = s['market_cap'] + s['debt'][-1]
         s['my_debt_to_equity'] = (s['debt'][-1])/s['equity'][-1]
 
         s['weighted_earnings'] = weighted_avg(s, 'earnings', True)
