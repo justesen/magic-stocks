@@ -3,144 +3,22 @@
 import time
 import traceback
 import sys
+from collections.abc import Callable
+from typing import Dict, List
 
 import selenium
 import pymongo
 from selenium import webdriver
+from selenium.webdriver.chrome.webdriver import WebDriver
+
+from urls import URLS
 
 
 EUR_TO_DKK = 7.44
 
 
-URLS = [
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RL',  # A. P. Moller Maersk A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RN',  # Ambu
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RB',  # Bavarian Nordic A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K1',  # Carlsberg A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000OO3C',  # Chr. Hansen Holding A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K4',  # Coloplast A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KA',  # Danske Bank A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LK',  # Demant AS
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q9',  # DSV Panalpina AS
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RO',  # FLSmidth & Co. A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QU',  # Genmab A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KG',  # GN Store Nord A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00012E78',  # ISS A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KR',  # Jyske Bank A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q7',  # Lundbeck A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5BQ',  # Novo Nordisk A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QX',  # Novozymes A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000Q1VF',  # Pandora A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5L9',  # Rockwool International A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QC',  # Royal UNIBREW A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QV',  # SimCorp A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RI',  # Tryg A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q5',  # Vestas Wind Systems A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001846T',  # Ørsted A/S
-
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LL',  # Alk-Abello A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PI',  # Alm Brand AS
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K5',  # DFDS A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001H6JR',  # Drilling Company of 1972
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RA',  # Jeudan A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PB',  # Copenhagen Airports A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001DFE0',  # Netcompany Group AS
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A6IU',  # Nordea Bank Abp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5L8',  # Ringkjøbing Landbobank A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00017EFW',  # Scandinavian Tobacco Group A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5JU',  # Schouw & Co A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PV',  # Spar Nord Bank A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5R6',  # Sydbank A/S
-
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PC',  # Brødrene Hartmann A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PK',  # Dampskibsselskabet NORDEN A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000Z26I',  # Matas A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001BQUO',  # Nilfisk Holding A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KX',  # NKT A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QW',  # RTX A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QR',  # Solar A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KP',  # SP Group A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001C9AZ',  # TCM Group A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LG',  # Topdanmark A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QN',  # UIE PLC
-
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000053I',  # The Travelers Company Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001H3ZI',  # Dow Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005UI',  # Walgreens Boot Alliance Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000014I',  # Caterpillar Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002H5',  # Goldman Sachs Group Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000000I',  # 3M Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000CU',  # American Express Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005NO',  # Raytheon Technologies Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002RH',  # IBM Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003X1',  # Nike Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003IJ',  # McDonald's Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000TU',  # Boeing Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000019Y',  # Cisco Systems Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000185',  # Chevron Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000CHAD',  # Pfizer Ltd
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003KE',  # Merck & Co Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005QY',  # Verizon Communications Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001BW',  # Coca-Cola Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005UJ',  # The Walt Disney Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002OY',  # The Home Depot Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000220',  # Exxon Mobil Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005NU',  # UnitedHealth Group Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002X8',  # Intel Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004GV',  # Procter & Gamble Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005UH',  # Walmart Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000032S',  # Johnson & Johnson
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000031C',  # JPMorgan Chase & Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000CPCP',  # Visa Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000GY',  # Apple Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003MH',  # Microsoft Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000B7',  # Amazon.com Inc
-
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002DT',  # General Mills Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002HD',  # Alphabet Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000031',  # AT&T Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001HZ',  # Ingredion Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000XPGW',  # AbbVie Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005K5',  # Tyson Foods Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00008WF2',  # B&G Foods Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004B0',  # PepsiCo Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001CL',  # Colgate-Palmolive Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000RD',  # Berkshire Hathaway Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002DN',  # General Dynamics Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001GL',  # Consolidated Edison Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00016CR2',  # The Kraft Heinz Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000AV',  # Altria Group Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001BD',  # Clorox Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002PC',  # Honeywell (HON)
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000K5',  # Assurant (AIZ)
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001IK',  # Costco Wholesale Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005B5',  # Target Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000M76Q',  # Dollar General Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001R5',  # Dollar Tree Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000357',  # Kimberly-Clark Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000019F',  # Church & Dwight Co Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003WA',  # Newell Brands Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000YWYX',  # Coty Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002PP',  # Hormel Foods Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003IF',  # McCormick & Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001FX',  # Conagra Brands Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000034A',  # Kellogg Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000011A',  # Campbell Soup Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000031B',  # JM Smucker Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00018XMP',  # Lamb Weston Holdings Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000CUPM',  # Philip Morris Internation Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000036D',  # Mondelez International Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002NZ',  # The Hershey Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000I0',  # Archer-Daniels Midland Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000059B',  # Sysco Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000036H',  # The Kroger Co
-
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A6N7',  # Note AB
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A6GI',  # Hennes & Mauritz AB
-]
-
-
-def parse_decimal_comma_string(s):
+def parse_decimal_comma_string(s: str) -> float:
+    """Parse string with decimal comma to float"""
     s = s.replace('.', '')
     s = s.replace(',', '.')
     if s == '-':
@@ -148,17 +26,20 @@ def parse_decimal_comma_string(s):
     return float(s)
 
 
-def parse_market_cap(s):
+def parse_market_cap(s: str) -> float:
+    """Parse string with market cap in Danish ("mia.") to float (mio.)"""
     if not s.endswith('Mia.'):
-        print('parse_market_cap failure: %s does not end with "Mia."' % (s))
+        raise Exception('parse_market_cap failure: %s does not end with "Mia."' % (s))
     return parse_decimal_comma_string(s[:-len('Mia.')])*1000
 
 
-def find_and_parse(driver, xpath, parse_fn=parse_decimal_comma_string):
+def find_and_parse(driver: WebDriver, xpath: str, parse_fn: Callable=parse_decimal_comma_string) -> float:
+    """Find xpath element on web page given by driver and parse it with parse_fn"""
     return parse_fn(driver.find_element_by_xpath(xpath).get_attribute('innerHTML'))
 
 
-def get_stock_data(driver, url):
+def get_stock_data(driver: WebDriver, url: str) -> Dict:
+    """Return dict with data on stock from url using driver"""
     driver.get(url)
 
     try:
@@ -267,7 +148,8 @@ def get_stock_data(driver, url):
     return stock
 
 
-def load_data(db, gui):
+def load_data(db, gui: bool) -> None:
+    """Load stock data from URLs to database"""
     options = webdriver.ChromeOptions()
     if not gui:
         options.add_argument('headless')
@@ -287,7 +169,13 @@ def load_data(db, gui):
     driver.close()
 
 
-def weighted_avg(s, key, growth=False, growth_discount=0.5):
+def weighted_avg(s: Dict, key: str, growth: bool=False, growth_discount: float=0.5) -> float:
+    """Return weighted average of three values in s[key]
+
+    If growth is True and elements in s[key] are monotonically increasing or decreasing,
+    apply the smallest (in |absolute| terms) growth factor between the pairs of values,
+    but discount the growth by growth_discount (defaults to 50%).
+    """
     seq = s[key]
     n = len(seq)
     denom = sum(range(1, n+1))
@@ -308,7 +196,8 @@ def weighted_avg(s, key, growth=False, growth_discount=0.5):
     return sum([e*(i+1)/denom for i, e in enumerate(seq)])
 
 
-def calc_fcf(s):
+def calc_fcf(s: Dict) -> List:
+    """If not all FCF values are missing (i.e. None), set remaing to 0"""
     if all((x is None for x in s['fcf'])):
         return s['fcf']
 
@@ -316,7 +205,8 @@ def calc_fcf(s):
 
 
 
-def calc_debt(s):
+def calc_debt(s: Dict) -> List:
+    """Return debt based on long/short term liabilites and cash"""
     if all((x is None for x in s['long_term_liabilities'])) and all((x is None for x in s['short_term_liabilities'])):
         print('using liabilites')
         return [l - c for l, c in zip(s['liabilities'], s['cash'])]
@@ -325,7 +215,8 @@ def calc_debt(s):
             for st, ost, lt, olt in zip(s['short_term_debt'], s['other_short_term_debt'], s['long_term_debt'], s['other_long_term_debt'])]
 
 
-def calc_ebit(s):
+def calc_ebit(s: Dict) -> List:
+    """Calculate EBIT based on available data as either EBIT, EBT or earnings"""
     if None not in s['ebit']:
         ebit = s['ebit']
     elif None not in s['ebt']:
@@ -338,7 +229,8 @@ def calc_ebit(s):
     return ebit
 
 
-def process_data(db):
+def process_data(db) -> None:
+    """Process data in database, i.e., convert currencies, calculate properties and weighted properties"""
     for s in sorted(db.stocks.find(), key=lambda s: s['name']):
         print(s['name'])
 
@@ -380,22 +272,8 @@ def process_data(db):
         print()
 
 
-def rank(stocks, s, key):
-    return [x[key] for x in sorted(stocks, key=lambda s: s[key], reverse=True)].index(s[key]) + 1
-
-
-def rank_data(db):
-    stocks = [s for s in db.stocks.find()]
-
-    for s in db.stocks.find():
-        s['rank_valuation'] = rank(stocks, s, 'valuation')
-        s['rank_roc'] = rank(stocks, s, 'weighted_roce')
-        s['score'] = s['rank_valuation'] + s['rank_roc']
-        db.stocks.remove({'name': s['name']})
-        db.stocks.insert_one(s)
-
-
 if __name__ == '__main__':
+    # Parse command line args
     gui = 'gui' in sys.argv
     clear = 'clear' in sys.argv
     load = 'load' in sys.argv
@@ -405,10 +283,7 @@ if __name__ == '__main__':
 
     if clear:
         db.stocks.remove({})
-
     if load:
         load_data(db, gui)
-
     if process:
         process_data(db)
-        rank_data(db)
