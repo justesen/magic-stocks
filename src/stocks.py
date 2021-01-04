@@ -164,7 +164,6 @@ def load_data(db, gui: bool) -> None:
         except Exception:
             print(traceback.format_exc())
             print('failed at ' + str(i))
-            input()
 
     driver.close()
 
@@ -271,6 +270,21 @@ def process_data(db) -> None:
         print()
 
 
+def rank(stocks, s, key):
+    return [x[key] for x in sorted(stocks, key=lambda s: s[key], reverse=True)].index(s[key]) + 1
+
+
+def rank_data(db):
+    stocks = [s for s in db.stocks.find()]
+
+    for s in db.stocks.find():
+        s['rank_valuation'] = rank(stocks, s, 'valuation')
+        s['rank_roc'] = rank(stocks, s, 'weighted_roce')
+        s['score'] = s['rank_valuation'] + s['rank_roc']
+        db.stocks.remove({'name': s['name']})
+        db.stocks.insert_one(s)
+
+
 if __name__ == '__main__':
     # Parse command line args
     gui = 'gui' in sys.argv
@@ -286,3 +300,4 @@ if __name__ == '__main__':
         load_data(db, gui)
     if process:
         process_data(db)
+        rank_data(db)
