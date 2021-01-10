@@ -27,10 +27,12 @@ def parse_decimal_comma_string(s: str) -> float:
 
 
 def parse_market_cap(s: str) -> float:
-    """Parse string with market cap in Danish ("mia.") to float (mio.)"""
-    if not s.endswith('Mia.'):
-        raise Exception('parse_market_cap failure: %s does not end with "Mia."' % (s))
-    return parse_decimal_comma_string(s[:-len('Mia.')])*1000
+    """Parse string with market cap in Danish ("Mia."/"Mio.") to float (mio.)"""
+    if s.endswith('Mia.'):
+        return parse_decimal_comma_string(s[:-len('Mia.')])*1000
+    if s.endswith('Mio.'):
+        return parse_decimal_comma_string(s[:-len('Mio.')])
+    raise Exception('parse_market_cap failure: %s' % (s))
 
 
 def find_and_parse(driver: WebDriver, xpath: str, parse_fn: Callable = parse_decimal_comma_string) -> float:
@@ -207,7 +209,7 @@ def calc_debt(s: Dict) -> List:
     """Return debt based on long/short term liabilites and cash"""
     if all((x is None for x in s['long_term_liabilities'])) and all((x is None for x in s['short_term_liabilities'])):
         print('using liabilites')
-        return [lia - c for lia, c in zip(s['liabilities'], s['cash'])]
+        return [lia - c for lia, c in zip(s['liabilities'], s['my_cash'])]
 
     return [(0 if lt is None else lt) + (0 if olt is None else olt)
             for st, ost, lt, olt in zip(s['short_term_debt'], s['other_short_term_debt'], s['long_term_debt'], s['other_long_term_debt'])]
