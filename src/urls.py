@@ -91,6 +91,8 @@ URLS = [
     'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000B7',  # Amazon.com Inc
 
     # US selected by me
+    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000WX',  # Bunge Ltd
+    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000TDWC',  # Mosaic Co
     'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002DT',  # General Mills Inc
     'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002HD',  # Alphabet Inc
     'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000031',  # AT&T Inc

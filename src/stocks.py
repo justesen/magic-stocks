@@ -215,20 +215,6 @@ def calc_debt(s: Dict) -> List:
             for st, ost, lt, olt in zip(s['short_term_debt'], s['other_short_term_debt'], s['long_term_debt'], s['other_long_term_debt'])]
 
 
-def calc_ebit(s: Dict) -> List:
-    """Calculate EBIT based on available data as either EBIT, EBT or earnings"""
-    if None not in s['ebit']:
-        ebit = s['ebit']
-    elif None not in s['ebt']:
-        ebit = s['ebt']
-        print('using ebt')
-    else:
-        print('using earnings')
-        ebit = s['earnings']
-
-    return ebit
-
-
 def process_data(db) -> None:
     """Process data in database, i.e., convert currencies, calculate properties and weighted properties"""
     for s in sorted(db.stocks.find(), key=lambda s: s['name']):
@@ -242,15 +228,13 @@ def process_data(db) -> None:
 
         s['my_cash'] = [0 if x is None else x for x in s['cash']]
         s['debt'] = calc_debt(s)
-        s['my_ebit'] = calc_ebit(s)
         s['my_fcf'] = calc_fcf(s)
-        s['roce'] = [100*s['earnings'][i]/((s['equity'][i] if s['equity'][i] > 0 else -s['equity'][i]) + s['debt'][i]) for i in range(len(s['my_ebit']))]
+        s['roce'] = [100*s['earnings'][i]/((s['equity'][i] if s['equity'][i] > 0 else -s['equity'][i]) + s['debt'][i]) for i in range(len(s['equity']))]
 
         s['ev'] = s['market_cap'] + s['debt'][-1]
         s['my_debt_to_equity'] = (s['debt'][-1])/s['equity'][-1]
 
         s['weighted_earnings'] = weighted_avg(s, 'earnings', True)
-        s['weighted_ebit'] = weighted_avg(s, 'my_ebit', True)
         if None not in s['my_fcf']:
             s['weighted_fcf'] = weighted_avg(s, 'my_fcf', True)
         s['weighted_roe'] = weighted_avg(s, 'roe', True)
@@ -258,14 +242,13 @@ def process_data(db) -> None:
         s['weighted_roce'] = weighted_avg(s, 'roce', True)
 
         s['earnings_ev'] = s['weighted_earnings']/s['ev']
-        s['ebit_ev'] = s['weighted_ebit']/s['ev']
 
         if 'weighted_fcf' in s:
             s['fcf_ev'] = s['weighted_fcf']/s['ev']
-            s['valuation'] = 100*(0.6*s['earnings_ev'] + 0.0*s['ebit_ev'] + 0.3*s['fcf_ev'] + 0.1*(1/s['p_e'] if s['p_e'] is not None else 0))
+            s['valuation'] = 100*(0.4*s['earnings_ev'] + 0.0*s['ebit_ev'] + 0.2*s['fcf_ev'] + 0.4*(1/s['p_e'] if s['p_e'] is not None else 0))
         else:
             print('no fcf')
-            s['valuation'] = 100*(0.9*s['earnings_ev'] + 0.0*s['ebit_ev'] + 0.1*(1/s['p_e'] if s['p_e'] is not None else 0))
+            s['valuation'] = 100*(0.6*s['earnings_ev'] + 0.0*s['ebit_ev'] + 0.4*(1/s['p_e'] if s['p_e'] is not None else 0))
 
         db.stocks.remove({'name': s['name']})
         db.stocks.insert_one(s)
@@ -282,7 +265,7 @@ def rank_data(db):
     for s in db.stocks.find():
         s['rank_valuation'] = rank(stocks, s, 'valuation')
         s['rank_roc'] = rank(stocks, s, 'weighted_roce')
-        s['score'] = s['rank_valuation'] + s['rank_roc']
+        s['score'] = 1.5*s['rank_valuation'] + s['rank_roc']
         db.stocks.remove({'name': s['name']})
         db.stocks.insert_one(s)
 

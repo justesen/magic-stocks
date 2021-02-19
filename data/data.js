@@ -135,10 +135,10 @@ const DATA =
 	"earnings_ev": 0.030024059194697902,
 	"ebit_ev": 0.07814783459577773,
 	"fcf_ev": 0.02378050133318591,
-	"valuation": 3.122761327239761,
-	"rank_valuation": 103,
+	"valuation": 4.108183336700875,
+	"rank_valuation": 59,
 	"rank_roc": 173,
-	"score": 276
+	"score": 261.5
 },
 {
 	"_id": {
@@ -276,10 +276,10 @@ const DATA =
 	"earnings_ev": 0.03372462911353208,
 	"ebit_ev": 0.048731338381705756,
 	"fcf_ev": 0.0392713212587789,
-	"valuation": 3.5386581665099053,
-	"rank_valuation": 75,
+	"valuation": 3.4825747174553174,
+	"rank_valuation": 100,
 	"rank_roc": 27,
-	"score": 102
+	"score": 177.0
 },
 {
 	"_id": {
@@ -417,10 +417,10 @@ const DATA =
 	"earnings_ev": 0.05544196211677113,
 	"ebit_ev": 0.09717651802983968,
 	"fcf_ev": 0.048839991167235634,
-	"valuation": 5.462858401620653,
-	"rank_valuation": 15,
+	"valuation": 5.87904206640482,
+	"rank_valuation": 17,
 	"rank_roc": 124,
-	"score": 139
+	"score": 149.5
 },
 {
 	"_id": {
@@ -558,10 +558,10 @@ const DATA =
 	"earnings_ev": 0.08001546312234822,
 	"ebit_ev": 0.08917275498169676,
 	"fcf_ev": 0.0876864581995684,
-	"valuation": 8.353180519503061,
-	"rank_valuation": 2,
+	"valuation": 8.640983633585758,
+	"rank_valuation": 4,
 	"rank_roc": 49,
-	"score": 51
+	"score": 55.0
 },
 {
 	"_id": {
@@ -699,10 +699,10 @@ const DATA =
 	"earnings_ev": 0.04970771494139688,
 	"ebit_ev": 0.05937916941108915,
 	"fcf_ev": 0.06004458630997619,
-	"valuation": 5.2848024897911134,
-	"rank_valuation": 19,
+	"valuation": 5.193208339887463,
+	"rank_valuation": 33,
 	"rank_roc": 111,
-	"score": 130
+	"score": 160.5
 },
 {
 	"_id": {
@@ -840,10 +840,10 @@ const DATA =
 	"earnings_ev": 0.03462092820727528,
 	"ebit_ev": 0.07310802667133222,
 	"fcf_ev": 0.08204882328769741,
-	"valuation": 4.786736264083312,
-	"rank_valuation": 30,
+	"valuation": 4.017877086108452,
+	"rank_valuation": 66,
 	"rank_roc": 155,
-	"score": 185
+	"score": 254.0
 },
 {
 	"_id": {
@@ -981,10 +981,10 @@ const DATA =
 	"earnings_ev": 0.03894168387882639,
 	"ebit_ev": 0.062311328249126156,
 	"fcf_ev": 0.04481285086325601,
-	"valuation": 4.2840228674330545,
-	"rank_valuation": 45,
+	"valuation": 4.866469607641337,
+	"rank_valuation": 38,
 	"rank_roc": 150,
-	"score": 195
+	"score": 207.0
 },
 {
 	"_id": {
@@ -1122,10 +1122,10 @@ const DATA =
 	"earnings_ev": 0.024380820438747192,
 	"ebit_ev": 0.02744554752205705,
 	"fcf_ev": 0.02176096626165304,
-	"valuation": 2.7035676909527884,
-	"rank_valuation": 127,
+	"valuation": 3.762010049896411,
+	"rank_valuation": 78,
 	"rank_roc": 180,
-	"score": 307
+	"score": 297.0
 },
 {
 	"_id": {
@@ -1263,10 +1263,10 @@ const DATA =
 	"earnings_ev": 0.025836368440239333,
 	"ebit_ev": 0.04032533128574675,
 	"fcf_ev": 0.04081672884244501,
-	"valuation": 3.10266035738794,
-	"rank_valuation": 106,
+	"valuation": 3.161694857259392,
+	"rank_valuation": 118,
 	"rank_roc": 84,
-	"score": 190
+	"score": 261.0
 },
 {
 	"_id": {
@@ -1404,10 +1404,10 @@ const DATA =
 	"earnings_ev": 0.00406434242226527,
 	"ebit_ev": 0.005140603662756229,
 	"fcf_ev": 0.0078003076288469765,
-	"valuation": 1.3944600583443136,
-	"rank_valuation": 187,
+	"valuation": 3.984940986039503,
+	"rank_valuation": 67,
 	"rank_roc": 212,
-	"score": 399
+	"score": 312.5
 },
 {
 	"_id": {
@@ -1545,10 +1545,10 @@ const DATA =
 	"earnings_ev": 0.03751182384126355,
 	"ebit_ev": 0.04337779316948625,
 	"fcf_ev": 0.017878339625773444,
-	"valuation": 3.3401569643817597,
-	"rank_valuation": 91,
+	"valuation": 4.070429126696985,
+	"rank_valuation": 64,
 	"rank_roc": 102,
-	"score": 193
+	"score": 198.0
 },
 {
 	"_id": {
@@ -1686,10 +1686,10 @@ const DATA =
 	"earnings_ev": 0.03530212319278395,
 	"ebit_ev": 0.0510506112036715,
 	"fcf_ev": 0.027624789655505043,
-	"valuation": 3.4419205861826834,
-	"rank_valuation": 81,
+	"valuation": 3.94477874062344,
+	"rank_valuation": 69,
 	"rank_roc": 16,
-	"score": 97
+	"score": 119.5
 },
 {
 	"_id": {
@@ -1827,10 +1827,10 @@ const DATA =
 	"earnings_ev": 0.037731465719786014,
 	"ebit_ev": 0.05656660002043169,
 	"fcf_ev": 0.03922754786101234,
-	"valuation": 3.4747141070197065,
-	"rank_valuation": 79,
+	"valuation": 2.429808498020391,
+	"rank_valuation": 158,
 	"rank_roc": 170,
-	"score": 249
+	"score": 407.0
 },
 {
 	"_id": {
@@ -1968,10 +1968,10 @@ const DATA =
 	"earnings_ev": 0.049144097695583706,
 	"ebit_ev": 0.09791942686098434,
 	"fcf_ev": 0.07953039894008539,
-	"valuation": 5.569575456259558,
-	"rank_valuation": 13,
+	"valuation": 4.496442391912954,
+	"rank_valuation": 50,
 	"rank_roc": 137,
-	"score": 150
+	"score": 212.0
 },
 {
 	"_id": {
@@ -2109,10 +2109,10 @@ const DATA =
 	"earnings_ev": 0.010041604602188094,
 	"ebit_ev": 0.04453590037723789,
 	"fcf_ev": 0.04076231980471903,
-	"valuation": 2.9364769813839677,
-	"rank_valuation": 113,
+	"valuation": 5.661355024626349,
+	"rank_valuation": 20,
 	"rank_roc": 179,
-	"score": 292
+	"score": 209.0
 },
 {
 	"_id": {
@@ -2250,10 +2250,10 @@ const DATA =
 	"earnings_ev": 0.02945677123182861,
 	"ebit_ev": 0.04275563881996535,
 	"fcf_ev": 0.03154994423370431,
-	"valuation": 2.988932103671121,
-	"rank_valuation": 111,
+	"valuation": 2.909379744948331,
+	"rank_valuation": 132,
 	"rank_roc": 61,
-	"score": 172
+	"score": 259.0
 },
 {
 	"_id": {
@@ -2391,10 +2391,10 @@ const DATA =
 	"earnings_ev": 0.04297681924043099,
 	"ebit_ev": 0.06057573277942134,
 	"fcf_ev": 0.050783659595896015,
-	"valuation": 4.505182223237846,
-	"rank_valuation": 37,
+	"valuation": 4.346999085275587,
+	"rank_valuation": 52,
 	"rank_roc": 90,
-	"score": 127
+	"score": 168.0
 },
 {
 	"_id": {
@@ -2532,10 +2532,10 @@ const DATA =
 	"earnings_ev": 0.018684216357552793,
 	"ebit_ev": 0.018602229165281745,
 	"fcf_ev": 0.017087420684980512,
-	"valuation": 1.8056742260135907,
-	"rank_valuation": 171,
+	"valuation": 1.7771115640457538,
+	"rank_valuation": 190,
 	"rank_roc": 183,
-	"score": 354
+	"score": 468.0
 },
 {
 	"_id": {
@@ -2673,10 +2673,10 @@ const DATA =
 	"earnings_ev": 0.05640244418930815,
 	"ebit_ev": 0.0723812839615002,
 	"fcf_ev": 0.03578711393806803,
-	"valuation": 5.194679745255873,
-	"rank_valuation": 22,
+	"valuation": 5.919518749355058,
+	"rank_valuation": 16,
 	"rank_roc": 35,
-	"score": 57
+	"score": 59.0
 },
 {
 	"_id": {
@@ -2814,10 +2814,10 @@ const DATA =
 	"earnings_ev": 0.034019975031210986,
 	"ebit_ev": 0.042960622138992925,
 	"fcf_ev": 0.06575764669163546,
-	"valuation": 4.85074798630373,
-	"rank_valuation": 29,
+	"valuation": 6.023232269809182,
+	"rank_valuation": 14,
 	"rank_roc": 184,
-	"score": 213
+	"score": 205.0
 },
 {
 	"_id": {
@@ -2955,10 +2955,10 @@ const DATA =
 	"earnings_ev": 0.024007749322278615,
 	"ebit_ev": 0.03852166068710964,
 	"fcf_ev": 0.02572701543207751,
-	"valuation": 2.6352872666306832,
-	"rank_valuation": 133,
+	"valuation": 3.16689765885926,
+	"rank_valuation": 117,
 	"rank_roc": 55,
-	"score": 188
+	"score": 230.5
 },
 {
 	"_id": {
@@ -3096,10 +3096,10 @@ const DATA =
 	"earnings_ev": 0.03615534411537259,
 	"ebit_ev": 0.0848799269910879,
 	"fcf_ev": 0.02827104684805828,
-	"valuation": 5.0582683788947165,
-	"rank_valuation": 25,
+	"valuation": 10.174900007698518,
+	"rank_valuation": 3,
 	"rank_roc": 176,
-	"score": 201
+	"score": 180.5
 },
 {
 	"_id": {
@@ -3237,10 +3237,10 @@ const DATA =
 	"earnings_ev": 0.02971792279228475,
 	"ebit_ev": 0.032106779005003784,
 	"fcf_ev": 0.024188542449860465,
-	"valuation": 2.7197466230966247,
-	"rank_valuation": 125,
+	"valuation": 2.5165476889435054,
+	"rank_valuation": 152,
 	"rank_roc": 3,
-	"score": 128
+	"score": 231.0
 },
 {
 	"_id": {
@@ -3378,10 +3378,10 @@ const DATA =
 	"earnings_ev": 0.033987477329541146,
 	"ebit_ev": 0.05474880324950126,
 	"fcf_ev": 0.0519622226297451,
-	"valuation": 4.330179740333929,
-	"rank_valuation": 44,
+	"valuation": 5.327001232452975,
+	"rank_valuation": 31,
 	"rank_roc": 175,
-	"score": 219
+	"score": 221.5
 },
 {
 	"_id": {
@@ -3519,10 +3519,10 @@ const DATA =
 	"earnings_ev": 0.025462025707364274,
 	"ebit_ev": 0.03422398193038273,
 	"fcf_ev": 0.026929822597179943,
-	"valuation": 2.635646223357555,
-	"rank_valuation": 132,
+	"valuation": 2.7571974922393703,
+	"rank_valuation": 137,
 	"rank_roc": 97,
-	"score": 229
+	"score": 302.5
 },
 {
 	"_id": {
@@ -3660,10 +3660,10 @@ const DATA =
 	"earnings_ev": 0.02964559157039982,
 	"ebit_ev": 0.043856814046795436,
 	"fcf_ev": 0.02993930257462406,
-	"valuation": 2.992870337655444,
-	"rank_valuation": 109,
+	"valuation": 3.0484327790794064,
+	"rank_valuation": 125,
 	"rank_roc": 75,
-	"score": 184
+	"score": 262.5
 },
 {
 	"_id": {
@@ -3801,10 +3801,10 @@ const DATA =
 	"earnings_ev": 0.027305624122992315,
 	"ebit_ev": 0.03295735063003265,
 	"fcf_ev": 0.03417965771954912,
-	"valuation": 2.897700038114351,
-	"rank_valuation": 118,
+	"valuation": 2.7117095559040303,
+	"rank_valuation": 142,
 	"rank_roc": 145,
-	"score": 263
+	"score": 358.0
 },
 {
 	"_id": {
@@ -3942,10 +3942,10 @@ const DATA =
 	"earnings_ev": 0.055330096141627476,
 	"ebit_ev": 0.05920285164266863,
 	"fcf_ev": 0.04772561499470103,
-	"valuation": 5.339463695117045,
-	"rank_valuation": 16,
+	"valuation": 5.519274052672582,
+	"rank_valuation": 25,
 	"rank_roc": 26,
-	"score": 42
+	"score": 63.5
 },
 {
 	"_id": {
@@ -4083,10 +4083,10 @@ const DATA =
 	"earnings_ev": 0.025234524669104367,
 	"ebit_ev": 0.03155389000448414,
 	"fcf_ev": 0.02642933996037579,
-	"valuation": 2.594970112137259,
-	"rank_valuation": 135,
+	"valuation": 2.6900415186905846,
+	"rank_valuation": 147,
 	"rank_roc": 32,
-	"score": 167
+	"score": 252.5
 },
 {
 	"_id": {
@@ -4224,10 +4224,10 @@ const DATA =
 	"earnings_ev": 0.01022380906101629,
 	"ebit_ev": 0.07041687546684569,
 	"fcf_ev": 0.06726044710027768,
-	"valuation": 3.1202395116815325,
-	"rank_valuation": 104,
+	"valuation": 3.7101515244951053,
+	"rank_valuation": 81,
 	"rank_roc": 205,
-	"score": 309
+	"score": 326.5
 },
 {
 	"_id": {
@@ -4365,10 +4365,10 @@ const DATA =
 	"earnings_ev": 0.041821486543373046,
 	"ebit_ev": 0.03940252079386195,
 	"fcf_ev": 0.031640549656032975,
-	"valuation": 3.8344455319074324,
-	"rank_valuation": 59,
+	"valuation": 3.8094298533518223,
+	"rank_valuation": 76,
 	"rank_roc": 115,
-	"score": 174
+	"score": 229.0
 },
 {
 	"_id": {
@@ -4506,10 +4506,10 @@ const DATA =
 	"earnings_ev": 0.025655706612593594,
 	"ebit_ev": 0.03180040915134793,
 	"fcf_ev": 0.022179181780626413,
-	"valuation": 2.46271578619092,
-	"rank_valuation": 138,
+	"valuation": 2.5018036441823197,
+	"rank_valuation": 154,
 	"rank_roc": 17,
-	"score": 155
+	"score": 248.0
 },
 {
 	"_id": {
@@ -4647,10 +4647,10 @@ const DATA =
 	"earnings_ev": 0.01985119533104961,
 	"ebit_ev": 0.04467067922018713,
 	"fcf_ev": 0.03443713410545013,
-	"valuation": 2.4852141951277593,
-	"rank_valuation": 137,
+	"valuation": 2.5269043037561034,
+	"rank_valuation": 151,
 	"rank_roc": 120,
-	"score": 257
+	"score": 346.5
 },
 {
 	"_id": {
@@ -4788,10 +4788,10 @@ const DATA =
 	"earnings_ev": 0.05780850942841108,
 	"ebit_ev": 0.058611082250198225,
 	"fcf_ev": -0.004866874840840711,
-	"valuation": 3.3225043204794433,
-	"rank_valuation": 95,
+	"valuation": 2.215002880319629,
+	"rank_valuation": 169,
 	"rank_roc": 125,
-	"score": 220
+	"score": 378.5
 },
 {
 	"_id": {
@@ -4929,10 +4929,10 @@ const DATA =
 	"earnings_ev": 0.010170804730040627,
 	"ebit_ev": 0.009984586719818755,
 	"fcf_ev": 0.013753783277429502,
-	"valuation": 1.1408558824203079,
-	"rank_valuation": 198,
+	"valuation": 1.1538842559301563,
+	"rank_valuation": 210,
 	"rank_roc": 13,
-	"score": 211
+	"score": 328.0
 },
 {
 	"_id": {
@@ -5070,10 +5070,10 @@ const DATA =
 	"earnings_ev": 0.01543218857857814,
 	"ebit_ev": 0.020604106436440894,
 	"fcf_ev": 0.010465979424556708,
-	"valuation": 1.3999106974513895,
-	"rank_valuation": 186,
+	"valuation": 1.4666071316342597,
+	"rank_valuation": 199,
 	"rank_roc": 65,
-	"score": 251
+	"score": 363.5
 },
 {
 	"_id": {
@@ -5211,10 +5211,10 @@ const DATA =
 	"earnings_ev": 0.00946099435701855,
 	"ebit_ev": 0.013618332861486471,
 	"fcf_ev": -0.011446263706113895,
-	"valuation": 0.34026757438802674,
-	"rank_valuation": 212,
+	"valuation": 0.6134977967597864,
+	"rank_valuation": 214,
 	"rank_roc": 136,
-	"score": 348
+	"score": 457.0
 },
 {
 	"_id": {
@@ -5352,10 +5352,10 @@ const DATA =
 	"earnings_ev": -0.10258520978747812,
 	"ebit_ev": 0.046431640665938766,
 	"fcf_ev": 0.03291107160347032,
-	"valuation": -4.860749429012554,
+	"valuation": -2.2170629189016253,
 	"rank_valuation": 220,
 	"rank_roc": 220,
-	"score": 440
+	"score": 550.0
 },
 {
 	"_id": {
@@ -5493,10 +5493,10 @@ const DATA =
 	"earnings_ev": 0.013405262524799889,
 	"ebit_ev": 0.017764561321767413,
 	"fcf_ev": 0.013469213118398434,
-	"valuation": 1.3433995704483437,
-	"rank_valuation": 189,
+	"valuation": 1.3456244649935543,
+	"rank_valuation": 205,
 	"rank_roc": 38,
-	"score": 227
+	"score": 345.5
 },
 {
 	"_id": {
@@ -5634,10 +5634,10 @@ const DATA =
 	"earnings_ev": 0.008762711000582629,
 	"ebit_ev": 0.07483143698737559,
 	"fcf_ev": 0.011203170988513046,
-	"valuation": 1.0068483653029343,
-	"rank_valuation": 201,
+	"valuation": 1.154534162243907,
+	"rank_valuation": 209,
 	"rank_roc": 198,
-	"score": 399
+	"score": 511.5
 },
 {
 	"_id": {
@@ -5775,10 +5775,10 @@ const DATA =
 	"earnings_ev": 0.0044689767249158005,
 	"ebit_ev": 0.004076615629530164,
 	"fcf_ev": 0.001967707913973418,
-	"valuation": 1.1502151084038625,
-	"rank_valuation": 197,
+	"valuation": 3.5102942972349482,
+	"rank_valuation": 98,
 	"rank_roc": 210,
-	"score": 407
+	"score": 357.0
 },
 {
 	"_id": {
@@ -5916,10 +5916,10 @@ const DATA =
 	"earnings_ev": 0.04549786247815305,
 	"ebit_ev": 0.08355731211258101,
 	"fcf_ev": 0.024593413421311938,
-	"valuation": 4.098588977826964,
-	"rank_valuation": 51,
+	"valuation": 4.835442073546052,
+	"rank_valuation": 40,
 	"rank_roc": 46,
-	"score": 97
+	"score": 106.0
 },
 {
 	"_id": {
@@ -6057,10 +6057,10 @@ const DATA =
 	"earnings_ev": 0.03831100501131183,
 	"ebit_ev": 0.049122587065456295,
 	"fcf_ev": 0.03323437379606304,
-	"valuation": 3.699731918601005,
-	"rank_valuation": 63,
+	"valuation": 3.8132892925353503,
+	"rank_valuation": 75,
 	"rank_roc": 1,
-	"score": 64
+	"score": 113.5
 },
 {
 	"_id": {
@@ -6198,10 +6198,10 @@ const DATA =
 	"earnings_ev": 0.029278925880459897,
 	"ebit_ev": 0.032549118284477645,
 	"fcf_ev": 0.01993711467920939,
-	"valuation": 2.644872195060024,
-	"rank_valuation": 130,
+	"valuation": 2.729992136227178,
+	"rank_valuation": 139,
 	"rank_roc": 19,
-	"score": 149
+	"score": 227.5
 },
 {
 	"_id": {
@@ -6339,10 +6339,10 @@ const DATA =
 	"earnings_ev": 0.07976189088535444,
 	"ebit_ev": 0.11862537874887728,
 	"fcf_ev": 0.06007779610407524,
-	"valuation": 6.863074838993799,
-	"rank_valuation": 4,
+	"valuation": 5.492141568496782,
+	"rank_valuation": 27,
 	"rank_roc": 83,
-	"score": 87
+	"score": 123.5
 },
 {
 	"_id": {
@@ -6480,10 +6480,10 @@ const DATA =
 	"earnings_ev": 0.01813426830670192,
 	"ebit_ev": 0.04735697589761276,
 	"fcf_ev": 0.022107426140935738,
-	"valuation": 2.16331019701008,
-	"rank_valuation": 151,
+	"valuation": 2.8156445126063634,
+	"rank_valuation": 134,
 	"rank_roc": 166,
-	"score": 317
+	"score": 367.0
 },
 {
 	"_id": {
@@ -6621,10 +6621,10 @@ const DATA =
 	"earnings_ev": 0.03486128058768914,
 	"ebit_ev": 0.052523727751176655,
 	"fcf_ev": 0.041737066328066286,
-	"valuation": 3.8698277519839266,
-	"rank_valuation": 56,
+	"valuation": 4.333348257591248,
+	"rank_valuation": 53,
 	"rank_roc": 100,
-	"score": 156
+	"score": 179.5
 },
 {
 	"_id": {
@@ -6762,10 +6762,10 @@ const DATA =
 	"earnings_ev": 0.02954218041760396,
 	"ebit_ev": 0.04802078708043482,
 	"fcf_ev": 0.034210699426052926,
-	"valuation": 3.1158090186143705,
-	"rank_valuation": 105,
+	"valuation": 3.133730048331398,
+	"rank_valuation": 119,
 	"rank_roc": 108,
-	"score": 213
+	"score": 286.5
 },
 {
 	"_id": {
@@ -6903,10 +6903,10 @@ const DATA =
 	"earnings_ev": 0.04115065256049464,
 	"ebit_ev": 0.05209223308943753,
 	"fcf_ev": 0.09080853758778586,
-	"valuation": 5.522242649684306,
-	"rank_valuation": 14,
+	"valuation": 4.777986327859714,
+	"rank_valuation": 43,
 	"rank_roc": 34,
-	"score": 48
+	"score": 98.5
 },
 {
 	"_id": {
@@ -7044,10 +7044,10 @@ const DATA =
 	"earnings_ev": 0.030379173649759304,
 	"ebit_ev": 0.04449917622376432,
 	"fcf_ev": 0.0464250964839265,
-	"valuation": 3.5824757905675733,
-	"rank_valuation": 71,
+	"valuation": 3.6115587839257834,
+	"rank_valuation": 88,
 	"rank_roc": 114,
-	"score": 185
+	"score": 246.0
 },
 {
 	"_id": {
@@ -7185,10 +7185,10 @@ const DATA =
 	"earnings_ev": 0.009616602164725062,
 	"ebit_ev": 0.010718121082633186,
 	"fcf_ev": 0.013822827255663077,
-	"valuation": 1.1066763477373887,
-	"rank_valuation": 200,
+	"valuation": 1.1211022324382347,
+	"rank_valuation": 211,
 	"rank_roc": 77,
-	"score": 277
+	"score": 393.5
 },
 {
 	"_id": {
@@ -7326,10 +7326,10 @@ const DATA =
 	"earnings_ev": 0.037363908839693996,
 	"ebit_ev": 0.03973525202004505,
 	"fcf_ev": 0.0238351046527099,
-	"valuation": 3.33184080082158,
-	"rank_valuation": 94,
+	"valuation": 3.4710709700765285,
+	"rank_valuation": 101,
 	"rank_roc": 85,
-	"score": 179
+	"score": 236.5
 },
 {
 	"_id": {
@@ -7467,10 +7467,10 @@ const DATA =
 	"earnings_ev": 0.0375691705048414,
 	"ebit_ev": 0.044653303004866765,
 	"fcf_ev": 0.02218441018304301,
-	"valuation": 3.285714746616328,
-	"rank_valuation": 98,
+	"valuation": 3.41058386719273,
+	"rank_valuation": 107,
 	"rank_roc": 51,
-	"score": 149
+	"score": 211.5
 },
 {
 	"_id": {
@@ -7608,10 +7608,10 @@ const DATA =
 	"earnings_ev": 0.0118204146219433,
 	"ebit_ev": 0.021359019089467034,
 	"fcf_ev": 0.013552882669185794,
-	"valuation": 1.3758217578081884,
-	"rank_valuation": 188,
+	"valuation": 1.7839158399255144,
+	"rank_valuation": 189,
 	"rank_roc": 172,
-	"score": 360
+	"score": 455.5
 },
 {
 	"_id": {
@@ -7749,10 +7749,10 @@ const DATA =
 	"earnings_ev": 0.025691365829988554,
 	"ebit_ev": 0.021948118182174826,
 	"fcf_ev": 0.0102663629727237,
-	"valuation": 2.080473069981255,
-	"rank_valuation": 156,
+	"valuation": 2.1569828166549403,
+	"rank_valuation": 173,
 	"rank_roc": 59,
-	"score": 215
+	"score": 318.5
 },
 {
 	"_id": {
@@ -7890,10 +7890,10 @@ const DATA =
 	"earnings_ev": 0.04607524108520715,
 	"ebit_ev": 0.06601288756790231,
 	"fcf_ev": 0.061536550579831026,
-	"valuation": 5.229422863695478,
-	"rank_valuation": 21,
+	"valuation": 5.548988179757382,
+	"rank_valuation": 22,
 	"rank_roc": 53,
-	"score": 74
+	"score": 86.0
 },
 {
 	"_id": {
@@ -8031,10 +8031,10 @@ const DATA =
 	"earnings_ev": 0.02690685878995401,
 	"ebit_ev": 0.04497630191682186,
 	"fcf_ev": 0.042220568296126366,
-	"valuation": 3.2930598906609245,
-	"rank_valuation": 96,
+	"valuation": 3.5688109750402597,
+	"rank_valuation": 93,
 	"rank_roc": 81,
-	"score": 177
+	"score": 220.5
 },
 {
 	"_id": {
@@ -8172,10 +8172,10 @@ const DATA =
 	"earnings_ev": 0.03760796479533141,
 	"ebit_ev": 0.03448417846290706,
 	"fcf_ev": 0.03503857438263793,
-	"valuation": 3.592616595403069,
-	"rank_valuation": 69,
+	"valuation": 3.345015984282202,
+	"rank_valuation": 109,
 	"rank_roc": 58,
-	"score": 127
+	"score": 221.5
 },
 {
 	"_id": {
@@ -8313,10 +8313,10 @@ const DATA =
 	"earnings_ev": 0.01663893794739222,
 	"ebit_ev": 0.02972604025356847,
 	"fcf_ev": 0.02485346438352658,
-	"valuation": 2.037971375653065,
-	"rank_valuation": 159,
+	"valuation": 2.3387514747811573,
+	"rank_valuation": 165,
 	"rank_roc": 76,
-	"score": 235
+	"score": 323.5
 },
 {
 	"_id": {
@@ -8454,10 +8454,10 @@ const DATA =
 	"earnings_ev": 0.03309685488730561,
 	"ebit_ev": 0.04211544401739914,
 	"fcf_ev": 0.029216312792960678,
-	"valuation": 3.187292552230277,
-	"rank_valuation": 99,
+	"valuation": 3.208167952163918,
+	"rank_valuation": 112,
 	"rank_roc": 47,
-	"score": 146
+	"score": 215.0
 },
 {
 	"_id": {
@@ -8595,10 +8595,10 @@ const DATA =
 	"earnings_ev": 0.03682638578831297,
 	"ebit_ev": 0.056469943580793124,
 	"fcf_ev": 0.0448756794934415,
-	"valuation": 3.8188729955423177,
-	"rank_valuation": 60,
+	"valuation": 3.422646875162527,
+	"rank_valuation": 105,
 	"rank_roc": 134,
-	"score": 194
+	"score": 291.5
 },
 {
 	"_id": {
@@ -8736,10 +8736,10 @@ const DATA =
 	"earnings_ev": 0.035402488571177296,
 	"ebit_ev": 0.05474116519826992,
 	"fcf_ev": 0.0438651745346422,
-	"valuation": 3.5321008704570978,
-	"rank_valuation": 76,
+	"valuation": 2.661388314128712,
+	"rank_valuation": 148,
 	"rank_roc": 153,
-	"score": 229
+	"score": 375.0
 },
 {
 	"_id": {
@@ -8877,10 +8877,10 @@ const DATA =
 	"earnings_ev": 0.01799711421477655,
 	"ebit_ev": 0.02269342225222773,
 	"fcf_ev": 0.00034628536924850975,
-	"valuation": 1.6420917936549972,
-	"rank_valuation": 179,
+	"valuation": 2.9343157947398293,
+	"rank_valuation": 131,
 	"rank_roc": 195,
-	"score": 374
+	"score": 391.5
 },
 {
 	"_id": {
@@ -9018,10 +9018,10 @@ const DATA =
 	"earnings_ev": 0.03664533874300561,
 	"ebit_ev": 0.038115141718394585,
 	"fcf_ev": 0.03071485217746016,
-	"valuation": 3.583128852867104,
-	"rank_valuation": 70,
+	"valuation": 3.9319624451212793,
+	"rank_valuation": 71,
 	"rank_roc": 22,
-	"score": 92
+	"score": 128.5
 },
 {
 	"_id": {
@@ -9159,10 +9159,10 @@ const DATA =
 	"earnings_ev": 0.044025489437869,
 	"ebit_ev": 0.06179942994572669,
 	"fcf_ev": 0.000286345638563456,
-	"valuation": 3.008157687451958,
-	"rank_valuation": 108,
+	"valuation": 3.1988982983776864,
+	"rank_valuation": 115,
 	"rank_roc": 73,
-	"score": 181
+	"score": 245.5
 },
 {
 	"_id": {
@@ -9300,10 +9300,10 @@ const DATA =
 	"earnings_ev": 0.03777393821884189,
 	"ebit_ev": 0.04859983658038421,
 	"fcf_ev": 0.030563801495941526,
-	"valuation": 3.574280752394998,
-	"rank_valuation": 73,
+	"valuation": 3.685955216217464,
+	"rank_valuation": 83,
 	"rank_roc": 30,
-	"score": 103
+	"score": 154.5
 },
 {
 	"_id": {
@@ -9441,10 +9441,10 @@ const DATA =
 	"earnings_ev": 0.03149265676032271,
 	"ebit_ev": 0.035370612958098895,
 	"fcf_ev": 0.0020786018644691024,
-	"valuation": 2.304900165400947,
-	"rank_valuation": 145,
+	"valuation": 2.7132091230923363,
+	"rank_valuation": 141,
 	"rank_roc": 70,
-	"score": 215
+	"score": 281.5
 },
 {
 	"_id": {
@@ -9582,10 +9582,10 @@ const DATA =
 	"earnings_ev": 0.05053831912359524,
 	"ebit_ev": 0.07178688930555063,
 	"fcf_ev": 0.06830933597481162,
-	"valuation": 5.889333669309497,
+	"valuation": 6.6187372550377805,
 	"rank_valuation": 8,
 	"rank_roc": 147,
-	"score": 155
+	"score": 159.0
 },
 {
 	"_id": {
@@ -9723,10 +9723,10 @@ const DATA =
 	"earnings_ev": -0.16628183248000533,
 	"ebit_ev": 0.03228583956276234,
 	"fcf_ev": 0.055051366997958706,
-	"valuation": -8.325368938861558,
+	"valuation": -5.55024595924104,
 	"rank_valuation": 223,
 	"rank_roc": 223,
-	"score": 446
+	"score": 557.5
 },
 {
 	"_id": {
@@ -9864,10 +9864,10 @@ const DATA =
 	"earnings_ev": 0.048712702950133586,
 	"ebit_ev": 0.05801340963955553,
 	"fcf_ev": 0.018530351437699683,
-	"valuation": 4.1076035377490685,
-	"rank_valuation": 50,
+	"valuation": 4.834838417199589,
+	"rank_valuation": 41,
 	"rank_roc": 138,
-	"score": 188
+	"score": 199.5
 },
 {
 	"_id": {
@@ -10005,10 +10005,10 @@ const DATA =
 	"earnings_ev": 0.06331961844883115,
 	"ebit_ev": 0.062079940573216634,
 	"fcf_ev": 0.051518111309987194,
-	"valuation": 5.878623275914481,
-	"rank_valuation": 9,
+	"valuation": 5.69875828289298,
+	"rank_valuation": 19,
 	"rank_roc": 23,
-	"score": 32
+	"score": 51.5
 },
 {
 	"_id": {
@@ -10146,10 +10146,10 @@ const DATA =
 	"earnings_ev": 0.029735383328103757,
 	"ebit_ev": 0.05793625890896051,
 	"fcf_ev": 0.029939197160772965,
-	"valuation": 3.3855337949594846,
-	"rank_valuation": 86,
+	"valuation": 4.601138798139891,
+	"rank_valuation": 45,
 	"rank_roc": 126,
-	"score": 212
+	"score": 193.5
 },
 {
 	"_id": {
@@ -10287,10 +10287,10 @@ const DATA =
 	"earnings_ev": 0.018876913022954304,
 	"ebit_ev": 0.0329416516138649,
 	"fcf_ev": 0.02644687752231078,
-	"valuation": 2.213047513475973,
-	"rank_valuation": 147,
+	"valuation": 2.4321196970819536,
+	"rank_valuation": 157,
 	"rank_roc": 99,
-	"score": 246
+	"score": 334.5
 },
 {
 	"_id": {
@@ -10428,10 +10428,10 @@ const DATA =
 	"earnings_ev": 0.02402159996829683,
 	"ebit_ev": 0.03176350103244176,
 	"fcf_ev": 0.018637001225147474,
-	"valuation": 2.162401822961743,
-	"rank_valuation": 152,
+	"valuation": 1.9815871756728596,
+	"rank_valuation": 183,
 	"rank_roc": 6,
-	"score": 158
+	"score": 280.5
 },
 {
 	"_id": {
@@ -10569,10 +10569,10 @@ const DATA =
 	"earnings_ev": 0.023873873873873873,
 	"ebit_ev": 0.08845037506125374,
 	"fcf_ev": 0.03778778778778779,
-	"valuation": 3.627637191331459,
-	"rank_valuation": 67,
+	"valuation": 5.956995211772282,
+	"rank_valuation": 15,
 	"rank_roc": 167,
-	"score": 234
+	"score": 189.5
 },
 {
 	"_id": {
@@ -10710,10 +10710,10 @@ const DATA =
 	"earnings_ev": 0.011517927003267824,
 	"ebit_ev": 0.014085776529970392,
 	"fcf_ev": -0.009107331891195287,
-	"valuation": 1.3327687467173015,
-	"rank_valuation": 191,
+	"valuation": 3.93822277533517,
+	"rank_valuation": 70,
 	"rank_roc": 200,
-	"score": 391
+	"score": 305.0
 },
 {
 	"_id": {
@@ -10851,10 +10851,10 @@ const DATA =
 	"earnings_ev": 0.0259322821171006,
 	"ebit_ev": 0.051094976164283094,
 	"fcf_ev": 0.028147170272582813,
-	"valuation": 2.7573673868636415,
-	"rank_valuation": 122,
+	"valuation": 3.028296096776166,
+	"rank_valuation": 126,
 	"rank_roc": 149,
-	"score": 271
+	"score": 338.0
 },
 {
 	"_id": {
@@ -10992,10 +10992,10 @@ const DATA =
 	"earnings_ev": 0.005749848820793567,
 	"ebit_ev": 0.01860755679455771,
 	"fcf_ev": 0.0005217947618830467,
-	"valuation": 0.41864604813217804,
-	"rank_valuation": 210,
+	"valuation": 0.4724349521816941,
+	"rank_valuation": 215,
 	"rank_roc": 192,
-	"score": 402
+	"score": 514.5
 },
 {
 	"_id": {
@@ -11133,10 +11133,10 @@ const DATA =
 	"earnings_ev": 0.019760093048023432,
 	"ebit_ev": 0.023868779865753,
 	"fcf_ev": 0.05727498213309791,
-	"valuation": 3.804755947775244,
-	"rank_valuation": 61,
+	"valuation": 5.5395069681865,
+	"rank_valuation": 23,
 	"rank_roc": 191,
-	"score": 252
+	"score": 225.5
 },
 {
 	"_id": {
@@ -11274,10 +11274,10 @@ const DATA =
 	"earnings_ev": 0.02403765760342463,
 	"ebit_ev": 0.029720112506064978,
 	"fcf_ev": 0.016158322464131635,
-	"valuation": 2.1270091301294274,
-	"rank_valuation": 154,
+	"valuation": 2.084672753419618,
+	"rank_valuation": 176,
 	"rank_roc": 92,
-	"score": 246
+	"score": 356.0
 },
 {
 	"_id": {
@@ -11415,10 +11415,10 @@ const DATA =
 	"earnings_ev": 0.0056948719166839265,
 	"ebit_ev": 0.0072425832383222035,
 	"fcf_ev": -0.012733313045242441,
-	"valuation": 0.91480276127509,
-	"rank_valuation": 204,
+	"valuation": 3.793567966287819,
+	"rank_valuation": 77,
 	"rank_roc": 209,
-	"score": 413
+	"score": 324.5
 },
 {
 	"_id": {
@@ -11556,10 +11556,10 @@ const DATA =
 	"earnings_ev": 0.017612000083097677,
 	"ebit_ev": 0.02998592533154673,
 	"fcf_ev": 0.024680138876986876,
-	"valuation": 1.8671227713234662,
-	"rank_valuation": 169,
+	"valuation": 1.4780771809756426,
+	"rank_valuation": 198,
 	"rank_roc": 129,
-	"score": 298
+	"score": 426.0
 },
 {
 	"_id": {
@@ -11697,10 +11697,10 @@ const DATA =
 	"earnings_ev": 0.06150628001935637,
 	"ebit_ev": 0.06434062188994515,
 	"fcf_ev": 0.030732813140220545,
-	"valuation": 5.180220366293609,
-	"rank_valuation": 23,
+	"valuation": 5.346344147281108,
+	"rank_valuation": 29,
 	"rank_roc": 18,
-	"score": 41
+	"score": 61.5
 },
 {
 	"_id": {
@@ -11838,10 +11838,10 @@ const DATA =
 	"earnings_ev": 0.0728699893300595,
 	"ebit_ev": 0.10162690751910904,
 	"fcf_ev": 0.0849645805344117,
-	"valuation": 7.679862117262324,
-	"rank_valuation": 3,
+	"valuation": 7.648992549596229,
+	"rank_valuation": 5,
 	"rank_roc": 52,
-	"score": 55
+	"score": 59.5
 },
 {
 	"_id": {
@@ -11979,10 +11979,10 @@ const DATA =
 	"earnings_ev": 0.03873463750585768,
 	"ebit_ev": 0.05170940565151298,
 	"fcf_ev": 0.03131811011244722,
-	"valuation": 3.358624403810379,
-	"rank_valuation": 90,
+	"valuation": 2.555759102825262,
+	"rank_valuation": 150,
 	"rank_roc": 10,
-	"score": 100
+	"score": 235.0
 },
 {
 	"_id": {
@@ -12120,10 +12120,10 @@ const DATA =
 	"earnings_ev": 0.031378049483955624,
 	"ebit_ev": 0.04222704404319246,
 	"fcf_ev": 0.034369812426915954,
-	"valuation": 3.3367891861764574,
-	"rank_valuation": 92,
+	"valuation": 3.6345656052231092,
+	"rank_valuation": 86,
 	"rank_roc": 78,
-	"score": 170
+	"score": 207.0
 },
 {
 	"_id": {
@@ -12261,10 +12261,10 @@ const DATA =
 	"earnings_ev": 0.03179227022312977,
 	"ebit_ev": 0.04097164614042924,
 	"fcf_ev": 0.03636228277285006,
-	"valuation": 3.3644369074078417,
-	"rank_valuation": 89,
+	"valuation": 3.463065307720406,
+	"rank_valuation": 102,
 	"rank_roc": 4,
-	"score": 93
+	"score": 157.0
 },
 {
 	"_id": {
@@ -12402,10 +12402,10 @@ const DATA =
 	"earnings_ev": 0.015206393742294775,
 	"ebit_ev": 0.02056795476767419,
 	"fcf_ev": 0.008476146989692814,
-	"valuation": 1.2996644433254252,
-	"rank_valuation": 193,
+	"valuation": 1.3097643258734648,
+	"rank_valuation": 206,
 	"rank_roc": 152,
-	"score": 345
+	"score": 461.0
 },
 {
 	"_id": {
@@ -12543,10 +12543,10 @@ const DATA =
 	"earnings_ev": 0.00041831002748894805,
 	"ebit_ev": 0.003292002634936253,
 	"fcf_ev": 0.027070634636070276,
-	"valuation": 4.421447031412448,
-	"rank_valuation": 40,
+	"valuation": 14.895062656544978,
+	"rank_valuation": 1,
 	"rank_roc": 207,
-	"score": 247
+	"score": 208.5
 },
 {
 	"_id": {
@@ -12684,10 +12684,10 @@ const DATA =
 	"earnings_ev": 0.03171489932043182,
 	"ebit_ev": 0.049821508795747226,
 	"fcf_ev": 0.04462517467105919,
-	"valuation": 3.63166479998171,
-	"rank_valuation": 64,
+	"valuation": 3.7211618687345562,
+	"rank_valuation": 80,
 	"rank_roc": 24,
-	"score": 88
+	"score": 144.0
 },
 {
 	"_id": {
@@ -12825,10 +12825,10 @@ const DATA =
 	"earnings_ev": 0.034223889651678045,
 	"ebit_ev": 0.048070033545357466,
 	"fcf_ev": 0.034150782451290544,
-	"valuation": 3.499897780909441,
-	"rank_valuation": 77,
+	"valuation": 3.7397349481731013,
+	"rank_valuation": 79,
 	"rank_roc": 5,
-	"score": 82
+	"score": 123.5
 },
 {
 	"_id": {
@@ -12966,10 +12966,10 @@ const DATA =
 	"earnings_ev": -0.008239203881171348,
 	"ebit_ev": 0.06413199956028548,
 	"fcf_ev": 0.02567961924751673,
-	"valuation": 0.7299628084680672,
-	"rank_valuation": 207,
+	"valuation": 1.9997300853548652,
+	"rank_valuation": 182,
 	"rank_roc": 214,
-	"score": 421
+	"score": 487.0
 },
 {
 	"_id": {
@@ -13107,10 +13107,10 @@ const DATA =
 	"earnings_ev": 0.04326980227443832,
 	"ebit_ev": 0.04644635521918876,
 	"fcf_ev": 0.034740733038762454,
-	"valuation": 4.606464338664991,
-	"rank_valuation": 32,
+	"valuation": 6.2978235958960544,
+	"rank_valuation": 11,
 	"rank_roc": 113,
-	"score": 145
+	"score": 129.5
 },
 {
 	"_id": {
@@ -13245,10 +13245,10 @@ const DATA =
 	"weighted_roce": 7.300002232449347,
 	"earnings_ev": 0.05834917129859135,
 	"ebit_ev": 0.07053538507914425,
-	"valuation": 6.005573229844565,
-	"rank_valuation": 7,
+	"valuation": 6.517541529800851,
+	"rank_valuation": 9,
 	"rank_roc": 135,
-	"score": 142
+	"score": 148.5
 },
 {
 	"_id": {
@@ -13386,10 +13386,10 @@ const DATA =
 	"earnings_ev": 0.011600963118941635,
 	"ebit_ev": 0.009095135212671822,
 	"fcf_ev": 0.010141180442643779,
-	"valuation": 1.195301000727824,
-	"rank_valuation": 196,
+	"valuation": 1.446893334858591,
+	"rank_valuation": 202,
 	"rank_roc": 163,
-	"score": 359
+	"score": 466.0
 },
 {
 	"_id": {
@@ -13527,10 +13527,10 @@ const DATA =
 	"earnings_ev": 0.01972787758904827,
 	"ebit_ev": 0.020664048504908994,
 	"fcf_ev": 0.019795420224396613,
-	"valuation": 2.03050768808036,
-	"rank_valuation": 161,
+	"valuation": 2.1969132120721246,
+	"rank_valuation": 171,
 	"rank_roc": 123,
-	"score": 284
+	"score": 379.5
 },
 {
 	"_id": {
@@ -13665,10 +13665,10 @@ const DATA =
 	"weighted_roce": 1.5934207525227024,
 	"earnings_ev": 0.013189700472937467,
 	"ebit_ev": 0.016932329071057396,
-	"valuation": 1.5710976201373368,
-	"rank_valuation": 180,
+	"valuation": 2.327480338668107,
+	"rank_valuation": 166,
 	"rank_roc": 196,
-	"score": 376
+	"score": 445.0
 },
 {
 	"_id": {
@@ -13806,10 +13806,10 @@ const DATA =
 	"earnings_ev": 0.0283643380657741,
 	"ebit_ev": 0.036868210947649915,
 	"fcf_ev": 0.030484803634613044,
-	"valuation": 3.035340295791708,
-	"rank_valuation": 107,
+	"valuation": 3.420013206550707,
+	"rank_valuation": 106,
 	"rank_roc": 39,
-	"score": 146
+	"score": 198.0
 },
 {
 	"_id": {
@@ -13947,10 +13947,10 @@ const DATA =
 	"earnings_ev": 0.019696969696969695,
 	"ebit_ev": 0.0381906496660595,
 	"fcf_ev": 0.06346801346801346,
-	"valuation": 3.3658921898910696,
-	"rank_valuation": 88,
+	"valuation": 3.177373473368993,
+	"rank_valuation": 116,
 	"rank_roc": 146,
-	"score": 234
+	"score": 320.0
 },
 {
 	"_id": {
@@ -14085,10 +14085,10 @@ const DATA =
 	"weighted_roce": 4.473752539376888,
 	"earnings_ev": 0.024816588129167375,
 	"ebit_ev": 0.03176352958245807,
-	"valuation": 2.7085523140478664,
-	"rank_valuation": 126,
+	"valuation": 3.389232817441254,
+	"rank_valuation": 108,
 	"rank_roc": 162,
-	"score": 288
+	"score": 324.0
 },
 {
 	"_id": {
@@ -14226,10 +14226,10 @@ const DATA =
 	"earnings_ev": 0.062187059116434754,
 	"ebit_ev": 0.08322498547677668,
 	"fcf_ev": 0.056691286988114,
-	"valuation": 6.336939532195116,
+	"valuation": 7.241217606682114,
 	"rank_valuation": 6,
 	"rank_roc": 131,
-	"score": 137
+	"score": 140.0
 },
 {
 	"_id": {
@@ -14364,10 +14364,10 @@ const DATA =
 	"weighted_roce": 9.195738202704618,
 	"earnings_ev": 0.01155186000266627,
 	"ebit_ev": 0.01796207614504789,
-	"valuation": 2.189092687596286,
-	"rank_valuation": 150,
+	"valuation": 5.290812749585264,
+	"rank_valuation": 32,
 	"rank_roc": 109,
-	"score": 259
+	"score": 157.0
 },
 {
 	"_id": {
@@ -14505,10 +14505,10 @@ const DATA =
 	"earnings_ev": 0.04052598446446057,
 	"ebit_ev": 0.05161989337322177,
 	"fcf_ev": 0.048996186416232566,
-	"valuation": 4.382445141355093,
-	"rank_valuation": 41,
+	"valuation": 4.5249650309049985,
+	"rank_valuation": 49,
 	"rank_roc": 71,
-	"score": 112
+	"score": 144.5
 },
 {
 	"_id": {
@@ -14646,10 +14646,10 @@ const DATA =
 	"earnings_ev": 0.019896242020103594,
 	"ebit_ev": 0.027482132040106702,
 	"fcf_ev": 0.029455042778632166,
-	"valuation": 2.274431320719633,
-	"rank_valuation": 146,
+	"valuation": 2.1729726009945964,
+	"rank_valuation": 172,
 	"rank_roc": 193,
-	"score": 339
+	"score": 451.0
 },
 {
 	"_id": {
@@ -14787,10 +14787,10 @@ const DATA =
 	"earnings_ev": 0.025878216588843785,
 	"ebit_ev": 0.034058709968185955,
 	"fcf_ev": 0.029575054730541245,
-	"valuation": 2.796959988906986,
-	"rank_valuation": 121,
+	"valuation": 3.054691164805062,
+	"rank_valuation": 123,
 	"rank_roc": 43,
-	"score": 164
+	"score": 227.5
 },
 {
 	"_id": {
@@ -14928,10 +14928,10 @@ const DATA =
 	"earnings_ev": 0.05252843199857277,
 	"ebit_ev": 0.0769856473275202,
 	"fcf_ev": 0.04570699530033137,
-	"valuation": 5.302946980172357,
-	"rank_valuation": 17,
+	"valuation": 6.135401990941737,
+	"rank_valuation": 12,
 	"rank_roc": 98,
-	"score": 115
+	"score": 116.0
 },
 {
 	"_id": {
@@ -15069,10 +15069,10 @@ const DATA =
 	"earnings_ev": 0.019538006562524676,
 	"ebit_ev": 0.027381797034356715,
 	"fcf_ev": 0.0008597624766011796,
-	"valuation": 1.3370779942102053,
-	"rank_valuation": 190,
+	"valuation": 1.3547344166757684,
+	"rank_valuation": 204,
 	"rank_roc": 63,
-	"score": 253
+	"score": 369.0
 },
 {
 	"_id": {
@@ -15210,10 +15210,10 @@ const DATA =
 	"earnings_ev": 0.02457659171170854,
 	"ebit_ev": 0.031752506439265665,
 	"fcf_ev": 0.023881722747283195,
-	"valuation": 2.442051201185265,
-	"rank_valuation": 140,
+	"valuation": 2.4647141876710337,
+	"rank_valuation": 155,
 	"rank_roc": 36,
-	"score": 176
+	"score": 268.5
 },
 {
 	"_id": {
@@ -15351,10 +15351,10 @@ const DATA =
 	"earnings_ev": 0.02503259604090598,
 	"ebit_ev": 0.03980938021613061,
 	"fcf_ev": 0.03425456074001413,
-	"valuation": 2.8455483508475163,
-	"rank_valuation": 119,
+	"valuation": 2.9502181212074543,
+	"rank_valuation": 130,
 	"rank_roc": 143,
-	"score": 262
+	"score": 338.0
 },
 {
 	"_id": {
@@ -15492,10 +15492,10 @@ const DATA =
 	"earnings_ev": 0.040169239354093764,
 	"ebit_ev": 0.05982805321437776,
 	"fcf_ev": 0.03719031199431363,
-	"valuation": 3.8398354636182055,
-	"rank_valuation": 58,
+	"valuation": 3.6064627842227073,
+	"rank_valuation": 89,
 	"rank_roc": 21,
-	"score": 79
+	"score": 154.5
 },
 {
 	"_id": {
@@ -15633,10 +15633,10 @@ const DATA =
 	"earnings_ev": 0.005003204595905135,
 	"ebit_ev": 0.010570727607163056,
 	"fcf_ev": 0.05511078467376668,
-	"valuation": 2.074522592346786,
-	"rank_valuation": 157,
+	"valuation": 1.786370982829448,
+	"rank_valuation": 188,
 	"rank_roc": 208,
-	"score": 365
+	"score": 490.0
 },
 {
 	"_id": {
@@ -15774,10 +15774,10 @@ const DATA =
 	"earnings_ev": 0.02399764851695275,
 	"ebit_ev": 0.044587273694516594,
 	"fcf_ev": 0.030138647581902937,
-	"valuation": 2.8259460493176265,
-	"rank_valuation": 120,
+	"valuation": 3.4903897356896625,
+	"rank_valuation": 99,
 	"rank_roc": 117,
-	"score": 237
+	"score": 265.5
 },
 {
 	"_id": {
@@ -15915,10 +15915,10 @@ const DATA =
 	"earnings_ev": 0.02633970996004019,
 	"ebit_ev": 0.043857773064554254,
 	"fcf_ev": 0.03419404866463991,
-	"valuation": 2.925183323889296,
-	"rank_valuation": 117,
+	"valuation": 3.0133864370851553,
+	"rank_valuation": 127,
 	"rank_roc": 139,
-	"score": 256
+	"score": 329.5
 },
 {
 	"_id": {
@@ -16056,10 +16056,10 @@ const DATA =
 	"earnings_ev": 0.02662534705848032,
 	"ebit_ev": 0.038156583080014767,
 	"fcf_ev": 0.02491907671119026,
-	"valuation": 2.6430669031520355,
-	"rank_valuation": 131,
+	"valuation": 2.755290529793054,
+	"rank_valuation": 138,
 	"rank_roc": 9,
-	"score": 140
+	"score": 216.0
 },
 {
 	"_id": {
@@ -16197,10 +16197,10 @@ const DATA =
 	"earnings_ev": 0.011861185329060704,
 	"ebit_ev": 0.01408722203239,
 	"fcf_ev": 0.012586636125085761,
-	"valuation": 1.2302741516067621,
-	"rank_valuation": 195,
+	"valuation": 1.290195928106332,
+	"rank_valuation": 207,
 	"rank_roc": 79,
-	"score": 274
+	"score": 389.5
 },
 {
 	"_id": {
@@ -16338,10 +16338,10 @@ const DATA =
 	"earnings_ev": 0.03012335582362162,
 	"ebit_ev": 0.06749642199959109,
 	"fcf_ev": 0.037324871558344366,
-	"valuation": 3.5760767628775567,
-	"rank_valuation": 72,
+	"valuation": 4.547148730951466,
+	"rank_valuation": 47,
 	"rank_roc": 148,
-	"score": 220
+	"score": 218.5
 },
 {
 	"_id": {
@@ -16479,10 +16479,10 @@ const DATA =
 	"earnings_ev": 0.014812279359454488,
 	"ebit_ev": 0.051577709833394395,
 	"fcf_ev": 0.016134444757647755,
-	"valuation": 1.4627710043057018,
-	"rank_valuation": 182,
+	"valuation": 1.275183669567135,
+	"rank_valuation": 208,
 	"rank_roc": 189,
-	"score": 371
+	"score": 501.0
 },
 {
 	"_id": {
@@ -16620,10 +16620,10 @@ const DATA =
 	"earnings_ev": 0.19469994021321366,
 	"ebit_ev": 0.11869234614515728,
 	"fcf_ev": 0.098129268867131,
-	"valuation": 15.027803739256909,
-	"rank_valuation": 1,
+	"valuation": 11.35830002767181,
+	"rank_valuation": 2,
 	"rank_roc": 41,
-	"score": 42
+	"score": 44.0
 },
 {
 	"_id": {
@@ -16761,10 +16761,10 @@ const DATA =
 	"earnings_ev": 0.032583282336142105,
 	"ebit_ev": 0.04564193072354138,
 	"fcf_ev": 0.02881252602955608,
-	"valuation": 3.1553942264315524,
-	"rank_valuation": 101,
+	"valuation": 3.223667835542182,
+	"rank_valuation": 111,
 	"rank_roc": 133,
-	"score": 234
+	"score": 299.5
 },
 {
 	"_id": {
@@ -16902,10 +16902,10 @@ const DATA =
 	"earnings_ev": 0.019371120284812627,
 	"ebit_ev": 0.026345486056177123,
 	"fcf_ev": 0.016860443145603185,
-	"valuation": 1.8950952674159904,
-	"rank_valuation": 166,
+	"valuation": 2.020112698141118,
+	"rank_valuation": 180,
 	"rank_roc": 50,
-	"score": 216
+	"score": 320.0
 },
 {
 	"_id": {
@@ -17043,10 +17043,10 @@ const DATA =
 	"earnings_ev": 0.03210276161599607,
 	"ebit_ev": 0.04668250976535824,
 	"fcf_ev": 0.048396569149662644,
-	"valuation": 3.94916499874833,
-	"rank_valuation": 55,
+	"valuation": 4.536450756827841,
+	"rank_valuation": 48,
 	"rank_roc": 74,
-	"score": 129
+	"score": 146.0
 },
 {
 	"_id": {
@@ -17184,10 +17184,10 @@ const DATA =
 	"earnings_ev": 0.012683473635819228,
 	"ebit_ev": 0.021714878833979216,
 	"fcf_ev": -0.016180442708523098,
-	"valuation": 0.5935601607408375,
-	"rank_valuation": 209,
+	"valuation": 1.4555901866518142,
+	"rank_valuation": 201,
 	"rank_roc": 164,
-	"score": 373
+	"score": 465.5
 },
 {
 	"_id": {
@@ -17325,10 +17325,10 @@ const DATA =
 	"earnings_ev": 0.01896042021353816,
 	"ebit_ev": 0.03339032890485084,
 	"fcf_ev": 0.05842836440117636,
-	"valuation": 3.160454546575443,
-	"rank_valuation": 100,
+	"valuation": 3.006897703476501,
+	"rank_valuation": 128,
 	"rank_roc": 106,
-	"score": 206
+	"score": 298.0
 },
 {
 	"_id": {
@@ -17466,10 +17466,10 @@ const DATA =
 	"earnings_ev": 0.0367266521095299,
 	"ebit_ev": 0.043818816335454785,
 	"fcf_ev": 0.03853123509775871,
-	"valuation": 3.8555679255363002,
-	"rank_valuation": 57,
+	"valuation": 4.223817770463354,
+	"rank_valuation": 54,
 	"rank_roc": 54,
-	"score": 111
+	"score": 135.0
 },
 {
 	"_id": {
@@ -17607,10 +17607,10 @@ const DATA =
 	"earnings_ev": 0.003259671828982429,
 	"ebit_ev": 0.0038567106765772445,
 	"fcf_ev": 0.007577852129371774,
-	"valuation": 0.7919195636569993,
-	"rank_valuation": 206,
+	"valuation": 1.7579586758943344,
+	"rank_valuation": 191,
 	"rank_roc": 194,
-	"score": 400
+	"score": 480.5
 },
 {
 	"_id": {
@@ -17748,10 +17748,10 @@ const DATA =
 	"earnings_ev": 0.027833082267453037,
 	"ebit_ev": 0.07183203241352676,
 	"fcf_ev": 0.07612945410061771,
-	"valuation": 4.471734949536972,
-	"rank_valuation": 38,
+	"valuation": 4.70737793459551,
+	"rank_valuation": 44,
 	"rank_roc": 182,
-	"score": 220
+	"score": 248.0
 },
 {
 	"_id": {
@@ -17889,10 +17889,10 @@ const DATA =
 	"earnings_ev": 0.031146397196726527,
 	"ebit_ev": 0.03898864942967326,
 	"fcf_ev": 0.046631587248287996,
-	"valuation": 3.718791440231031,
-	"rank_valuation": 62,
+	"valuation": 3.9827275967500215,
+	"rank_valuation": 68,
 	"rank_roc": 116,
-	"score": 178
+	"score": 218.0
 },
 {
 	"_id": {
@@ -18030,10 +18030,10 @@ const DATA =
 	"earnings_ev": 0.02078627102449376,
 	"ebit_ev": 0.02239894227151276,
 	"fcf_ev": 0.020387870022092188,
-	"valuation": 2.022800554982506,
-	"rank_valuation": 162,
+	"valuation": 1.8951610128220535,
+	"rank_valuation": 187,
 	"rank_roc": 118,
-	"score": 280
+	"score": 398.5
 },
 {
 	"_id": {
@@ -18171,10 +18171,10 @@ const DATA =
 	"earnings_ev": 0.031109279869100427,
 	"ebit_ev": 0.0389866145254822,
 	"fcf_ev": 0.04741565882997177,
-	"valuation": 3.6190595603455082,
-	"rank_valuation": 68,
+	"valuation": 3.512816384564773,
+	"rank_valuation": 97,
 	"rank_roc": 28,
-	"score": 96
+	"score": 173.5
 },
 {
 	"_id": {
@@ -18312,10 +18312,10 @@ const DATA =
 	"earnings_ev": 0.04495442659937159,
 	"ebit_ev": 0.07791760522739542,
 	"fcf_ev": 0.0845311754212238,
-	"valuation": 5.721243806378414,
-	"rank_valuation": 12,
+	"valuation": 5.440972363516958,
+	"rank_valuation": 28,
 	"rank_roc": 122,
-	"score": 134
+	"score": 164.0
 },
 {
 	"_id": {
@@ -18453,10 +18453,10 @@ const DATA =
 	"earnings_ev": 0.024927786892377138,
 	"ebit_ev": 0.02018643873145509,
 	"fcf_ev": 0.024345065903321576,
-	"valuation": 2.4610368169642496,
-	"rank_valuation": 139,
+	"valuation": 2.4240832990494137,
+	"rank_valuation": 159,
 	"rank_roc": 8,
-	"score": 147
+	"score": 246.5
 },
 {
 	"_id": {
@@ -18594,10 +18594,10 @@ const DATA =
 	"earnings_ev": 0.019356435228292692,
 	"ebit_ev": 0.0224308159481927,
 	"fcf_ev": 0.01968367842741852,
-	"valuation": 1.9458828874706506,
-	"rank_valuation": 164,
+	"valuation": 1.943876661482212,
+	"rank_valuation": 186,
 	"rank_roc": 95,
-	"score": 259
+	"score": 374.0
 },
 {
 	"_id": {
@@ -18732,10 +18732,10 @@ const DATA =
 	"weighted_roce": 3.1845446524702137,
 	"earnings_ev": 0.016288235602550778,
 	"ebit_ev": 0.02304181931412365,
-	"valuation": 1.7539596374092934,
-	"rank_valuation": 173,
+	"valuation": 2.129367868871941,
+	"rank_valuation": 174,
 	"rank_roc": 181,
-	"score": 354
+	"score": 442.0
 },
 {
 	"_id": {
@@ -18873,10 +18873,10 @@ const DATA =
 	"earnings_ev": 0.02310544202339395,
 	"ebit_ev": 0.030296656294642663,
 	"fcf_ev": -0.005459023972334788,
-	"valuation": 1.4355483474945092,
-	"rank_valuation": 185,
+	"valuation": 1.6670073825327258,
+	"rank_valuation": 193,
 	"rank_roc": 130,
-	"score": 315
+	"score": 419.5
 },
 {
 	"_id": {
@@ -19014,10 +19014,10 @@ const DATA =
 	"earnings_ev": -0.0039001841753638364,
 	"ebit_ev": -0.0021788065917927608,
 	"fcf_ev": -0.007854537575385505,
-	"valuation": -0.4536471777833953,
-	"rank_valuation": 215,
+	"valuation": -0.24909811852226355,
+	"rank_valuation": 218,
 	"rank_roc": 215,
-	"score": 430
+	"score": 542.0
 },
 {
 	"_id": {
@@ -19152,10 +19152,10 @@ const DATA =
 	"weighted_roce": 0.964292147724054,
 	"earnings_ev": 0.00864925560385895,
 	"ebit_ev": 0.011182932281767755,
-	"valuation": 1.3263782098267576,
-	"rank_valuation": 192,
+	"valuation": 2.7107361581493454,
+	"rank_valuation": 143,
 	"rank_roc": 206,
-	"score": 398
+	"score": 420.5
 },
 {
 	"_id": {
@@ -19293,10 +19293,10 @@ const DATA =
 	"earnings_ev": 0.028820334095491337,
 	"ebit_ev": 0.029716869005208115,
 	"fcf_ev": 0.021466667195119214,
-	"valuation": 2.6572302859511336,
-	"rank_valuation": 128,
+	"valuation": 2.7181876051943465,
+	"rank_valuation": 140,
 	"rank_roc": 68,
-	"score": 196
+	"score": 278.0
 },
 {
 	"_id": {
@@ -19434,10 +19434,10 @@ const DATA =
 	"earnings_ev": 0.03144967338515726,
 	"ebit_ev": 0.0931589318686093,
 	"fcf_ev": 0.06796381635091313,
-	"valuation": 4.01889219671504,
-	"rank_valuation": 54,
+	"valuation": 2.989252474737396,
+	"rank_valuation": 129,
 	"rank_roc": 82,
-	"score": 136
+	"score": 275.5
 },
 {
 	"_id": {
@@ -19575,10 +19575,10 @@ const DATA =
 	"earnings_ev": 0.007340406347315784,
 	"ebit_ev": 0.009297833485730603,
 	"fcf_ev": 0.014363512551884405,
-	"valuation": 0.9773293333971752,
-	"rank_valuation": 202,
+	"valuation": 1.0048848089371034,
+	"rank_valuation": 212,
 	"rank_roc": 119,
-	"score": 321
+	"score": 437.0
 },
 {
 	"_id": {
@@ -19716,10 +19716,10 @@ const DATA =
 	"earnings_ev": 0.0030192331438217666,
 	"ebit_ev": 0.005226610546611063,
 	"fcf_ev": 0.0014869232523810141,
-	"valuation": 0.2647617252007754,
-	"rank_valuation": 213,
+	"valuation": 0.30650794680064697,
+	"rank_valuation": 217,
 	"rank_roc": 128,
-	"score": 341
+	"score": 453.5
 },
 {
 	"_id": {
@@ -19857,10 +19857,10 @@ const DATA =
 	"earnings_ev": 0.025258236426139447,
 	"ebit_ev": 0.03531548464878318,
 	"fcf_ev": 0.04364181894939991,
-	"valuation": 3.154781757350694,
-	"rank_valuation": 102,
+	"valuation": 3.2032978492348962,
+	"rank_valuation": 113,
 	"rank_roc": 171,
-	"score": 273
+	"score": 340.5
 },
 {
 	"_id": {
@@ -19998,10 +19998,10 @@ const DATA =
 	"earnings_ev": 0.01585483461047032,
 	"ebit_ev": 0.028911688965791764,
 	"fcf_ev": -0.007148717698762785,
-	"valuation": 0.9698201579672926,
+	"valuation": 1.4231854796513854,
 	"rank_valuation": 203,
 	"rank_roc": 178,
-	"score": 381
+	"score": 482.5
 },
 {
 	"_id": {
@@ -20139,10 +20139,10 @@ const DATA =
 	"earnings_ev": 0.022431175110305814,
 	"ebit_ev": 0.026058294212010245,
 	"fcf_ev": 0.026345732227044318,
-	"valuation": 2.3672427044299096,
-	"rank_valuation": 142,
+	"valuation": 2.3481625729540427,
+	"rank_valuation": 163,
 	"rank_roc": 14,
-	"score": 156
+	"score": 258.5
 },
 {
 	"_id": {
@@ -20280,10 +20280,10 @@ const DATA =
 	"earnings_ev": 0.033488617085317134,
 	"ebit_ev": 0.04205487604662617,
 	"fcf_ev": 0.03236161276199858,
-	"valuation": 3.3780961680267367,
-	"rank_valuation": 87,
+	"valuation": 3.578499978843664,
+	"rank_valuation": 91,
 	"rank_roc": 31,
-	"score": 118
+	"score": 167.5
 },
 {
 	"_id": {
@@ -20421,10 +20421,10 @@ const DATA =
 	"earnings_ev": 0.04163772684368934,
 	"ebit_ev": 0.04678011077273779,
 	"fcf_ev": -0.12880447365140424,
-	"valuation": -0.7309499640001318,
-	"rank_valuation": 216,
+	"valuation": 1.6291021404020285,
+	"rank_valuation": 194,
 	"rank_roc": 151,
-	"score": 367
+	"score": 442.0
 },
 {
 	"_id": {
@@ -20562,10 +20562,10 @@ const DATA =
 	"earnings_ev": 0.011403334479238617,
 	"ebit_ev": 0.014586638323908526,
 	"fcf_ev": 0.04573178339678389,
-	"valuation": 2.5710866293602024,
-	"rank_valuation": 136,
+	"valuation": 3.4305012819146974,
+	"rank_valuation": 104,
 	"rank_roc": 199,
-	"score": 335
+	"score": 355.0
 },
 {
 	"_id": {
@@ -20703,10 +20703,10 @@ const DATA =
 	"earnings_ev": 0.033469761004713404,
 	"ebit_ev": 0.04901126612955475,
 	"fcf_ev": -0.043765649616037385,
-	"valuation": 1.2331397866483746,
-	"rank_valuation": 194,
+	"valuation": 2.6151719072545556,
+	"rank_valuation": 149,
 	"rank_roc": 161,
-	"score": 355
+	"score": 384.5
 },
 {
 	"_id": {
@@ -20844,10 +20844,10 @@ const DATA =
 	"earnings_ev": 0.0519614895449208,
 	"ebit_ev": 0.07316965346708273,
 	"fcf_ev": 0.06705521602288088,
-	"valuation": 5.7991382177487205,
-	"rank_valuation": 11,
+	"valuation": 6.098733359722634,
+	"rank_valuation": 13,
 	"rank_roc": 37,
-	"score": 48
+	"score": 56.5
 },
 {
 	"_id": {
@@ -20985,10 +20985,10 @@ const DATA =
 	"earnings_ev": 0.03484092042769431,
 	"ebit_ev": 0.04358806984153558,
 	"fcf_ev": 0.03341849088481744,
-	"valuation": 3.4409570642451515,
-	"rank_valuation": 82,
+	"valuation": 3.453795082960002,
+	"rank_valuation": 103,
 	"rank_roc": 7,
-	"score": 89
+	"score": 161.5
 },
 {
 	"_id": {
@@ -21126,10 +21126,10 @@ const DATA =
 	"earnings_ev": 0.01494014132207899,
 	"ebit_ev": 0.042848728129499546,
 	"fcf_ev": 0.011857338161932605,
-	"valuation": 1.744012539578684,
-	"rank_valuation": 174,
+	"valuation": 2.8022880777056782,
+	"rank_valuation": 135,
 	"rank_roc": 186,
-	"score": 360
+	"score": 388.5
 },
 {
 	"_id": {
@@ -21264,10 +21264,10 @@ const DATA =
 	"weighted_roce": 1.181684352237967,
 	"earnings_ev": 0.011571247557225344,
 	"ebit_ev": 0.014510029801777007,
-	"valuation": 1.668371527799184,
-	"rank_valuation": 176,
+	"valuation": 3.2021118440291327,
+	"rank_valuation": 114,
 	"rank_roc": 201,
-	"score": 377
+	"score": 372.0
 },
 {
 	"_id": {
@@ -21405,10 +21405,10 @@ const DATA =
 	"earnings_ev": -0.017237537726103425,
 	"ebit_ev": -0.014604959753377953,
 	"fcf_ev": -0.10568176843376313,
-	"valuation": -3.5705899075746603,
-	"rank_valuation": 218,
+	"valuation": -0.26667524170164403,
+	"rank_valuation": 219,
 	"rank_roc": 218,
-	"score": 436
+	"score": 546.5
 },
 {
 	"_id": {
@@ -21546,10 +21546,10 @@ const DATA =
 	"earnings_ev": 0.009820506104393126,
 	"ebit_ev": 0.019631501077431477,
 	"fcf_ev": 0.032031992563332154,
-	"valuation": 1.6581931672482266,
-	"rank_valuation": 177,
+	"valuation": 1.4654721917810656,
+	"rank_valuation": 200,
 	"rank_roc": 188,
-	"score": 365
+	"score": 488.0
 },
 {
 	"_id": {
@@ -21687,10 +21687,10 @@ const DATA =
 	"earnings_ev": 0.062244959074085476,
 	"ebit_ev": 0.07118591962580106,
 	"fcf_ev": 0.028435616178338535,
-	"valuation": 5.233760861836628,
-	"rank_valuation": 20,
+	"valuation": 5.642490014695564,
+	"rank_valuation": 21,
 	"rank_roc": 132,
-	"score": 152
+	"score": 163.5
 },
 {
 	"_id": {
@@ -21828,10 +21828,10 @@ const DATA =
 	"earnings_ev": 0.047263311568166544,
 	"ebit_ev": 0.062800896687733,
 	"fcf_ev": 0.05699806043921666,
-	"valuation": 5.12078363550111,
-	"rank_valuation": 24,
+	"valuation": 5.330666184449466,
+	"rank_valuation": 30,
 	"rank_roc": 20,
-	"score": 44
+	"score": 65.0
 },
 {
 	"_id": {
@@ -21969,10 +21969,10 @@ const DATA =
 	"earnings_ev": 0.019032478112086415,
 	"ebit_ev": 0.023904570990464558,
 	"fcf_ev": 0.010653403338086164,
-	"valuation": 1.9175471388969536,
-	"rank_valuation": 165,
+	"valuation": 2.7983525993619147,
+	"rank_valuation": 136,
 	"rank_roc": 187,
-	"score": 352
+	"score": 391.0
 },
 {
 	"_id": {
@@ -22110,10 +22110,10 @@ const DATA =
 	"earnings_ev": 0.02884754028837998,
 	"ebit_ev": 0.027214800678541134,
 	"fcf_ev": 0.02683948261238337,
-	"valuation": 2.7400352636873557,
-	"rank_valuation": 124,
+	"valuation": 2.5066847358350905,
+	"rank_valuation": 153,
 	"rank_roc": 69,
-	"score": 193
+	"score": 298.5
 },
 {
 	"_id": {
@@ -22251,10 +22251,10 @@ const DATA =
 	"earnings_ev": 0.01822082635976059,
 	"ebit_ev": 0.03291653052187238,
 	"fcf_ev": 0.04075584996700375,
-	"valuation": 2.418922299670833,
-	"rank_valuation": 141,
+	"valuation": 1.9559389300308385,
+	"rank_valuation": 184,
 	"rank_roc": 110,
-	"score": 251
+	"score": 386.0
 },
 {
 	"_id": {
@@ -22392,10 +22392,10 @@ const DATA =
 	"earnings_ev": 0.019558382363543007,
 	"ebit_ev": 0.019394335300426817,
 	"fcf_ev": 0.05435799657423682,
-	"valuation": 2.9462479512237234,
-	"rank_valuation": 112,
+	"valuation": 2.4375156747626114,
+	"rank_valuation": 156,
 	"rank_roc": 165,
-	"score": 277
+	"score": 399.0
 },
 {
 	"_id": {
@@ -22533,10 +22533,10 @@ const DATA =
 	"earnings_ev": 0.02200882523148148,
 	"ebit_ev": 0.029839409722222224,
 	"fcf_ev": 0.016624168113425927,
-	"valuation": 2.081240410055617,
-	"rank_valuation": 155,
+	"valuation": 2.260779782583581,
+	"rank_valuation": 167,
 	"rank_roc": 42,
-	"score": 197
+	"score": 292.5
 },
 {
 	"_id": {
@@ -22674,10 +22674,10 @@ const DATA =
 	"earnings_ev": 0.032900998564261395,
 	"ebit_ev": 0.05616319024343027,
 	"fcf_ev": 0.02490361193114907,
-	"valuation": 3.4993783885216736,
-	"rank_valuation": 78,
+	"valuation": 4.926952648119507,
+	"rank_valuation": 36,
 	"rank_roc": 112,
-	"score": 190
+	"score": 166.0
 },
 {
 	"_id": {
@@ -22815,10 +22815,10 @@ const DATA =
 	"earnings_ev": 0.04259242257314237,
 	"ebit_ev": 0.05411464071489778,
 	"fcf_ev": 0.05241906641575418,
-	"valuation": 4.58515573808603,
-	"rank_valuation": 34,
+	"valuation": 4.58023179614023,
+	"rank_valuation": 46,
 	"rank_roc": 87,
-	"score": 121
+	"score": 156.0
 },
 {
 	"_id": {
@@ -22956,10 +22956,10 @@ const DATA =
 	"earnings_ev": -0.05877746356319339,
 	"ebit_ev": 0.07729678776013342,
 	"fcf_ev": 0.0864839388006671,
-	"valuation": -0.35708652153697235,
-	"rank_valuation": 214,
+	"valuation": 1.6787527464240768,
+	"rank_valuation": 192,
 	"rank_roc": 221,
-	"score": 435
+	"score": 509.0
 },
 {
 	"_id": {
@@ -23097,10 +23097,10 @@ const DATA =
 	"earnings_ev": 0.04224112575765509,
 	"ebit_ev": 0.060042511171276826,
 	"fcf_ev": 0.04479994175107013,
-	"valuation": 4.347508949961391,
-	"rank_valuation": 43,
+	"valuation": 4.461816473207532,
+	"rank_valuation": 51,
 	"rank_roc": 121,
-	"score": 164
+	"score": 197.5
 },
 {
 	"_id": {
@@ -23238,10 +23238,10 @@ const DATA =
 	"earnings_ev": -0.07896008080453208,
 	"ebit_ev": -0.038180873333040564,
 	"fcf_ev": -0.10199742362361484,
-	"valuation": -6.125286754304785,
-	"rank_valuation": 221,
+	"valuation": 1.4906115060487606,
+	"rank_valuation": 197,
 	"rank_roc": 217,
-	"score": 438
+	"score": 512.5
 },
 {
 	"_id": {
@@ -23379,10 +23379,10 @@ const DATA =
 	"earnings_ev": 0.038580144286069665,
 	"ebit_ev": 0.056480434680873604,
 	"fcf_ev": 0.03263768213754326,
-	"valuation": 3.627940457295822,
-	"rank_valuation": 66,
+	"valuation": 3.531964758215028,
+	"rank_valuation": 96,
 	"rank_roc": 93,
-	"score": 159
+	"score": 237.0
 },
 {
 	"_id": {
@@ -23520,10 +23520,10 @@ const DATA =
 	"earnings_ev": 0.035778907914867014,
 	"ebit_ev": 0.023799003916405922,
 	"fcf_ev": 0.06038193223385422,
-	"valuation": 4.20620831492352,
-	"rank_valuation": 46,
+	"valuation": 3.630858453335257,
+	"rank_valuation": 87,
 	"rank_roc": 169,
-	"score": 215
+	"score": 299.5
 },
 {
 	"_id": {
@@ -23661,10 +23661,10 @@ const DATA =
 	"earnings_ev": 0.008010986962371241,
 	"ebit_ev": 0.011443932548466366,
 	"fcf_ev": 0.009573016159307488,
-	"valuation": 0.824849246525147,
-	"rank_valuation": 205,
+	"valuation": 0.7398979776955913,
+	"rank_valuation": 213,
 	"rank_roc": 127,
-	"score": 332
+	"score": 446.5
 },
 {
 	"_id": {
@@ -23802,10 +23802,10 @@ const DATA =
 	"earnings_ev": 0.023132134535869604,
 	"ebit_ev": 0.03140919032736653,
 	"fcf_ev": 0.01975461530225705,
-	"valuation": 2.2075812871790252,
-	"rank_valuation": 148,
+	"valuation": 2.228436711316475,
+	"rank_valuation": 168,
 	"rank_roc": 64,
-	"score": 212
+	"score": 316.0
 },
 {
 	"_id": {
@@ -23940,10 +23940,10 @@ const DATA =
 	"weighted_roce": 5.230623168774149,
 	"earnings_ev": 0.04710767911026821,
 	"ebit_ev": 0.05828229237352118,
-	"valuation": 4.586672382935936,
-	"rank_valuation": 33,
+	"valuation": 4.214385798663282,
+	"rank_valuation": 55,
 	"rank_roc": 157,
-	"score": 190
+	"score": 239.5
 },
 {
 	"_id": {
@@ -24081,10 +24081,10 @@ const DATA =
 	"earnings_ev": 0.025753939800865117,
 	"ebit_ev": 0.035889685673672685,
 	"fcf_ev": 0.034492914356086486,
-	"valuation": 2.932012555094938,
-	"rank_valuation": 114,
+	"valuation": 3.127970824598081,
+	"rank_valuation": 120,
 	"rank_roc": 80,
-	"score": 194
+	"score": 260.0
 },
 {
 	"_id": {
@@ -24222,10 +24222,10 @@ const DATA =
 	"earnings_ev": 0.04475891355236381,
 	"ebit_ev": 0.05086400583453906,
 	"fcf_ev": 0.04219669763362741,
-	"valuation": 4.5245016447294475,
-	"rank_valuation": 36,
+	"valuation": 4.926554105082287,
+	"rank_valuation": 37,
 	"rank_roc": 156,
-	"score": 192
+	"score": 211.5
 },
 {
 	"_id": {
@@ -24363,10 +24363,10 @@ const DATA =
 	"earnings_ev": 0.02387707140144955,
 	"ebit_ev": 0.03198867635260382,
 	"fcf_ev": 0.031076405625136028,
-	"valuation": 2.6449500568735376,
-	"rank_valuation": 129,
+	"valuation": 2.696745384690638,
+	"rank_valuation": 145,
 	"rank_roc": 62,
-	"score": 191
+	"score": 279.5
 },
 {
 	"_id": {
@@ -24504,10 +24504,10 @@ const DATA =
 	"earnings_ev": 0.042273767033671264,
 	"ebit_ev": 0.062343310992633204,
 	"fcf_ev": 0.06426585729840707,
-	"valuation": 5.004358544428211,
-	"rank_valuation": 28,
+	"valuation": 5.136095041137886,
+	"rank_valuation": 34,
 	"rank_roc": 67,
-	"score": 95
+	"score": 118.0
 },
 {
 	"_id": {
@@ -24645,10 +24645,10 @@ const DATA =
 	"earnings_ev": 0.010366254172803839,
 	"ebit_ev": 0.01715572203648775,
 	"fcf_ev": -1.3151085355520044e-05,
-	"valuation": 1.443273404742651,
-	"rank_valuation": 184,
+	"valuation": 3.7011578929453886,
+	"rank_valuation": 82,
 	"rank_roc": 204,
-	"score": 388
+	"score": 327.0
 },
 {
 	"_id": {
@@ -24786,10 +24786,10 @@ const DATA =
 	"earnings_ev": 0.027642531804617558,
 	"ebit_ev": 0.03728600596827391,
 	"fcf_ev": 0.040740355921760035,
-	"valuation": 3.2857848621550474,
-	"rank_valuation": 97,
+	"valuation": 3.5405974955206725,
+	"rank_valuation": 95,
 	"rank_roc": 25,
-	"score": 122
+	"score": 167.5
 },
 {
 	"_id": {
@@ -24927,10 +24927,10 @@ const DATA =
 	"earnings_ev": 0.04350836110805993,
 	"ebit_ev": 0.043866008099629095,
 	"fcf_ev": 0.03709700902389328,
-	"valuation": 4.121342697248146,
-	"rank_valuation": 48,
+	"valuation": 4.0739976649912695,
+	"rank_valuation": 62,
 	"rank_roc": 40,
-	"score": 88
+	"score": 133.0
 },
 {
 	"_id": {
@@ -25068,10 +25068,10 @@ const DATA =
 	"earnings_ev": 0.030214856379077646,
 	"ebit_ev": 0.04804433392786623,
 	"fcf_ev": 0.037293691967172984,
-	"valuation": 3.332664451302751,
-	"rank_valuation": 93,
+	"valuation": 3.5583173326781776,
+	"rank_valuation": 94,
 	"rank_roc": 15,
-	"score": 108
+	"score": 156.0
 },
 {
 	"_id": {
@@ -25209,10 +25209,10 @@ const DATA =
 	"earnings_ev": 0.02086889278654091,
 	"ebit_ev": 0.02978023592688621,
 	"fcf_ev": 0.019039530966058052,
-	"valuation": 2.03130618502611,
-	"rank_valuation": 160,
+	"valuation": 2.0474930861904515,
+	"rank_valuation": 178,
 	"rank_roc": 2,
-	"score": 162
+	"score": 269.0
 },
 {
 	"_id": {
@@ -25350,10 +25350,10 @@ const DATA =
 	"earnings_ev": 0.028692279239755338,
 	"ebit_ev": 0.05692958268467611,
 	"fcf_ev": 0.056815260714697564,
-	"valuation": 4.060915210746882,
-	"rank_valuation": 53,
+	"valuation": 4.823678923566704,
+	"rank_valuation": 42,
 	"rank_roc": 154,
-	"score": 207
+	"score": 217.0
 },
 {
 	"_id": {
@@ -25491,10 +25491,10 @@ const DATA =
 	"earnings_ev": 0.07022416103410814,
 	"ebit_ev": 0.09290656927518588,
 	"fcf_ev": 0.059724142012334565,
-	"valuation": 6.7093992745292015,
-	"rank_valuation": 5,
+	"valuation": 6.820350690061722,
+	"rank_valuation": 7,
 	"rank_roc": 105,
-	"score": 110
+	"score": 115.5
 },
 {
 	"_id": {
@@ -25632,10 +25632,10 @@ const DATA =
 	"earnings_ev": 0.025803911159876847,
 	"ebit_ev": 0.0510049631015487,
 	"fcf_ev": -0.008886810102899906,
-	"valuation": 1.8475613229289298,
-	"rank_valuation": 170,
+	"valuation": 3.118144070030341,
+	"rank_valuation": 121,
 	"rank_roc": 185,
-	"score": 355
+	"score": 366.5
 },
 {
 	"_id": {
@@ -25773,10 +25773,10 @@ const DATA =
 	"earnings_ev": 0.0284769513770822,
 	"ebit_ev": 0.04837217839734101,
 	"fcf_ev": 0.039868125946646696,
-	"valuation": 3.3917529214237483,
-	"rank_valuation": 84,
+	"valuation": 3.884808815613884,
+	"rank_valuation": 72,
 	"rank_roc": 140,
-	"score": 224
+	"score": 248.0
 },
 {
 	"_id": {
@@ -25911,10 +25911,10 @@ const DATA =
 	"weighted_roce": 10.521823575736706,
 	"earnings_ev": 0.019884196173748026,
 	"ebit_ev": 0.027594772222047356,
-	"valuation": 1.8855745837356233,
-	"rank_valuation": 167,
+	"valuation": 1.5770394828180851,
+	"rank_valuation": 196,
 	"rank_roc": 91,
-	"score": 258
+	"score": 385.0
 },
 {
 	"_id": {
@@ -26052,10 +26052,10 @@ const DATA =
 	"earnings_ev": 0.02465805799813837,
 	"ebit_ev": 0.032905603059951286,
 	"fcf_ev": 0.03912417453662682,
-	"valuation": 2.92620898898738,
-	"rank_valuation": 116,
+	"valuation": 2.860806902659163,
+	"rank_valuation": 133,
 	"rank_roc": 57,
-	"score": 173
+	"score": 256.5
 },
 {
 	"_id": {
@@ -26193,10 +26193,10 @@ const DATA =
 	"earnings_ev": -0.12552216792453713,
 	"ebit_ev": -0.007037306710353743,
 	"fcf_ev": -0.006553061595978549,
-	"valuation": -7.727921923351584,
+	"valuation": -5.151947948901056,
 	"rank_valuation": 222,
 	"rank_roc": 219,
-	"score": 441
+	"score": 552.0
 },
 {
 	"_id": {
@@ -26334,10 +26334,10 @@ const DATA =
 	"earnings_ev": 0.053738568794793835,
 	"ebit_ev": 0.06485171483340049,
 	"fcf_ev": 0.03879284031109971,
-	"valuation": 4.6841324927340615,
-	"rank_valuation": 31,
+	"valuation": 4.109532180867507,
+	"rank_valuation": 58,
 	"rank_roc": 160,
-	"score": 191
+	"score": 247.0
 },
 {
 	"_id": {
@@ -26475,10 +26475,10 @@ const DATA =
 	"earnings_ev": 0.015662483100463753,
 	"ebit_ev": 0.029979222279210325,
 	"fcf_ev": 0.018863641844741316,
-	"valuation": 1.6546673309245272,
-	"rank_valuation": 178,
+	"valuation": 1.5998085191312281,
+	"rank_valuation": 195,
 	"rank_roc": 89,
-	"score": 267
+	"score": 381.5
 },
 {
 	"_id": {
@@ -26616,10 +26616,10 @@ const DATA =
 	"earnings_ev": 0.004925500483030469,
 	"ebit_ev": 0.01338483673223273,
 	"fcf_ev": -0.005351766058118789,
-	"valuation": 1.7248021664751485,
-	"rank_valuation": 175,
+	"valuation": 6.44928517510638,
+	"rank_valuation": 10,
 	"rank_roc": 190,
-	"score": 365
+	"score": 205.0
 },
 {
 	"_id": {
@@ -26757,10 +26757,10 @@ const DATA =
 	"earnings_ev": 0.004323282992099466,
 	"ebit_ev": 0.0034260542533840577,
 	"fcf_ev": -0.0252805740896938,
-	"valuation": 0.39703710450540475,
-	"rank_valuation": 211,
+	"valuation": 3.251549228571106,
+	"rank_valuation": 110,
 	"rank_roc": 211,
-	"score": 422
+	"score": 376.0
 },
 {
 	"_id": {
@@ -26898,10 +26898,10 @@ const DATA =
 	"earnings_ev": 0.026466531440162273,
 	"ebit_ev": 0.035645706558485465,
 	"fcf_ev": 0.020860040567951318,
-	"valuation": 2.3578023200381373,
-	"rank_valuation": 143,
+	"valuation": 2.051898935324964,
+	"rank_valuation": 177,
 	"rank_roc": 60,
-	"score": 203
+	"score": 325.5
 },
 {
 	"_id": {
@@ -27039,10 +27039,10 @@ const DATA =
 	"earnings_ev": 0.029101375454698077,
 	"ebit_ev": 0.03953102672174041,
 	"fcf_ev": 0.02467393171776761,
-	"valuation": 2.99237335330884,
-	"rank_valuation": 110,
+	"valuation": 3.6818251505189843,
+	"rank_valuation": 84,
 	"rank_roc": 103,
-	"score": 213
+	"score": 229.0
 },
 {
 	"_id": {
@@ -27180,10 +27180,10 @@ const DATA =
 	"earnings_ev": 0.005170050124546339,
 	"ebit_ev": 0.04545412171438404,
 	"fcf_ev": 0.026903947333525104,
-	"valuation": 1.5163637259621727,
-	"rank_valuation": 181,
+	"valuation": 2.341050145586913,
+	"rank_valuation": 164,
 	"rank_roc": 213,
-	"score": 394
+	"score": 459.0
 },
 {
 	"_id": {
@@ -27321,10 +27321,10 @@ const DATA =
 	"earnings_ev": 0.03234356098632862,
 	"ebit_ev": 0.04597745638455015,
 	"fcf_ev": 0.037011747420398734,
-	"valuation": 3.4369174519190437,
-	"rank_valuation": 83,
+	"valuation": 3.5777828683705755,
+	"rank_valuation": 92,
 	"rank_roc": 94,
-	"score": 177
+	"score": 232.0
 },
 {
 	"_id": {
@@ -27462,10 +27462,10 @@ const DATA =
 	"earnings_ev": 0.011851323757217294,
 	"ebit_ev": 0.06618786086466695,
 	"fcf_ev": 0.014471993381213915,
-	"valuation": 1.8704023885808403,
-	"rank_valuation": 168,
+	"valuation": 3.6641454647585108,
+	"rank_valuation": 85,
 	"rank_roc": 202,
-	"score": 370
+	"score": 329.5
 },
 {
 	"_id": {
@@ -27603,10 +27603,10 @@ const DATA =
 	"earnings_ev": 0.02250843633905446,
 	"ebit_ev": 0.03370836801743465,
 	"fcf_ev": 0.025796616385833717,
-	"valuation": 2.322385269819685,
-	"rank_valuation": 144,
+	"valuation": 2.2081921728844756,
+	"rank_valuation": 170,
 	"rank_roc": 107,
-	"score": 251
+	"score": 362.0
 },
 {
 	"_id": {
@@ -27744,10 +27744,10 @@ const DATA =
 	"earnings_ev": 0.046869236444116565,
 	"ebit_ev": 0.029985860076232634,
 	"fcf_ev": 0.036164391983278005,
-	"valuation": 4.206109431930254,
-	"rank_valuation": 47,
+	"valuation": 3.8341512405699016,
+	"rank_valuation": 73,
 	"rank_roc": 12,
-	"score": 59
+	"score": 121.5
 },
 {
 	"_id": {
@@ -27885,10 +27885,10 @@ const DATA =
 	"earnings_ev": 0.02351693130757637,
 	"ebit_ev": 0.025735268081610686,
 	"fcf_ev": 0.014249414131569936,
-	"valuation": 2.132529469705414,
-	"rank_valuation": 153,
+	"valuation": 2.401790204149391,
+	"rank_valuation": 160,
 	"rank_roc": 33,
-	"score": 186
+	"score": 273.0
 },
 {
 	"_id": {
@@ -28026,10 +28026,10 @@ const DATA =
 	"earnings_ev": 0.03778756904927546,
 	"ebit_ev": 0.052159332132217844,
 	"fcf_ev": 0.04665025908352835,
-	"valuation": 4.073762322462785,
-	"rank_valuation": 52,
+	"valuation": 4.072509571643214,
+	"rank_valuation": 63,
 	"rank_roc": 66,
-	"score": 118
+	"score": 160.5
 },
 {
 	"_id": {
@@ -28167,10 +28167,10 @@ const DATA =
 	"earnings_ev": 0.01961774982302228,
 	"ebit_ev": 0.02291478903946342,
 	"fcf_ev": 0.03936875596302861,
-	"valuation": 2.7411226893369207,
-	"rank_valuation": 123,
+	"valuation": 3.1040651964403683,
+	"rank_valuation": 122,
 	"rank_roc": 174,
-	"score": 297
+	"score": 357.0
 },
 {
 	"_id": {
@@ -28308,10 +28308,10 @@ const DATA =
 	"earnings_ev": 0.03591842897509298,
 	"ebit_ev": 0.047180974156233534,
 	"fcf_ev": 0.052149239667297544,
-	"valuation": 4.1145276362654215,
-	"rank_valuation": 49,
+	"valuation": 4.059500783313336,
+	"rank_valuation": 65,
 	"rank_roc": 11,
-	"score": 60
+	"score": 108.5
 },
 {
 	"_id": {
@@ -28449,10 +28449,10 @@ const DATA =
 	"earnings_ev": 0.020976154043585337,
 	"ebit_ev": 0.03222382324086408,
 	"fcf_ev": 0.034955270500174884,
-	"valuation": 2.6002247206440994,
-	"rank_valuation": 134,
+	"valuation": 2.7101410238418424,
+	"rank_valuation": 144,
 	"rank_roc": 158,
-	"score": 292
+	"score": 374.0
 },
 {
 	"_id": {
@@ -28590,10 +28590,10 @@ const DATA =
 	"earnings_ev": 0.06545671117798257,
 	"ebit_ev": 0.05931916494263682,
 	"fcf_ev": 0.039877750611246945,
-	"valuation": 5.29573381302737,
-	"rank_valuation": 18,
+	"valuation": 4.103817955388274,
+	"rank_valuation": 60,
 	"rank_roc": 141,
-	"score": 159
+	"score": 231.0
 },
 {
 	"_id": {
@@ -28731,10 +28731,10 @@ const DATA =
 	"earnings_ev": 0.05647625988845607,
 	"ebit_ev": 0.0871418344611857,
 	"fcf_ev": 0.023562687092798032,
-	"valuation": 4.432496988025918,
-	"rank_valuation": 39,
+	"valuation": 4.07846726513266,
+	"rank_valuation": 61,
 	"rank_roc": 144,
-	"score": 183
+	"score": 235.5
 },
 {
 	"_id": {
@@ -28872,10 +28872,10 @@ const DATA =
 	"earnings_ev": 0.014937892296382862,
 	"ebit_ev": 0.02569099543762617,
 	"fcf_ev": -0.004800231215325555,
-	"valuation": 1.1301955506807257,
-	"rank_valuation": 199,
+	"valuation": 2.0132268649788867,
+	"rank_valuation": 181,
 	"rank_roc": 177,
-	"score": 376
+	"score": 448.5
 },
 {
 	"_id": {
@@ -29013,10 +29013,10 @@ const DATA =
 	"earnings_ev": 0.029188032801589322,
 	"ebit_ev": 0.0340604600999453,
 	"fcf_ev": 0.006252079361474608,
-	"valuation": 2.202835901209925,
-	"rank_valuation": 149,
+	"valuation": 2.3485291083743745,
+	"rank_valuation": 162,
 	"rank_roc": 159,
-	"score": 308
+	"score": 402.0
 },
 {
 	"_id": {
@@ -29154,10 +29154,10 @@ const DATA =
 	"earnings_ev": -0.051552106430155197,
 	"ebit_ev": -0.040881374722838135,
 	"fcf_ev": -0.018893200295639317,
-	"valuation": -3.6599223946784916,
-	"rank_valuation": 219,
+	"valuation": -2.439948263118994,
+	"rank_valuation": 221,
 	"rank_roc": 222,
-	"score": 441
+	"score": 553.5
 },
 {
 	"_id": {
@@ -29295,10 +29295,10 @@ const DATA =
 	"earnings_ev": 0.04395965449809594,
 	"ebit_ev": 0.04322625171273824,
 	"fcf_ev": 0.03809783942553579,
-	"valuation": 4.3656519599660495,
-	"rank_valuation": 42,
+	"valuation": 4.86089299769143,
+	"rank_valuation": 39,
 	"rank_roc": 142,
-	"score": 184
+	"score": 200.5
 },
 {
 	"_id": {
@@ -29436,10 +29436,10 @@ const DATA =
 	"earnings_ev": 0.021568090112457843,
 	"ebit_ev": 0.03109563755002254,
 	"fcf_ev": 0.018535142204912137,
-	"valuation": 2.0511446980204626,
-	"rank_valuation": 158,
+	"valuation": 2.037446549099069,
+	"rank_valuation": 179,
 	"rank_roc": 72,
-	"score": 230
+	"score": 340.5
 },
 {
 	"_id": {
@@ -29577,10 +29577,10 @@ const DATA =
 	"earnings_ev": 0.04501981932153392,
 	"ebit_ev": 0.03811505434489939,
 	"fcf_ev": 0.035709347345132744,
-	"valuation": 4.527186560778093,
-	"rank_valuation": 35,
+	"valuation": 5.533847644292314,
+	"rank_valuation": 24,
 	"rank_roc": 96,
-	"score": 131
+	"score": 132.0
 },
 {
 	"_id": {
@@ -29718,10 +29718,10 @@ const DATA =
 	"earnings_ev": 0.03635039420017052,
 	"ebit_ev": 0.04515935856752759,
 	"fcf_ev": 0.027676489518651703,
-	"valuation": 3.465244801482628,
-	"rank_valuation": 80,
+	"valuation": 3.8232514140312395,
+	"rank_valuation": 74,
 	"rank_roc": 45,
-	"score": 125
+	"score": 156.0
 },
 {
 	"_id": {
@@ -29859,10 +29859,10 @@ const DATA =
 	"earnings_ev": 0.05761012184691104,
 	"ebit_ev": 0.07690650798683507,
 	"fcf_ev": 0.02925216994829536,
-	"valuation": 5.054114813871155,
-	"rank_valuation": 26,
+	"valuation": 5.769217891272875,
+	"rank_valuation": 18,
 	"rank_roc": 86,
-	"score": 112
+	"score": 113.0
 },
 {
 	"_id": {
@@ -30000,10 +30000,10 @@ const DATA =
 	"earnings_ev": -0.04198363079197401,
 	"ebit_ev": 0.02879240518024608,
 	"fcf_ev": 0.0018716282459949596,
-	"valuation": -1.9450026096673327,
-	"rank_valuation": 217,
+	"valuation": 0.4295528951259727,
+	"rank_valuation": 216,
 	"rank_roc": 216,
-	"score": 433
+	"score": 540.0
 },
 {
 	"_id": {
@@ -30141,10 +30141,10 @@ const DATA =
 	"earnings_ev": 0.04064177974958257,
 	"ebit_ev": 0.06125568447779773,
 	"fcf_ev": 0.06511562741026018,
-	"valuation": 5.037970439324104,
-	"rank_valuation": 27,
+	"valuation": 5.511963066353881,
+	"rank_valuation": 26,
 	"rank_roc": 101,
-	"score": 128
+	"score": 140.0
 },
 {
 	"_id": {
@@ -30282,10 +30282,10 @@ const DATA =
 	"earnings_ev": 0.03214239597922068,
 	"ebit_ev": 0.03511129652254239,
 	"fcf_ev": -0.05732391708135919,
-	"valuation": 0.6609058123160817,
-	"rank_valuation": 208,
+	"valuation": 1.94753576155611,
+	"rank_valuation": 185,
 	"rank_roc": 168,
-	"score": 376
+	"score": 445.5
 },
 {
 	"_id": {
@@ -30423,10 +30423,10 @@ const DATA =
 	"earnings_ev": 0.015407515756175258,
 	"ebit_ev": 0.016295662686698367,
 	"fcf_ev": 0.006319208247489709,
-	"valuation": 1.4600479540408817,
-	"rank_valuation": 183,
+	"valuation": 2.126767840179504,
+	"rank_valuation": 175,
 	"rank_roc": 48,
-	"score": 231
+	"score": 310.5
 },
 {
 	"_id": {
@@ -30564,10 +30564,10 @@ const DATA =
 	"earnings_ev": 0.03678044202504318,
 	"ebit_ev": 0.05856402220439241,
 	"fcf_ev": 0.03826216386815769,
-	"valuation": 3.3856914995474456,
-	"rank_valuation": 85,
+	"valuation": 2.360461206365377,
+	"rank_valuation": 161,
 	"rank_roc": 104,
-	"score": 189
+	"score": 345.5
 },
 {
 	"_id": {
@@ -30705,10 +30705,10 @@ const DATA =
 	"earnings_ev": 0.009770268741279994,
 	"ebit_ev": 0.013099172803736188,
 	"fcf_ev": 0.009697670404322536,
-	"valuation": 1.7821236121720867,
-	"rank_valuation": 172,
+	"valuation": 4.204673660000094,
+	"rank_valuation": 56,
 	"rank_roc": 203,
-	"score": 375
+	"score": 287.0
 },
 {
 	"_id": {
@@ -30846,10 +30846,10 @@ const DATA =
 	"earnings_ev": 0.05898705669334664,
 	"ebit_ev": 0.08186977357210952,
 	"fcf_ev": 0.06516119951118704,
-	"valuation": 5.828060722941753,
-	"rank_valuation": 10,
+	"valuation": 4.998711601978982,
+	"rank_valuation": 35,
 	"rank_roc": 44,
-	"score": 54
+	"score": 96.5
 },
 {
 	"_id": {
@@ -30987,10 +30987,10 @@ const DATA =
 	"earnings_ev": 0.03841639034211655,
 	"ebit_ev": 0.04864110300684308,
 	"fcf_ev": 0.038489169110624666,
-	"valuation": 3.5556554219440337,
-	"rank_valuation": 74,
+	"valuation": 2.690426708290359,
+	"rank_valuation": 146,
 	"rank_roc": 29,
-	"score": 103
+	"score": 248.0
 },
 {
 	"_id": {
@@ -31128,10 +31128,10 @@ const DATA =
 	"earnings_ev": 0.014038587644195693,
 	"ebit_ev": 0.051527158201952465,
 	"fcf_ev": 0.008594016975607953,
-	"valuation": 1.9592422971296022,
-	"rank_valuation": 163,
+	"valuation": 4.169849962118475,
+	"rank_valuation": 57,
 	"rank_roc": 197,
-	"score": 360
+	"score": 282.5
 },
 {
 	"_id": {
@@ -31269,10 +31269,10 @@ const DATA =
 	"earnings_ev": 0.03499162008265409,
 	"ebit_ev": 0.04279899649188553,
 	"fcf_ev": 0.039363054902105975,
-	"valuation": 3.630406352897469,
-	"rank_valuation": 65,
+	"valuation": 3.5869959048484583,
+	"rank_valuation": 90,
 	"rank_roc": 56,
-	"score": 121
+	"score": 191.0
 },
 {
 	"_id": {
@@ -31410,9 +31410,9 @@ const DATA =
 	"earnings_ev": 0.03077076968626192,
 	"ebit_ev": 0.03667747566142555,
 	"fcf_ev": 0.025219447087739558,
-	"valuation": 2.9317769622289545,
-	"rank_valuation": 115,
+	"valuation": 3.0510092028894786,
+	"rank_valuation": 124,
 	"rank_roc": 88,
-	"score": 203
+	"score": 274.0
 }]
 
