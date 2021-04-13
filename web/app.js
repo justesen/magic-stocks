@@ -16,6 +16,9 @@ angular.module("stocksApp", ['ngSanitize'])
     }
 
     $scope.format = (s, key) => {
+      if (s[key] == undefined) {
+        return "";
+      }
       switch (key) {
         case "p_e":
           return s.p_e.toFixed(1);

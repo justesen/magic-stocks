@@ -233,12 +233,15 @@ def avg(xs):
 def process_data(db) -> None:
     """Process data in database, i.e., convert currencies, calculate properties and weighted properties"""
     for s in sorted(db.stocks.find(), key=lambda s: s['name']):
-        print(s['name'])
+        print(f"{s['currency_price']}  {s['name']}")
         try:
             if 2021 in s['years']:
                 year_index = s['years'].index(2021)
             else:
                 year_index = s['years'].index(2020)
+
+            if s['currency_price'] == 'GBP':
+                s['price'] = s['price']/100
 
             if s['equity'][-1] is None and s['equity'][-2] is not None:
                 print(f"No equity for {s['years'][-1]}, using that for {s['years'][-2]}")
@@ -247,6 +250,16 @@ def process_data(db) -> None:
             if s['book_ps'][-1] is None and s['book_ps'][-2] is not None:
                 print(f"No book per share for {s['years'][-1]}, using that for {s['years'][-2]}")
                 s['book_ps'][-1] = s['book_ps'][-2]
+
+            if any(ns is None for ns in s['num_shares']):
+                print(f"No number of shares, using the most recent")
+                most_recent_num_shares = next((ns for ns in reversed(s['num_shares']) if ns is not None), None)
+                s['num_shares'] = [most_recent_num_shares if ns is None else ns for ns in s['num_shares']]
+
+            if any(bps is None for bps in s['book_ps']):
+                i = s['book_ps'].index(None)
+                s['book_ps'][i] = (s['book_ps'][i-1] + s['book_ps'][i+1])/2
+                print(f"No book per share found for {s['years'][i]}, using average of {s['years'][i-1]} and {s['years'][i+1]}")
 
             s['roe'] = [
                 100*s['earnings'][i]/s['equity'][i] if s['equity'][i] else 0
