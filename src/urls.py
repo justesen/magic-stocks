@@ -1,248 +1,312 @@
 URLS = [
-    # DK Large cap
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RL',  # A. P. Moller Maersk A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RN',  # Ambu
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RB',  # Bavarian Nordic A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K1',  # Carlsberg A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000OO3C',  # Chr. Hansen Holding A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K4',  # Coloplast A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KA',  # Danske Bank A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LK',  # Demant AS
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q9',  # DSV Panalpina AS
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RO',  # FLSmidth & Co. A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QU',  # Genmab A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KG',  # GN Store Nord A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00012E78',  # ISS A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KR',  # Jyske Bank A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q7',  # Lundbeck A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5BQ',  # Novo Nordisk A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QX',  # Novozymes A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000Q1VF',  # Pandora A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5L9',  # Rockwool International A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QC',  # Royal UNIBREW A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QV',  # SimCorp A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RI',  # Tryg A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5Q5',  # Vestas Wind Systems A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001846T',  # Ørsted A/S
+    'https://www.marketscreener.com/quote/stock/3I-GROUP-PLC-4007143/financials/',
+    'https://www.marketscreener.com/quote/stock/ANGLO-AMERICAN-PLC-4007113/financials/',
+    'https://www.marketscreener.com/quote/stock/ANTOFAGASTA-PLC-4001646/financials/',
+    'https://www.marketscreener.com/quote/stock/ASHTEAD-GROUP-PLC-4001655/financials/',
+    'https://www.marketscreener.com/quote/stock/ASSOCIATED-BRITISH-FOODS-9583547/financials/',
+    'https://www.marketscreener.com/quote/stock/ASTRAZENECA-PLC-4000930/financials/',
+    'https://www.marketscreener.com/quote/stock/AUTO-TRADER-GROUP-PLC-21296406/financials/',
+    'https://www.marketscreener.com/quote/stock/AVAST-PLC-43328204/financials/',
+    'https://www.marketscreener.com/quote/stock/AVEVA-GROUP-PLC-13659098/financials/',
+    'https://www.marketscreener.com/quote/stock/AVIVA-PLC-4000581/financials/',
+    'https://www.marketscreener.com/quote/stock/B-M-EUROPEAN-VALUE-RETAIL-16686539/financials/',
+    'https://www.marketscreener.com/quote/stock/BAE-SYSTEMS-PLC-9583545/financials/',
+    'https://www.marketscreener.com/quote/stock/BARCLAYS-PLC-9583556/financials/',
+    'https://www.marketscreener.com/quote/stock/BARRATT-DEVELOPMENTS-PLC-9583550/financials/',
+    'https://www.marketscreener.com/quote/stock/BERKELEY-GROUP-HOLDINGS-P-4004901/financials/',
+    'https://www.marketscreener.com/quote/stock/BP-PLC-9590188/financials/',
+    'https://www.marketscreener.com/quote/stock/BRITISH-AMERICAN-TOBACCO-4001163/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-BRITISH-LAND-COMPANY-9583554/financials/',
+    'https://www.marketscreener.com/quote/stock/BUNZL-PLC-4005251/financials/',
+    'https://www.marketscreener.com/quote/stock/BURBERRY-GROUP-PLC-4003938/financials/',
+    'https://www.marketscreener.com/quote/stock/COCA-COLA-HBC-AG-13101752/financials/',
+    'https://www.marketscreener.com/quote/stock/COMPASS-GROUP-PLC-35939959/financials/',
+    'https://www.marketscreener.com/quote/stock/CRH-PLC-4000708/financials/',
+    'https://www.marketscreener.com/quote/stock/CRODA-INTERNATIONAL-PLC-57672075/financials/',
+    'https://www.marketscreener.com/quote/stock/DCC-PLC-9676704/financials/',
+    'https://www.marketscreener.com/quote/stock/DIAGEO-PLC-4000514/financials/',
+    'https://www.marketscreener.com/quote/stock/EVRAZ-PLC-9428118/financials/',
+    'https://www.marketscreener.com/quote/stock/EXPERIAN-PLC-9590128/financials/',
+    'https://www.marketscreener.com/quote/stock/FERGUSON-PLC-44211865/financials/',
+    'https://www.marketscreener.com/quote/stock/FRESNILLO-PLC-4008409/financials/',
+    'https://www.marketscreener.com/quote/stock/GLAXOSMITHKLINE-PLC-9590199/financials/',
+    'https://www.marketscreener.com/quote/stock/GLENCORE-PLC-8017494/financials/',
+    'https://www.marketscreener.com/quote/stock/HALMA-PLC-9590130/financials/',
+    'https://www.marketscreener.com/quote/stock/HIKMA-PHARMACEUTICALS-PLC-9590215/financials/',
+    'https://www.marketscreener.com/quote/stock/HSBC-HOLDINGS-PLC-16896790/financials/',
+    'https://www.marketscreener.com/quote/stock/INTERCONTINENTAL-HOTELS-G-50387540/financials/',
+    'https://www.marketscreener.com/quote/stock/IMPERIAL-BRANDS-PLC-9590191/financials/',
+    'https://www.marketscreener.com/quote/stock/INFORMA-PLC-16587322/financials/',
+    'https://www.marketscreener.com/quote/stock/INTERMEDIATE-CAPITAL-GROU-30403106/financials/',
+    'https://www.marketscreener.com/quote/stock/INTERNATIONAL-CONSOLIDATE-7233512/financials/',
+    'https://www.marketscreener.com/quote/stock/INTERTEK-GROUP-PLC-4003872/financials/',
+    'https://www.marketscreener.com/quote/stock/JD-SPORTS-FASHION-PLC-32053202/financials/',
+    'https://www.marketscreener.com/quote/stock/JOHNSON-MATTHEY-PLC-25600218/financials/',
+    'https://www.marketscreener.com/quote/stock/KINGFISHER-PLC-9590115/financials/',
+    'https://www.marketscreener.com/quote/stock/LAND-SECURITIES-GROUP-PLC-37940486/financials/',
+    'https://www.marketscreener.com/quote/stock/LEGAL-GENERAL-PLC-4002140/financials/',
+    'https://www.marketscreener.com/quote/stock/LLOYDS-BANKING-GROUP-PLC-4000786/financials/',
+    'https://www.marketscreener.com/quote/stock/M-G-PLC-71215893/financials/',
+    'https://www.marketscreener.com/quote/stock/MELROSE-INDUSTRIES-PLC-26487567/financials/',
+    'https://www.marketscreener.com/quote/stock/MONDI-PLC-4007006/financials/',
+    'https://www.marketscreener.com/quote/stock/NATIONAL-GRID-PLC-34973324/financials/',
+    'https://www.marketscreener.com/quote/stock/NATWEST-GROUP-PLC-10759239/financials/',
+    'https://www.marketscreener.com/quote/stock/NEXT-PLC-9590100/financials/',
+    'https://www.marketscreener.com/quote/stock/OCADO-GROUP-PLC-6413974/financials/',
+    'https://www.marketscreener.com/quote/stock/PEARSON-PLC-4000637/financials/',
+    'https://www.marketscreener.com/quote/stock/PERSIMMON-PLC-4002227/financials/',
+    'https://www.marketscreener.com/quote/stock/POLYMETAL-INTERNATIONAL-P-9303852/financials/',
+    'https://www.marketscreener.com/quote/stock/PRUDENTIAL-PLC-9590193/financials/',
+    'https://www.marketscreener.com/quote/stock/RECKITT-BENCKISER-GROUP-P-9590106/financials/',
+    'https://www.marketscreener.com/quote/stock/RELX-PLC-9590187/financials/',
+    'https://www.marketscreener.com/quote/stock/RENISHAW-PLC-9590169/financials/',
+    'https://www.marketscreener.com/quote/stock/RENTOKIL-INITIAL-PLC-4005234/financials/',
+    'https://www.marketscreener.com/quote/stock/RIGHTMOVE-PLC-45538042/financials/',
+    'https://www.marketscreener.com/quote/stock/ROLLS-ROYCE-HOLDINGS-PLC-4004084/financials/',
+    'https://www.marketscreener.com/quote/stock/RSA-INSURANCE-GROUP-PLC-16481694/financials/',
+    'https://www.marketscreener.com/quote/stock/SAGE-GROUP-PLC-13421569/financials/',
+    'https://www.marketscreener.com/quote/stock/J-SAINSBURY-PLC-9590189/financials/',
+    'https://www.marketscreener.com/quote/stock/SCHRODERS-PLC-9590124/financials/',
+    'https://www.marketscreener.com/quote/stock/SCOTTISH-MORTGAGE-INVESTM-16840490/financials/',
+    'https://www.marketscreener.com/quote/stock/SEGRO-PLC-4007239/financials/',
+    'https://www.marketscreener.com/quote/stock/SEVERN-TRENT-PLC-9590170/financials/',
+    'https://www.marketscreener.com/quote/stock/DS-SMITH-PLC-9590140/financials/',
+    'https://www.marketscreener.com/quote/stock/SMITHS-GROUP-PLC-9590110/financials/',
+    'https://www.marketscreener.com/quote/stock/SMITH-NEPHEW-PLC-9590181/financials/',
+    'https://www.marketscreener.com/quote/stock/SMURFIT-KAPPA-GROUP-PLC-26704412/financials/',
+    'https://www.marketscreener.com/quote/stock/SPIRAX-SARCO-ENGINEERING-22554025/financials/',
+    'https://www.marketscreener.com/quote/stock/SSE-PLC-4000881/financials/',
+    'https://www.marketscreener.com/quote/stock/STANDARD-CHARTERED-PLC-4003394/financials/',
+    'https://www.marketscreener.com/quote/stock/ST-JAMES-S-PLACE-PLC-9590172/financials/',
+    'https://www.marketscreener.com/quote/stock/TAYLOR-WIMPEY-PLC-4003237/financials/',
+    'https://www.marketscreener.com/quote/stock/TESCO-PLC-4000540/financials/',
+    'https://www.marketscreener.com/quote/stock/UNILEVER-PLC-9590186/financials/',
+    'https://www.marketscreener.com/quote/stock/UNITED-UTILITIES-GROUP-PL-9590184/financials/',
+    'https://www.marketscreener.com/quote/stock/VODAFONE-GROUP-PLC-15867071/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-WEIR-GROUP-PLC-9590176/financials/',
+    'https://www.marketscreener.com/quote/stock/WHITBREAD-PLC-4006657/financials/',
+    'https://www.marketscreener.com/quote/stock/WPP-PLC-12281876/financials/',
 
-    # DK Mid cap
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LL',  # Alk-Abello A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PI',  # Alm Brand AS
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5K5',  # DFDS A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001H6JR',  # Drilling Company of 1972
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5RA',  # Jeudan A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PB',  # Copenhagen Airports A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001DFE0',  # Netcompany Group AS
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A6IU',  # Nordea Bank Abp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5L8',  # Ringkjøbing Landbobank A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00017EFW',  # Scandinavian Tobacco Group A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5JU',  # Schouw & Co A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PV',  # Spar Nord Bank A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5R6',  # Sydbank A/S
+    'https://www.marketscreener.com/quote/stock/CITIGROUP-INC-4818/financials/',
+    'https://www.marketscreener.com/quote/stock/DOLLAR-GENERAL-CORPORATIO-5699818/financials/',
+    'https://www.marketscreener.com/quote/stock/FLSMIDTH-CO-A-S-1412901/financials/',
+    'https://www.marketscreener.com/quote/stock/H-LUNDBECK-A-S-1412962/financials/',
+    'https://www.marketscreener.com/quote/stock/KELLOGG-COMPANY-13226/financials/',
+    'https://www.marketscreener.com/quote/stock/LEGGETT-PLATT-INCORPOR-13369/financials/',
+    'https://www.marketscreener.com/quote/stock/LOEWS-CORPORATION-13434/financials/',
+    'https://www.marketscreener.com/quote/stock/MACY-S-INC-12578/financials/',
+    'https://www.marketscreener.com/quote/stock/MASTERCARD-INCORPORATED-17163/financials/',
+    'https://www.marketscreener.com/quote/stock/PFIZER-INC-23365019/financials/',
+    'https://www.marketscreener.com/quote/stock/RTX-A-S-1413005/financials/',
+    'https://www.marketscreener.com/quote/stock/SP-GROUP-A-S-43257883/financials/',
+    'https://www.marketscreener.com/quote/stock/TCM-GROUP-A-S-38838935/financials/',
+    'https://www.marketscreener.com/quote/stock/TRACTOR-SUPPLY-COMPANY-11162/financials/',
+    'https://www.marketscreener.com/quote/stock/VISA-INC-2277468/financials/',
+    'https://www.marketscreener.com/quote/stock/BUNGE-LIMITED-11825/financials/',
+    'http://www.marketscreener.com/quote/stock/THE-MOSAIC-COMPANY-11900095/financials/',
 
-    # DK Small cap
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PC',  # Brødrene Hartmann A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5PK',  # Dampskibsselskabet NORDEN A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000Z26I',  # Matas A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001BQUO',  # Nilfisk Holding A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KX',  # NKT A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QW',  # RTX A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QR',  # Solar A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5KP',  # SP Group A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001C9AZ',  # TCM Group A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5LG',  # Topdanmark A/S
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A5QN',  # UIE PLC
-
-    # SE selected by me
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A6N7',  # Note AB
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000A6GI',  # Hennes & Mauritz AB
-
-    # Dow Jones
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000053I',  # The Travelers Company Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0001H3ZI',  # Dow Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005UI',  # Walgreens Boot Alliance Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000014I',  # Caterpillar Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002H5',  # Goldman Sachs Group Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000000I',  # 3M Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000CU',  # American Express Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005NO',  # Raytheon Technologies Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002RH',  # IBM Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003X1',  # Nike Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003IJ',  # McDonald's Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000TU',  # Boeing Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000019Y',  # Cisco Systems Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000185',  # Chevron Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000CHAD',  # Pfizer Ltd
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003KE',  # Merck & Co Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005QY',  # Verizon Communications Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001BW',  # Coca-Cola Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005UJ',  # The Walt Disney Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002OY',  # The Home Depot Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000220',  # Exxon Mobil Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005NU',  # UnitedHealth Group Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002X8',  # Intel Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004GV',  # Procter & Gamble Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005UH',  # Walmart Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000032S',  # Johnson & Johnson
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000031C',  # JPMorgan Chase & Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000CPCP',  # Visa Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000GY',  # Apple Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003MH',  # Microsoft Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000B7',  # Amazon.com Inc
-
-    # US selected by me
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000WX',  # Bunge Ltd
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000TDWC',  # Mosaic Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002DT',  # General Mills Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002HD',  # Alphabet Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000031',  # AT&T Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001HZ',  # Ingredion Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000XPGW',  # AbbVie Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005K5',  # Tyson Foods Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00008WF2',  # B&G Foods Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004B0',  # PepsiCo Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001CL',  # Colgate-Palmolive Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000RD',  # Berkshire Hathaway Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002DN',  # General Dynamics Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001GL',  # Consolidated Edison Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00016CR2',  # The Kraft Heinz Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000AV',  # Altria Group Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001BD',  # Clorox Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002PC',  # Honeywell (HON)
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000K5',  # Assurant (AIZ)
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001IK',  # Costco Wholesale Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005B5',  # Target Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000M76Q',  # Dollar General Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001R5',  # Dollar Tree Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000357',  # Kimberly-Clark Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000019F',  # Church & Dwight Co Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003WA',  # Newell Brands Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000YWYX',  # Coty Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002PP',  # Hormel Foods Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003IF',  # McCormick & Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001FX',  # Conagra Brands Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000034A',  # Kellogg Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000011A',  # Campbell Soup Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000031B',  # JM Smucker Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00018XMP',  # Lamb Weston Holdings Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000CUPM',  # Philip Morris Internation Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000036D',  # Mondelez International Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002NZ',  # The Hershey Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000I0',  # Archer-Daniels Midland Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000059B',  # Sysco Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000036H',  # The Kroger Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000VL',  # Bristol-Myers Squibb Company
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000035Z',  # Kohl's Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003C9',  # Lowe's Companies Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000246',  # Macy's Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000412',  # Occidental Petroleum Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000059E',  # T. Rowe Price Group Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000XYO2',  # Zoetis Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000QR',  # Becton, Dickinson and Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000WD',  # Brown-Forman Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004X6',  # Sherwin-Williams Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000003P',  # Abbott Laboratories
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000004C',  # Accenture PLC Class A
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000056',  # Acuity Brands Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000005M',  # Adobe Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000007E',  # Agilent Technologies Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000CU',  # American Express Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00009JO7',  # American Water Works Co Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000H9',  # Applied Materials Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000LK',  # AutoZone Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000PA',  # Bank of America Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000RH',  # Best Buy Co Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000T6',  # BlackRock Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000KU35',  # Broadcom Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000013F',  # Carnival Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000014I',  # Caterpillar Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000068U',  # Chipotle Mexican Grill Inc Class A
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001A2',  # Citigroup Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001GE',  # ConocoPhillips
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001GT',  # Constellation Brands Inc A
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001HC',  # The Cooper Companies Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000062O',  # eBay Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001W8',  # Electronic Arts Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001WJ',  # Eli Lilly and Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001X9',  # Emerson Electric Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000021X',  # Extra Space Storage Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000023X',  # FedEx Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000029O',  # Forward Industries Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002CM',  # Gap Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002CQ',  # Garmin Ltd
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002DO',  # General Electric Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000RQZL',  # General Motors Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002EG',  # Genuine Parts Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00016V9T',  # Hewlett Packard Enterprise Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002TG',  # Illinois Tool Works Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002YT',  # International Paper Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000SDEF',  # Kinder Morgan Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003AV',  # L Brands Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000039L',  # Leggett & Platt Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003BP',  # Lockheed Martin Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000068W',  # Loews Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00005U6B',  # Mastercard Inc A
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003IF',  # McCormick & Co Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003OO',  # Molson Coors Beverage Co B
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002L4',  # Monster Beverage Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003PN',  # Motorola Solutions Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000003',  # 1-800-Flowers.com Inc Class A
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003UP',  # Netflix Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003WA',  # Newell Brands Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003RE',  # NVIDIA Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000043L',  # Oracle Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000048G',  # Parker Hannifin Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00016CGN',  # PayPal Holdings Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004BB',  # PerkinElmer Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004I8',  # Public Storage
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004J4',  # Qualcomm Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004EB',  # Ralph Lauren Corp Class A
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000007H',  # Agree Realty Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004PK',  # Rockwell Automation Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004UK',  # Schlumberger Ltd
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004VE',  # Seagate Technology PLC
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004VF',  # Sealed Air Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000053X',  # Stanley Black &amp; Decker Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000546',  # Starbucks Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000054E',  # State Street Corporation
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000563',  # Stryker Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005B5',  # Target Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005EI',  # Texas Instruments Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005F1',  # Thermo Fisher Scientific Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005A3',  # TJX Companies Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005H8',  # Tractor Supply Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000UTBL',  # TripAdvisor Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005QH',  # Ventas Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005QP',  # VeriSign Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005TG',  # Vulcan Materials Co
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005V2',  # Waste Management Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005V9',  # Waters Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005XP',  # Whirlpool Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005YA',  # Williams Companies Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000060R',  # Xerox Holdings Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000061H',  # Yum Brands Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000008C',  # Albemarle Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000KX',  # Atmos Energy Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000000LO',  # Automatic Data Processing Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000130',  # Cardinal Health Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000001C',  # Chubb Ltd
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000019F',  # Church &amp; Dwight Co Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000019P',  # Cincinnati Financial Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000019R',  # Cintas Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001RL',  # Dover Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000001V4',  # Ecolab Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000020R',  # Essex Property Trust Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000021P',  # Expeditors International of Washington Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000241',  # Federal Realty Investment Trust
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000002AB',  # Franklin Resources Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004FA',  # Linde PLC
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003C9',  # Lowe's Companies Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003JU',  # Medtronic PLC
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000003ZV',  # Nucor Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000X06P',  # Pentair PLC
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000004B0',  # PepsiCo Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P00000467',  # PPG Industries Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P0000059B',  # Sysco Corp
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005TP',  # W.W. Grainger Inc
-    'https://www.morningstar.dk/dk/stockquicktake/default.aspx?id=0P000005WS',  # West Pharmaceutical Services Inc
+    'https://www.marketscreener.com/quote/stock/3M-COMPANY-4836/financials/',
+    'https://www.marketscreener.com/quote/stock/A-P-MOLLER-MAERSK-A-S-1412885/financials/',
+    'https://www.marketscreener.com/quote/stock/AT-T-INC-14324/financials/',
+    'https://www.marketscreener.com/quote/stock/ABBVIE-INC-12136589/financials/',
+    'https://www.marketscreener.com/quote/stock/ABBOTT-LABORATORIES-11506/financials/',
+    'https://www.marketscreener.com/quote/stock/ACCENTURE-PLC-11521/financials/',
+    'https://www.marketscreener.com/quote/stock/ACUITY-BRANDS-INC-11742/financials/',
+    'https://www.marketscreener.com/quote/stock/AGILENT-TECHNOLOGIES-INC-11488/financials/',
+    'https://www.marketscreener.com/quote/stock/AGREE-REALTY-CORPORATION-11530/financials/',
+    'https://www.marketscreener.com/quote/stock/ALBEMARLE-CORPORATION-11613/financials/',
+    'https://www.marketscreener.com/quote/stock/ALK-ABELL-A-S-1412833/financials/',
+    'https://www.marketscreener.com/quote/stock/ALM-BRAND-A-S-1412845/financials/',
+    'https://www.marketscreener.com/quote/stock/ALPHABET-INC-24203373/financials/'
+    'https://www.marketscreener.com/quote/stock/ALTRIA-GROUP-INC-4837/financials/',
+    'https://www.marketscreener.com/quote/stock/AMBU-A-S-39742692/financials/',
+    'https://www.marketscreener.com/quote/stock/ADOBE-INC-4844/financials/',
+    'https://www.marketscreener.com/quote/stock/AMAZON-COM-INC-12864605/financials/',
+    'https://www.marketscreener.com/quote/stock/AMERICAN-EXPRESS-COMPANY-4814/financials/',
+    'https://www.marketscreener.com/quote/stock/AMERICAN-WATER-WORKS-COMP-2989352/financials/',
+    'https://www.marketscreener.com/quote/stock/APPLE-INC-4849/financials/',
+    'https://www.marketscreener.com/quote/stock/APPLIED-MATERIALS-INC-4850/financials/',
+    'https://www.marketscreener.com/quote/stock/ARCHER-DANIELS-MIDLAND-CO-11533/financials/',
+    'https://www.marketscreener.com/quote/stock/ASSURANT-INC-11600/financials/',
+    'https://www.marketscreener.com/quote/stock/ATMOS-ENERGY-CORPORATION-11707/financials/',
+    'https://www.marketscreener.com/quote/stock/AUTOZONE-INC-11746/financials/',
+    'https://www.marketscreener.com/quote/stock/AUTOMATIC-DATA-PROCESSING-11713/financials/',
+    'https://www.marketscreener.com/quote/stock/B-G-FOODS-INC-51153/financials/',
+    'https://www.marketscreener.com/quote/stock/BANK-OF-AMERICA-CORPORATI-11751/financials/',
+    'https://www.marketscreener.com/quote/stock/BAVARIAN-NORDIC-A-S-1412846/financials/',
+    'https://www.marketscreener.com/quote/stock/BECTON-DICKINSON-AND-COM-11801/financials/',
+    'https://www.marketscreener.com/quote/stock/BERKSHIRE-HATHAWAY-INC-11916/financials/',
+    'https://www.marketscreener.com/quote/stock/BEST-BUY-CO-INC-11778/financials/',
+    'https://www.marketscreener.com/quote/stock/BLACKROCK-INC-11862/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-BOEING-COMPANY-4816/financials/',
+    'https://www.marketscreener.com/quote/stock/BRISTOL-MYERS-SQUIBB-COMP-11877/financials/',
+    'https://www.marketscreener.com/quote/stock/BROADCOM-INC-42668543/financials/',
+    'https://www.marketscreener.com/quote/stock/BROWN-FORMAN-CORPORATION-11816/financials/',
+    'https://www.marketscreener.com/quote/stock/BRODRENE-HARTMANN-A-S-1412929/financials/',
+    'https://www.marketscreener.com/quote/stock/CAMPBELL-SOUP-COMPANY-12154/financials/',
+    'https://www.marketscreener.com/quote/stock/CARDINAL-HEALTH-INC-11969/financials/',
+    'https://www.marketscreener.com/quote/stock/CARLSBERG-A-S-1412856/financials/',
+    'https://www.marketscreener.com/quote/stock/CARNIVAL-CORPORATION-PL-12003/financials/',
+    'https://www.marketscreener.com/quote/stock/CATERPILLAR-INC-4817/financials/',
+    'https://www.marketscreener.com/quote/stock/CHEVRON-CORPORATION-12064/financials/',
+    'https://www.marketscreener.com/quote/stock/CHIPOTLE-MEXICAN-GRILL-I-12109/financials/',
+    'https://www.marketscreener.com/quote/stock/CHR-HANSEN-HOLDING-A-S-6275856/financials/',
+    'https://www.marketscreener.com/quote/stock/CHUBB-LIMITED-3860961/financials/',
+    'https://www.marketscreener.com/quote/stock/CHURCH-DWIGHT-CO-INC-12050/financials/',
+    'https://www.marketscreener.com/quote/stock/CINCINNATI-FINANCIAL-CORP-40311119/financials/',
+    'https://www.marketscreener.com/quote/stock/CINTAS-CORPORATION-4861/financials/',
+    'https://www.marketscreener.com/quote/stock/CISCO-SYSTEMS-INC-4862/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-CLOROX-COMPANY-12103/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-COCA-COLA-COMPANY-4819/financials/',
+    'https://www.marketscreener.com/quote/stock/COLGATE-PALMOLIVE-COMPANY-12089/financials/',
+    'https://www.marketscreener.com/quote/stock/COLOPLAST-A-S-1412860/financials/',
+    'https://www.marketscreener.com/quote/stock/CONAGRA-BRANDS-INC-11968/financials/',
+    'https://www.marketscreener.com/quote/stock/CONOCOPHILLIPS-13929/financials/',
+    'https://www.marketscreener.com/quote/stock/CONSOLIDATED-EDISON-INC-12403/financials/',
+    'https://www.marketscreener.com/quote/stock/CONSTELLATION-BRANDS-INC-14502/financials/',
+    'https://www.marketscreener.com/quote/stock/KOBENHAVNS-LUFTHAVNE-A-S-1412948/financials/',
+    'https://www.marketscreener.com/quote/stock/COSTCO-WHOLESALE-CORPORAT-4866/financials/',
+    'https://www.marketscreener.com/quote/stock/COTY-INC-13396702/financials/',
+    'https://www.marketscreener.com/quote/stock/DFDS-A-S-1412874/financials/',
+    'https://www.marketscreener.com/quote/stock/DSV-PANALPINA-A-S-65289675/financials/',
+    'https://www.marketscreener.com/quote/stock/DAMPSKIBSSELSKABET-NORDEN-1412883/financials/',
+    'https://www.marketscreener.com/quote/stock/DANSKE-BANK-A-S-1412871/financials/',
+    'https://www.marketscreener.com/quote/stock/DEMANT-A-S-56225597/financials/',
+    'https://www.marketscreener.com/quote/stock/DOLLAR-TREE-INC-4868/financials/',
+    'https://www.marketscreener.com/quote/stock/DOVER-CORPORATION-12331/financials/',
+    'https://www.marketscreener.com/quote/stock/DOW-INC-56727683/financials/',
+    'https://www.marketscreener.com/quote/stock/ECOLAB-INC-12399/financials/',
+    'https://www.marketscreener.com/quote/stock/ELECTRONIC-ARTS-INC-9664624/financials/',
+    'https://www.marketscreener.com/quote/stock/ELI-LILLY-AND-COMPANY-13401/financials/',
+    'https://www.marketscreener.com/quote/stock/EMERSON-ELECTRIC-CO-12451/financials/',
+    'https://www.marketscreener.com/quote/stock/ESSEX-PROPERTY-TRUST-INC-12501/financials/',
+    'https://www.marketscreener.com/quote/stock/EXPEDITORS-INTERNATIONAL-4900/financials/',
+    'https://www.marketscreener.com/quote/stock/EXTRA-SPACE-STORAGE-INC-12540/financials/',
+    'https://www.marketscreener.com/quote/stock/EXXON-MOBIL-CORPORATION-4822/financials/',
+    'https://www.marketscreener.com/quote/stock/FEDEX-CORPORATION-12585/financials/',
+    'https://www.marketscreener.com/quote/stock/FEDERAL-REALTY-INVESTMENT-12673/financials/',
+    'https://www.marketscreener.com/quote/stock/FRANKLIN-RESOURCES-INC-11807/financials/',
+    'https://www.marketscreener.com/quote/stock/GN-STORE-NORD-A-S-1412917/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-GAP-INC-12816/financials/',
+    'https://www.marketscreener.com/quote/stock/GARMIN-LTD-4933/financials/',
+    'https://www.marketscreener.com/quote/stock/GENERAL-DYNAMICS-CORPORAT-12723/financials/',
+    'https://www.marketscreener.com/quote/stock/GENERAL-ELECTRIC-COMPANY-4823/financials/',
+    'https://www.marketscreener.com/quote/stock/GENERAL-MILLS-INC-12763/financials/',
+    'https://www.marketscreener.com/quote/stock/GENERAL-MOTORS-COMPANY-6873535/financials/',
+    'https://www.marketscreener.com/quote/stock/GENMAB-A-S-63733191/financials/',
+    'https://www.marketscreener.com/quote/stock/GENUINE-PARTS-COMPANY-40311101/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-GOLDMAN-SACHS-GROUP-12831/financials/',
+    'https://www.marketscreener.com/quote/stock/HENNES-MAURITZ-AB-6491104/financials/',
+    'https://www.marketscreener.com/quote/stock/HEWLETT-PACKARD-ENTERPRIS-24843838/financials/',
+    'https://www.marketscreener.com/quote/stock/HONEYWELL-INTERNATIONAL-I-4827/financials/',
+    'https://www.marketscreener.com/quote/stock/HORMEL-FOODS-CORPORATION-12977/financials/',
+    'https://www.marketscreener.com/quote/stock/ISS-A-S-16012058/financials/',
+    'https://www.marketscreener.com/quote/stock/ILLINOIS-TOOL-WORKS-INC-13125/financials/',
+    'https://www.marketscreener.com/quote/stock/INGREDION-INCORPORATED-10759254/financials/',
+    'https://www.marketscreener.com/quote/stock/INTEL-CORPORATION-4829/financials/',
+    'https://www.marketscreener.com/quote/stock/INTERNATIONAL-BUSINESS-MA-4828/financials/',
+    'https://www.marketscreener.com/quote/stock/INTERNATIONAL-PAPER-COMPA-13095/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-J-M-SMUCKER-COMPANY-14400/financials/',
+    'https://www.marketscreener.com/quote/stock/JEUDAN-A-S-1412943/financials/',
+    'https://www.marketscreener.com/quote/stock/JOHNSON-JOHNSON-4832/financials/',
+    'https://www.marketscreener.com/quote/stock/JYSKE-BANK-A-S-1412946/financials/',
+    'https://www.marketscreener.com/quote/stock/KIMBERLY-CLARK-CORPORATIO-13266/financials/',
+    'https://www.marketscreener.com/quote/stock/KINDER-MORGAN-INC-7331799/financials/',
+    'https://www.marketscreener.com/quote/stock/KOHL-S-CORPORATION-13316/financials/',
+    'https://www.marketscreener.com/quote/stock/L-BRANDS-INC-21245782/financials/',
+    'https://www.marketscreener.com/quote/stock/LAMB-WESTON-HOLDINGS-INC-31862637/financials/',
+    'https://www.marketscreener.com/quote/stock/LINDE-PLC-46923083/financials/',
+    'https://www.marketscreener.com/quote/stock/LOCKHEED-MARTIN-CORPORATI-13406/financials/',
+    'https://www.marketscreener.com/quote/stock/LOWE-S-COMPANIES-INC-13416/financials/',
+    'https://www.marketscreener.com/quote/stock/MATAS-A-S-13421490/financials/',
+    'https://www.marketscreener.com/quote/stock/MCCORMICK-COMPANY-INCO-13556/financials/',
+    'https://www.marketscreener.com/quote/stock/MCDONALD-S-CORPORATION-4833/financials/',
+    'https://www.marketscreener.com/quote/stock/MEDTRONIC-PLC-20661655/financials/',
+    'https://www.marketscreener.com/quote/stock/MERCK-CO-INC-13611/financials/',
+    'https://www.marketscreener.com/quote/stock/MICROSOFT-CORPORATION-4835/financials/',
+    'https://www.marketscreener.com/quote/stock/MOLSON-COORS-BEVERAGE-COM-14548/financials/',
+    'https://www.marketscreener.com/quote/stock/MONDELEZ-INTERNATIONAL-I-11499018/financials/',
+    'https://www.marketscreener.com/quote/stock/MONSTER-BEVERAGE-CORPORAT-22497283/financials/',
+    'https://www.marketscreener.com/quote/stock/MOTOROLA-SOLUTIONS-INC-7130472/financials/',
+    'https://www.marketscreener.com/quote/stock/NKT-A-S-1412976/financials/',
+    'https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/financials/',
+    'https://www.marketscreener.com/quote/stock/NETCOMPANY-GROUP-A-S-44172535/financials/',
+    'https://www.marketscreener.com/quote/stock/NETFLIX-INC-44292425/financials/',
+    'https://www.marketscreener.com/quote/stock/NEWELL-BRANDS-INC-47564184/financials/',
+    'https://www.marketscreener.com/quote/stock/NIKE-INC-13739/financials/',
+    'https://www.marketscreener.com/quote/stock/NILFISK-HOLDING-A-S-38123483/financials/',
+    'https://www.marketscreener.com/quote/stock/NOVO-NORDISK-A-S-1412980/financials/',
+    'https://www.marketscreener.com/quote/stock/NOVOZYMES-A-S-1412985/financials/',
+    'https://www.marketscreener.com/quote/stock/NUCOR-CORPORATION-13823/financials/',
+    'https://www.marketscreener.com/quote/stock/OCCIDENTAL-PETROLEUM-CORP-13928/financials/',
+    'https://www.marketscreener.com/quote/stock/ORACLE-CORPORATION-13620698/financials/',
+    'https://www.marketscreener.com/quote/stock/PPG-INDUSTRIES-INC-14090/financials/',
+    'https://www.marketscreener.com/quote/stock/PANDORA-A-S-6705882/financials/',
+    'https://www.marketscreener.com/quote/stock/PARKER-HANNIFIN-CORPORATI-40295173/financials/',
+    'https://www.marketscreener.com/quote/stock/PAYPAL-HOLDINGS-INC-23377703/financials/',
+    'https://www.marketscreener.com/quote/stock/PENTAIR-PLC-16656327/financials/',
+    'https://www.marketscreener.com/quote/stock/PEPSICO-INC-39085159/financials/',
+    'https://www.marketscreener.com/quote/stock/PERKINELMER-INC-12426/financials/',
+    'https://www.marketscreener.com/quote/stock/PHILIP-MORRIS-INTERNATION-2836703/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-PROCTER-GAMBLE-COMP-4838/financials/',
+    'https://www.marketscreener.com/quote/stock/PUBLIC-STORAGE-14115/financials/',
+    'https://www.marketscreener.com/quote/stock/QUALCOMM-INCORPORATED-4897/financials/',
+    'https://www.marketscreener.com/quote/stock/RALPH-LAUREN-CORPORATION-14256/financials/',
+    'https://www.marketscreener.com/quote/stock/RAYTHEON-TECHNOLOGIES-COR-4840/financials/',
+    'https://www.marketscreener.com/quote/stock/RINGKJOBING-LANDBOBANK-A-35018541/financials/',
+    'https://www.marketscreener.com/quote/stock/ROCKWELL-AUTOMATION-INC-14277/financials/',
+    'https://www.marketscreener.com/quote/stock/ROCKWOOL-INTERNATIONAL-A-1413002/financials/',
+    'https://www.marketscreener.com/quote/stock/ROYAL-UNIBREW-A-S-1412996/financials/',
+    'https://www.marketscreener.com/quote/stock/SCANDINAVIAN-TOBACCO-GROU-26019411/financials/',
+    'https://www.marketscreener.com/quote/stock/SCHLUMBERGER-LIMITED-14411/financials/',
+    'https://www.marketscreener.com/quote/stock/AKTIESELSKABET-SCHOUW-C-1413014/financials/',
+    'https://www.marketscreener.com/quote/stock/SEAGATE-TECHNOLOGY-PLC-14501/financials/',
+    'https://www.marketscreener.com/quote/stock/SEALED-AIR-CORPORATION-14348/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-SHERWIN-WILLIAMS-COMP-14390/financials/',
+    'https://www.marketscreener.com/quote/stock/SIMCORP-A-S-1413016/financials/',
+    'https://www.marketscreener.com/quote/stock/SOLAR-A-S-1413022/financials/',
+    'https://www.marketscreener.com/quote/stock/SPAR-NORD-BANK-A-S-1413032/financials/',
+    'https://www.marketscreener.com/quote/stock/STANLEY-BLACK-DECKER-I-14522/financials/',
+    'https://www.marketscreener.com/quote/stock/STARBUCKS-CORPORATION-4905/financials/',
+    'https://www.marketscreener.com/quote/stock/STATE-STREET-CORPORATION-14499/financials/',
+    'https://www.marketscreener.com/quote/stock/STRYKER-CORPORATION-14536/financials/',
+    'https://www.marketscreener.com/quote/stock/SYDBANK-A-S-1413034/financials/',
+    'https://www.marketscreener.com/quote/stock/SYSCO-CORPORATION-14540/financials/',
+    'https://www.marketscreener.com/quote/stock/T-ROWE-PRICE-GROUP-INC-40311214/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-TJX-COMPANIES-INC-9894794/financials/',
+    'https://www.marketscreener.com/quote/stock/TARGET-CORPORATION-12291/financials/',
+    'https://www.marketscreener.com/quote/stock/TEXAS-INSTRUMENTS-INCORPO-9730651/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-COOPER-COMPANIES-INC-12149/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-DRILLING-COMPANY-OF-1-56798204/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-HERSHEY-COMPANY-12988/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-HOME-DEPOT-INC-4826/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-KRAFT-HEINZ-COMPANY-22816979/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-KROGER-CO-13293/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-TRAVELERS-COMPANIES-14449/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-WALT-DISNEY-COMPANY-4842/financials/',
+    'https://www.marketscreener.com/quote/stock/THERMO-FISHER-SCIENTIFIC-14623/financials/',
+    'https://www.marketscreener.com/quote/stock/TOPDANMARK-A-S-1413041/financials/',
+    'https://www.marketscreener.com/quote/stock/TRIPADVISOR-INC-9597196/financials/',
+    'https://www.marketscreener.com/quote/stock/TRYG-A-S-1413048/financials/',
+    'https://www.marketscreener.com/quote/stock/TYSON-FOODS-INC-14672/financials/',
+    'https://www.marketscreener.com/quote/stock/UIE-PLC-1413049/financials/',
+    'https://www.marketscreener.com/quote/stock/UNITEDHEALTH-GROUP-INCORP-14750/financials/',
+    'https://www.marketscreener.com/quote/stock/VENTAS-INC-14836/financials/',
+    'https://www.marketscreener.com/quote/stock/VERISIGN-INC-4912/financials/',
+    'https://www.marketscreener.com/quote/stock/VERIZON-COMMUNICATIONS-IN-4830/financials/',
+    'https://www.marketscreener.com/quote/stock/VESTAS-WIND-SYSTEMS-A-S-1413059/financials/',
+    'https://www.marketscreener.com/quote/stock/VULCAN-MATERIALS-COMPANY-14815/financials/',
+    'https://www.marketscreener.com/quote/stock/W-W-GRAINGER-INC-12858/financials/',
+    'https://www.marketscreener.com/quote/stock/WALGREENS-BOOTS-ALLIANCE-19356230/financials/',
+    'https://www.marketscreener.com/quote/stock/WALMART-INC-4841/financials/',
+    'https://www.marketscreener.com/quote/stock/WASTE-MANAGEMENT-INC-14885/financials/',
+    'https://www.marketscreener.com/quote/stock/WATERS-CORPORATION-14845/financials/',
+    'https://www.marketscreener.com/quote/stock/WEST-PHARMACEUTICAL-SERVI-14917/financials/',
+    'https://www.marketscreener.com/quote/stock/WHIRLPOOL-CORPORATION-14872/financials/',
+    'https://www.marketscreener.com/quote/stock/THE-WILLIAMS-COMPANIES-I-14884/financials/',
+    'https://www.marketscreener.com/quote/stock/XEROX-HOLDINGS-CORPORATIO-63181095/financials/',
+    'https://www.marketscreener.com/quote/stock/YUM-BRANDS-INC-46353249/financials/',
+    'https://www.marketscreener.com/quote/stock/ZOETIS-INC-12482719/financials/',
+    'https://www.marketscreener.com/quote/stock/EBAY-INC-4869/financials/',
+    'https://www.marketscreener.com/quote/stock/ORSTED-A-S-28607554/financials/',
 ]

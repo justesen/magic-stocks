@@ -19,20 +19,11 @@ EUR_TO_DKK = 7.44
 
 def parse_decimal_comma_string(s: str) -> float:
     """Parse string with decimal comma to float"""
-    s = s.replace('.', '')
+    s = s.replace(' ', '')
     s = s.replace(',', '.')
     if s == '-':
         return None
     return float(s)
-
-
-def parse_market_cap(s: str) -> float:
-    """Parse string with market cap in Danish ("Mia."/"Mio.") to float (mio.)"""
-    if s.endswith('Mia.'):
-        return parse_decimal_comma_string(s[:-len('Mia.')])*1000
-    if s.endswith('Mio.'):
-        return parse_decimal_comma_string(s[:-len('Mio.')])
-    raise Exception('parse_market_cap failure: %s' % (s))
 
 
 def find_and_parse(driver: WebDriver, xpath: str, parse_fn: Callable = parse_decimal_comma_string) -> float:
@@ -44,108 +35,165 @@ def get_stock_data(driver: WebDriver, url: str) -> Dict:
     """Return dict with data on stock from url using driver"""
     driver.get(url)
 
+    header = driver.find_element_by_xpath('//*[@id="zbCenter"]/div/span/table[2]/tbody/tr/td[2]/a').get_attribute('innerHTML')
+    symbol = header[header.index('(') + 1:header.index(')')]
+
     try:
-        driver.find_element_by_xpath('//*[@id="_evidon-accept-button"]').click()
+        currency_price = driver.find_element_by_xpath('//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[13]/td/div[1]').get_attribute('innerHTML').strip()[13:13+3]
     except selenium.common.exceptions.NoSuchElementException:
-        pass
+        currency_price = driver.find_element_by_xpath('//*[@id="zbCenter"]/div/span/table[4]/tbody/tr/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[13]/td/div[1]').get_attribute('innerHTML').strip()[13:13+3]
+
+    try:
+        currency_financials = driver.find_element_by_xpath('//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[13]/td/div[2]').get_attribute('innerHTML').strip()[13:13+3]
+    except selenium.common.exceptions.NoSuchElementException:
+        currency_financials = currency_price
 
     stock = {
-        'name': driver.find_element_by_class_name('securityName').get_attribute('innerHTML')[:-3].replace('&amp;', '&'),
-        'symbol': driver.find_element_by_class_name('securitySymbol').get_attribute('innerHTML'),
+        'name': driver.find_element_by_xpath('//*[@id="zbCenter"]/div/span/table[2]/tbody/tr/td[2]/a/h1').get_attribute('innerHTML').replace('&amp;', '&'),
+        'symbol': symbol,
         'url': url,
-        'debt_to_equity': find_and_parse(driver, '//*[@id="KeyStatsDebtEquity"]/td'),
-        'market_cap_raw': find_and_parse(driver, '//*[@id="Col0MCap"]', parse_market_cap),
-        'price': find_and_parse(driver, '//*[@id="Col0Price"]'),
-        'p_e': find_and_parse(driver, '//*[@id="Col0PE"]'),
-        'p_b': find_and_parse(driver, '//*[@id="KeyStatsPriceBookRatio"]/td'),
-        'financials_currency': driver.find_element_by_xpath('//*[@id="OverviewFinancialsDisclaimer"]/p').get_attribute('innerHTML').strip()[-4:-1],
+        'price': find_and_parse(driver, '//*[@id="zbjsfv_dr"]'),
+        'currency_price': currency_price,
+        'currency_financials': currency_financials,
+        'years': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[1]/td[2]/b', int),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[1]/td[3]/b', int),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[1]/td[4]/b', int),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[1]/td[5]/b', int),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[1]/td[6]/b', int),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[1]/td[7]/b', int),
+        ],
+        'capitalization': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[2]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[2]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[2]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[2]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[2]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[2]/td[7]'),
+        ],
+        'ev': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[3]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[3]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[3]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[3]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[3]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[3]/td[7]'),
+        ],
+        'num_shares': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[10]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[10]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[10]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[10]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[10]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td/table/tbody/tr[10]/td[7]'),
+        ],
+        # Income
+        'sales': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[2]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[2]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[2]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[2]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[2]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[2]/td[7]'),
+        ],
+        'ebitda': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[3]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[3]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[3]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[3]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[3]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[3]/td[7]'),
+        ],
+        'ebit': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[4]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[4]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[4]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[4]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[4]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[4]/td[7]'),
+        ],
+        'earnings': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[7]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[7]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[7]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[7]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[7]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[7]/td[7]'),
+        ],
+        'eps': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[9]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[9]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[9]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[9]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[9]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[9]/td[7]'),
+        ],
+        'dividend': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[10]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[10]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[10]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[10]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[10]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[3]/tbody/tr[2]/td/table/tbody/tr[10]/td[7]'),
+        ],
+        # Balance sheet
+        'debt': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[2]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[2]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[2]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[2]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[2]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[2]/td[7]'),
+        ],
+        'cash': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[3]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[3]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[3]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[3]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[3]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[3]/td[7]'),
+        ],
         'fcf': [
-            find_and_parse(driver, '//*[@id="OverviewFinancials"]/table/tbody[3]/tr[4]/td[1]'),
-            find_and_parse(driver, '//*[@id="OverviewFinancials"]/table/tbody[3]/tr[4]/td[2]'),
-            find_and_parse(driver, '//*[@id="OverviewFinancials"]/table/tbody[3]/tr[4]/td[3]'),
-        ]
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[5]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[5]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[5]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[5]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[5]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[5]/td[7]'),
+        ],
+        'equity': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[7]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[7]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[7]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[7]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[7]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[7]/td[7]'),
+        ],
+        'assets': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[9]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[9]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[9]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[9]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[9]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[9]/td[7]'),
+        ],
+        'book_ps': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[10]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[10]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[10]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[10]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[10]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[10]/td[7]'),
+        ],
+        'capex': [
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[12]/td[2]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[12]/td[3]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[12]/td[4]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[12]/td[5]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[12]/td[6]'),
+            find_and_parse(driver, '//*[@id="zbCenter"]/div/span/table[4]/tbody/tr[2]/td[1]/table[4]/tbody/tr[2]/td/table/tbody/tr[12]/td[7]'),
+        ],
     }
-
-    driver.find_element_by_xpath('//*[@id="LnkPage10"]').click()
-    stock['revenue'] = [
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[1]/tr[1]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[1]/tr[1]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[1]/tr[1]/td[5]'),
-    ]
-    stock['ebit'] = [
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[2]/tr[8]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[2]/tr[8]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[2]/tr[8]/td[5]'),
-    ]
-    stock['ebt'] = [
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[2]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[2]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[2]/td[5]'),
-    ]
-    stock['earnings'] = [
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[5]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[5]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsIncomeStatement"]/table/tbody[3]/tr[5]/td[5]'),
-    ]
-
-    driver.find_element_by_xpath('//*[@id="LnkPage10Viewbs"]').click()
-    stock['cash'] = [
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[1]/tr[6]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[1]/tr[6]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[1]/tr[6]/td[5]'),
-    ]
-    stock['short_term_debt'] = [
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[6]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[6]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[6]/td[5]'),
-    ]
-    stock['other_short_term_debt'] = [
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[7]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[7]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[7]/td[5]'),
-    ]
-    stock['short_term_liabilities'] = [
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[8]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[8]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[8]/td[5]'),
-    ]
-    stock['long_term_debt'] = [
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[11]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[11]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[11]/td[5]'),
-    ]
-    stock['other_long_term_debt'] = [
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[12]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[12]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[12]/td[5]'),
-    ]
-    stock['long_term_liabilities'] = [
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[13]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[13]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[13]/td[5]'),
-    ]
-    stock['liabilities'] = [
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[14]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[14]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[14]/td[5]'),
-    ]
-    stock['equity'] = [
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[21]/td[3]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[21]/td[4]'),
-        find_and_parse(driver, '//*[@id="FinancialsBalanceSheet"]/table/tbody[2]/tr[21]/td[5]'),
-    ]
-
-    driver.find_element_by_xpath('//*[@id="LnkPage11"]').click()
-    stock['roa'] = [
-        find_and_parse(driver, '//*[@id="KeyRatiosProfitability"]/table/tbody/tr[3]/td[3]'),
-        find_and_parse(driver, '//*[@id="KeyRatiosProfitability"]/table/tbody/tr[3]/td[4]'),
-        find_and_parse(driver, '//*[@id="KeyRatiosProfitability"]/table/tbody/tr[3]/td[5]'),
-    ]
-    stock['roe'] = [
-        find_and_parse(driver, '//*[@id="KeyRatiosProfitability"]/table/tbody/tr[5]/td[3]'),
-        find_and_parse(driver, '//*[@id="KeyRatiosProfitability"]/table/tbody/tr[5]/td[4]'),
-        find_and_parse(driver, '//*[@id="KeyRatiosProfitability"]/table/tbody/tr[5]/td[5]'),
-    ]
 
     return stock
 
@@ -157,7 +205,7 @@ def load_data(db, gui: bool) -> None:
         options.add_argument('headless')
     driver = webdriver.Chrome(chrome_options=options)
 
-    for i, url in enumerate(URLS):
+    for url in URLS:
         try:
             stock = get_stock_data(driver, url)
             print(stock['name'])
@@ -165,94 +213,74 @@ def load_data(db, gui: bool) -> None:
             time.sleep(1)
         except Exception:
             print(traceback.format_exc())
-            print('failed at ' + str(i))
+            print('failed at ' + url)
 
     driver.close()
 
 
-def weighted_avg(s: Dict, key: str, growth: bool = False, growth_discount: float = 0.5) -> float:
-    """Return weighted average of three values in s[key]
-
-    If growth is True and elements in s[key] are monotonically increasing or decreasing,
-    apply the smallest (in |absolute| terms) growth factor between the pairs of values,
-    but discount the growth by growth_discount (defaults to 50%).
-    """
-    seq = s[key]
-    n = len(seq)
-    denom = sum(range(1, n + 1))
-    s['growth_' + key] = 0
-
-    if growth and seq[0] < seq[1] < seq[2] and all([x > 0 for x in seq]):
-        growth_factor = ((min(seq[2]/seq[1], seq[1]/seq[0]) - 1)*growth_discount + 1)
-        growth = growth_factor*seq[2]
-        s['growth_' + key] = growth_factor - 1
-        return growth
-
-    if growth and seq[0] > seq[1] > seq[2] and all([x > 0 for x in seq]):
-        growth_factor = ((max(seq[2]/seq[1], seq[1]/seq[0]) - 1)*growth_discount + 1)
-        growth = growth_factor*seq[2]
-        s['growth_' + key] = growth_factor - 1
-        return growth
-
-    return sum([e*(i + 1)/denom for i, e in enumerate(seq)])
-
-
-def calc_fcf(s: Dict) -> List:
-    """If not all FCF values are missing (i.e. None), set remaing to 0"""
-    if all((x is None for x in s['fcf'])):
-        return s['fcf']
-
-    return [0 if x is None else x for x in s['fcf']]
-
-
-def calc_debt(s: Dict) -> List:
-    """Return debt based on long/short term liabilites and cash"""
-    if all((x is None for x in s['long_term_liabilities'])) and all((x is None for x in s['short_term_liabilities'])):
-        print('using liabilites')
-        return [lia - c for lia, c in zip(s['liabilities'], s['my_cash'])]
-
-    return [(0 if lt is None else lt) + (0 if olt is None else olt)
-            for st, ost, lt, olt in zip(s['short_term_debt'], s['other_short_term_debt'], s['long_term_debt'], s['other_long_term_debt'])]
+def avg(xs):
+    ys = [
+        0.5*xs[0],
+        0.6*xs[1],
+        0.7*xs[2],
+        1.0*xs[3],
+        1.0*xs[4],
+        1.0*xs[5],
+    ]
+    return sum(ys)/len(ys)
 
 
 def process_data(db) -> None:
     """Process data in database, i.e., convert currencies, calculate properties and weighted properties"""
     for s in sorted(db.stocks.find(), key=lambda s: s['name']):
         print(s['name'])
+        try:
+            if 2021 in s['years']:
+                year_index = s['years'].index(2021)
+            else:
+                year_index = s['years'].index(2020)
 
-        if s['financials_currency'] == 'EUR':
-            print('euro conversion!')
-            s['market_cap'] = s['market_cap_raw']/EUR_TO_DKK
-        else:
-            s['market_cap'] = s['market_cap_raw']
+            if s['equity'][-1] is None and s['equity'][-2] is not None:
+                print(f"No equity for {s['years'][-1]}, using that for {s['years'][-2]}")
+                s['equity'][-1] = s['equity'][-2]
 
-        s['my_cash'] = [0 if x is None else x for x in s['cash']]
-        s['debt'] = calc_debt(s)
-        s['my_fcf'] = calc_fcf(s)
-        s['roce'] = [100*s['earnings'][i]/((s['equity'][i] if s['equity'][i] > 0 else -s['equity'][i]) + s['debt'][i]) for i in range(len(s['equity']))]
+            if s['book_ps'][-1] is None and s['book_ps'][-2] is not None:
+                print(f"No book per share for {s['years'][-1]}, using that for {s['years'][-2]}")
+                s['book_ps'][-1] = s['book_ps'][-2]
 
-        s['ev'] = s['market_cap'] + s['debt'][-1]
-        s['my_debt_to_equity'] = (s['debt'][-1])/s['equity'][-1]
+            s['roe'] = [
+                100*s['earnings'][i]/s['equity'][i] if s['equity'][i] else 0
+                for i in range(len(s['years']))
+            ]
+            s['roa'] = [
+                100*s['earnings'][i]/s['assets'][i] if s['assets'][i] else 0
+                for i in range(len(s['years']))
+            ]
 
-        s['weighted_earnings'] = weighted_avg(s, 'earnings', True)
-        if None not in s['my_fcf']:
-            s['weighted_fcf'] = weighted_avg(s, 'my_fcf', True)
-        s['weighted_roe'] = weighted_avg(s, 'roe', True)
-        s['weighted_roa'] = weighted_avg(s, 'roa', True)
-        s['weighted_roce'] = weighted_avg(s, 'roce', True)
+            s['avg_roe'] = avg(s['roe'])
+            s['avg_roa'] = avg(s['roa'])
+            s['yield'] = 100*s['dividend'][year_index]/s['price'] if s['dividend'][year_index] else 0
+            s['last_year'] = s['years'][-1]
+            s['earnings_ev'] = avg([
+                s['earnings'][i]/s['ev'][year_index] if s['earnings'][i] else 0
+                for i in range(len(s['years']))
+            ])
+            s['fcf_ev'] = avg([
+                s['fcf'][i]/s['ev'][year_index] if s['fcf'][i] else 0
+                for i in range(len(s['years']))
+            ])
 
-        s['earnings_ev'] = s['weighted_earnings']/s['ev']
+            s['avg_roce'] = avg([
+                100*(s['earnings'][i] if s['earnings'][i] else 0)/((s['equity'][i] if s['equity'][i] else -s['book_ps'][i]*s['num_shares'][year_index]/1000) + (s['debt'][i] if s['debt'][i] else 0))
+                for i in range(len(s['years']))
+            ])
+            s['valuation'] = 2*s['earnings_ev'] + s['fcf_ev']
 
-        if 'weighted_fcf' in s:
-            s['fcf_ev'] = s['weighted_fcf']/s['ev']
-            s['valuation'] = 100*(0.4*s['earnings_ev'] + 0.0*s['ebit_ev'] + 0.2*s['fcf_ev'] + 0.4*(1/s['p_e'] if s['p_e'] is not None else 0))
-        else:
-            print('no fcf')
-            s['valuation'] = 100*(0.6*s['earnings_ev'] + 0.0*s['ebit_ev'] + 0.4*(1/s['p_e'] if s['p_e'] is not None else 0))
-
-        db.stocks.remove({'name': s['name']})
-        db.stocks.insert_one(s)
-        print()
+            db.stocks.remove({'name': s['name']})
+            db.stocks.insert_one(s)
+        except Exception:
+            print(traceback.format_exc())
+            print('failed')
 
 
 def rank(stocks, s, key):
@@ -260,12 +288,12 @@ def rank(stocks, s, key):
 
 
 def rank_data(db):
-    stocks = [s for s in db.stocks.find()]
+    stocks = [s for s in db.stocks.find({'valuation': {'$exists': 1}})]
 
-    for s in db.stocks.find():
+    for s in stocks:
         s['rank_valuation'] = rank(stocks, s, 'valuation')
-        s['rank_roc'] = rank(stocks, s, 'weighted_roce')
-        s['score'] = 1.5*s['rank_valuation'] + s['rank_roc']
+        s['rank_roc'] = rank(stocks, s, 'avg_roce')
+        s['score'] = 2*s['rank_valuation'] + s['rank_roc']
         db.stocks.remove({'name': s['name']})
         db.stocks.insert_one(s)
 

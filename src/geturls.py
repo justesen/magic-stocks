@@ -1,54 +1,34 @@
 #!/usr/bin/env python
 
-import time
 import traceback
 import sys
-from collections.abc import Callable
-from typing import Dict, List, Tuple
 
 import selenium
-import pymongo
 from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
 
-from names import NAMES
 from urls import URLS
 
 
-SEARCH_PAGE_URL = 'https://www.morningstar.dk/dk/funds/SecuritySearchResults.aspx?type=STOCK&search='
+SEARCH_PAGE_URL = 'https://www.marketscreener.com/search/?mots='
 
 
-def get_url(driver: WebDriver, name: str) -> str:
-    driver.get(SEARCH_PAGE_URL + name)
+def get_url(driver: WebDriver, symbol: str) -> str:
+    driver.get(SEARCH_PAGE_URL + symbol)
 
     try:
-        driver.find_element_by_xpath('//*[@id="_evidon-accept-button"]').click()
-        time.sleep(2)
-        driver.get(SEARCH_PAGE_URL + name)
+        market = driver.find_element_by_xpath('//*[@id="ALNI0"]/tbody/tr[2]/td[7]').get_attribute('innerHTML').replace('&nbsp;', ' ')
+        ms_name = driver.find_element_by_xpath('//*[@id="ALNI0"]/tbody/tr[2]/td[3]/a').get_attribute('innerHTML')
+        print(name, market)
+        if (market == 'London Stock Exchange'):
+            ms_name = driver.find_element_by_xpath('//*[@id="ALNI0"]/tbody/tr[2]/td[3]/a').get_attribute('innerHTML')
+            ms_url = driver.find_element_by_xpath('//*[@id="ALNI0"]/tbody/tr[2]/td[3]/a').get_attribute('href') + 'financials/'
+            return ms_name, ms_url
     except selenium.common.exceptions.NoSuchElementException:
-        pass
-
-    for tr in range(2, 10):
-        try:
-            ticker = driver.find_element_by_xpath('//*[@id="ctl00_MainContent_stockTable"]/tbody/tr[%d]/td[2]/span' % tr).get_attribute('innerHTML')
-            if ticker.split(':')[0] in ['NYSE', 'NASDAQ']:
-                ms_name = driver.find_element_by_xpath('//*[@id="ctl00_MainContent_stockTable"]/tbody/tr[%d]/td[1]/a' % tr).get_attribute('innerHTML')
-                ms_url = driver.find_element_by_xpath('//*[@id="ctl00_MainContent_stockTable"]/tbody/tr[%d]/td[1]/a' % tr).get_attribute('href')
-                return ms_name, ms_url
-        except selenium.common.exceptions.NoSuchElementException:
-            print("error: couldn't find '%s'" % name)
-            return None, None
+        print(traceback.format_exc())
+        return None, None
 
     return None, None
-
-
-def normalize(name: str) -> str:
-    name = name.replace('.', ' ')
-    name = ''.join([c.lower() for c in name
-                    if c.isalnum() or c == ' '])
-    terms = [t for t in name.split()
-             if t not in ['the', 'co', 'corp', 'class', 'corporation', 'limited', 'ltd', 'company', 'group'] and not t.startswith('inc')]
-    return ' '.join(terms)
 
 
 if __name__ == '__main__':
@@ -58,27 +38,30 @@ if __name__ == '__main__':
     options = webdriver.ChromeOptions()
     if not gui:
         options.add_argument('headless')
-    driver = webdriver.Chrome(chrome_options=options)
 
     urls = []
     missed = []
 
-    for name in NAMES:
-        norm_name = normalize(name)
-        ms_name, ms_url = get_url(driver, norm_name)
+    with open('info.txt') as f:
+        for line in f:
+            driver = webdriver.Chrome(chrome_options=options)
+            name, symbol, sector = line.strip().split('\t')
+            ms_name, ms_url = get_url(driver, symbol)
+            driver.close()
 
-        if ms_url:
-            print(ms_url, ms_name)
-            if (ms_url, ms_name) not in urls:
-                urls.append((ms_url, ms_name))
+            if ms_url:
+                print(ms_url, ms_name)
+                if (ms_url, ms_name) not in urls:
+                    urls.append((ms_url, ms_name))
+                else:
+                    print(ms_name + " added twice to NAMES")
             else:
-                print(ms_name + " added twice to NAMES")
-        else:
-            missed.append(name)
+                print('couldn\'t find %s' % name)
+                missed.append(name)
 
     for url, name in urls:
         if url not in URLS:
-            print("'%s',  # %s" % (url, name))
+            print("'%s'" % url)
 
     for url, name in urls:
         if url in URLS:
