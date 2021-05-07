@@ -36,6 +36,16 @@
               </a>
             </th>
             <th>
+              <a href="#" ng-click="orderByField='rank_bp'; reverseSort = !reverseSort">
+                Rank B/P <span ng-show="orderByField == 'rank_bp'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='rank_invest'; reverseSort = !reverseSort">
+                Rank invest <span ng-show="orderByField == 'rank_invest'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
               <a href="#" ng-click="orderByField='rank_roc'; reverseSort = !reverseSort">
                 Rank ROC <span ng-show="orderByField == 'rank_roc'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
               </a>
@@ -48,6 +58,16 @@
             <th>
               <a href="#" ng-click="orderByField='fcf_ev'; reverseSort = !reverseSort">
                 FCF/EV <span ng-show="orderByField == 'fcf_ev'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='b_p'; reverseSort = !reverseSort">
+                B/P <span ng-show="orderByField == 'b_p'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+              </a>
+            </th>
+            <th>
+              <a href="#" ng-click="orderByField='invest'; reverseSort = !reverseSort">
+                A growth <span ng-show="orderByField == 'invest'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
               </a>
             </th>
             <th>
@@ -85,9 +105,13 @@
             <td>{{ s.name }}</td>
             <td class="right" ng-bind-html="format(s, 'score')">{{ s.score }}</td>
             <td class="right" ng-bind-html="format(s, 'rank_valuation')">{{ s.rank_valuation }}</td>
+            <td class="right" ng-bind-html="format(s, 'rank_bp')">{{ s.rank_bp }}</td>
+            <td class="right" ng-bind-html="format(s, 'rank_invest')">{{ s.rank_invest }}</td>
             <td class="right" ng-bind-html="format(s, 'rank_roc')">{{ s.rank_roc }}</td>
             <td class="right" ng-bind-html="format(s, 'earnings_ev')"></td>
             <td class="right" ng-bind-html="format(s, 'fcf_ev')"></td>
+            <td class="right" ng-bind-html="format(s, 'b_p')"></td>
+            <td class="right" ng-bind-html="format(s, 'invest')"></td>
             <td class="right" ng-bind-html="format(s, 'avg_roce')"></td>
             <td class="right" ng-bind-html="format(s, 'avg_roe')"></td>
             <td class="right" ng-bind-html="format(s, 'avg_roa')"></td>

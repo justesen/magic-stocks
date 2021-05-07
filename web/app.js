@@ -26,6 +26,10 @@ angular.module("stocksApp", ['ngSanitize'])
           return formatGrowth(s.growth_earnings) + " " + s.earnings_ev.toFixed(2);
         case "fcf_ev":
           return formatGrowth(s.growth_my_fcf) + " " + s.fcf_ev.toFixed(2);
+        case "b_p":
+          return s.b_p.toFixed(2);
+        case "invest":
+          return s.invest.toFixed(1) + '%';
         case "avg_roce":
           return formatGrowth(s.growth_roce) + " " + s.avg_roce.toFixed(0) + '%';
         case "avg_roe":
