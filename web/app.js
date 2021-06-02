@@ -16,6 +16,9 @@ angular.module("stocksApp", ['ngSanitize'])
     }
 
     $scope.format = (s, key) => {
+      if (s[key] == undefined) {
+        return "";
+      }
       switch (key) {
         case "p_e":
           return s.p_e.toFixed(1);
@@ -23,12 +26,16 @@ angular.module("stocksApp", ['ngSanitize'])
           return formatGrowth(s.growth_earnings) + " " + s.earnings_ev.toFixed(2);
         case "fcf_ev":
           return formatGrowth(s.growth_my_fcf) + " " + s.fcf_ev.toFixed(2);
-        case "weighted_roce":
-          return formatGrowth(s.growth_roce) + " " + s.weighted_roce.toFixed(0) + '%';
-        case "weighted_roe":
-          return formatGrowth(s.growth_roe) + " " + s.weighted_roe.toFixed(0) + '%';
-        case "weighted_roa":
-          return formatGrowth(s.growth_roa) + " " + s.weighted_roa.toFixed(0) + '%';
+        case "b_p":
+          return s.b_p.toFixed(2);
+        case "invest":
+          return s.invest.toFixed(1) + '%';
+        case "avg_roce":
+          return formatGrowth(s.growth_roce) + " " + s.avg_roce.toFixed(0) + '%';
+        case "avg_roe":
+          return formatGrowth(s.growth_roe) + " " + s.avg_roe.toFixed(0) + '%';
+        case "avg_roa":
+          return formatGrowth(s.growth_roa) + " " + s.avg_roa.toFixed(0) + '%';
         case "p_b":
           if (s.p_b < 0) {
             return severe(s.p_b.toFixed(1));
@@ -50,19 +57,22 @@ angular.module("stocksApp", ['ngSanitize'])
             return good(s.my_debt_to_equity.toFixed(1));
           }
           return s.my_debt_to_equity.toFixed(1);
+        case "yield":
+          return s.yield.toFixed(1) + "%";
         default:
           return s[key];
       }
     };
 
     formatGrowth = (growth) => {
-      if (growth == 0) {
-        return "";
-      }
-      const str = "(" + Math.round(100*growth) + "%)";
-      if (growth > 0) {
-        return good(str);
-      }
-      return warn(str);
+      return "";
+      // if (growth == 0) {
+      //   return "";
+      // }
+      // const str = "(" + Math.round(100*growth) + "%)";
+      // if (growth > 0) {
+      //   return good(str);
+      // }
+      // return warn(str);
     };
   });
