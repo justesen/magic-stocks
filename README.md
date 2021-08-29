@@ -15,4 +15,3 @@ Open `web/index.html` in a browser to view.
 ## Dependencies ##
 * selenium
 * pymongo
-* 
