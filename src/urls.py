@@ -1,4 +1,5 @@
 URLS = [
+    'https://www.marketscreener.com/quote/stock/PER-AARSLEFF-HOLDING-A-S-1412992/financials/',
     'https://www.marketscreener.com/quote/stock/RECKITT-BENCKISER-GROUP-P-9590106/financials/',
     'https://www.marketscreener.com/quote/stock/3I-GROUP-PLC-4007143/financials/',
     'https://www.marketscreener.com/quote/stock/ANGLO-AMERICAN-PLC-4007113/financials/',
