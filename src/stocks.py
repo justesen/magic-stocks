@@ -52,7 +52,7 @@ def get_stock_data(driver: WebDriver, url: str) -> Dict:
         'name': driver.find_element_by_xpath('//*[@id="zbCenter"]/div/span/table[1]/tbody/tr/td[2]/a/h1').get_attribute('innerHTML').replace('&amp;', '&'),
         'symbol': symbol,
         'url': url,
-        'price': find_and_parse(driver, '//*[@id="zbjsfv_dr"]'),
+        'price': find_and_parse(driver, '//*[@id="zbCenter"]/div/span/div[3]/table/tbody/tr/td[1]/div/table/tbody/tr/td[1]/table/tbody/tr[2]/td[1]/span'),
         'currency_price': currency_price,
         'currency_financials': currency_financials,
         'years': [
@@ -80,12 +80,12 @@ def get_stock_data(driver: WebDriver, url: str) -> Dict:
             find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[3]/td[9]'),
         ],
         'num_shares': [
-            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[10]/td[4]'),
-            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[10]/td[5]'),
-            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[10]/td[6]'),
-            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[10]/td[7]'),
-            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[10]/td[8]'),
-            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[10]/td[9]'),
+            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[12]/td[4]'),
+            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[12]/td[5]'),
+            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[12]/td[6]'),
+            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[12]/td[7]'),
+            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[12]/td[8]'),
+            find_and_parse(driver, '//*[@id="Tableau_Histo_Valo"]/table/tbody/tr[12]/td[9]'),
         ],
         # Income
         'sales': [
@@ -240,7 +240,7 @@ def process_data(db) -> None:
             else:
                 year_index = s['years'].index(2020)
 
-            if s['currency_price'] == 'GBP':
+            if s['currency_price'] == 'GBX':
                 s['real_price'] = s['price']/100
             else:
                 s['real_price'] = s['price']
@@ -260,8 +260,11 @@ def process_data(db) -> None:
 
             if any(bps is None for bps in s['book_ps']):
                 i = s['book_ps'].index(None)
-                s['book_ps'][i] = (s['book_ps'][i-1] + s['book_ps'][i+1])/2
-                print(f"No book per share found for {s['years'][i]}, using average of {s['years'][i-1]} and {s['years'][i+1]}")
+                try:
+                    s['book_ps'][i] = (s['book_ps'][i-1] + s['book_ps'][i+1])/2
+                    print(f"No book per share found for {s['years'][i]}, using average of {s['years'][i-1]} and {s['years'][i+1]}")
+                except TypeError:
+                    s['book_ps'][i] = s['book_ps'][i+1]
 
             s['roe'] = [
                 100*s['earnings'][i]/s['equity'][i] if s['equity'][i] else 0

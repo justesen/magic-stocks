@@ -1,4 +1,7 @@
 URLS = [
+    'https://www.marketscreener.com/quote/stock/META-PLATFORMS-INC-10547141/financials/',
+    'https://www.marketscreener.com/quote/stock/PHILIPS-NV-6289/financials/',
+    'https://www.marketscreener.com/quote/stock/MEDTRONIC-PLC-20661655/financials/',
     'https://www.marketscreener.com/quote/stock/PER-AARSLEFF-HOLDING-A-S-1412992/financials/',
     'https://www.marketscreener.com/quote/stock/RECKITT-BENCKISER-GROUP-P-9590106/financials/',
     'https://www.marketscreener.com/quote/stock/3I-GROUP-PLC-4007143/financials/',
@@ -208,6 +211,7 @@ URLS = [
     'https://www.marketscreener.com/quote/stock/INTEL-CORPORATION-4829/financials/',
     'https://www.marketscreener.com/quote/stock/INTERNATIONAL-BUSINESS-MA-4828/financials/',
     'https://www.marketscreener.com/quote/stock/INTERNATIONAL-PAPER-COMPA-13095/financials/',
+    'https://www.marketscreener.com/quote/stock/PACKAGING-CORPORATION-OF-40311146/financials/',
     'https://www.marketscreener.com/quote/stock/THE-J-M-SMUCKER-COMPANY-14400/financials/',
     'https://www.marketscreener.com/quote/stock/JEUDAN-A-S-1412943/financials/',
     'https://www.marketscreener.com/quote/stock/JOHNSON-JOHNSON-4832/financials/',
